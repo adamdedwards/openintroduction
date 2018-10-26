@@ -1,4 +1,4 @@
-\documentclass[twoside, openright]{book}
+\documentclass[nobib]{tufte-book}
 
 %glossary and indexing stuff
 \usepackage[toc, nopostdot, numberedsection]{glossaries}
@@ -11,7 +11,7 @@
 %General packages
 \usepackage{answers}
 \usepackage{textcomp}
-\usepackage{anyfontsize}	
+\usepackage{anyfontsize}
 \usepackage{geometry}
 \usepackage{url}
 \usepackage{changepage}
@@ -20,14 +20,14 @@
 \usepackage{turnstile}
 \usepackage{float}
 \usepackage[normalem]{ulem}
-\usepackage{fixltx2e}	
+\usepackage{fixltx2e}
 \usepackage{wasysym}
 \usepackage{tocloft}
 \usepackage{fancyhdr}
 \usepackage{fancyref}
 \usepackage{etoolbox}
 \usepackage[utf8]{inputenc}
-%\usepackage{amsthm} for some reason, this conflicts with the fitch.sty part of openlogic.sty. 
+%\usepackage{amsthm} for some reason, this conflicts with the fitch.sty part of openlogic.sty.
 
 %%% Bibstuff
 \usepackage[authordate,autocite=inline,backend=biber, natbib]{biblatex-chicago}
@@ -45,29 +45,29 @@
 
 
 %%%    Table and figure packages %%%
-\usepackage[singlelinecheck=false, skip=0pt]{caption} %left aligns captions for tables, moves them closer to table. 
+\usepackage[singlelinecheck=false, skip=0pt]{caption} %left aligns captions for tables, moves them closer to table.
 \usepackage{tabularx}
 \usepackage{longtable}
 \usepackage{tabu}
-\usepackage[framemethod=1]{mdframed} 
+\usepackage[framemethod=1]{mdframed}
 \usepackage{wrapfig} %I used this to put a frame around tables.
 \tabulinesep=.75ex
 \usepackage{colortbl}
-\floatstyle{plain} 
+\floatstyle{plain}
 \restylefloat{figure}
 \usepackage[export]{adjustbox}
 \usepackage{multirow}
 \usepackage{openintroduction}
 \usepackage{rotating}
 \usepackage{booktabs}
-	
+
 
 %linking and bookmarks in the pdf.
 \usepackage{hyperref}
 \hypersetup{pdftex,colorlinks=true,allcolors=blue}
-\usepackage{hypcap}	
-	
-	
+\usepackage{hypcap}
+
+
 \pdfinfo{
   /Title (An Open Introduction to Logic)
   /Author (J. Robert Loftis, Cathal Woods, and P.D. Magnus)
@@ -82,12 +82,12 @@
 
 \raggedright
 \setlength{\parindent}{1em}
-\setlength{\parskip}{1em}	
+\setlength{\parskip}{1em}
 
 \frontmatter
-\pagestyle{plain} %Says there are no running heads, only page numbers centered at the bottom. 
+\pagestyle{plain} %Says there are no running heads, only page numbers centered at the bottom.
 \include{tex/01-cover}
-\include{tex/02-frontmatter}	
+\include{tex/02-frontmatter}
 
 
 {
@@ -99,7 +99,7 @@
 \tableofcontents
 }
 
-\include{tex/03-aboutthisbook}	
+\include{tex/03-aboutthisbook}
 \include{tex/04-acknowledgements}
 
 
@@ -111,7 +111,7 @@
 
 %
 \part{Basic Concepts} \label{part:basic_concepts}
-\include{tex/ch01-whatislogic}	
+\include{tex/ch01-whatislogic}
 \include{tex/ch02-basicevaluation}
 
 %\part{Formal Logic}
@@ -120,18 +120,18 @@
 \part{Categorical Logic}
 \label{part:cat_logic}
 \include{tex/ch04-categoricalstatements}
-\include{tex/ch05-categoricalsyllogisms} %Label for typesetting full chapter is at the start of the file. Uncomment to get the whole thing. 
+\include{tex/ch05-categoricalsyllogisms} %Label for typesetting full chapter is at the start of the file. Uncomment to get the whole thing.
 \part{Sentential Logic} \label{part:sent_logic}
-\include{tex/ch06-sentential}	
+\include{tex/ch06-sentential}
 \include{tex/ch07-truthtables}
-\include{tex/ch08-proofsinsl}%Label for typesetting full chapter is at the start of the file. Uncomment to get the whole thing. 
+\include{tex/ch08-proofsinsl}%Label for typesetting full chapter is at the start of the file. Uncomment to get the whole thing.
 \part{Quantificational Logic} \label{part:quant_logic}
 \include{tex/ch09-predicate}
 \include{tex/ch10-semanticsforql}
 \include{tex/ch11-proofsinql}
 
 %
-%\part{Critical Thinking} \label{part:CT}	
+%\part{Critical Thinking} \label{part:CT}
 %\include{tex/ch12-whatiscriticalthinking}
 %\include{tex/ch13-substitutes}
 %\include{tex/ch14-incompletearguments}
@@ -179,7 +179,7 @@
 \printglossaries
 
 \iflabelexists{part:formal_logic}{\include{tex/zz-quickreference}}{}
-\include{tex/zzz-backmatter}	
+\include{tex/zzz-backmatter}
 
 
 
