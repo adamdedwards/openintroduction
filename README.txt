@@ -10,4 +10,4 @@ The intended audience of this textbook is students in introductory logic courses
 
 ## Contact
 
-Contact aedwards@lincolncollege.edu with any questions.
+Contact info will be added later.
