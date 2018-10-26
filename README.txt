@@ -10,4 +10,4 @@ The intended audience of this textbook is students in introductory logic courses
 
 ## Contact
 
-Contact info will be added later.
+Contact info will be added later. New Test.
