@@ -1,4 +1,4 @@
-PWD C:/Users/adame/git
+PWD C:/Users/adame/openintroduction
 INPUT C:/Users/adame/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
 INPUT openintroduction.tex
 OUTPUT openintroduction.log
@@ -217,8 +217,6 @@ INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/enumitem/enumitem.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/enumitem/enumitem.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/turnstile/turnstile.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/turnstile/turnstile.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/float/float.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/float/float.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/ulem/ulem.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/ulem/ulem.sty
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/latex-fonts/lasy6.tfm
@@ -797,6 +795,16 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplbj8r.tfm
 OUTPUT tex/ch02-basicevaluation.aux
 INPUT tex/ch02-basicevaluation.tex
 INPUT tex/ch02-basicevaluation.tex
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb9d.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplb9d.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb8r.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmb.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplbj8r.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplri9d.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplri9d.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplri8r.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmri.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplrij8r.tfm
 INPUT img/sudoku.png
 INPUT ./img/sudoku.png
 INPUT ./img/sudoku.png
@@ -842,6 +850,8 @@ INPUT ./img/majorvenn2.png
 INPUT ./img/majorvenn2.png
 INPUT ./img/majorvenn2.png
 INPUT ./img/majorvenn2.png
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7m.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9d.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/helvetic/phvr8t.vf
