@@ -1,4 +1,4 @@
-# README -- For All X, Midwest Collaboration
+# For All X, Midwest Collaboration
 
 ## Introduction
 
@@ -10,4 +10,6 @@ The intended audience of this textbook is students in introductory logic courses
 
 ## Contact
 
-For questions regarding this version of For All X, please contact Adam Edwards at adamdedwards.com
+For questions regarding this version of For All X, please contact Adam Edwards at [adamdedwards.com][1]
+
+[1]: https://adamedw.com
