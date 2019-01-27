@@ -86,8 +86,8 @@
 
 \frontmatter
 \pagestyle{plain} %Says there are no running heads, only page numbers centered at the bottom.
-\include{tex/01-cover}
-\include{tex/02-frontmatter}
+\include{tex/00-cover}
+\include{tex/01-frontmatter}
 
 
 {
@@ -99,8 +99,8 @@
 \tableofcontents
 }
 
-\include{tex/03-aboutthisbook}
-\include{tex/04-acknowledgements}
+\include{tex/02-aboutthisbook}
+\include{tex/03-acknowledgements}
 
 
 
@@ -116,27 +116,27 @@
 
 %
 \part{Basic Concepts} \label{part:basic_concepts}
-\include{tex/10 whatislogic}
-\include{tex/11 basicevaluation}
-\include{tex/12 whatisformallogic}
+\include{tex/10-whatislogic}
+\include{tex/11-basicevaluation}
+\include{tex/12-whatisformallogic}
 
 \part{Categorical Logic}\label{part:cat_logic}
-\include{tex/20 categoricalstatements}
-\include{tex/21 categoricalsyllogisms}
+\include{tex/20-categoricalstatements}
+\include{tex/21-categoricalsyllogisms}
 
 \part{Propositional Logic} \label{part:prop_logic}
-\include{tex/30 propositional}
-\include{tex/31 truthtables}
-\include{tex/32 naturaldeduction}
+\include{tex/30-propositional}
+\include{tex/31-truthtables}
+\include{tex/32-naturaldeduction}
 %\include{tex/33 existentialgraphs}
 
 \part{Predicate Logic} \label{part:pred_logic}
-\include{tex/40 predicate}
-\include{tex/41 semanticsforql}
-\include{tex/42 proofsinql}
+\include{tex/40-predicate}
+\include{tex/41-semanticsforql}
+\include{tex/42-proofsinql}
 
 \part{Critical Thinking} \label{part:critical_thinking}
-\include{tex/50 whatiscriticalthinking}
+\include{tex/50-whatiscriticalthinking}
 %\include{tex/51 substitutes}
 %\include{tex/52 incompletearguments}
 %\include{tex/53 emotions}
@@ -147,7 +147,7 @@
 %\include{tex/58 practicalarguments}
 
 \part{Inductive and Scientific Reasoning}  \label{part:inductive_scientific}
-\include{tex/60 whatareinductionandscientificreasoning}
+\include{tex/60-whatareinductionandscientificreasoning}
 %\include{tex/61 inductioninscience}
 %\include{tex/62 mills-methods}
 %\include{tex/63 causation-explanation}
@@ -165,9 +165,8 @@
 \part{Appendices}  \label{part:appendices}
 \appendix
 \iflabelexists{part:prop_logic}{
-  \include{tex/A0 notation}}
+  \include{tex/A0-notation}}
 {}
-%\include{app-solutions}
 
 %Bibstuff
 %If the {part:critical_thinking} label is found, LaTeX will typeset separate bibliographies for sample passages and logical sources.
@@ -191,10 +190,10 @@
 \printglossaries
 
 \iflabelexists{part:prop_logic}{
-  \include{tex/A1 quickreference}
+  \include{tex/A1-quickreference}
 }{}
 
-\include{tex/A2 backmatter}
+\include{tex/A2-backmatter}
 
 
 

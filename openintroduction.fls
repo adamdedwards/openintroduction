@@ -1,4 +1,4 @@
-PWD C:/Users/adame/openintroduction
+PWD C:/Users/adame/Dropbox/git/openintroduction
 INPUT C:/Users/adame/AppData/Local/MiKTeX/2.9/miktex/data/le/pdftex/pdflatex.fmt
 INPUT openintroduction.tex
 OUTPUT openintroduction.log
@@ -488,46 +488,46 @@ INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/lbx/english.l
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/lbx/english.lbx
 INPUT openintroduction.aux
 INPUT openintroduction.aux
-INPUT tex/01-cover.aux
-INPUT tex/01-cover.aux
-INPUT tex/02-frontmatter.aux
-INPUT tex/02-frontmatter.aux
-INPUT tex/03-aboutthisbook.aux
-INPUT tex/03-aboutthisbook.aux
-INPUT tex/04-acknowledgements.aux
-INPUT tex/04-acknowledgements.aux
-INPUT tex/ch01-whatislogic.aux
-INPUT tex/ch01-whatislogic.aux
-INPUT tex/ch02-basicevaluation.aux
-INPUT tex/ch02-basicevaluation.aux
-INPUT tex/ch03-whatisformallogic.aux
-INPUT tex/ch03-whatisformallogic.aux
-INPUT tex/ch04-categoricalstatements.aux
-INPUT tex/ch04-categoricalstatements.aux
-INPUT tex/ch05-categoricalsyllogisms.aux
-INPUT tex/ch05-categoricalsyllogisms.aux
-INPUT tex/ch06-sentential.aux
-INPUT tex/ch06-sentential.aux
-INPUT tex/ch07-truthtables.aux
-INPUT tex/ch07-truthtables.aux
-INPUT tex/ch08-proofsinsl.aux
-INPUT tex/ch08-proofsinsl.aux
-INPUT tex/ch09-predicate.aux
-INPUT tex/ch09-predicate.aux
-INPUT tex/ch10-semanticsforql.aux
-INPUT tex/ch10-semanticsforql.aux
-INPUT tex/ch11-proofsinql.aux
-INPUT tex/ch11-proofsinql.aux
-INPUT tex/ch12-whatiscriticalthinking.aux
-INPUT tex/ch12-whatiscriticalthinking.aux
-INPUT tex/ch21-whatareinductionandscientificreasoning.aux
-INPUT tex/ch21-whatareinductionandscientificreasoning.aux
-INPUT tex/z-app-notation.aux
-INPUT tex/z-app-notation.aux
-INPUT tex/zz-quickreference.aux
-INPUT tex/zz-quickreference.aux
-INPUT tex/zzz-backmatter.aux
-INPUT tex/zzz-backmatter.aux
+INPUT tex/00-cover.aux
+INPUT tex/00-cover.aux
+INPUT tex/01-frontmatter.aux
+INPUT tex/01-frontmatter.aux
+INPUT tex/02-aboutthisbook.aux
+INPUT tex/02-aboutthisbook.aux
+INPUT tex/03-acknowledgements.aux
+INPUT tex/03-acknowledgements.aux
+INPUT tex/10-whatislogic.aux
+INPUT tex/10-whatislogic.aux
+INPUT tex/11-basicevaluation.aux
+INPUT tex/11-basicevaluation.aux
+INPUT tex/12-whatisformallogic.aux
+INPUT tex/12-whatisformallogic.aux
+INPUT tex/20-categoricalstatements.aux
+INPUT tex/20-categoricalstatements.aux
+INPUT tex/21-categoricalsyllogisms.aux
+INPUT tex/21-categoricalsyllogisms.aux
+INPUT tex/30-propositional.aux
+INPUT tex/30-propositional.aux
+INPUT tex/31-truthtables.aux
+INPUT tex/31-truthtables.aux
+INPUT tex/32-naturaldeduction.aux
+INPUT tex/32-naturaldeduction.aux
+INPUT tex/40-predicate.aux
+INPUT tex/40-predicate.aux
+INPUT tex/41-semanticsforql.aux
+INPUT tex/41-semanticsforql.aux
+INPUT tex/42-proofsinql.aux
+INPUT tex/42-proofsinql.aux
+INPUT tex/50-whatiscriticalthinking.aux
+INPUT tex/50-whatiscriticalthinking.aux
+INPUT tex/60-whatareinductionandscientificreasoning.aux
+INPUT tex/60-whatareinductionandscientificreasoning.aux
+INPUT tex/A0-notation.aux
+INPUT tex/A0-notation.aux
+INPUT tex/A1-quickreference.aux
+INPUT tex/A1-quickreference.aux
+INPUT tex/A2-backmatter.aux
+INPUT tex/A2-backmatter.aux
 OUTPUT openintroduction.aux
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ts1cmr.fd
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ts1cmr.fd
@@ -558,9 +558,9 @@ OUTPUT openintroduction.bcf
 INPUT openintroduction.bbl
 INPUT openintroduction.bbl
 INPUT openintroduction.bbl
-OUTPUT tex/01-cover.aux
-INPUT tex/01-cover.tex
-INPUT tex/01-cover.tex
+OUTPUT tex/00-cover.aux
+INPUT tex/00-cover.tex
+INPUT tex/00-cover.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9d.tfm
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/psnfss/ot1pplx.fd
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/psnfss/ot1pplx.fd
@@ -671,9 +671,9 @@ INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmr.
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplrc8r.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/bera/fvmr8t.vf
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/bera/fvmr8r.tfm
-OUTPUT tex/02-frontmatter.aux
-INPUT tex/02-frontmatter.tex
-INPUT tex/02-frontmatter.tex
+OUTPUT tex/01-frontmatter.aux
+INPUT tex/01-frontmatter.tex
+INPUT tex/01-frontmatter.tex
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/psnfss/ts1pplj.fd
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/psnfss/ts1pplj.fd
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9c.tfm
@@ -709,17 +709,17 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplrc8r.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9d.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb9d.tfm
-INPUT openintroduction.toc
-INPUT openintroduction.toc
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb9d.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9d.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb9d.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplb9d.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplbj8r.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9d.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb9d.tfm
+INPUT openintroduction.toc
+INPUT openintroduction.toc
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9d.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb9d.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplb9d.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmb.tfm
@@ -729,17 +729,17 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplbj8r.tfm
 OUTPUT openintroduction.toc
-OUTPUT tex/03-aboutthisbook.aux
-INPUT tex/03-aboutthisbook.tex
-INPUT tex/03-aboutthisbook.tex
+OUTPUT tex/02-aboutthisbook.aux
+INPUT tex/02-aboutthisbook.tex
+INPUT tex/02-aboutthisbook.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplri9d.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplri9d.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplrij8r.tfm
-OUTPUT tex/04-acknowledgements.aux
-INPUT tex/04-acknowledgements.tex
-INPUT tex/04-acknowledgements.tex
+OUTPUT tex/03-acknowledgements.aux
+INPUT tex/03-acknowledgements.tex
+INPUT tex/03-acknowledgements.tex
 INPUT openintroduction.lof
 INPUT openintroduction.lof
 OUTPUT openintroduction.lof
@@ -751,14 +751,19 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplb9d.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb8r.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmb.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplbj8r.tfm
-OUTPUT tex/ch01-whatislogic.aux
-INPUT tex/ch01-whatislogic.tex
-INPUT tex/ch01-whatislogic.tex
+OUTPUT tex/10-whatislogic.aux
+INPUT tex/10-whatislogic.tex
+INPUT tex/10-whatislogic.tex
+INPUT img/clue.jpg
+INPUT ./img/clue.jpg
+INPUT ./img/clue.jpg
+INPUT ./img/clue.jpg
+INPUT ./img/clue.jpg
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplr9t.vf
 OUTPUT openintroduction.glsdefs
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9d.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplrc9d.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplrc9d.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplrc9d.vf
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr10.tfm
@@ -767,6 +772,11 @@ INPUT ./img/Fatmouse.jpg
 INPUT ./img/Fatmouse.jpg
 INPUT ./img/Fatmouse.jpg
 INPUT ./img/Fatmouse.jpg
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb9d.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplb9d.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb8r.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmb.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplbj8r.tfm
 INPUT img/statement_and_contexts.png
 INPUT ./img/statement_and_contexts.png
 INPUT ./img/statement_and_contexts.png
@@ -774,6 +784,7 @@ INPUT ./img/statement_and_contexts.png
 INPUT ./img/statement_and_contexts.png
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9d.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplri9d.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb9d.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplri9d.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmri.tfm
@@ -782,24 +793,18 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplr9d.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplrc8r.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplb9d.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb8r.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmb.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplbj8r.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplri9d.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplri9d.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplrij8r.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb9d.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplb9d.vf
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb8r.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmb.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplbj8r.tfm
-OUTPUT tex/ch02-basicevaluation.aux
-INPUT tex/ch02-basicevaluation.tex
-INPUT tex/ch02-basicevaluation.tex
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb9d.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplb9d.vf
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplb8r.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmb.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplbj8r.tfm
+OUTPUT tex/11-basicevaluation.aux
+INPUT tex/11-basicevaluation.tex
+INPUT tex/11-basicevaluation.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplri9d.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplri9d.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplri8r.tfm
@@ -812,12 +817,12 @@ INPUT ./img/sudoku.png
 INPUT ./img/sudoku.png
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
-OUTPUT tex/ch03-whatisformallogic.aux
-INPUT tex/ch03-whatisformallogic.tex
-INPUT tex/ch03-whatisformallogic.tex
-OUTPUT tex/ch04-categoricalstatements.aux
-INPUT tex/ch04-categoricalstatements.tex
-INPUT tex/ch04-categoricalstatements.tex
+OUTPUT tex/12-whatisformallogic.aux
+INPUT tex/12-whatisformallogic.tex
+INPUT tex/12-whatisformallogic.tex
+OUTPUT tex/20-categoricalstatements.aux
+INPUT tex/20-categoricalstatements.tex
+INPUT tex/20-categoricalstatements.tex
 INPUT img/partsofacategoricalstatement.png
 INPUT ./img/partsofacategoricalstatement.png
 INPUT ./img/partsofacategoricalstatement.png
@@ -856,9 +861,9 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9d.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvr8t.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/helvetic/phvr8t.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/helvetic/phvr8r.tfm
-OUTPUT tex/ch05-categoricalsyllogisms.aux
-INPUT tex/ch05-categoricalsyllogisms.tex
-INPUT tex/ch05-categoricalsyllogisms.tex
+OUTPUT tex/21-categoricalsyllogisms.aux
+INPUT tex/21-categoricalsyllogisms.tex
+INPUT tex/21-categoricalsyllogisms.tex
 INPUT img/barbara_celarent_darii_ferio.png
 INPUT ./img/barbara_celarent_darii_ferio.png
 INPUT ./img/barbara_celarent_darii_ferio.png
@@ -884,9 +889,9 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/zapfchan/pzcmi7t.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/zapfchan/pzcmi7t.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
-OUTPUT tex/ch06-sentential.aux
-INPUT tex/ch06-sentential.tex
-INPUT tex/ch06-sentential.tex
+OUTPUT tex/30-propositional.aux
+INPUT tex/30-propositional.tex
+INPUT tex/30-propositional.tex
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/zapfchan/pzcmi7t.vf
@@ -907,9 +912,9 @@ INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7v
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmr.tfm
-OUTPUT tex/ch07-truthtables.aux
-INPUT tex/ch07-truthtables.tex
-INPUT tex/ch07-truthtables.tex
+OUTPUT tex/31-truthtables.aux
+INPUT tex/31-truthtables.tex
+INPUT tex/31-truthtables.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9t.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/zplmr7m.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/zplmr7y.tfm
@@ -927,9 +932,9 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/zapfchan/pzcmi7t.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/zapfchan/pzcmi8r.tfm
-OUTPUT tex/ch08-proofsinsl.aux
-INPUT tex/ch08-proofsinsl.tex
-INPUT tex/ch08-proofsinsl.tex
+OUTPUT tex/32-naturaldeduction.aux
+INPUT tex/32-naturaldeduction.tex
+INPUT tex/32-naturaldeduction.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr8r.tfm
@@ -944,32 +949,32 @@ INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7y
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr10.tfm
-OUTPUT tex/ch09-predicate.aux
-INPUT tex/ch09-predicate.tex
-INPUT tex/ch09-predicate.tex
+OUTPUT tex/40-predicate.aux
+INPUT tex/40-predicate.tex
+INPUT tex/40-predicate.tex
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/zplmb7t.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/zplmb7t.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/zplmb7t.tfm
-OUTPUT tex/ch10-semanticsforql.aux
-INPUT tex/ch10-semanticsforql.tex
-INPUT tex/ch10-semanticsforql.tex
-OUTPUT tex/ch11-proofsinql.aux
-INPUT tex/ch11-proofsinql.tex
-INPUT tex/ch11-proofsinql.tex
+OUTPUT tex/41-semanticsforql.aux
+INPUT tex/41-semanticsforql.tex
+INPUT tex/41-semanticsforql.tex
+OUTPUT tex/42-proofsinql.aux
+INPUT tex/42-proofsinql.tex
+INPUT tex/42-proofsinql.tex
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7v.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmr.tfm
-OUTPUT tex/ch12-whatiscriticalthinking.aux
-INPUT tex/ch12-whatiscriticalthinking.tex
-INPUT tex/ch12-whatiscriticalthinking.tex
-OUTPUT tex/ch21-whatareinductionandscientificreasoning.aux
-INPUT tex/ch21-whatareinductionandscientificreasoning.tex
-INPUT tex/ch21-whatareinductionandscientificreasoning.tex
-OUTPUT tex/z-app-notation.aux
-INPUT tex/z-app-notation.tex
-INPUT tex/z-app-notation.tex
+OUTPUT tex/50-whatiscriticalthinking.aux
+INPUT tex/50-whatiscriticalthinking.tex
+INPUT tex/50-whatiscriticalthinking.tex
+OUTPUT tex/60-whatareinductionandscientificreasoning.aux
+INPUT tex/60-whatareinductionandscientificreasoning.tex
+INPUT tex/60-whatareinductionandscientificreasoning.tex
+OUTPUT tex/A0-notation.aux
+INPUT tex/A0-notation.tex
+INPUT tex/A0-notation.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9d.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9c.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplr9c.vf
@@ -977,57 +982,53 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplrc8r.tfm
 INPUT openintroduction.gls
 INPUT openintroduction.gls
 INPUT openintroduction.gls
-OUTPUT tex/zz-quickreference.aux
-INPUT tex/zz-quickreference.tex
-INPUT tex/zz-quickreference.tex
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/zplmb7t.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/zplmb7t.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7m.vf
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
-OUTPUT tex/zzz-backmatter.aux
-INPUT tex/zzz-backmatter.tex
-INPUT tex/zzz-backmatter.tex
+OUTPUT tex/A1-quickreference.aux
+INPUT tex/A1-quickreference.tex
+INPUT tex/A1-quickreference.tex
+OUTPUT tex/A2-backmatter.aux
+INPUT tex/A2-backmatter.tex
+INPUT tex/A2-backmatter.tex
 INPUT openintroduction.aux
-INPUT tex/01-cover.aux
-INPUT tex/01-cover.aux
-INPUT tex/02-frontmatter.aux
-INPUT tex/02-frontmatter.aux
-INPUT tex/03-aboutthisbook.aux
-INPUT tex/03-aboutthisbook.aux
-INPUT tex/04-acknowledgements.aux
-INPUT tex/04-acknowledgements.aux
-INPUT tex/ch01-whatislogic.aux
-INPUT tex/ch01-whatislogic.aux
-INPUT tex/ch02-basicevaluation.aux
-INPUT tex/ch02-basicevaluation.aux
-INPUT tex/ch03-whatisformallogic.aux
-INPUT tex/ch03-whatisformallogic.aux
-INPUT tex/ch04-categoricalstatements.aux
-INPUT tex/ch04-categoricalstatements.aux
-INPUT tex/ch05-categoricalsyllogisms.aux
-INPUT tex/ch05-categoricalsyllogisms.aux
-INPUT tex/ch06-sentential.aux
-INPUT tex/ch06-sentential.aux
-INPUT tex/ch07-truthtables.aux
-INPUT tex/ch07-truthtables.aux
-INPUT tex/ch08-proofsinsl.aux
-INPUT tex/ch08-proofsinsl.aux
-INPUT tex/ch09-predicate.aux
-INPUT tex/ch09-predicate.aux
-INPUT tex/ch10-semanticsforql.aux
-INPUT tex/ch10-semanticsforql.aux
-INPUT tex/ch11-proofsinql.aux
-INPUT tex/ch11-proofsinql.aux
-INPUT tex/ch12-whatiscriticalthinking.aux
-INPUT tex/ch12-whatiscriticalthinking.aux
-INPUT tex/ch21-whatareinductionandscientificreasoning.aux
-INPUT tex/ch21-whatareinductionandscientificreasoning.aux
-INPUT tex/z-app-notation.aux
-INPUT tex/z-app-notation.aux
-INPUT tex/zz-quickreference.aux
-INPUT tex/zz-quickreference.aux
-INPUT tex/zzz-backmatter.aux
-INPUT tex/zzz-backmatter.aux
+INPUT tex/00-cover.aux
+INPUT tex/00-cover.aux
+INPUT tex/01-frontmatter.aux
+INPUT tex/01-frontmatter.aux
+INPUT tex/02-aboutthisbook.aux
+INPUT tex/02-aboutthisbook.aux
+INPUT tex/03-acknowledgements.aux
+INPUT tex/03-acknowledgements.aux
+INPUT tex/10-whatislogic.aux
+INPUT tex/10-whatislogic.aux
+INPUT tex/11-basicevaluation.aux
+INPUT tex/11-basicevaluation.aux
+INPUT tex/12-whatisformallogic.aux
+INPUT tex/12-whatisformallogic.aux
+INPUT tex/20-categoricalstatements.aux
+INPUT tex/20-categoricalstatements.aux
+INPUT tex/21-categoricalsyllogisms.aux
+INPUT tex/21-categoricalsyllogisms.aux
+INPUT tex/30-propositional.aux
+INPUT tex/30-propositional.aux
+INPUT tex/31-truthtables.aux
+INPUT tex/31-truthtables.aux
+INPUT tex/32-naturaldeduction.aux
+INPUT tex/32-naturaldeduction.aux
+INPUT tex/40-predicate.aux
+INPUT tex/40-predicate.aux
+INPUT tex/41-semanticsforql.aux
+INPUT tex/41-semanticsforql.aux
+INPUT tex/42-proofsinql.aux
+INPUT tex/42-proofsinql.aux
+INPUT tex/50-whatiscriticalthinking.aux
+INPUT tex/50-whatiscriticalthinking.aux
+INPUT tex/60-whatareinductionandscientificreasoning.aux
+INPUT tex/60-whatareinductionandscientificreasoning.aux
+INPUT tex/A0-notation.aux
+INPUT tex/A0-notation.aux
+INPUT tex/A1-quickreference.aux
+INPUT tex/A1-quickreference.aux
+INPUT tex/A2-backmatter.aux
+INPUT tex/A2-backmatter.aux
 INPUT ./openintroduction.out
 INPUT ./openintroduction.out
 INPUT openintroduction.run.xml
