@@ -129,7 +129,8 @@
 \part{Sentential Logic} \label{part:sent_logic}
 \include{tex/ch06-sentential}
 \include{tex/ch07-truthtables}
-\include{tex/ch08-proofsinsl}%Label for typesetting full chapter is at the start of the file. Uncomment to get the whole thing.
+\include{tex/ch08-naturaldeduction}
+\include{tex/ch09}
 
 \part{Quantificational Logic} \label{part:quant_logic}
 \include{tex/ch09-predicate}
@@ -137,7 +138,7 @@
 \include{tex/ch11-proofsinql}
 
 
-\part{Critical Thinking} \label{part:CT}
+\part{Critical Thinking} \label{part:critical_thinking}
 \include{tex/ch12-whatiscriticalthinking}
 %\include{tex/ch13-substitutes}
 %\include{tex/ch14-incompletearguments}
@@ -161,13 +162,15 @@
 
 \part{Appendices}  \label{part:appendices}
 \appendix
-\iflabelexists{part:formal_logic}{\include{tex/z-app-notation}}{}
+\iflabelexists{part:formal_logic}{
+  \include{tex/z-app-notation}}
+{}
 %\include{app-solutions}
 
 %Bibstuff
-%If the {part:CT} label is found, LaTeX will typeset separate bibliographies for sample passages and logical sources.
+%If the {part:critical_thinking} label is found, LaTeX will typeset separate bibliographies for sample passages and logical sources.
 
-\iflabelexists{part:CT}{%text for CT version}
+\iflabelexists{part:critical_thinking}{
 
 \defbibnote{sample}{\textit{ \large  This bibliography includes all sources except for those that were used as examples for logical analysis, either in the main text or problem sets}}
 
@@ -185,7 +188,10 @@
 \setglossarysection{part}
 \printglossaries
 
-\iflabelexists{part:formal_logic}{\include{tex/zz-quickreference}}{}
+\iflabelexists{part:formal_logic}{
+  \include{tex/zz-quickreference}
+}{}
+
 \include{tex/zzz-backmatter}
 
 
