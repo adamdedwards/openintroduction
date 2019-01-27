@@ -1,56 +1,14 @@
-\setlength{\parindent}{0em}
-\thispagestyle{empty}
 
+\begin{tikzpicture}[remember picture,overlay,shift={(5,-5)}]
 
+\node[draw=none,fill=none] at (0,0.5)  {\scshape\Huge For All X\par};
+\node[draw=none,fill=none] at (0,-1.5) {\large\scshape Midwest Collaboration\par};
 
-{\huge For All \script{X}}\\ \vspace{24pt}
-{\Large \emph{The Midwest Collaboration}}\\
-
-
-
-
-\vfill
-
-{\sf P.D. Magnus}\\
-\emph{University at Albany, State University of New York}
-
-and
-
-{\sf Cathal Woods}\\
-\emph{Virginia Wesleyan University}
-
-and
-
-{\sf J. Robert Loftis}\\
-\emph{Lorain County Community College}
-
-and
-
-{\sf Adam Edwards}\\
-\emph{Lincoln College}
-
-
-\vfill
-
-
-
-{\footnotesize Licensed under a Creative Commons license.\\
-	(Attribution-NonComercial-ShareAlike 4.0 International )
-	\url{https://creativecommons.org/licenses/by-nc-sa/4.0/}
-
-
-\includegraphics[width=66pt, height=23pt, keepaspectratio=true]{img/cc-by-nc-sa.png}
-
-}
-
-
-
-%\begin{frame}
-%	\titlepage
-%	\vfill
-%	\begin{center}
-%		\CcGroupByNcSa{0.83}{0.95ex}\\[2.5ex]
-%		{\tiny\CcNote{\CcLongnameByNcSa}}
-%		\vspace*{-2.5ex}
-%	\end{center}
-%\end{frame}
+%\foreach \x in {0,...,4} {\draw[rotate=90*\x,very thin] (1,0) -- (3,0);}
+\foreach \x in {0,...,12} {\draw[rotate=30*\x,very thin] (4,0) -- (8,0);}
+\foreach \x in {0,...,36} {\draw[rotate=10*\x,very thin] (8,0) -- (12,0);}
+\foreach \x in {0,...,108} {\draw[rotate=(10/3)*\x,very thin] (12,0) -- (16,0);}
+\foreach \x in {0,...,324} {\draw[rotate=1.11111111*\x,very thin] (16,0) -- (20,0);}
+\foreach \x in {0,...,972} {\draw[rotate=0.37037037*\x,very thin] (20,0) -- (24,0);}
+\foreach \x in {0,...,2916} {\draw[rotate=0.123456789*\x,very thin] (24,0) -- (28,0);}
+\end{tikzpicture}

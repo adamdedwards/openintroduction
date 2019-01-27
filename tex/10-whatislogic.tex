@@ -1,19 +1,18 @@
 \chapter{What Is Logic?}
-\label{Chap:what_is_logic}
-\markright{Ch. \ref{Chap:what_is_logic}: What Is Logic?}
+\label{ch:what_is_logic}
+\markright{Ch. \ref{ch:what_is_logic}: What Is Logic?}
 
-% *****************************
-% *		Introduction                      *
-% ****************************
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Introduction
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Introduction}
+\section{Introduction}\label{sec:what_is_logic}
 
-Logic is a part of the study of human reasoning---the ability we have to think abstractly, solve problems, explain the things that we know, and infer new knowledge on the basis of evidence. Traditionally, logic has focused on the last of these items, the ability to make inferences on the basis of evidence. This is an activity you engage in every day. Consider, for example, the game of Clue. (For those of you who have never played, Clue is a murder mystery game where players have to decide who committed the murder, what weapon they used, and where they were.) A player in the game might decide that the murder weapon was the candlestick by ruling out the other weapons in the game: the knife, the revolver, the rope, the lead pipe, and the wrench. This evidence lets the player know something they did not know previously, namely, the identity of the murderer.\begin{marginfigure}\includegraphics{img/clue}\caption{The boardgame Clue.}\end{marginfigure}
+Logic is a part of the study of human reasoning---the ability we have to think abstractly, solve problems, explain the things that we know, and infer new knowledge on the basis of evidence. Traditionally, logic has focused on the last of these items, the ability to make inferences on the basis of evidence. This is an activity you engage in every day. Consider, for example, the game of Clue. (For those of you who have never played, Clue is a murder mystery game where players have to decide who committed the murder, what weapon they used, and where they were.) A player in the game might decide that the murder weapon was the candlestick by ruling out the other weapons in the game: the knife, the revolver, the rope, the lead pipe, and the wrench. This evidence lets the player know something they did not know previously, namely, the identity of the murderer.\begin{marginfigure}\includegraphics[width=\textwidth]{img/clue}\caption{The boardgame Clue.}\end{marginfigure}
 
 In logic, we use the word ``argument'' to refer to the attempt to show that certain evidence supports a conclusion. This is very different from the sort of argument you might have when you are mad at someone, which could involve a lot of yelling. We are going to use the word ``argument'' a lot in this book, so you need to get used to thinking of it as a name for an abstract and rational process, and not a word that describes what happens when people disagree.
 
 A logical argument is structured to give someone a reason to believe some conclusion. Here is the argument about a game of Clue written out in a way that shows its structure.
-
 
 \label{argClue}
 \begin{earg}
@@ -25,15 +24,27 @@ A logical argument is structured to give someone a reason to believe some conclu
 \item[C:] Therefore, the murder weapon was the candlestick.
 \end{earg}
 
-In the argument above, statements P$_1$--P$_3$ are the evidence. We call these the \emph{premises}. The word ``therefore'' indicates that the final statement, marked with a C, is the \emph{conclusion} of the argument. If you believe the premises, then the argument provides you with a reason to believe the conclusion. You might use reasoning like this purely in your own head, without talking with anyone else. You might wonder what the murder weapon is, and then mentally rule out each item, leaving only the candlestick. On the other hand, you might use reasoning like this while talking to someone else, to convince them that the murder weapon is the candlestick. (Perhaps you are playing as a team.) Either way the structure of the reasoning is the same.
+\newglossaryentry{premises}
+{
+name=premises,
+description={The part of an argument that provides evidence.}
+}
+
+\newglossaryentry{conclusion}
+{
+name=conclusion,
+description={The part of an argument that is being provided evidence.}
+}
+
+In the argument above, statements P$_1$--P$_3$ are the evidence. We call these the \textsc{\glspl{premise}}\label{def:premise}. The word ``therefore'' indicates that the final statement, marked with a C, is the \textsc{\gls{conclusion}}\label{def:conclusion} of the argument. If you believe the premises, then the argument provides you with a reason to believe the conclusion. You might use reasoning like this purely in your own head, without talking with anyone else. You might wonder what the murder weapon is, and then mentally rule out each item, leaving only the candlestick. On the other hand, you might use reasoning like this while talking to someone else, to convince them that the murder weapon is the candlestick. (Perhaps you are playing as a team.) Either way the structure of the reasoning is the same.
 
 \newglossaryentry{logic}
 {
 name=logic,
-description={the part of the study of reasoning that focuses on argument.}
+description={The part of the study of reasoning that focuses on argument.}
 }
 
-We can define \textsc{\Gls{logic}}\label{def:logic} then more precisely as the part of the study of reasoning that focuses on argument. In more casual situations, we will follow ordinary practice and use the word ``logic'' to either refer to the business of studying human reason or the thing being studied, that is, human reasoning itself. While logic focuses on argument, other disciplines, like decision theory and cognitive science, deal with other aspects of human reasoning, like abstract thinking and problem solving more generally. Logic, as the study of argument, has been pursued for thousands of years by people from civilizations all over the globe. The initial motivation for studying logic is generally practical. Given that we use arguments and make inferences all the time, it only makes sense that we would want to learn to do these things better.  Once people begin to study logic, however, they quickly realize that it is a fascinating topic in its own right. Thus the study of logic quickly moves from being a practical business to a theoretical endeavor people pursue for its own sake.
+We can define \textsc{\gls{logic}}\label{def:logic} then more precisely as the part of the study of reasoning that focuses on argument. In more casual situations, we will follow ordinary practice and use the word ``logic'' to either refer to the business of studying human reason or the thing being studied, that is, human reasoning itself. While logic focuses on argument, other disciplines, like decision theory and cognitive science, deal with other aspects of human reasoning, like abstract thinking and problem solving more generally. Logic, as the study of argument, has been pursued for thousands of years by people from civilizations all over the globe. The initial motivation for studying logic is generally practical. Given that we use arguments and make inferences all the time, it only makes sense that we would want to learn to do these things better.  Once people begin to study logic, however, they quickly realize that it is a fascinating topic in its own right. Thus the study of logic quickly moves from being a practical business to a theoretical endeavor people pursue for its own sake.
 
 \newglossaryentry{metareasoning}
 {
@@ -47,7 +58,7 @@ name=metacognition,
 description={Thought processes that are applied to other thought processes See also \emph{metareasoning}.}
 }
 
-In order to study reasoning, we have to apply our ability to reason to our reason itself. This reasoning about reasoning is called \textsc{\gls{metareasoning}}\label{def:Metareasoning}. It is part of a more general set of processes called \textsc{\gls{metacognition}}\label{def:Metacognition}, which is just any kind of thinking about thinking. When we are pursing logic as a practical discipline, one important part of metacognition will be awareness of your own thinking, especially its weakness and biases, as it is occurring. More theoretical metacognition will be about attempting to understand the structure of thought itself.
+In order to study reasoning, we have to apply our ability to reason to our reason itself. This reasoning about reasoning is called \textsc{\gls{metareasoning}}\label{def:metareasoning}. It is part of a more general set of processes called \textsc{\gls{metacognition}}\label{def:metacognition}, which is just any kind of thinking about thinking. When we are pursing logic as a practical discipline, one important part of metacognition will be awareness of your own thinking, especially its weakness and biases, as it is occurring. More theoretical metacognition will be about attempting to understand the structure of thought itself.
 
 
 \newglossaryentry{content neutrality}
@@ -65,7 +76,7 @@ description={A way of studying logic that achieves content neutrality by replaci
 }
 
 
-When logic is studied for theoretical reasons, it typically is pursued as \textsc{\gls{formal logic}}. \label{def:Formal_logic} In formal logic we get content neutrality by replacing parts of the argument we are studying with abstract symbols. For instance, we could turn the argument above into a formal argument like this:
+When logic is studied for theoretical reasons, it typically is pursued as \textsc{\gls{formal logic}}. \label{def:formal_logic} In formal logic we get content neutrality by replacing parts of the argument we are studying with abstract symbols. For instance, we could turn the argument above into a formal argument like this:
 
 \label{argClueformal}
 \begin{earg}
@@ -104,8 +115,7 @@ description={The study of arguments given in ordinary language.}
 
 When logic is studied for practical reasons, it is typically called critical thinking. We will define \textsc{\gls{critical thinking}}\label{def:Critical_Thinking}  narrowly as the use of metareasoning to improve our reasoning in practical situations.  Sometimes we will use the term ``critical thinking'' more broadly to refer to the results of this effort at self-improvement.  You are ``thinking critically'' when you reason in a way that has been sharpened by reflection and metareasoning. A \textsc{\gls{critical thinker}}\label{def:critical_thinker} someone who has both sharpened their reasoning abilities using metareasoning and deploys those sharpened abilities in real world situations.
 
-Critical thinking is generally pursued as \textsc{\gls{informal logic}}, rather than formal logic. This means that we will keep arguments in ordinary language and draw extensively on your knowledge of the world to evaluate them. In contrast to the clarity and rigor of formal logic, informal logic is suffused with ambiguity and vagueness. There are problems  with multiple correct answers, or where reasonable people can disagree with what the correct answer is. This is because you will be dealing with reasoning in the real world, which is messy. \label{messiness_warning} \label{ver_var} \iflabelexists{part:CT}{You will learn more about this in the chapters on critical thinking Part \ref{part:CT}}{}
-
+Critical thinking is generally pursued as \textsc{\gls{informal logic}}, rather than formal logic. This means that we will keep arguments in ordinary language and draw extensively on your knowledge of the world to evaluate them. In contrast to the clarity and rigor of formal logic, informal logic is suffused with ambiguity and vagueness. There are problems  with multiple correct answers, or where reasonable people can disagree with what the correct answer is. This is because you will be dealing with reasoning in the real world, which is messy.
 
 You can think of the difference between formal logic and informal logic as the difference between a laboratory science and a field science. \label{lab_vs._field_science} If you are studying, say, mice, you could discover things about them by running experiments in a lab, or you can go out into the field where mice live and observe them in their natural habitat.  Informal logic is the field science for arguments: you go out and study arguments in their natural habitats, like newspapers, courtrooms, and scientific journal articles. Like studying mice scurrying around a meadow, the process takes patience, and often doesn't yield clear answers but it lets you see how things work in the real world. Formal logic takes arguments out of their natural habitat and performs experiments on them to see what they are capable of. The arguments here are like lab mice. They are pumped full of chemicals and asked to perform strange tasks, as it were. They live lives very different than their wild cousins. Some of the arguments will wind up looking like the ``ob/ob mouse'', a genetically engineered obese mouse scientists use to study type II diabetes (See Figure \ref{fig:ob_ob_mouse}). These arguments will be huge, awkward, and completely unable to survive in the wild. But they will tell us a lot about the limits of logic as a process.
 
@@ -114,7 +124,7 @@ You can think of the difference between formal logic and informal logic as the d
 \includegraphics*[width=\textwidth]{img/Fatmouse}
 \end{center}
 \label{fig:ob_ob_mouse}
-\caption{The ob/ob mouse (left), a laboratory mouse which has been genetically engineered to be obese, and an ordinary mouse (right). Photo from \cite{WikimediaCommons2006}.}
+\caption{The ob/ob mouse (left), a laboratory mouse which has been genetically engineered to be obese, and an ordinary mouse (right). Photo from \citet{WikimediaCommons2006}.}
 \end{figure}
 
 \newglossaryentry{rhetoric}
@@ -125,12 +135,12 @@ description={The study of effective persuasion.}
 
 Our main goal in studying arguments is to separate the good ones from the bad ones. The argument about Clue we saw earlier is a good one, based on the process of elimination.  It is good because it leads to truth. If I've got all the premises right, the conclusion will also be right. The textbook \textit{Logic: Techniques of Formal Reasoning} \citep{Kalish1980} had a nice way of capturing the meaning of logic: ``logic is the study of virtue in argument.'' \label{virtue_in_argument} This textbook will accept this definition, with the caveat that an argument is virtuous if it helps us get to the truth.
 
-Logic is different from \textsc{\gls{rhetoric}}, which is the study of effective persuasion. Rhetoric does not look at virtue in argument. It only looks at the power of arguments, regardless of whether they lead to truth. An advertisement might convince you to buy a new truck by having a gravelly voiced announcer tell you it is ``ram tough'' and showing you a picture of the truck on top of a mountain, where it no doubt actually had to be airlifted. This sort of persuasion is often more effective at getting people to believe things than logical argument, but it has nothing to do with whether the truck is really the right thing to buy. In this textbook we will only be interested in rhetoric to the extent that we need to learn to defend ourselves against the misleading rhetoric of others. \iflabelexists{part:CT}{The sections of this text on critical thinking will emphasize becoming aware of our biases and how others might use misleading rhetoric to exploit them. }{}This will not, however, be anything close to a full treatment of the study of rhetoric.
+Logic is different from \textsc{\gls{rhetoric}}, which is the study of effective persuasion. Rhetoric does not look at virtue in argument. It only looks at the power of arguments, regardless of whether they lead to truth. An advertisement might convince you to buy a new truck by having a gravelly voiced announcer tell you it is ``ram tough'' and showing you a picture of the truck on top of a mountain, where it no doubt actually had to be airlifted. This sort of persuasion is often more effective at getting people to believe things than logical argument, but it has nothing to do with whether the truck is really the right thing to buy. In this textbook we will only be interested in rhetoric to the extent that we need to learn to defend ourselves against the misleading rhetoric of others. This will not, however, be anything close to a full treatment of the study of rhetoric.
 
 
-% ******************************************
-% *		Statement, Argument, Premise, Conclusion  *
-% ******************************************
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Statement, Argument, Premise, Conclusion
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Statement, Argument, Premise, Conclusion}
 \label{sec:SAPC}
@@ -141,13 +151,19 @@ name=statement,
 description={A unit of language that can be true or false.}
 }
 
-So far we have defined logic as the study of argument and outlined its relationship to related fields. To go any further, we are going to need a more precise definition of what exactly an argument is. We have said that an argument is not simply two people disagreeing; it is an attempt to prove something using evidence. More specifically, an argument is composed of statements. In logic, we define a \textsc{\gls{statement}} \label{def:statement} as a unit of language that can be true or false. To put it another way, it is some combination of words or symbols that have been put together in a way that lets someone agree or disagree with it. All of the items below are statements.
+\newglossaryentry{truth evaluable}
+{
+name=truth evaluable,
+description={A property of some objects (such as bits of language, maps, or diagrams) that means they can be appropriately assessed as either true or false.}
+}
 
-\begin{enumerate}[label=(\alph*)]
+So far we have defined logic as the study of argument and outlined its relationship to related fields. To go any further, we are going to need a more precise definition of what exactly an argument is. We have said that an argument is not simply two people disagreeing; it is an attempt to prove something using evidence. More specifically, an argument is composed of statements. In logic, we define a \textsc{\gls{statement}} \label{def:statement} as a unit of language that can be true or false. That means that statements are \textsc{\gls{truth evaluable}} \label{def:truth_evaluable}. All of the items below are statements.
+
+\begin{enumerate}[label=(\Alph*)]
 \item \label{itm:t.rex_true}\emph{Tyrannosaurus rex} went extinct 65 million years ago.
 \item \label{itm:t.rex_false}\emph{Tyrannosaurus rex} went extinct last week.
 \item \label{itm:t.rex_unknown}On this exact spot, 100  million years ago, a \emph{T. rex} laid a clutch of eggs.
-\item \label{itm:silly}George W. Bush is the king of Jupiter.
+\item \label{itm:silly}Abraham Lincoln is the king of Jupiter.
 \item \label{itm:moral}Murder is wrong.
 \item \label{itm:opinion1}Abortion is murder.
 \item \label{itm:opinion2}Abortion is a woman's right.
@@ -169,7 +185,7 @@ We are treating statements primarily as units of language or strings of symbols,
 \end{figure}
 
 
-``Statements' in this text does \emph{not} include questions, commands, exclamations, or sentence fragments. Someone who asks a \emph{question} like ``Does the grass need to be mowed?'' is typically not claiming that anything is true or false. Generally, \emph{questions} will not count as statements, but \emph{answers} will. ``What is this course about?'' is not a statement. ``No one knows what this course is about,'' is a statement.
+``Statements'' in this text will \emph{not} include questions, commands, exclamations, or sentence fragments. Someone who asks a \emph{question} like ``Does the grass need to be mowed?'' is typically not claiming that anything is true or false. \emph{Questions} do not count as statements, but \emph{answers} usually will. ``What is this course about?'' is not a statement. An answer to that question such as ``No one knows what this course is about,'' is a statement.
 
 For the same reason \emph{commands} do not count as statements for us. If someone bellows ``Mow the grass, now!'' they are not saying whether the grass has been mowed or not. You might infer that they believe the lawn has not been mowed, but then again maybe they think the lawn is fine and just want to see you exercise.
 
@@ -177,7 +193,7 @@ An exclamation like ``Ouch!'' is also neither true nor false. On its own, it is 
 
 Finally, a lot of possible strings of words will fail to qualify as statements simply because they don't form a complete sentence. In your composition classes, these were probably referred to as sentence fragments. This includes strings of words that are parts of sentences, such as noun phrases like ``The tall man with the hat'' and verb phrases, like ``ran down the hall.'' Phrases like these are missing something they need to make a claim about the world. The class of sentence fragments also includes completely random combinations of words, like ``The up if blender route,'' which don't even have the form of a statement about the world.
 
-Other logic textbooks describe the components of argument as ``propositions,'' or ``assertions,'' and we will use these terms sometimes as well.  There is actually a great deal of disagreement about what the differences between all of these things are and which term is best used to describe parts of arguments. However, none of that makes a difference for this textbook. We could have used any of the other terms in this text, and it wouldn't change anything. Some textbooks will also use the term ``sentence'' here. We will not use the word ``sentence'' to mean the same thing as ``statement.'' Instead, we will use ``sentence'' the way it is used in ordinary grammar, to refer generally to statements, questions, and commands.
+Other logic textbooks describe the components of argument as ``propositions,'' or ``assertions,'' and we will use these terms sometimes as well.  There is actually a great deal of disagreement about what the differences between all of these things are and which term is best used to describe parts of arguments. However, none of that makes a difference for this textbook. Some textbooks will also use the term ``sentence'' here. We will not use the word ``sentence'' to mean the same thing as ``statement.'' Instead, we will use ``sentence'' the way it is used in ordinary grammar, to refer generally to statements, questions, and commands.
 
 Sometimes the outward form of a speech act does not match how it is actually being used. A rhetorical question, for instance, has the outward form of a question, but is really a statement or a command. If someone says ``don't you think the lawn needs to be mowed?'' they may actually mean a statement like ``the lawn needs to be mowed'' or a command like ``mow the lawn, now.'' Similarly one might disguise a command as a statement. ``You will respect my authority'' \emph{is} either true or false---either you will or you will not. But the speaker may intend this as an order---''Respect me!''---rather than a prediction of how you will behave.
 
@@ -194,25 +210,25 @@ The latter kind of change will be important in critical thinking, because critic
 \newglossaryentry{argument}
 {
 name=argument,
-description={a connected series of statements designed to convince an audience of another statement.}
+description={A collection of statements, called the premises, that provides evidential support to another statement, called the conclusion.}
 }
 
 \newglossaryentry{premise}
 {
 name=premise,
-description={a statement in an argument that provides evidence for the conclusion}
+description={A statement in an argument that provides evidence for the conclusion.}
 }
 
 \newglossaryentry{conclusion}
 {
 name=conclusion,
-description={the statement that an argument is trying to convince an audience of.}
+description={The statement that is being supported in an argument.}
 }
 
 
-Once we have a collection of statements, we can use them to build arguments. An \textsc{\gls{argument}} \label{def:Argument} is a connected series of statements designed to convince an audience of another statement. Here an audience might be a literal audience sitting in front of you at some public speaking engagement. Or it might be the readers of a book or article. The audience might even be yourself as you reason your way through a problem. Let's start with an example of an argument given to an external audience. This passage is from an essay by Peter Singer called ``Famine, Affluence, and Morality'' in which he tries to convince people in rich nations that they need to do more to help people in poor nations who are experiencing famine.
+Once we have a collection of statements, we can use them to build arguments. An \textsc{\gls{argument}} \label{def:argument} is a connected series of statements designed to convince an audience of another statement. Here an audience might be a literal audience sitting in front of you at some public speaking engagement. Or it might be the readers of a book or article. The audience might even be yourself as you reason your way through a problem. Let's start with an example of an argument given to an external audience. This passage is from an essay by Peter Singer called ``Famine, Affluence, and Morality'' in which he tries to convince people in rich nations that they need to do more to help people in poor nations who are experiencing famine.
 
-\begin{quotation}\noindent \textit{A contemporary philosopher writing in an academic journal} If it is in our power to prevent something bad from happening, without thereby sacrificing anything of comparable moral importance, we ought, morally, to do so. Famine is something bad, and it can be prevented without sacrificing anything of comparable moral importance. So, we ought to prevent famine. \citep{Singer1972} \label{singer_quote} \end{quotation}
+\begin{quotation}\noindent \textit{A contemporary philosopher writing in an academic journal.} If it is in our power to prevent something bad from happening, without thereby sacrificing anything of comparable moral importance, we ought, morally, to do so. Famine is something bad, and it can be prevented without sacrificing anything of comparable moral importance. So, we ought to prevent famine. \citet{Singer1972}  \end{quotation}\label{singer_quote}
 
 Singer wants his readers to work to prevent famine. This is represented by the last statement of the passage, ``we ought to prevent famine,'' which is called the conclusion of the passage. The \textsc{\gls{conclusion}} \label{def:conclusion} of an argument is the statement that the argument is trying to convince the audience of. The statements that do the convincing are called the \textsc{\glspl{premise}}. \label{def:premise}In this case, the argument has three premises: (1) ``If it is in our power to prevent something bad from happening, without thereby sacrificing anything of comparable moral importance, we ought, morally, to do so''; (2) ``Famine is something bad''; and (3) ``it can be prevented without sacrificing anything of comparable moral importance.''
 
