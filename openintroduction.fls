@@ -524,6 +524,18 @@ INPUT tex/50-whatiscriticalthinking.aux
 INPUT tex/50-whatiscriticalthinking.aux
 INPUT tex/60-whatareinductionandscientificreasoning.aux
 INPUT tex/60-whatareinductionandscientificreasoning.aux
+INPUT tex/70-introsettheory.aux
+INPUT tex/70-introsettheory.aux
+INPUT tex/71-relations.aux
+INPUT tex/71-relations.aux
+INPUT tex/80-introprobability.aux
+INPUT tex/80-introprobability.aux
+INPUT tex/81-conditionalprob.aux
+INPUT tex/81-conditionalprob.aux
+INPUT tex/82-bayes.aux
+INPUT tex/82-bayes.aux
+INPUT tex/83-randomvariables.aux
+INPUT tex/83-randomvariables.aux
 INPUT tex/A0-notation.aux
 INPUT tex/A0-notation.aux
 INPUT tex/A1-quickreference.aux
@@ -955,6 +967,30 @@ INPUT tex/50-whatiscriticalthinking.tex
 OUTPUT tex/60-whatareinductionandscientificreasoning.aux
 INPUT tex/60-whatareinductionandscientificreasoning.tex
 INPUT tex/60-whatareinductionandscientificreasoning.tex
+OUTPUT tex/70-introsettheory.aux
+INPUT tex/70-introsettheory.tex
+INPUT tex/70-introsettheory.tex
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/psnfss/ufplmbb.fd
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/psnfss/ufplmbb.fd
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmbb.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmbb.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmbb.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9d.tfm
+OUTPUT tex/71-relations.aux
+INPUT tex/71-relations.tex
+INPUT tex/71-relations.tex
+OUTPUT tex/80-introprobability.aux
+INPUT tex/80-introprobability.tex
+INPUT tex/80-introprobability.tex
+OUTPUT tex/81-conditionalprob.aux
+INPUT tex/81-conditionalprob.tex
+INPUT tex/81-conditionalprob.tex
+OUTPUT tex/82-bayes.aux
+INPUT tex/82-bayes.tex
+INPUT tex/82-bayes.tex
+OUTPUT tex/83-randomvariables.aux
+INPUT tex/83-randomvariables.tex
+INPUT tex/83-randomvariables.tex
 OUTPUT tex/A0-notation.aux
 INPUT tex/A0-notation.tex
 INPUT tex/A0-notation.tex
@@ -1008,6 +1044,18 @@ INPUT tex/50-whatiscriticalthinking.aux
 INPUT tex/50-whatiscriticalthinking.aux
 INPUT tex/60-whatareinductionandscientificreasoning.aux
 INPUT tex/60-whatareinductionandscientificreasoning.aux
+INPUT tex/70-introsettheory.aux
+INPUT tex/70-introsettheory.aux
+INPUT tex/71-relations.aux
+INPUT tex/71-relations.aux
+INPUT tex/80-introprobability.aux
+INPUT tex/80-introprobability.aux
+INPUT tex/81-conditionalprob.aux
+INPUT tex/81-conditionalprob.aux
+INPUT tex/82-bayes.aux
+INPUT tex/82-bayes.aux
+INPUT tex/83-randomvariables.aux
+INPUT tex/83-randomvariables.aux
 INPUT tex/A0-notation.aux
 INPUT tex/A0-notation.aux
 INPUT tex/A1-quickreference.aux
@@ -1029,6 +1077,8 @@ INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/fpl/fplbj8a.pfb
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/fpl/fplbj8a.pfb
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mathpazo/fplmbb.pfb
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mathpazo/fplmbb.pfb
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mathpazo/fplmr.pfb
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mathpazo/fplmr.pfb
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/type1/public/mathpazo/fplmri.pfb

@@ -160,17 +160,17 @@ description={A property of some objects (such as bits of language, maps, or diag
 So far we have defined logic as the study of argument and outlined its relationship to related fields. To go any further, we are going to need a more precise definition of what exactly an argument is. We have said that an argument is not simply two people disagreeing; it is an attempt to prove something using evidence. More specifically, an argument is composed of statements. In logic, we define a \textsc{\gls{statement}} \label{def:statement} as a unit of language that can be true or false. That means that statements are \textsc{\gls{truth evaluable}} \label{def:truth_evaluable}. All of the items below are statements.
 
 \begin{enumerate}[label=(\Alph*)]
-\item \label{itm:t.rex_true}\emph{Tyrannosaurus rex} went extinct 65 million years ago.
-\item \label{itm:t.rex_false}\emph{Tyrannosaurus rex} went extinct last week.
-\item \label{itm:t.rex_unknown}On this exact spot, 100  million years ago, a \emph{T. rex} laid a clutch of eggs.
-\item \label{itm:silly}Abraham Lincoln is the king of Jupiter.
-\item \label{itm:moral}Murder is wrong.
-\item \label{itm:opinion1}Abortion is murder.
-\item \label{itm:opinion2}Abortion is a woman's right.
-\item \label{itm:opinion3}Lady Gaga is pretty.
-\item \label{itm:definition}Murder is the unjustified killing of a person.
-\item \label{itm:nonsense}The slithy toves did gyre and gimble in the wabe.
-\item \label{itm:history}The murder of logician Richard Montague was never solved.
+	\item \label{itm:t.rex_true}\emph{Tyrannosaurus rex} went extinct 65 million years ago.
+	\item \label{itm:t.rex_false}\emph{Tyrannosaurus rex} went extinct last week.
+	\item \label{itm:t.rex_unknown}On this exact spot, 100  million years ago, a \emph{T. rex} laid a clutch of eggs.
+	\item \label{itm:silly}Abraham Lincoln is the king of Jupiter.
+	\item \label{itm:moral}Murder is wrong.
+	\item \label{itm:opinion1}Abortion is murder.
+	\item \label{itm:opinion2}Abortion is a woman's right.
+	\item \label{itm:opinion3}Lady Gaga is pretty.
+	\item \label{itm:definition}Murder is the unjustified killing of a person.
+	\item \label{itm:nonsense}The slithy toves did gyre and gimble in the wabe.
+	\item \label{itm:history}The murder of logician Richard Montague was never solved.
 \end{enumerate}
 
 Because a statement is something that can be true \emph{or} false, statements include truths like \ref{itm:t.rex_true} and falsehoods like \ref{itm:t.rex_false}. A statement can also be something that that must either be true or false, but we don't know which, like \ref{itm:t.rex_unknown}. A statement can be something that is completely silly, like \ref{itm:silly}. Statements in logic include statements about morality, like \ref{itm:moral}, and things that in other contexts might be called ``opinions,'' like \ref{itm:opinion1} and \ref{itm:opinion2}. People disagree strongly about whether \ref{itm:opinion1} or \ref{itm:opinion2} are true, but it is definitely possible for one of them to be true. The same is true about \ref{itm:opinion3}, although it is a less important issue than \ref{itm:opinion1} and \ref{itm:opinion2}. A statement in logic can also simply give a definition, like \ref{itm:definition}. This sort of statement announces that we plan to use words a certain way, which is different from statements that describe the world, like \ref{itm:t.rex_true}, or statements about morality, like \ref{itm:opinion1}. Statements can include nonsense words like \ref{itm:nonsense}, because we don't really need to know what the statement is about to see that it is the sort of thing that can be true or false. All of this relates back to the content neutrality of logic. The statements we study can be about dinosaurs, abortion, Lady Gaga, and even the history of logic itself, as in statement \ref{itm:history}, which is true.
@@ -237,40 +237,37 @@ Now let's look at an example of internal reasoning.
 \begin{quotation}\noindent\textit{Jack arrives at the track, in bad weather.} There is no one here. I guess the race is not happening. \label{racetrack}
 \end{quotation}
 
-In the passage above, the words in \textit{italics} explain the context for the reasoning, and the words in regular type represent what Jack is actually thinking to himself. \nix{(We will talk more about his way of representing reasoning in section \ref{sec:arguments_and_context}, below.)} This passage again has a premise and a conclusion. The premise is that no one is at the track, and the conclusion is that the race was canceled. The context gives another reason why Jack might believe the race has been canceled, the weather is bad. You could view this as another premise--it is very likely a reason Jack has come to believe that the race is canceled. In general, when you are looking at people's internal reasoning, it is often hard to determine what is actually working as a premise and what is just working in the background of their unconscious. %[We will talk more about this in section...]
+In the passage above, the words in \textit{italics} explain the context for the reasoning, and the words in regular type represent what Jack is actually thinking to himself. \nix{(We will talk more about his way of representing reasoning in section \ref{sec:arguments_and_context}, below.)} This passage again has a premise and a conclusion. The premise is that no one is at the track, and the conclusion is that the race was canceled. The context gives another reason why Jack might believe the race has been canceled, the weather is bad. You could view this as another premise--it is very likely a reason Jack has come to believe that the race is canceled. In general, when you are looking at people's internal reasoning, it is often hard to determine what is actually working as a premise and what is just working in the background of their unconscious.
 
 
 \newglossaryentry{premise indicator}
 {
-name=premise indicator,
-description={a word or phrase such as ``because'' used to indicate that what follows is the premise of an argument.}
+name=Premise Indicator,
+description={A word or phrase such as ``because'' used to indicate that what follows is the premise of an argument.}
 }
 
 \newglossaryentry{conclusion indicator}
 {
-name=conclusion indicator,
-description={a word or phrase such as ``therefore'' used to indicate that what follows is the conclusion of an argument.}
+name=Conclusion Indicator,
+description={A word or phrase such as ``therefore'' used to indicate that what follows is the conclusion of an argument.}
 }
 
 When people give arguments to each other, they typically use words like ``therefore'' and ``because.'' These are meant to signal to the audience that what is coming is either a premise or a conclusion in an argument. Words and phrases like ``because'' signal that a premise is coming, so we call these \textsc{\glspl{premise indicator}}. Similarly, words and phrases like ``therefore'' signal a conclusion and are called \textsc{\glspl{conclusion indicator}}. The argument from Peter Singer (on page \pageref{singer_quote}) uses the conclusion indicator word, ``so.'' Table \ref{table:Indicators} is an incomplete list of indicator words and phrases in English.
 
 
 \begin{table}
-\begin{mdframed}[style=mytablebox]
-
 \begin{longtabu}{X[1,p]X[2,p]}
 \textbf{Premise Indicators:} & because, as, for, since, given that, for the reason that \\
 \textbf{Conclusion Indicators:} & therefore, thus, hence, so, consequently, it follows that, in conclusion, as a result, then, must, accordingly, this implies that, this entails that, we may infer that \\
 \end{longtabu}
-\end{mdframed}
 \caption{Premise and Conclusion Indicators.}
 \label{table:Indicators}
 \end{table}
 
 \newglossaryentry{canonical form}
 {
-name=canonical form,
-description={a method for representing arguments where each premise is written on a separate, numbered, line, followed by a horizontal bar and then the conclusion. Statements in the argument might be paraphrased for brevity and indicator words are removed.}
+name=Canonical form,
+description={A method for representing arguments where each premise is numbered and written on a separate line. The premises are followed by a horizontal bar and then the conclusion. Statements in the argument may be paraphrased for brevity and indicator words are removed.}
 }
 
 
@@ -541,9 +538,9 @@ Conclusion Indicator: Therefore}
 }
 \end{enumerate}
 
-% * **********************************
-% *     Arguments and Nonarguments          *
-% ************************************
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Arguments and Nonarguments
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Arguments and Nonarguments}
 \label{sec:arguments_and_nonarguments}
@@ -910,9 +907,9 @@ Some forms of explanation overlap with other kinds of nonargumentative passages.
 
 On the one hand, this is clearly a narrative---retelling a sequence of events united by time, place, and character. But it also can work as an explanation about how Duke won, if the audience immediately accepts the result. 'The last shot was a miss\textit{ }and then Duke won' can be understood as 'the last shot was a miss and so Duke won'.
 
-
-%%%%%% Practice problems
-
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Practice Problems
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \practiceproblems
 \problempart Identify each of the passages below as an argument, an explanation, or neither, and justify your answer. If the passage is an argument write it in canonical form, with premises marked P$_1$ etc., then a line, and then the conclusion marked with a C. If the argument is an explanation, write it in the canonical form for an explanation, with the explainers numbered and an ``E'' after the line that separates the explainers and the explainee. If the argument is neither an argument nor an explanation, state what kind of nonargument you think it is, such as a narrative or an expository passage.
@@ -1161,42 +1158,6 @@ home as a big dog.\\
 
 \end{exercises}
 
-% *****************************************
-% *  		Recognizing Arguments in Wild		*
-% *****************************************
-
-% a section for working with newspapers and field projects.
-
-%
-%\section{Recognizing Arguments in Wild}
-%%When faced with a passage or dialogue, you must first determine whether or not it contains reasoning, and in particular whether the reasons involved are reasons-to-believe or reasons-which-explain.
-%
-%%reiterate flag words.
-%
-%
-%%      There are an infinitely large number of flag words and phrases.
-%%
-%%      These flag words and phrases indicate reasoning because they indicate premises or target, but they do not distinguish between arguing and explaining. Moreover, passages sometimes do not have any flag words. So, we need other ways of telling whether and what kind of reasoning is taking place.
-%
-%
-%Discuss replacing pronouns, making each statement stand on its own, paraphrasing for length. Use lots of real world examples.
-%
-%
-%   Discuss reports of arguments here.
-%
-%Arguments vs. explanations (again)
-%
-%``Should'' statements in the conclusion are generally a sign of arguing. Predictions are a sign of arguing.
-%
-%
-%\begin{quote}Highway repairs begin downtown today. And a bridge lift is scheduled for the middle of rush hour. I predict that traffic is going to be terrible.\end{quote}
-%
-%\begin{quote}Yeah, I know traffic is going to be terrible. It's because repairs begin downtown today. And a bridge lift is scheduled for the middle of rush hour.\end{quote}
-%
-%The words ``I predict'' in the first passage suggest the conclusion is a novel belief, (in fact, it's novel even to the speaker). The second passage starts out with the speaker saying ``I know'' about what is clearly the target, because of the reasons offered subsequently. In the first, therefore, the speaker is making an inference and trying to convince someone (perhaps herself) that the proposition ``Traffic is going to be terrible.'' is true. The second, on the other hand, is an explanation. The speaker is not trying to increase her (or anyone else's) store of knowledge; she is trying to describe connections between states of affairs.
-%
-%      Sometimes you need to use your knowledge of what various specific people know, as well as your general knowledge of the knowledge that people have, including your knowledge of what you can reasonably expect people or different ages (children, teens, adults) or different backgrounds (people from your own country or region as opposed to foreigners) and so on. This is called epistemic score-keeping.
-%
 
 
 

@@ -1,74 +1,67 @@
-\chapter{The Basics of Evaluating Argument}
-\markright{Ch. \ref{chap:basicevaluation}: The Basics of Evaluating Argument}
-\label{chap:basicevaluation}
+\chapter{The Basics of Evaluating Argument} \label{ch:basicevaluation}
+\markright{Ch. \ref{ch:basicevaluation}: The Basics of Evaluating Argument}
 \setlength{\parindent}{1em}
 
-% ****************************************************
-% *			Two ways that arguments can go wrong			*
-% ****************************************************
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Two ways that arguments can go wrong
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \section{Two Ways an Argument Can Go Wrong}
 \label{sec:two_ways}
 
-Arguments are supposed to lead us to the truth, but they don't always succeed. There are two ways they can fail in their mission. First, they can simply start out wrong, using false premises. Consider the following argument.
+Arguments are supposed to lead us to the truth but they don't always succeed. There are two ways that arguments can fail to lead us to true conclusions. First, they can simply start off with false premises. Consider the following argument:
 
 \begin{earg*}
 \item It is raining heavily.
-\item If you do not take an umbrella, you will get soaked.
-\itemc You should take an umbrella.
+\item If it is raining heavily, then you should take an umbrella.
+\itemc So, you should take an umbrella.
 \end{earg*}
 
-If premise (1) is false---if it is sunny outside---then the argument gives you no reason to carry an umbrella.The argument has failed its job. Premise (2) could also be false: Even if it is raining outside, you might not need an umbrella. You might wear a rain poncho or keep to covered walkways and still avoid getting soaked. Again, the argument fails because a premise is false.
+If premise (1) is false---if it is sunny outside---then the argument gives you no reason to carry an umbrella. The argument has failed its job. Premise (2) could also be false: Even if it is raining outside, you might not need an umbrella. You might wear a rain poncho or keep to covered walkways and still avoid getting soaked. Again, the argument fails because a premise is false. An argument with false premises can not lead us to a true conclusion.
 
-Even if an argument has all true premises, there is still a second way it can fail. Suppose for a moment that both the premises in the argument above are true. You do not own a rain poncho. You need to go places where there are no covered walkways. Now does the argument show you that you should take an umbrella? Not necessarily. Perhaps you enjoy walking in the rain, and you would like to get soaked. In that case, even though the premises were true, the conclusion would be false. The premises, although true, do not \emph{support} the conclusion. Back on page \pageref{def:Inference} we defined an inference, and said  it was like argument glue: it holds the premises and conclusion together. When an argument goes wrong because the premises do not support the conclusion, we say there is something wrong with the inference. %When there is something wrong with the inference, that means there is something wrong with the \emph{logical form} of the argument: Premises of the kind given do not necessarily lead to a conclusion of the kind given. We will be interested primarily in the logical form of arguments. We will learn to identify bad inferences by identifying bad logical forms.
-
-Consider another example:
+Even if an argument has all true premises, there is still a second way it can fail. Consider another example:
 
 \begin{earg*}
 \item You are reading this book.
-\item This is a logic book.
-\itemc[.3] You are a logic student.
+\item Most people who read this book are logic students.
+\itemc You are a logic student.
 \end{earg*}
 
-This is not a terrible argument. Most people who read this book are logic students. Yet, it is possible for someone besides a logic student to read this book. If your roommate picked up the book and thumbed through it, they would not immediately become a logic student. So the premises of this argument, even though they are true, do not guarantee the truth of the conclusion. Its inference is less than perfect.
+This is not a terrible argument. The premises are true. Most people who read this book \emph{are} logic students. Yet, it is possible for someone besides a logic student to read this book. If your friend who is not currently in a logic class read this book, they would not immediately become a logic student. So the premises of this argument, even though they are true, do not guarantee the truth of the conclusion. The evidential support between premises and conclusion is not a guarantee. This criterion is about the \emph{structure} of the argument, and how the premises and the conclusion are related to one another. There are better and worse ways that the premises of an argument can supply evidential support to its conclusion. Compare the example above with this one:
 
-Again, for any argument, there are two ways that it could fail. First, one or more of the premises might be false.  Second, the premises might fail to support the conclusion. Even if the premises were true, the form of the argument might be weak, meaning the inference is bad.
+\begin{earg*}
+\item You are reading this book.
+\item At least one person reading this book is a professional surfer.
+\itemc You are a professional surfer.
+\end{earg*}
+
+This argument should strike you as substantially worse than the previous one, even if you really are a professional surfer! Suppose the premises are both true. It still would seem pretty unlikely that the premises are very good reason to think that the conclusion is true. Just because there's at least one professional surfer who read this book, it doesn't follow that that person is you. Even though both of these arguments fail to guarantee their conclusions, one does seem better than the other. We'll be discussing why some arguments that fail this second citerion may still be worthwhile arguments.
+
+To sum up, for any argument there are two ways that it could fail. First, one or more of the premises might be false.  Second, the premises might fail to support the conclusion. Even if the premises were true, the form of the argument might be weak, meaning that there is little to no evidential support from premises to conclusion.
 
 
-%  ********************************************************
-% *				Valid, Sound									*
-% ********************************************************
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Validity and Soundness
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Valid, Sound}
+\section{Validity and Soundness}
 
 \newglossaryentry{valid}
 {
-name=valid,
-description={A property of arguments where it is impossible for the premises to be true and the conclusion false.}
+name=Valid,
+description={An argument is valid just in case its premises entail its conclusion. In other words, it is impossible for the premises to be true and the conclusion false.}
 }
 
-In logic, we are mostly concerned with evaluating the quality of inferences, not the truth of the premises. The truth of various premises will be a matter of whatever specific topic we are arguing about, and, as we have said, logic is content neutral.
+In logic, we are mostly concerned with evaluating the quality of inferences, not the truth of the premises. The truth of various premises will be a matter of whatever specific topic we are arguing aboutand since logic is content neutral we will also remain neutral.
 
-The strongest inference possible would be one where the premises, if true, would somehow force the conclusion to be true. This kind of inference is called valid. There are a number of different ways to make this idea of the premises forcing the truth of the conclusion more precise. Here are a few:
+The strongest possible evidential support would be for the premises to somehow force the conclusion to be true. This kind of inference is called \textsc{\gls{valid}}. Lets make this notion a bit more precise:
 
-An argument is valid if and only if\ldots
-\begin{enumerate}[label=(\alph*)]
-\item it is impossible to consistently both (i) accept the premises and (ii) reject the conclusion
+\begin{definition}[Valid]
+  An argument is valid if and only if it is impossible for the premises to be true and the conclusion false.
+\end{definition}
 
-\item \label{itm:our_def} it is impossible for the premises to be true and the conclusion false
-
-\item \label{itm:necessary} the premises, if true, would necessarily make the conclusion true.
-
-\item \label{itm:imagination} the conclusion is true in every imaginable scenario in which the premises are true
-
-\item \label{itm:story} it is impossible to write a consistent story (even fictional) in which the premises are true and the conclusion is false
-
-\end{enumerate}
-
-In the glossary, we formally adopt item \ref{itm:our_def} as the definition for this textbook: an argument is \textsc{\gls{valid}} \label{def:valid} if and only if it is impossible for the premises to be true and the conclusion false.  However, nothing will really ride on the differences between the definitions in the list above, and we can look at all of them in order to give us a sense of what logicians mean when they use the term ``valid''.
-
-The important thing to see is that all the definitions in the list above try to get at what \textit{would} happen if the premises were true. None of them assert that the premises actually \textit{are} true. This is why definitions \ref{itm:imagination} and \ref{itm:story} talk about what would happen if you somehow \textit{pretend} the premises are true, for instance by telling a story. The argument is valid if, when you pretend the premises are true, you also have to pretend the conclusion is true. Consider the argument in Figure \ref{fig:Gaga_valid}
+The important thing to see is that the definition is about what \textit{would} happen if the premises were true. It doesn't state that the premises actually \textit{are} true. This is why our definition is about what is possible or impossible. The argument is valid if, when you imagine the premises are true, you are somehow forced into imagining that the conclusion is also true. Consider the argument in Figure \ref{fig:Gaga_valid}
 
 
 \begin{marginfigure}

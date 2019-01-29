@@ -16,29 +16,29 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces A \textbf {valid} argument.}}{55}{Item.82}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces A \textbf {valid} argument.}}{54}{Item.79}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces A \textbf {valid} argument}}{56}{Item.84}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces A \textbf {valid} argument}}{56}{Item.81}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces An \textbf {invalid} argument.}}{56}{Item.86}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces An \textbf {invalid} argument.}}{56}{Item.83}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces An \textbf {invalid} argument.}}{57}{Item.88}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces An \textbf {invalid} argument.}}{57}{Item.85}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces An \textbf {invalid} argument}}{57}{Item.90}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces An \textbf {invalid} argument}}{57}{Item.87}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces An \textbf {invalid} argument}}{58}{Item.92}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces An \textbf {invalid} argument}}{58}{Item.89}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces These two arguments are valid, but only the one on the right is sound}}{59}{Item.96}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces These two arguments are valid, but only the one on the right is sound}}{58}{Item.93}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces An argument that is \textbf {valid} but not \textit {sound}}}{61}{Item.98}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces An argument that is \textbf {valid} but not \textit {sound}}}{59}{Item.95}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Neither argument is valid, but one is strong and one is weak}}{67}{Item.145}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Neither argument is valid, but one is strong and one is weak}}{67}{Item.142}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Parts of a quantified categorical statement.}}{92}{Item.271}
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Parts of a quantified categorical statement.}}{92}{Item.268}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Euler Circles}}{97}{section.4.2}
 \defcounter {refsection}{0}\relax 
@@ -56,21 +56,21 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.9}{\ignorespaces Obversions of the Four Basic Forms}}{115}{subsection*.14}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Valid argument forms by obversion}}{116}{Item.385}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Valid argument forms by obversion}}{116}{Item.382}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces *}}{117}{Item.385}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces *}}{117}{Item.382}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.12}{\ignorespaces Contrapositions the Four Basic Forms}}{117}{subsection*.15}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Valid argument forms from contraposition}}{117}{Item.387}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Valid argument forms from contraposition}}{117}{Item.384}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces *}}{120}{Item.388}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces *}}{120}{Item.385}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces *}}{120}{Item.389}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces *}}{120}{Item.386}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.16}{\ignorespaces *}}{120}{Item.390}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces *}}{120}{Item.387}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.17}{\ignorespaces *}}{120}{Item.390}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces *}}{120}{Item.387}
 \defcounter {refsection}{0}\relax 
 \contentsline {figure}{\numberline {4.18}{\ignorespaces The traditional square of opposition}}{126}{section.4.5}
 \defcounter {refsection}{0}\relax 
@@ -92,13 +92,29 @@
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces This is Cupcake. The fact that she is a dog is a \textit {sufficient} condition for her to be a mammal. She also likes socks.}}{195}{Item.708}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces This is Cupcake. The fact that she is a dog is a \textit {sufficient} condition for her to be a mammal. She also likes socks.}}{195}{Item.705}
 \defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces The antecedent of a material conditional is a sufficient condition for the consequent, while the consequent is a necessary condition for the antecedent.}}{196}{Item.708}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces The antecedent of a material conditional is a sufficient condition for the consequent, while the consequent is a necessary condition for the antecedent.}}{196}{Item.705}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {14.1}{\ignorespaces A set defined extensionally.}}{370}{section.14.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {figure}{\numberline {14.2}{\ignorespaces A set defined intensionally.}}{370}{section.14.1}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
