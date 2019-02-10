@@ -4,3 +4,53 @@
 \setlength{\parindent}{1em}
 
 \section{Evidential Support Revisited}
+
+So far we've been talking about arguments that have an ``all or nothing'' relation of evidential support. These are deductive arguments. However, we noted in chapter~\ref{ch:basicevaluation} that not all arguments that we care about are deductive. Some arguments are inductive, meaning that their premises are not supposed to \emph{guarantee} their conclusion, but merely make it more likely. In this section we are going to make that notion more rigorously defined.
+
+Recall that inductive arguments are intended to make their conclusions more likely. We can see that in the following argument:
+
+\begin{earg}
+\item[1.] Only one person wins the spelling bee.
+\item[2.] There are 200 contestants in the spelling bee.
+\item[3.] Sara is a contestant in the spelling bee.
+\item[] \textcolor{white}{.}\sout{\hspace{.8\linewidth}}\textcolor{white}{.}
+\item[$\therefore$] Sara will not win the spelling bee.
+\end{earg}
+
+You might react to this argument in a couple of ways. First, you might agree that the premises do make the conclusion more likely. If Sara is only one of 200 possible winners, it is not likely that Sara will win. The premises do support the conclusion that Sara will not win. However, you might also react to this argument by objecting: ``Hang on! Sara has been practicing for the spelling bee every day for months! She's definitely going to win!''
+
+Both responses make sense and they both carry some implicit assumptions about Sara and about spelling bees. As we develop an understanding of probability we can make these assumption explicit.
+
+\section{What is Probability?}\label{sec:whatisprob}
+
+Before we go further into the chapter, let's get clear about what exactly we mean when we talk about probabilities. For many philosophers and statisticians, the best way to understand ``probability'' is a matter of substantial dispute. There are two popular ways of understanding probability.
+
+\subsection{Degree of Truth}
+
+One popular way to understand probability is as a representation of how true a given proposition is. As we said in chapter~\ref{ch:what_is_logic} the elements of logic are statements and statements can either be true or false. We can adjust our definition of ``statements'' to accommodate statements that may be somewhat true or somewhat false.
+
+Another way to understand this interpretation is that probabilities represent the chance that something is true. When we flip a coin we often talk about the chance that the coin will land heads or land tails. So while it may seem strange to say that ``The coin will land heads.'' is \emph{somewhat true} and \emph{somewhat false} it is more natural to say that there is a chance that ``The coin will land heads.'' is true \emph{and} there is a chance that ``The coin will land heads.'' is false.
+
+\subsection{Degree of Belief}
+
+Another popular way to understand probability is as a representation of someone's degree of belief that a proposition is true. Perhaps talking about the degree of truth or the chance that some proposition is true seems too bizarre. ``Things are either true or false,'' the objection goes, ``Just because we don't know whether or not the coin will land heads doesn't mean that it's only half-true! It either happens or it doesn't.''
+
+Instead of thinking of probabilities as representing the actual chance or degree to which a proposition is true, we can think of probabilities as representing how much \emph{we believe in each proposition.}
+
+Either way we want to go, much of the formal machinery of probability will be the same. The philosophy of probability is concerned with identifying the best interpretation. Perhaps you have a sense right now of how you think that interpretation should go. Maybe you aren't sure yet. Either way, it will help to have a clear understanding of the formal methods of probability in order to think more clearly about the interpretation.
+
+\section{Defining Probability}
+
+We can think of probability as a function that maps propositions to a real number in the range $[0,1]$. This function is called a valuation function. Earlier, we gave a valuation function for propositions that mapped them to a binary number from the set $\{0,1\}$. Now we are imagining that propositions can take any value between zero and one (inclusive, meaning that the propositions can also take the values $0$ and $1$).
+
+We will write the valuation function like this: $pr(\mvp)$ for any sentence in our language $\mvp$. The valuation function will then give us a value back that is between $0$ and $1$. When we use our valuation function we aren't talking about the content of the sentence directly, but indirectly by assigning it some value. However, it is important to note that almost no sentences involving metavariables will receive a valuation. Just like it doesn't make sense to ask whether $(\mvp\eand\mvq)$ is true or false without knowing what $\mvp$ and $\mvq$ stand for, we won't assign particular valuations to sentences like that either.
+
+\section{Axioms of Probability}\label{sec:axiomsofprobability}
+
+\citet{kolmogorov1933} first defined the axioms of probability in the form we now use. These axioms put some limits on how we can assign probabilities to the sentences in our language. The axioms are as follows:
+
+\begin{description}
+  \item[Axiom of Non-negativity] $\forall x \in X : pr(x) \ge 0$
+  \item[Axiom of Normality] If $\{\}\vdash\mvp$, then $pr(\mvp)=1$
+  \item[Axiom of Finite Additivity] If $\{\}\vdash\enot(\mvp\eand\mvq)$, then $pr(\mvp\eor\mvq)=pr(\mvp)+pr(\mvq)$
+\end{description}

@@ -1,1 +1,2 @@
-clue.jpg,https://boardgamegeek.com/image/884234/clue
+clue.jpg,,,https://boardgamegeek.com/image/884234/clue
+matryoshkadoll.jpg,By BrokenSphere - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=3773186

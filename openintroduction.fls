@@ -976,6 +976,11 @@ INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmbb
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmbb.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmbb.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9d.tfm
+INPUT img/matryoshkadoll.jpg
+INPUT ./img/matryoshkadoll.jpg
+INPUT ./img/matryoshkadoll.jpg
+INPUT ./img/matryoshkadoll.jpg
+INPUT ./img/matryoshkadoll.jpg
 OUTPUT tex/71-relations.aux
 INPUT tex/71-relations.tex
 INPUT tex/71-relations.tex
@@ -1004,6 +1009,12 @@ INPUT openintroduction.gls
 OUTPUT tex/A1-quickreference.aux
 INPUT tex/A1-quickreference.tex
 INPUT tex/A1-quickreference.tex
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/zplmb7t.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/zplmb7t.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmbb.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmbb.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7m.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
 OUTPUT tex/A2-backmatter.aux
 INPUT tex/A2-backmatter.tex
 INPUT tex/A2-backmatter.tex
