@@ -1,0 +1,14 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{philosophy}[2019/01/12 Some Commands for Doing Philosophy]
+
+\RequirePackage{amsmath,amssymb,mathtools}
+
+\newcommand{\ci}{\mathrel{\text{$\perp\mkern-10mu\perp$}}}                            % This provides the symbol for conditional independence.
+\newcommand{\cfc}{\mathrel{\Box\kern-1.5pt\raise1pt\hbox{$\mathord{\rightarrow}$}}}   % This provides the symbol for counterfactual conditional.
+\newcommand{\onlyif}{\mathrel{\rightarrow}}                                           % This provides a helper command for the material conditional.
+\renewcommand{\iff}{\mathrel{\leftrightarrow}}                                        % This renames the biconditional to be the double arrow instead of triple bar.
+
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}
+\DeclarePairedDelimiter\oset{\langle}{\rangle}
+\DeclarePairedDelimiter\set{\left\{}{\right\}}
+\newcommand{\cm}{$\oset{V,E,A}$}
