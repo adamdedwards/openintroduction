@@ -1,0 +1,195 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{aristotle}[2019/01/12 Aristotle]
+
+\RequirePackage{tikz,xcolor,ifthen}
+
+\definecolor{empty} {hsb}{0.000,0.0,0.5}
+\definecolor{major} {hsb}{0.000,0.8,1.0}
+\definecolor{minor} {hsb}{0.333,0.8,1.0}
+\definecolor{middle}{hsb}{0.667,0.8,1.0}
+
+\def\majorcircle{ ( 30:1.2cm) circle (1.8cm)}
+\def\minorcircle{ (150:1.2cm) circle (1.8cm)}
+\def\middlecircle{(270:1.2cm) circle (1.8cm)}
+
+\newcounter{SyllogismCount}
+
+\newenvironment{syllogism}{%
+\stepcounter{SyllogismCount}
+\begin{tikzpicture}
+\coordinate (A) at (current bounding box.south west);
+\coordinate (B) at (current bounding box.north east);
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% A-type propositions: All X is Y
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\AMS}{%
+\begin{scope}[even odd rule, overlay] % All M is S.
+    \clip \minorcircle (A) rectangle (B);
+    \fill[empty] \middlecircle;
+\end{scope}
+}
+
+\newcommand{\AMP}{
+\begin{scope}[even odd rule, overlay] % All M is P.
+    \clip \majorcircle (A) rectangle (B);
+    \fill[empty] \middlecircle;
+\end{scope}
+}
+    
+\newcommand{\APS}{
+\begin{scope}[even odd rule, overlay] % All P is S.
+    \clip \minorcircle (A) rectangle (B);
+    \fill[empty] \majorcircle;
+\end{scope}
+}
+    
+\newcommand{\APM}{
+\begin{scope}[even odd rule, overlay] % All P is M.
+    \clip \middlecircle (A) rectangle (B);
+    \fill[empty] \majorcircle;
+\end{scope}
+}
+    
+\newcommand{\ASM}{
+\begin{scope}[even odd rule, overlay] % All S is M.
+    \clip \middlecircle (A) rectangle (B);
+    \fill[empty] \minorcircle;
+\end{scope}
+}
+    
+\newcommand{\ASP}{
+\begin{scope}[even odd rule, overlay] % All S is P.
+    \clip \majorcircle (A) rectangle (B);
+    \fill[empty] \minorcircle;
+\end{scope}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% E-type propositions: No X is Y
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\ESM}{
+\begin{scope} %No S is M. No M is S.
+    \clip \minorcircle;
+    \fill[empty, overlay] \middlecircle;
+\end{scope}
+}
+
+\newcommand{\EMP}{
+\begin{scope} %No P is M. No M is P.
+    \clip \majorcircle;
+    \fill[empty, overlay] \middlecircle;
+\end{scope}
+}
+
+\newcommand{\ESP}{
+\begin{scope} %No S is P. No P is S.
+    \clip \minorcircle;
+    \fill[empty, overlay] \majorcircle;
+\end{scope}
+}
+
+\newcommand{\EMS}{\ESM}
+\newcommand{\EPM}{\EMP}
+\newcommand{\EPS}{\ESP}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% I-type propositions: Some X is Y
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\IS}{\draw[black] (150:1.8cm) node{\scalebox{1.4}{$\times$}};}
+\newcommand{\IP}{\draw[black] ( 30:1.8cm) node{\scalebox{1.4}{$\times$}};}
+\newcommand{\IM}{\draw[black] (-90:1.8cm) node{\scalebox{1.4}{$\times$}};}
+
+\newcommand{\ISP}{\draw[black]  ( 90:0.6cm) node{\scalebox{1.4}{$\times$}};}
+\newcommand{\ISM}{\draw[black]  (210:0.6cm) node{\scalebox{1.4}{$\times$}};}
+\newcommand{\IMP}{\draw[black]  (330:0.6cm) node{\scalebox{1.4}{$\times$}};}
+\newcommand{\ISPx}{\draw[black] ( 90:1.2cm) node{\scalebox{1.4}{$\times$}};}
+\newcommand{\ISMx}{\draw[black] (210:1.2cm) node{\scalebox{1.4}{$\times$}};}
+\newcommand{\IMPx}{\draw[black] (330:1.2cm) node{\scalebox{1.4}{$\times$}};}
+
+\newcommand{\IMS}{\ISM}
+\newcommand{\IPM}{\IMP}
+\newcommand{\IPS}{\ISP}
+\newcommand{\IMSx}{\ISMx}
+\newcommand{\IPMx}{\IMPx}
+\newcommand{\IPSx}{\ISPx}
+
+\newcommand{\ISMP}{\draw[black] (  0:0.0cm) node{\scalebox{1.4}{$\times$}};}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% O-type propositions: Some X is not Y
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\OPM}{\draw[black] ( 63:1.4cm) node{\scalebox{1.4}{$\times$}};}
+\newcommand{\OSM}{\draw[black] (117:1.4cm) node{\scalebox{1.4}{$\times$}};}
+\newcommand{\OSP}{\draw[black] (183:1.4cm) node{\scalebox{1.4}{$\times$}};}
+\newcommand{\OMP}{\draw[black] (237:1.4cm) node{\scalebox{1.4}{$\times$}};}
+\newcommand{\OMS}{\draw[black] (303:1.4cm) node{\scalebox{1.4}{$\times$}};}
+\newcommand{\OPS}{\draw[black] (357:1.4cm) node{\scalebox{1.4}{$\times$}};}
+
+\newcommand{\OPMx}{\ISPx}
+\newcommand{\OSMx}{\IS}
+\newcommand{\OSPx}{\ISMx}
+\newcommand{\OMPx}{\IM}
+\newcommand{\OMSx}{\IMPx}
+\newcommand{\OPSx}{\IP}
+
+
+\begin{scope} [fill opacity=0.2,line width=0.5mm]
+    \draw[black!50!white] \majorcircle  node {};
+    \draw[black!50!white] \minorcircle  node {};
+    \draw[black!50!white] \middlecircle node {};
+    \fill[major]  \majorcircle;
+    \fill[minor]  \minorcircle;
+    \fill[middle] \middlecircle;
+\end{scope}
+}
+{
+\end{tikzpicture}
+}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Helper Commands for Valid Syllogisms
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Figure 1
+
+\newcommand{\barbara} {\begin{syllogism}\AMP\ASM     \end{syllogism}}
+\newcommand{\celarent}{\begin{syllogism}\EMP\ASM     \end{syllogism}}
+\newcommand{\darii}   {\begin{syllogism}\AMP\ISMP    \end{syllogism}}
+\newcommand{\ferio}   {\begin{syllogism}\EMP\ISMx    \end{syllogism}}
+\newcommand{\barbari} {\begin{syllogism}\AMP\ASM\ISMP\end{syllogism}} %Weakened Form + Existential Import
+\newcommand{\celaront}{\begin{syllogism}\EMP\ASM\ISMx\end{syllogism}} %Weakened Form + Existential Import
+
+
+% Figure 2
+
+\newcommand{\cesare}   {\begin{syllogism}\EPM\ASM     \end{syllogism}}
+\newcommand{\camestres}{\begin{syllogism}\APM\ESM     \end{syllogism}}
+\newcommand{\festino}  {\begin{syllogism}\EPM\ISMx    \end{syllogism}}
+\newcommand{\baroco}   {\begin{syllogism}\APM\OSMx    \end{syllogism}}
+\newcommand{\cesaro}   {\begin{syllogism}\EPM\ASM\OSPx\end{syllogism}} %Weakened Form + Existential Import
+\newcommand{\camestros}{\begin{syllogism}\APM\ESM\OMSx\end{syllogism}} %Weakened Form + Existential Import
+
+% Figure 3
+
+\newcommand{\datisi}  {\begin{syllogism}\AMP\ISMP    \end{syllogism}}
+\newcommand{\disamis} {\begin{syllogism}\ISMP\AMS    \end{syllogism}}
+\newcommand{\ferison} {\begin{syllogism}\EMP\IMSx    \end{syllogism}}
+\newcommand{\bocardo} {\begin{syllogism}\OSPx\AMS    \end{syllogism}}
+\newcommand{\felapton}{\begin{syllogism}\EMP\AMS\OSPx\end{syllogism}} %Weakened Form + Existential Import
+\newcommand{\darapti} {\begin{syllogism}\AMP\AMS\ISMP\end{syllogism}} %Weakened Form + Existential Import
+
+% Figure 4
+
+\newcommand{\calemes} {\begin{syllogism}\APM\EMS     \end{syllogism}}
+\newcommand{\dimatis} {\begin{syllogism}\ISMP\AMS    \end{syllogism}}
+\newcommand{\fresison}{\begin{syllogism}\EPM\IMSx    \end{syllogism}}
+\newcommand{\calemos} {\begin{syllogism}\APM\EMS\OMSx\end{syllogism}} %Weakened Form + Existential Import
+\newcommand{\fesapo}  {\begin{syllogism}\EPM\AMS\OSPx\end{syllogism}} %Weakened Form + Existential Import
+\newcommand{\bamalip} {\begin{syllogism}\APM\AMS\ISMP\end{syllogism}} %Weakened Form + Existential Import

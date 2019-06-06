@@ -4,19 +4,22 @@
 
 In the history of formal logic, different symbols have been used at different times and by different authors. Often, authors were forced to use notation that their printers could typeset.
 
-In one sense, the symbols used for various logical constants is arbitrary. There is nothing written in heaven that says that `\enot' must be the symbol for truth-functional negation. We might have specified a different symbol to play that part. Once we have given definitions for well-formed formulae (wff) and for truth in our logic languages, however, using `\enot' is no longer arbitrary. That is the symbol for negation in this textbook, and so it is the symbol for negation when writing sentences in our languages SL or QL.
+In one sense, the symbols used for various logical constants is arbitrary.
+There is nothing written in heaven that says that $\lnot$ must be the symbol for truth-functional negation.
+We might have specified a different symbol to play that part.
+Once we have given definitions for well-formed formulae (wff) and for truth in our logic languages, however, using $\lnot$ is no longer arbitrary. That is the symbol for negation in this textbook, and so it is the symbol for negation when writing sentences in our languages SL or QL.
 
 This appendix presents some common symbols, so that you can recognize them if you encounter them in an article or in another book.
-\marginpar{
+\begin{table}
 \begin{tabular}{rl}
-\multicolumn{2}{c}{summary of symbols}\\
-negation & $\neg$, ${\sim}$\\
-conjunction & $\&$, $\wedge$,	{\scriptsize\textbullet}\\
-disjunction & $\vee$\\
-conditional & $\rightarrow$, $\supset$\\
+\multicolumn{2}{c}{\textbf{Summary of Symbols}}\\
+negation      & $\lnot$, $\neg$\\
+conjunction   & $\&$, $\wedge$,	{\scriptsize\textbullet}\\
+disjunction   & $\lor$\\
+conditional   & $\rightarrow$, $\supset$\\
 biconditional & $\leftrightarrow$, $\equiv$
 \end{tabular}
-}
+\end{table}
 
 \paragraph{Negation} Two commonly used symbols are the \emph{hoe}, `$\neg$', and the \emph{swung dash}, `${\sim}$.' In some more advanced formal systems it is necessary to distinguish between two kinds of negation; the distinction is sometimes represented by using both `$\neg$' and `${\sim}$.'
 
@@ -45,18 +48,16 @@ Lower case letters are used as sentence letters. The capital letter $N$ is used 
 \begin{tabular}{cc}
 notation & Polish\\
 of SL & notation\\
-\enot & $N$\\
-\eand & $K$\\
-\eor & $A$\\
-\eif & $C$\\
-\eiff & $E$
+$\lnot$ & $N$\\
+$\land$ & $K$\\
+$\lor$ & $A$\\
+$\onlyif$ & $C$\\
+$\iff$ & $E$
 \end{tabular}
 }
 
-In Polish notation, a binary connective is written \emph{before} the two sentences that it connects. For example, the sentence $A\eand B$ of SL would be written $Kab$ in Polish notation.
+In Polish notation, a binary connective is written \emph{before} the two sentences that it connects. For example, the sentence $A\land B$ of SL would be written $Kab$ in Polish notation.
 
-The sentences $\enot A\eif B$ and $\enot (A\eif B)$ are very different; the main logical operator of the first is the conditional, but the main connective of the second is negation. In SL, we show this by putting parentheses around the conditional in the second sentence. In Polish notation, parentheses are never required. The left-most connective is always the main connective. The first sentence would simply be written $CNab$ and the second $NCab$.
+The sentences $\lnot A\onlyif B$ and $\lnot (A\onlyif B)$ are very different; the main logical operator of the first is the conditional, but the main connective of the second is negation. In SL, we show this by putting parentheses around the conditional in the second sentence. In Polish notation, parentheses are never required. The left-most connective is always the main connective. The first sentence would simply be written $CNab$ and the second $NCab$.
 
-This feature of Polish notation means that it is possible to evaluate sentences simply by working through the symbols from right to left. If you were constructing a truth table for $NKab$, for example, you would first consider the truth-values assigned to $b$ and $a$, then consider their conjunction, and then negate the result. The general rule for what to evaluate next in SL is not nearly so simple. In SL, the truth table for $\enot(A\eand B)$ requires looking at $A$ and $B$, then looking in the middle of the sentence at the conjunction, and then at the beginning of the sentence at the negation. Because the order of operations can be specified more mechanically in Polish notation, variants of Polish notation are used as the internal structure for many computer programming languages.
-
-
+This feature of Polish notation means that it is possible to evaluate sentences simply by working through the symbols from right to left. If you were constructing a truth table for $NKab$, for example, you would first consider the truth-values assigned to $b$ and $a$, then consider their conjunction, and then negate the result. The general rule for what to evaluate next in SL is not nearly so simple. In SL, the truth table for $\lnot(A\land B)$ requires looking at $A$ and $B$, then looking in the middle of the sentence at the conjunction, and then at the beginning of the sentence at the negation. Because the order of operations can be specified more mechanically in Polish notation, variants of Polish notation are used as the internal structure for many computer programming languages.

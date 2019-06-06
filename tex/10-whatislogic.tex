@@ -1,5 +1,4 @@
-\chapter{What Is Logic?}
-\label{ch:what_is_logic}
+\chapter{What Is Logic?}\label{ch:what_is_logic}
 \markright{Ch. \ref{ch:what_is_logic}: What Is Logic?}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -15,14 +14,12 @@ In logic, we use the word ``argument'' to refer to the attempt to show that cert
 A logical argument is structured to give someone a reason to believe some conclusion. Here is the argument about a game of Clue written out in a way that shows its structure.
 
 \label{argClue}
-\begin{earg}
-\item[P$_1$:] In a game of Clue, the possible murder weapons are the knife, the candlestick, the revolver, the rope, the lead pipe, and the wrench.
-\item[P$_2$:] The murder weapon was not the knife.
-\item[P$_3$:] The murder weapon was also not the revolver, the rope, the lead pipe, or the wrench.
-\vspace{-.5em}
-\item [] \rule{0.9\linewidth}{.5pt}
-\item[C:] Therefore, the murder weapon was the candlestick.
-\end{earg}
+\begin{kormanize}
+\premise{In a game of Clue, the possible murder weapons are the knife, the candlestick, the revolver, the rope, the lead pipe, and the wrench.}
+\premise{The murder weapon was not the knife.}
+\premise{The murder weapon was also not the revolver, the rope, the lead pipe, or the wrench.}
+\conclusion{Therefore, the murder weapon was the candlestick.}
+\end{kormanize}
 
 \newglossaryentry{premises}
 {
@@ -79,20 +76,14 @@ description={A way of studying logic that achieves content neutrality by replaci
 When logic is studied for theoretical reasons, it typically is pursued as \textsc{\gls{formal logic}}. \label{def:formal_logic} In formal logic we get content neutrality by replacing parts of the argument we are studying with abstract symbols. For instance, we could turn the argument above into a formal argument like this:
 
 \label{argClueformal}
-\begin{earg}
-\item[P$_1$:] There are six possibilities: A, B, C, D, E, and F.
-\item[P$_2$:] A is false.
-\item[P$_3$:] B, D, E, and F are also false.
-\vspace{-.5em}
-\item [] \rule{0.6\linewidth}{.5pt}
-\item[C:]  $\therefore$ The correct answer is C.
-\end{earg}
+\begin{kormanize}
+\premise{There are six possibilities: A, B, C, D, E, and F.}
+\premise{A is false.}
+\premise{B, D, E, and F are also false.}
+\conclusion{$\therefore$ The correct answer is C.}
+\end{kormanize}
 
-Here we have replaced the concrete possibilities in the first argument with abstract letters that could stand for anything. We have also replaced the English word ``therefore'' with the symbol ``$\therefore$,'' which means therefore. This lets us see the formal structure of the argument, which is why it works in any domain you can think of. In fact, we can think of formal logic as the method for studying argument that uses abstract notation to identify the formal structure of argument.  Formal logic is closely allied with mathematics, and studying formal logic often has the sort of puzzle-solving character one associates with mathematics. \iflabelexists{full_version}{You will see this when we get to Part \ref{part:formal_logic}, which covers formal logic.}
-	{\iflabelexists{part:CT}{}
-	{\iflabelexists{part:cat_logic}{You will see this when we get to Parts \ref{part:cat_logic} and \ref{part:sent_logic}, which cover formal logic.}
-{\iflabelexists{part:quant_logic}{You will see this when we get to Parts \ref{part:sent_logic} and \ref{part:quant_logic}, which cover formal logic.}}
-	{}	}}
+Here we have replaced the concrete possibilities in the first argument with abstract letters that could stand for anything. We have also replaced the English word ``therefore'' with the symbol ``$\therefore$,'' which means therefore. This lets us see the formal structure of the argument, which is why it works in any domain you can think of. In fact, we can think of formal logic as the method for studying argument that uses abstract notation to identify the formal structure of argument.  Formal logic is closely allied with mathematics, and studying formal logic often has the sort of puzzle-solving character one associates with mathematics. You will see this when we get to Part \ref{part:formal_logic}, which covers formal logic.
 
 \newglossaryentry{critical thinking}
 {
@@ -230,14 +221,14 @@ Once we have a collection of statements, we can use them to build arguments. An 
 
 \begin{quotation}\noindent \textit{A contemporary philosopher writing in an academic journal.} If it is in our power to prevent something bad from happening, without thereby sacrificing anything of comparable moral importance, we ought, morally, to do so. Famine is something bad, and it can be prevented without sacrificing anything of comparable moral importance. So, we ought to prevent famine. \citet{Singer1972}  \end{quotation}\label{singer_quote}
 
-Singer wants his readers to work to prevent famine. This is represented by the last statement of the passage, ``we ought to prevent famine,'' which is called the conclusion of the passage. The \textsc{\gls{conclusion}} \label{def:conclusion} of an argument is the statement that the argument is trying to convince the audience of. The statements that do the convincing are called the \textsc{\glspl{premise}}. \label{def:premise}In this case, the argument has three premises: (1) ``If it is in our power to prevent something bad from happening, without thereby sacrificing anything of comparable moral importance, we ought, morally, to do so''; (2) ``Famine is something bad''; and (3) ``it can be prevented without sacrificing anything of comparable moral importance.''
+Singer wants his readers to work to prevent famine. This is represented by the last statement of the passage, ``we ought to prevent famine,'' which is called the conclusion of the passage. The \textsc{\gls{conclusion}} of an argument is the statement that the argument is trying to convince the audience of. The statements that do the convincing are called the \textsc{\glspl{premise}}. In this case, the argument has three premises: (1) ``If it is in our power to prevent something bad from happening, without thereby sacrificing anything of comparable moral importance, we ought, morally, to do so''; (2) ``Famine is something bad''; and (3) ``it can be prevented without sacrificing anything of comparable moral importance.''
 
 Now let's look at an example of internal reasoning.
 
 \begin{quotation}\noindent\textit{Jack arrives at the track, in bad weather.} There is no one here. I guess the race is not happening. \label{racetrack}
 \end{quotation}
 
-In the passage above, the words in \textit{italics} explain the context for the reasoning, and the words in regular type represent what Jack is actually thinking to himself. \nix{(We will talk more about his way of representing reasoning in section \ref{sec:arguments_and_context}, below.)} This passage again has a premise and a conclusion. The premise is that no one is at the track, and the conclusion is that the race was canceled. The context gives another reason why Jack might believe the race has been canceled, the weather is bad. You could view this as another premise--it is very likely a reason Jack has come to believe that the race is canceled. In general, when you are looking at people's internal reasoning, it is often hard to determine what is actually working as a premise and what is just working in the background of their unconscious.
+In the passage above, the words in \textit{italics} explain the context for the reasoning, and the words in regular type represent what Jack is actually thinking to himself. (We will talk more about his way of representing reasoning in section \ref{sec:arguments_and_context}, below.) This passage again has a premise and a conclusion. The premise is that no one is at the track, and the conclusion is that the race was canceled. The context gives another reason why Jack might believe the race has been canceled, the weather is bad. You could view this as another premise---it is very likely a reason Jack has come to believe that the race is canceled. In general, when you are looking at people's internal reasoning, it is often hard to determine what is actually working as a premise and what is just working in the background of their unconscious.
 
 
 \newglossaryentry{premise indicator}
@@ -256,7 +247,7 @@ When people give arguments to each other, they typically use words like ``theref
 
 
 \begin{table}
-\begin{longtabu}{X[1,p]X[2,p]}
+\begin{longtabu} to \textwidth {X[1.2,p]X[8,p]}
 \textbf{Premise Indicators:} & because, as, for, since, given that, for the reason that \\
 \textbf{Conclusion Indicators:} & therefore, thus, hence, so, consequently, it follows that, in conclusion, as a result, then, must, accordingly, this implies that, this entails that, we may infer that \\
 \end{longtabu}
@@ -273,25 +264,21 @@ description={A method for representing arguments where each premise is numbered 
 
 The two passages we have looked at in this section so far have been simply presented as quotations. But often it is extremely useful to rewrite arguments in a way that makes their logical structure clear. One way to do this is to use something called ``canonical form.''   An argument written in \textsc{\gls{canonical form}} \label{def:canonical_form}has each premise numbered and written on a separate line. Indicator words and other unnecessary material should be removed from the premises. Although you can shorten the premises and conclusion, you need to be sure to keep them all complete sentences with the same meaning, so that they can be true or false. The argument from Peter Singer, above, looks like this in canonical form:
 
-\begin{earg}
-\item[P$_1$:] If we can stop something bad from happening, without sacrificing anything of comparable moral importance, we ought to do so.
-\item[P$_2$:] Famine is something bad.
-\item[P$_3$:] Famine can be prevented without sacrificing anything of comparable moral importance.
-\vspace{-.5em}
-\item [] \rule{0.9\linewidth}{.5pt}
-\item[C:] We ought to prevent famine.
-\end{earg}
+\begin{kormanize}
+\premise{If we can stop something bad from happening, without sacrificing anything of comparable moral importance, we ought to do so.}
+\premise{Famine is something bad.}
+\premise{Famine can be prevented without sacrificing anything of comparable moral importance.}
+\conclusion{We ought to prevent famine.}
+\end{kormanize}
 
 Each statement has been written on its own line and given a number. The statements have been paraphrased slightly, for brevity, and the indicator word ``so'' has been removed. Also notice that the ``it'' in the third premise has been replaced by the word ``famine,'' so that statements reads naturally on its own.
 
 Similarly, we can rewrite the argument Jack gives at the racetrack, on page \pageref{racetrack}, like this:
 
-\begin{earg}
-\item[P:] There is no one at the race track.
-\vspace{-.5em}
-\item [] \rule{0.4\linewidth}{.5pt}
-\item[C:] The race is not happening.
-\end{earg}
+\begin{kormanize}
+\premise{There is no one at the race track.}
+\conclusion{ The race is not happening.}
+\end{kormanize}
 
 Notice that we did not include anything from the part of the passage in italics. The italics represent the context, not the argument itself. Also, notice that the ``I guess'' has been removed. When we write things out in canonical form, we write the content of the statements, ignore information about the speaker's mental state, like ``I believe'' or ``I guess.''
 
@@ -303,12 +290,10 @@ One of the first things you have to learn to do in logic is to identify argument
 The first thing we need to do to put this argument in canonical form is to identify the conclusion. The indicator words are the best way to do this. The phrase ``make it evident that'' is a conclusion indicator phrase. He is saying that everything else is \textit{evidence} for what follows. So we know that the conclusion is that the earth is round. ``For'' is a premise indicator word---it is sort of a weaker version of ``because.''  Thus the premise is that the stars in the sky change if you move north or south. In canonical form, Aristotle's argument that the earth is round looks like this.\\
 
 
-\begin{earg}
-\item[P:] There are different stars overhead in the northern and southern parts of the earth.
-\vspace{-.5em}
-\item [] \rule{0.9\linewidth}{.5pt}
-\item[C:] The earth is spherical in shape.
-\end{earg}
+\begin{kormanize}
+\premise{There are different stars overhead in the northern and southern parts of the earth.}
+\conclusion{ The earth is spherical in shape.}
+\end{kormanize}
 
 That one is fairly simple, because it just has one premise. Here's another example of an argument, this time from the book of Ecclesiastes in the Bible. The speaker in this part of the bible is generally referred to as The Preacher, or in Hebrew, Koheleth. In this verse, Koheleth uses both a premise indicator and a conclusion indicator to let you know he is giving reasons for enjoying life.
 
@@ -319,13 +304,11 @@ That one is fairly simple, because it just has one premise. Here's another examp
 Koheleth begins by pointing out that good things happen to bad people and bad things happen to good people. This is his first premise. (Most Bible teachers provide some context here by pointing that that the ways of God are mysterious and this is an important theme in Ecclesiastes.) Then Koheleth gives his conclusion, that we should enjoy life, which he marks with the word ``so.'' Finally he gives an extra premise, marked with a ``because,'' that there is nothing better for a person than to eat and drink and be glad. In canonical form, the argument would look like this.
 
 
-\begin{earg}
-\item[P$_1$:] Good things happen to bad people and bad things happen to good people.
-\item[P$_2$:] There is nothing better for people than to eat, to drink and to enjoy life.
-\vspace{-.5em}
-\item [] \rule{0.8\linewidth}{.5pt}
-\item[C:] You should enjoy life.
-\end{earg}
+\begin{kormanize}
+\premise{Good things happen to bad people and bad things happen to good people.}
+\premise{There is nothing better for people than to eat, to drink and to enjoy life.}
+\conclusion{You should enjoy life.}
+\end{kormanize}
 
 Notice that in the original passages, Aristotle put the conclusion in the first sentence, while Koheleth put it in the middle of the passage, between two premises. In ordinary English, people can put the conclusion of their argument where ever they want. However, when we write the argument in canonical form, the conclusion goes last.
 
@@ -337,13 +320,11 @@ Unfortunately, indicator words aren't a perfect guide to when people are giving 
 
 Although there are no indicator words, this is in fact an argument. The writer wants you to believe something about George Bush: tax cuts are his number one priority. The next two sentences in the paragraph give you reasons to believe this. You can write the argument in canonical form like this.
 
-\begin{earg}
-\item[P$_1$:] Bush's first term cuts affected more money than any other initiative undertaken in his presidency, including the costs thus far of the war in Iraq.
-\item[P$_2$:] The White House budget calls for nearly \$300 billion in tax cuts over the next five years, and \$1.5 trillion over the next 10 years.
-\vspace{-.5em}
-\item [] \rule{0.9\linewidth}{.5pt}
-\item[C:] Tax cuts are of consistent and paramount importance of in the Bush philosophy.
-\end{earg}
+\begin{kormanize}
+\premise{Bush's first term cuts affected more money than any other initiative undertaken in his presidency, including the costs thus far of the war in Iraq.}
+\premise{The White House budget calls for nearly \$300 billion in tax cuts over the next five years, and \$1.5 trillion over the next 10 years.}
+\conclusion{Tax cuts are of consistent and paramount importance of in the Bush philosophy.}
+\end{kormanize}
 
 The ultimate test of whether something is an argument is simply whether some of the statements provide reason to believe another one of the statements. If some statements support others, you are looking at an argument. The speakers in these two cases use indicator phrases to let you know they are trying to give an argument.
 
@@ -355,188 +336,7 @@ description={the act of coming to believe a conclusion on the basis of some set 
 
 A final bit of terminology for this section. An \textsc{\gls{inference}} \label{def:Inference} is the act of coming to believe a conclusion on the basis of some set of premises. When Jack in the example above saw that no one was at the track, and came to believe that the race was not on, he was making an inference. We also use the term inference to refer to the connection between the premises and the conclusion of an argument. If your mind moves from premises to conclusion, you make an inference, and the premises and the conclusion are said to be linked by an inference. In that way inferences are like argument glue: they hold the premises and conclusion together.
 
-%%%% Practice Problems
 
-
-\practiceproblems
-Throughout the book, you will find a series of practice problems that review and explore the material covered in the chapter. There is no substitute for actually working through some problems, because logic is more about a way of thinking than it is about memorizing facts. %The answers to some of the problems are provided at the end of the book in Appendix \ref{app.solutions}; the problems that are solved in the appendix are marked with a star (\solutions.)
-
-\noindent\problempart Decide whether the following passages are statements in the logical sense and give reasons for your answers.
-
-\begin{longtabu}{p{.1\linewidth}p{.9\linewidth}}
-\textbf{Example}: & Did you follow the instructions? \\
-\textbf{Answer}: & Not a statement, a question. \\
-\end{longtabu}
-
-
-\begin{exercises}
-\item England is smaller than China. \answerblank{\underline{Statement}}{\vspace{.25in}}
-\item Greenland is south of Jerusalem. \answerblank{\underline{Statement}}{\vspace{.25in}}
-\item Is New Jersey east of Wisconsin? \answerblank{\underline{A question, not a Statement.}}{\vspace{.25in}}
-\item The atomic number of helium is 2. \answerblank{\underline{Statement}}{\vspace{.25in}}
-\item The atomic number of helium is $\pi$. \answerblank{\underline{Statement}}{\vspace{.25in}}
-\item I hate overcooked noodles. \answerblank{\underline{Statement}}{\vspace{.25in}}
-\item Blech! Overcooked noodles! \answerblank{\underline{An exclamation, not a statement.}}{\vspace{.25in}}
-\item Overcooked noodles are disgusting.\answerblank{\underline{Statement}}{\vspace{.25in}}
-\item Take your time. \answerblank{\underline{A command, not a Statement}}{\vspace{.25in}}
-\item This is the last question. \answerblank{\underline{Statement}}{\vspace{.25in}}
-\end{exercises}
-
-
-\noindent\problempart Decide whether the following passages are statements in the logical sense and give reasons for your answers.
-\answer{Answers from Ben Sheredos.}
-\begin{exercises}
-\item Is this a question? \answer{\underline{Question, not a statement.}}
-\item Nineteen out of the 20 known species of Eurasian elephants are extinct. \answer{\underline{Statement; has to be true or false (might be false bc 20 is the wrong number, or because they are not extinct, etc.)}}
-\item The government of the United Kingdom has formally apologized for the way it treated the logician Alan Turing. \answer{\underline{ Statement: has to be true or false; they either have or have not apologized}}
-
-\item Texting while driving \answer{\underline{Not a statement, but a sentence fragment}}
-\item Texting while driving is dangerous. \answer{\underline{Statement; has to be true or false.}}
-\item Insanity ran in the family of logician Bertrand Russell, and he had a life-long fear of going mad. \answer{\underline{Complex, but a statement: both halves are true or false, so is the whole.}}
-\item For the love of Pete, put that thing down before someone gets hurt!  \answer{\underline{Not a statement: First bit is an exclamation, second is a command.}}
-\item Don't try to make too much sense of this. \answer{\underline{Not a statement, a command.}}
-\item Never look a gift horse in the mouth.  \answer{\underline{Not a statement, a command.}}
-\item The physical impossibility of death in the mind of someone living  \answer{\underline{ Not a statement, sentence fragment.}}
-\end{exercises}
-
-\noindent\problempart Rewrite each of the following arguments in canonical form. Be sure to remove all indicator words and keep the premises and conclusion as complete sentences. Write the indicator words and phrases separately and state whether they are premise or conclusion indicators.
-
-%NTS: when writing these problems, be sure to include a mix of conclusion-first, conclusion-last and conclusion middle, as well as a mix of arguments with true and false premises and a variety of indicator words (or lack thereof).
-
-\begin{longtabu}{p{.1\linewidth}p{.9\linewidth}}
-\textbf{Example}: & \textit{An ancient philosopher writes} We should not be distressed or concerned by the thought of our our own death in any way. Why? Look back on the time before you were born: It is a time you did not exist, but it does not trouble you in any way. The time after you die is also a time when you will not exist, so it shouldn't trouble you either. (Based on Lucretius \citetitle{Lucretius2001} 3.972--75)\\
-\textbf{Answer}: &
-\vspace{-16pt}
-\begin{earg}
-\item[P$_1$:] The time before you were born is a time you did not exist.
-\item[P$_2$:] You are not troubled by the time before you were born.
-\item[P$_3$:] The time after you die is also a time you will not exist.
-\vspace{-.5em}
-\item [] \rule{0.6\linewidth}{.5pt}
-\item[C:] We should not be distressed or concerned by the thought of our our own death.
-\end{earg}
-Premise indicator: So
-\\
-\end{longtabu}
-
-\begin{exercises}
-
-\item \textit{A detective is speaking: }Henry's finger-prints were found on the stolen computer. So, I infer that Henry stole the computer.
-
-\answer{
-\begin{earg*}
-\item Henry's finger-prints were found on the stolen computer
-\itemc Henry stole the computer.
-\end{earg*}
-Conclusion indicator word: So, I infer that}
-
-
-\item \textit{Monica is wondering about her co-workers political opinions} You cannot both oppose abortion and support the death penalty, unless you think there is a difference between fetuses and felons. Steve opposes abortion and supports the death penalty. Therefore Steve thinks there is a difference between fetuses and felons.
-		%Conclusion-last
-
-\answer{
-\begin{earg*}
-\item You cannot both oppose abortion and support the death penalty, unless you think there is a difference between fetuses and felons.
-\item Steve opposes abortion and supports the death penalty.
-\itemc Steve thinks there is a difference between fetuses and felons.
-\end{earg*}
-Conclusion Indicator: Therefore}
-
-
-\item \textit{The Grand Moff of Earth defense considers strategy} We know that whenever people from one planet invade another, they always wind up being killed by the local diseases, because in 1938, when Martians invaded the Earth, they were defeated because they lacked immunity to Earth's diseases. Also, in 1942, when Hitler's forces landed on the Moon, they were killed by Moon diseases.
-		%Conclusion-first
-
-\answer{
-\begin{earg}
-\item[1.] In 1938, when Martians invaded the Earth, they were defeated because they lacked immunity to Earth's diseases.
-\item[2.] In 1942, when Hitler's forces landed on the Moon, they were killed by Moon diseases.
-\item [] \noindent\hrulefill
-\item[$\therefore$] Whenever people from one planet invade another, they always wind up being killed by the local diseases,
-\end{earg}
-Premise indicator: Because }
-
-
-\item If you have slain the Jabberwock, my son, it will be a frabjous day. The Jabberwock lies there dead, its head cleft with your vorpal sword. This is truly a fabjous day.
-%Conclusion-last
-\answer{
-\begin{earg*}
-\item  If you have slain the Jabberwock, my son, it will be a frabjous day.
-\item The Jabberwock lies there dead
-
-\itemc This is truly a fabjous day
-\end{earg*}
-Indicators: none
-}
-
-\item \textit{A detective trying to crack a case thinks to herself} Miss Scarlett was jealous that Professor Plum would not leave his wife to be with her. Therefore she must be the killer, because she is the only one with a motive.
-%Conclusion-middle
-\answer{
-\begin{earg*}
-\item Miss Scarlett was jealous that Professor Plum would not leave his wife to be with her.
-\item Miss Scarlett is the only one with a motive.
-
-\itemc Miss Scarlett must be the killer
-\end{earg*}
-
-Premise Indicator: Because \\
-Conclusion Indicator: Therefore}
-\end{exercises}
-
-
-
-\noindent\problempart Rewrite each of the following arguments in canonical form. Be sure to remove all indicator words and keep the premises and conclusion as complete sentences. Write the indicator words and phrases separately and state whether they are premise or conclusion indicators.
-
-\answer{Answers from Ben Sheredos.}
-
-\begin{enumerate}[label=\arabic*), topsep=0pt, parsep=0pt, itemsep=6pt]
-\item \textit{A pundit is speaking on a Sunday political talk show} Hillary Clinton should drop out of the race for Democratic Presidential nominee. For every day she stays in the race, McCain gets a day free from public scrutiny and the members of the Democratic party get to fight one another.
-			%Conclusion-first
-
-\answer{
-	\begin{earg*}
-		\item For every day Hillary stays in the race, McCain gets a day free from public scrutiny and the members of the Democratic party get to fight one another.
-		\itemc Hillary Clinton should drop out of the race for Democratic Presidential Nominee.
-	\end{earg*}
-	"For" could be a premise-indicator, functioning like "since."
-}
-
-
-\item You have to be smart to understand the rules of Dungeons and Dragons. Most smart people are nerds. So, I bet most people who play D\&D are nerds.
-			%Conclusion-last
-
-\answer{
-			\begin{earg*}
-				\item You have to be smart to understand the rules of D\&D.
-				\item Most smart people are nerds.
-				\itemc $[I bet]$ most people who play D\&D are nerds.
-			\end{earg*}
-			"So" is definitely a conclusion-indicator; "I bet" is probably part of a conclusion-indicator as well, with the speaker indicating that they think this argument is a bit weak.
-		}
-
-\item Any time the public receives a tax rebate, consumer spending increases. Since the public just received a tax rebate, consumer spending will increase.
-		%Conclusion-last
-
-\answer{
-	\begin{earg*}
-		\item Any time the public receives a tax rebate, consumer spending increases.
-		\item The public just received a tax rebate.
-		\itemc Consumer spending will increase.
-	\end{earg*}
-	"Since" is a premise-indicator, but the last sentence needs to be split up into premise and conclusion. This would be more clear if the speaker said "\underline{Since} the public just received a tax rebate, \underline{it follows that} consumer spending will increase." Our speaker is lazy.
-}
-
-\item Isabelle is taller than Jacob. Kate must also be taller than Jacob, because she is taller than Isabelle.
-%conclusion-middle
-
-\answer{
-	\begin{earg*}
-		\item Isabelle is taller than Jacob.
-		\item Kate is taller than Isabelle.
-		\itemc Kate is taller than Jacob.
-	\end{earg*}
-	"Must" is a conclusion indicator, "because" is a premise-indicator, and so the last sentence has to be split up to put this argument into canonical form.
-}
-\end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Arguments and Nonarguments
@@ -582,7 +382,7 @@ We call this kind of passage an expository passage. In an \textsc{\gls{expositor
 Deciding whether a passage is an argument or an expository passage is complicated by the fact that sometimes people argue by example:
 
 \begin{adjustwidth}{2em}{0em}
-\begin{longtabu}{p{.1\linewidth}p{.8\linewidth}}
+\begin{longtabu} to \textwidth {X[1.2,p]X[8,p]}
 \textbf{Steve:} & Kenyans are better distance runners than everyone else. \\
 \textbf{Monica:} & Oh come on, that sounds like an exaggeration of a stereotype that isn't even true.\\
 \textbf{Steve:} & What about Dennis Kimetto, the Kenyan who set the world record for running the marathon? And you know who the previous record holder was: Emmanuel Mutai, also Kenyan. \\
@@ -590,7 +390,7 @@ Deciding whether a passage is an argument or an expository passage is complicate
 \end{adjustwidth}
 \vspace{-1.5cm}
 
-Here Steve has made a general statement about all Kenyans. Monica clearly doubts this claim, so Steve backs it up with some examples that seem to match his generalization. This isn't a very strong way to argue: moving from two examples to statement about all Kenyans is probably going to be a kind of bad argument known as a hasty generalization. (This mistake is covered in the complete version of this text in the chapter on induction\nix{Chapter \ref{chap:induction} on induction.}\label{ver_var}) The point here however, is that Steve is just offering it as an argument.
+Here Steve has made a general statement about all Kenyans. Monica clearly doubts this claim, so Steve backs it up with some examples that seem to match his generalization. This isn't a very strong way to argue: moving from two examples to statement about all Kenyans is probably going to be a kind of bad argument known as a hasty generalization. (This mistake is covered in the complete version of this text in the chapter on induction Chapter \ref{chap:induction} on induction. \label{ver_var}) The point here however, is that Steve is just offering it as an argument.
 
 The key to telling the difference between expository passages and arguments by example is whether there is a conclusion that they audience needs to be convinced of. In the passage from the psychology textbook, ``Eysenck advocated three major behavioral techniques'' doesn't really work as a conclusion for an argument. The audience, students in an introductory psychology course, aren't likely to challenge this assertion, the way Monica  challenges Steve's overgeneralizing claim.
 
@@ -614,75 +414,6 @@ We will use the term \textsc{\gls{narrative}} \label{def:narrative} loosely to r
 
 This passage does not feature individual people performing specific actions, but it is still united by character and action. Instead of Hermione at breakfast, we have the Sumarians in Mesopotamia. Instead of retrieving a message from an owl, the conquer the Guti, but then are conquered by the Elamites and Amorites. The important thing is that the statements in a narrative are not related as premises and conclusion. Instead, they are all events which are united common characters acting in specific times and places.
 
-%%%%%%% Practice Problems
-
-\practiceproblems
-\problempart Identify each passage below as an argument or a nonargument, and give reasons for your answers. If it is a nonargument, say what kind of nonargument you think it is. If it is an argument, write it out in canonical form.
-
-\begin{longtabu}{p{.1\linewidth}p{.9\linewidth}}
-\textbf{Example}: & \textit{One student speaks to another student who has missed class:} The instructor passed out the syllabus at 9:30. Then he went over some basic points about reasoning, arguments and explanations. Then he said we should call it a day. \\
-\textbf{Answer}: & Not an argument, because none of the statements provide any support for any of the others. This is probably better classified as a narration because the events are in temporal sequence. \\
-\end{longtabu}
-
-\begin{exercises}
-\item \textit{An anthropology teacher is speaking to her class }Different gangs use different colors to distinguish themselves. Here are some illustrations: biologists tend to wear some blue, while the philosophy gang wears black.
-
-
-\answer{Not an argument. Expository passage. The students probably will believe the teacher as soon as she makes an assertion. The word ``illustration'' is also a clue.}
-
-\item The economy has been in trouble recently. And it's certainly true that cell phone use has been rising during that same period. So, I suspect increasing cell phone use is bad for the economy.
-
-
-\answer{Argument. The indicator ``so'' is a clue.
-
-\begin{earg*}
-\item The economy has been in trouble recently.
-\item Cell phone use has been rising during that same period.
-\itemc Cell phone use is bad for the economy.
-\end{earg*}
-}
-
-
-\item \textit{At Widget-World Corporate Headquarters:} We believe that our company must deliver a quality product to our customers. Our customers also expect first-class customer service. At the same time, we must make a profit.
-
-%\vspace{6pt}
-\answer{Not an argument. The speaker is not using any of the propositions as reasons to believe or explain any of the others; rather she is simply asserting various things.}
-
-\item \textit{Jack is at the breakfast table and shows no sign of hurrying. Gill says:} You should leave now. It's almost nine a.m. and it takes three hours to get there.
-
-\answer{Arguing. Jack's inaction suggests that he does believe that he needs to leave now and so Gill provides reasons that might convince him. Notice that there are no argument flag words or phrases.
-
-This example also includes the word ``should'' in its conclusion. Words such as ``ought'' and ``should'' indicate that the speaker is trying to get the audience to do or believe something that they are not currently doing or believing.
-
-\begin{earg*}
-\item It's almost nine a.m.
-\item It takes three hours to get there.
-\itemc  You should leave now.
-\end{earg*}
-}
-
-\item \textit{In a text book on the brain:} Axons are distinguished from dendrites by several features, including shape (dendrites often taper while axons usually maintain a constant radius), length (dendrites are restricted to a small region around the cell body while axons can be much longer), and function (dendrites usually receive signals while axons usually transmit them).
-
-\answer{Not an argument. Expository passage. The features named just fill in the first statement.}
-
-\end{exercises}
-%
-\problempart Identify each passage below as an argument or a nonargument, and give reasons for your answers. If it is a nonargument, say what kind of nonargument you think it is. If it is an argument, write it out in canonical form.
-
-%
-\begin{exercises}
-\item \textit{Suzi doesn't believe she can quit smoking. Her friend Brenda says} Some people have been able to give up cigarettes by using their will-power. Everyone can draw on their will-power. So, anyone who wants to give up cigarettes can do so.
-
-\item \textit{The words of the Preacher, son of David, King of Jerusalem} I have seen something else under the sun: The race is not to the swift or the battle to the strong, nor does food come to the wise or wealth to the brilliant or favor to the learned; but time and chance happen to them all. (Ecclesiastes 9:11, New International Version)
-
-\item \textit{An economic development expert is speaking.} The introduction of cooperative marketing into Europe greatly increased the prosperity of the farmers, so we may be confident that a similar system in Africa will greatly increase the prosperity of our farmers.
-
-\item \textit{From the CBS News website, US section.} Headline: ``FBI nabs 5 in alleged plot to blow up Ohio bridge.'' Five alleged anarchists have been arrested after a months-long sting operation, charged with plotting to blow up a bridge in the Cleveland area, the FBI announced Tuesday. CBS News senior correspondent John Miller reports the group had been involved in a series of escalating plots that ended with their arrest last night by FBI agents. The sting operation supplied the anarchists with what they thought were explosives and bomb-making materials. At no time during the case was the public in danger, the FBI said. \citep{CBSNews2012}
-
-
-\item \textit{At a school board meeting.} Since creationism can be discussed effectively as a scientific model, and since evolutionism is fundamentally a religious philosophy rather than a science, it is unsound educational practice for evolution to be taught and promoted in the public schools to the exclusion or detriment of special creation. (Kitcher \cite*{Kitcher1982}, p. 177, citing Morris \cite*{Morris1975}.)
-
-\end{exercises}
 
 
 
