@@ -192,7 +192,7 @@ description={A property of arguments that holds if the argument is valid and has
 
 If an argument is not only valid, but also has true premises, we call it \textsc{\gls{sound}}. \label{def:sound} ``Sound'' is the highest compliment you can pay an argument. If logic is the study of virtue in argument, sound arguments are the most virtuous. We said in Section \ref{sec:two_ways} that there were two ways an argument could go wrong, either by having false premises or weak inferences. Sound arguments have true premises and undeniable inferences. If someone gives a sound argument in a conversation, you have to believe the conclusion, or else you are irrational.
 
-\begin{longtabu}{X[l,c]X[l,c]}
+\begin{longtabu}{X[1,c] X[1,c]}
 \begin{kormanize}
 \premise{ Socrates is a person.}
 \premise{ All people are carrots.}
@@ -313,7 +313,7 @@ The reasoning in this inference is valid: if the premises are true, then the con
 One can also create a context where deduction is possible by imagining a rule that holds without exception. This can be done with respect to any subject matter at all. Speakers often exaggerate the connecting premise in order to ensure that the justificatory or explanatory power of the inference is as strong as possible. Consider Smith's words in the following passage:
 
 
-\begin{longtabu}{p{.1\linewidth}p{.8\linewidth}}
+\begin{longtabu} to \textwidth {X[1.2,p] X[8,p]}
 \textbf{Smith:} & I'm going to have some excellent pizza this evening. \\
 \textbf{Jones:} & I'm glad to hear it. How do you know?\\
 \textbf{Smith:} & I'm going to Adriatico's. They always make a great pizza. \\
@@ -321,19 +321,19 @@ One can also create a context where deduction is possible by imagining a rule th
 
 Here, Smith justifies his belief that the pizza will be excellent --- it comes from Adriatico's, where the pizza, he claims, is \textit{always }great: in the past, present and future.
 
-As stated by Smith, the inference that the pizza will be great this evening is valid. However, making the inference valid in this way often means making the general premise false: it's not likely that the pizza is great \textit{every single }time; Smith is overstating the case for emphasis. Note that Smith does not need to use a universal proposition in order to convince Jones that the pizza will \textit{very likely} be good. The inference to the conclusion would be strong (though not valid) if he had said that the pizza is ``almost always'' great, or that the pizza has been great on all of the many occasions he has been at that restaurant in the past. The strength of the inference would fall to some extent---it would not be guaranteed to be great this evening---but a slightly weaker inference seems appropriate, given that sometimes things go contrary to expectation.
+As stated by Smith, the inference that the pizza will be great this evening is valid. However, making the inference valid in this way often means making the general premise false: it's not likely that the pizza is great \textit{every single} time; Smith is overstating the case for emphasis. Note that Smith does not need to use a universal proposition in order to convince Jones that the pizza will \textit{very likely} be good. The inference to the conclusion would be strong (though not valid) if he had said that the pizza is ``almost always'' great, or that the pizza has been great on all of the many occasions he has been at that restaurant in the past. The strength of the inference would fall to some extent---it would not be guaranteed to be great this evening---but a slightly weaker inference seems appropriate, given that sometimes things go contrary to expectation.
 
 Sometimes the laws of nature make constructing contexts for valid arguments more reasonable. Now consider the following passage, which involves a scientific law:
 
-\begin{quotation}\noindent Jack is about to let go of Jim's leash. The operation of gravity makes all unsupported objects near the Earth's surface fall toward the center of the Earth. Nothing stands in the way. Therefore, Jim's leash will fall. \end{quotation}
+\begin{quotation}Jack is about to let go of Jim's leash. The operation of gravity makes all unsupported objects near the Earth's surface fall toward the center of the Earth. Nothing stands in the way. Therefore, Jim's leash will fall. \end{quotation}
 
 (Or, as Spock said in a Star Trek episode, ``If I let go of a hammer on a planet that has a positive gravity, I need not see it fall to know that it has in fact fallen.") The inference above is represented in canonical form as follows:
 
 \begin{kormanize}
-\premise{  Jack is about to let go of Jim's leash.}
-\premise{  The operation of gravity makes all unsupported objects near the Earth's surface fall toward the center of the Earth.}
-\premise{  Nothing stands in the way of the leash falling.}
-\conclusion{  Jim's leash will fall toward the center of the Earth.}
+    \premise{Jack is about to let go of Jim's leash.}
+    \premise{The operation of gravity makes all unsupported objects near the Earth's surface fall toward the center of the Earth.}
+    \premise{Nothing stands in the way of the leash falling.}
+    \conclusion{Jim's leash will fall toward the center of the Earth.}
 \end{kormanize}
 
 As stated, this argument is valid. That is, if you pretend that they are true or accept them ``for the sake of argument", you would \textit{necessarily} also accept the conclusion. Or, to put it another way, there is no way in which you could hold the premises to be true and the conclusion false.
@@ -344,25 +344,25 @@ Thus we see that using scientific laws to create a context where deductive valid
 
 So deduction is possible in artificial contexts like logical puzzles and legal codes. It is also possible in cases where we make idealizing assumptions or imagine exceptionless rules. The rest of the time we are dealing with induction. When we do induction, we try for strong inferences, where the premises, assuming they are true, would make the truth of the conclusion very likely, though not necessary. Consider the two arguments in Figure \ref{fig:strong_weak}
 
-
-\begin{longtabu}{X[1,c]X[1,c]}
+\begin{figure}
+\begin{longtabu} to \textwidth {X[1,l] X[1,l]}
 \begin{kormanize}
-\premise{  92\% of Republicans from Texas voted for Bush in 2000.}
-\premise{  Jack is a Republican from Texas.}
-\conclusion{  Jack voted for Bush.}
+\premise{92\% of Republicans from Texas voted for Bush in 2000.}
+\premise{Jack is a Republican from Texas.}
+\conclusion{Jack voted for Bush.}
 \end{kormanize}
 &
 \begin{kormanize}
-\premise{  Just over half of drivers are female.}
-\premise{  There's a person driving the car that just cut me off.}
-\conclusion{  The person driving the car that just cut me off is female.}
+\premise{Just over half of drivers are female.}
+\premise{There's a person driving the car that just cut me off.}
+\conclusion{The person driving the car that just cut me off is female.}
 \end{kormanize}
 \\
-A \textbf{strong} argument &
-A \textbf{weak} argument \\
+A \textbf{strong} argument & A \textbf{weak} argument \\
 \end{longtabu}
-%\caption{Neither argument is valid, but one is strong and one is weak} \label{fig:strong_weak}
-
+\caption{Neither argument is valid, but one is strong and one is weak}
+\label{fig:strong_weak}
+\end{figure}
 
 Note that the premises in neither inference \textit{guarantee} the truth of the conclusion. For all the premises in the first one say, Jack could be one of the 8\% of Republicans from Texas who did not vote for Bush; perhaps, for example, Jack soured on Bush, but not on Republicans in general, when Bush served as governor. Likewise for the second; the driver could be one of the 49\%.
 
@@ -370,76 +370,77 @@ So, neither inference is valid. But there is a big difference between how much s
 
 As we said earlier, there there are only two options with respect to validity---valid or not valid. On the other hand, strength comes in degrees, and sometimes arguments will have percentages that will enable you to exactly quantify their strength, as in the two examples in Figure \ref{fig:strong_weak}.
 
-However, even where the degree of support is made explicit by a percentage there is no firm way to say at what degree of support an inference can be classified as strong and below which it is weak. In other words, it is difficult to say whether or not a conclusion is \textit{very likely} to be true. For example, In the inference about whether Jack, a Texas Republican, voted for Bush. If 92\% of Texas Republicans voted for Bush, the conclusion, if the premises are granted, would very probably be true. But what if the number were 85\%? Or 75\%? Or 65\%? Would the conclusion very likely be true? Similarly, the second inference involves a percentage greater than 50\%, but this does not seem sufficient. At what point, however, would it be sufficient?
+However, even where the degree of support is made explicit by a percentage there is no firm way to say at what degree of support an inference can be classified as strong and below which it is weak. In other words, it is difficult to say whether or not a conclusion is \emph{very likely} to be true. For example, In the inference about whether Jack, a Texas Republican, voted for Bush. If 92\% of Texas Republicans voted for Bush, the conclusion, if the premises are granted, would very probably be true. But what if the number were 85\%? Or 75\%? Or 65\%? Would the conclusion very likely be true? Similarly, the second inference involves a percentage greater than 50\%, but this does not seem sufficient. At what point, however, would it be sufficient?
 
 In order to answer this question, go back to basics and ask yourself: ``If I accept the truth of the premises, would I then have sufficient reason to believe the conclusion?". If you would not feel safe in adopting the conclusion as a belief as a result of the inference, then you think it is weak, that is, you do not think the premises give sufficient support to the conclusion.
 
-Note that the same inference might be weak in one context but strong in another, because the degree of support needed changes. For example, if you merely have a deposit to make, you might accept that the bank is open on Saturday based on your memory of having gone to the bank on Saturday at some time in the past. If, on the other hand, you have a vital mortgage payment to make, you might not consider your memory sufficient justification. Instead, you will want to call up the bank and increase your level of confidence in the belief that it will be open on Saturday.
+Note that the same inference might be weak in one context but strong in another, because the degree of support needed changes. For example, if you merely have a deposit to make, you might accept that the bank is open on Saturday based on your memory of having gone to the bank on Saturday at some time in the past. If, on the other hand, you have a vital mortgage payment to make, you might not consider your memory sufficient justification. Instead, you will want to call up the bank and increase your level of confidence in the belief that it will be open on Saturday.\footnote{This kind of context-sensitivity is called \emph{contextualism} in epistemology. For more information, see e.g. Jason Stanley's book \textit{Knowledge and Practical Interests}.}
 
 Most inferences (if successful) are strong rather than valid. This is because they deal with situations which are in some way open-ended or where our knowledge is not precise. In the example of Jack voting for Bush, we know only that 92\% of Republicans voted for Bush, and so there is no definitive connection between being a Texas Republican and voting for Bush. Further, we have only statistical information to go on. This statistical information was based on polling or surveying a sample of Texas voters and so is itself subject to error (as is discussed in the chapter on induction in the complete version of this text. A more precise version of the premise might be ``92\% $\pm$ 3\% of Texas Republicans voted for Bush.".
 
 At the risk of redundancy, let's consider a variety of examples of valid, strong and weak inferences, presented in standard form.
 
 \begin{kormanize}
-\premise{  David Duchovny weighs more than 200 pounds.}
-\conclusion{  David Duchovny weighs more than 150 pounds.}
+\premise{David Duchovny weighs more than 200 pounds.}
+\conclusion{David Duchovny weighs more than 150 pounds.}
 \end{kormanize}
 
 The inference here is valid. It is valid because of the number system (here applied to weight): 200 is more than 150. It might be false, as a matter of fact, that David Duchovny weighs more than 200 pounds, and false, as a matter of fact, that David Duchovny weighs more than 150 pounds. But if you \textit{suppose }or \textit{grant }or \textit{imagine }that David Duchovny weighs more than 200 pounds, it would then \textit{have }to be true that David Duchovny weighs more than 150 pounds. Next:
 
 \begin{kormanize}
-\premise{  Armistice Day is November 11th, each year.}
-\premise{  Halloween is October 31st, each year.}
-\conclusion{  Armistice Day is later than Halloween, each year.}
+\premise{Armistice Day is November 11th, each year.}
+\premise{Halloween is October 31st, each year.}
+\conclusion{Armistice Day is later than Halloween, each year.}
 \end{kormanize}
 
 This inference is valid. It is valid because of order of the months in the Gregorian calendar and the placement of the New Year in this system. Next:
 
 \begin{kormanize}
-\premise{  All people are mortal.}
-\premise{  Professor Pappas is a person.}
-\conclusion{  Professor Pappas is mortal.}
+\premise{All people are mortal.}
+\premise{Professor Pappas is a person.}
+\conclusion{Professor Pappas is mortal.}
 \end{kormanize}
 
 As written, this inference is valid. If you accept for the sake of argument that all men are mortal (as the first premise says) and likewise that Professor Pappas is a man (as the second premise says), then you would have to accept also that Professor Pappas is mortal (as the conclusion says). You could not consistently both (i) affirm that all men are mortal and that Professor Pappas is a man and (ii) deny that Professor Pappas is mortal. If a person accepted these premises but denied the conclusion, that person would be making a mistake in logic.
 
-This inference's validity is due to the fact that the first premise uses the word ``all". You might, however, wonder whether or not this premise is true, given that we believe it to be true only on our experience of men \textit{in the past}. This might be a case of over-stating a premise, which we mentioned earlier. Next:
+This inference's validity is due to the fact that the first premise uses the word ``all''. You might, however, wonder whether or not this premise is true, given that we believe it to be true only on our experience of men \textit{in the past}. This might be a case of over-stating a premise, which we mentioned earlier. Next:
 
 \begin{kormanize}
-\premise{  In 1933, it rained in Columbus, Ohio on 175 days.}
-\premise{  In 1934, it rained in Columbus, Ohio on 177 days.}
-\premise{  In 1935, it rained in Columbus, Ohio on 171 days.}
-\conclusion{  In 1936, it rained in Columbus, Ohio on at least 150 days.}
+\premise{In 1933, it rained in Columbus, Ohio on 175 days.}
+\premise{In 1934, it rained in Columbus, Ohio on 177 days.}
+\premise{In 1935, it rained in Columbus, Ohio on 171 days.}
+\conclusion{In 1936, it rained in Columbus, Ohio on at least 150 days.}
 \end{kormanize}
 
 This inference is strong. The premises establish a record of days of rainfall that is well above 150. It is possible, however, that 1936 was exceptionally dry, and this possibility means that the inference does not achieve validity. Next:
 
 \begin{kormanize}
-\premise{  The Bible says that homosexuality is an abomination.}
-\conclusion{  Homosexuality is an abomination.}
+\premise{The Bible says that (male) homosexuality is an abomination.}
+\conclusion{(Male) homosexuality is an abomination.}
 \end{kormanize}
 
-This inference is an appeal to a source.  In brief, you should think about whether the source is reliable, is biased, and whether the claim is consistent with what other authorities on the subject say. You should apply all these criteria to this argument for yourself. You should ask what issues, if any, the Bible is reliable on. If you believe humans had any role in writing the Bible, you can ask about what biases and agendas they might have had. And you can think about what other sources---religious texts or moral experts---say on this issue. You can certainly find many who disagree. Given the controversial nature of this issue, we will not give our evaluation. We will only encourage you to think it through systematically.
-
+This inference is an appeal to a source. In brief, you should think about whether the source is reliable, biased, or whether the claim is consistent with what other authorities on the subject say. You should apply all these criteria to this argument for yourself. You should ask what issues, if any, the Bible is reliable on. If you believe humans had any role in writing the Bible, you can ask about what biases and agendas they might have had. And you can think about what other sources---religious texts or moral experts---say on this issue. You can certainly find many who disagree. We can also evaluate the context of the specific verse (Leviticus 18:22) that the premise refers to. It is important to note that here we are not evaluating the inference by taking a position on whether the premise is true (it is) or conclusion is true (it isn't). When evaluating an inference we are evaluating the \emph{degree of evidential support} that the premises confer on the conclusion. Perhaps an appeal to a religious text is very good (if defeasible) evidence for some conclusion, perhaps it isn't.
 
 \begin{kormanize}
-\premise{  Some professional philosophers published books in 2007.}
-\premise{  Some books published in 2007 sold more than 100,000 copies.}
-\conclusion{  Some professional philosophers published books in 2007 that sold more than 100,000 copies.}
+    \premise{Some professional philosophers published books in 2007.}
+    \premise{Some books published in 2007 sold more than 100,000 copies.}
+    \conclusion{Some professional philosophers published books in 2007 that sold more than 100,000 copies.}
 \end{kormanize}
 
-This reasoning is weak. Both premises use the word ``some'' which doesn't tell you a lot about many professional philosophers published books and how many books sold more than 100,000 copies in 2007. This means that you cannot be confident that even one professional philosopher sold more than 100,000 copies. Next:
+This reasoning is weak. Both premises use the word ``some'' which doesn't tell you much about how many professional philosophers published books and how many books sold more than 100,000 copies in 2007. This means that you cannot be confident that even one professional philosopher sold more than 100,000 copies. Next:
 
 \begin{kormanize}
-\premise{  Lots of Russians prefer vodka to bourbon.}
-\conclusion{  George Bush was the President of the United States in 2006.}
+\premise{Lots of Russians prefer vodka to bourbon.}
+\conclusion{George Bush was the President of the United States in 2006.}
 \end{kormanize}
 
-No one (in her right mind) would make an inference like this. It is presented here as an example only: it is clearly weak. It's hard to see how the premise justifies the conclusion to any extent at all.
+No one would sincerely make an inference like this. It is presented here as an example only: it is clearly weak. It's hard to see how the premise justifies the conclusion to any extent at all.
 
-To sum up this section, we have seen that there are two styles of reasoning, deductive and inductive. The former tries to use valid arguments, while the latter contents itself to give arguments that are merely strong. The section of this book on formal logic will deal entirely with deductive reasoning. Historically, most of formal logic has been devoted to the study of deductive arguments, although many great systems have been developed for the formal treatment of inductive logic. On the other hand, the sections of this book on informal logic and critical thinking will focus mostly on inductive logic, because these arguments are more readily available in the real world.
+To sum up this section, we have seen that there are two styles of reasoning, deductive and inductive. The former tries to use valid arguments, while the latter contents itself to give arguments that are strong.
 
 \section*{Key Terms}
+\begin{fullwidth}
+\begin{multicols}{2}
 \begin{sortedlist}
 \sortitem{Valid}{}
 \sortitem{Invalid}{}
@@ -453,3 +454,5 @@ To sum up this section, we have seen that there are two styles of reasoning, ded
 \sortitem{Confirmation bias}{}
 \sortitem{Cognitive Bias}{}
 \end{sortedlist}
+\end{multicols}
+\end{fullwidth}

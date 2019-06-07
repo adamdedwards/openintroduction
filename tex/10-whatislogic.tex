@@ -1,5 +1,5 @@
 \chapter{What Is Logic?}\label{ch:what_is_logic}
-\markright{Ch. \ref{ch:what_is_logic}: What Is Logic?}
+\markright{What Is Logic?}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Introduction
@@ -7,13 +7,12 @@
 
 \section{Introduction}\label{sec:what_is_logic}
 
-Logic is a part of the study of human reasoning---the ability we have to think abstractly, solve problems, explain the things that we know, and infer new knowledge on the basis of evidence. Traditionally, logic has focused on the last of these items, the ability to make inferences on the basis of evidence. This is an activity you engage in every day. Consider, for example, the game of Clue. (For those of you who have never played, Clue is a murder mystery game where players have to decide who committed the murder, what weapon they used, and where they were.) A player in the game might decide that the murder weapon was the candlestick by ruling out the other weapons in the game: the knife, the revolver, the rope, the lead pipe, and the wrench. This evidence lets the player know something they did not know previously, namely, the identity of the murderer.\begin{marginfigure}\includegraphics[width=\textwidth]{img/clue}\caption{The boardgame Clue.}\end{marginfigure}
+Logic is a part of the study of human reasoning---the ability we have to think abstractly, solve problems, explain the things that we know, and infer new knowledge on the basis of evidence. Traditionally, logic has focused on the last of these items, the ability to make inferences on the basis of evidence. This is an activity you engage in every day. Consider, for example, the game of Clue. (For those of you who have never played, Clue is a murder mystery game where players have to decide who committed the murder, what weapon they used, and where they were.) A player in the game might decide that the murder weapon was the candlestick by ruling out the other weapons in the game: the knife, the revolver, the rope, the lead pipe, and the wrench. This evidence lets the player know something they did not know previously, namely, the identity of the murderer.\begin{marginfigure}\includegraphics[width=\textwidth]{clue}\caption{The boardgame Clue.}\end{marginfigure}
 
 In logic, we use the word ``argument'' to refer to the attempt to show that certain evidence supports a conclusion. This is very different from the sort of argument you might have when you are mad at someone, which could involve a lot of yelling. We are going to use the word ``argument'' a lot in this book, so you need to get used to thinking of it as a name for an abstract and rational process, and not a word that describes what happens when people disagree.
 
 A logical argument is structured to give someone a reason to believe some conclusion. Here is the argument about a game of Clue written out in a way that shows its structure.
 
-\label{argClue}
 \begin{kormanize}
 \premise{In a game of Clue, the possible murder weapons are the knife, the candlestick, the revolver, the rope, the lead pipe, and the wrench.}
 \premise{The murder weapon was not the knife.}
@@ -33,15 +32,15 @@ name=conclusion,
 description={The part of an argument that is being provided evidence.}
 }
 
-In the argument above, statements P$_1$--P$_3$ are the evidence. We call these the \textsc{\glspl{premise}}\label{def:premise}. The word ``therefore'' indicates that the final statement, marked with a C, is the \textsc{\gls{conclusion}}\label{def:conclusion} of the argument. If you believe the premises, then the argument provides you with a reason to believe the conclusion. You might use reasoning like this purely in your own head, without talking with anyone else. You might wonder what the murder weapon is, and then mentally rule out each item, leaving only the candlestick. On the other hand, you might use reasoning like this while talking to someone else, to convince them that the murder weapon is the candlestick. (Perhaps you are playing as a team.) Either way the structure of the reasoning is the same.
+In the argument above, statements $A1$--$A3$ are the evidence. We call these the \textsc{\glspl{premise}}\label{def:premise}. The word ``therefore'' indicates that the final statement, marked with a C, is the \textsc{\gls{conclusion}}\label{def:conclusion} of the argument.\marginnote{Throughout the book, we will also use the triangle of dots symbol ``$\therefore$'' to indicate that a statement is a conclusion.} If you believe the premises, then the argument provides you with a reason to believe the conclusion. You might use reasoning like this purely in your own head, without talking with anyone else. You might wonder what the murder weapon is, and then mentally rule out each item, leaving only the candlestick. On the other hand, you might use reasoning like this while talking to someone else, to convince them that the murder weapon is the candlestick. (Perhaps you are playing as a team.) Either way the structure of the reasoning is the same.
 
 \newglossaryentry{logic}
 {
 name=logic,
-description={The part of the study of reasoning that focuses on argument.}
+description={The study of the structure of good inference.}
 }
 
-We can define \textsc{\gls{logic}}\label{def:logic} then more precisely as the part of the study of reasoning that focuses on argument. In more casual situations, we will follow ordinary practice and use the word ``logic'' to either refer to the business of studying human reason or the thing being studied, that is, human reasoning itself. While logic focuses on argument, other disciplines, like decision theory and cognitive science, deal with other aspects of human reasoning, like abstract thinking and problem solving more generally. Logic, as the study of argument, has been pursued for thousands of years by people from civilizations all over the globe. The initial motivation for studying logic is generally practical. Given that we use arguments and make inferences all the time, it only makes sense that we would want to learn to do these things better.  Once people begin to study logic, however, they quickly realize that it is a fascinating topic in its own right. Thus the study of logic quickly moves from being a practical business to a theoretical endeavor people pursue for its own sake.
+We can define \textsc{\gls{logic}}\label{def:logic} then more precisely as the part of the study of the structure of good inferences. In more casual situations, we will follow ordinary practice and use the word ``logic'' to either refer to the business of studying inferences and arguments in general or the thing being studied, that is, inference itself. While logic focuses on inferential reasoning, other disciplines, like decision theory and cognitive science, deal with other aspects of human reasoning, like abstract thinking and problem solving more generally. Logic, as the study of inference, has been pursued for thousands of years by people from civilizations all over the globe. The initial motivation for studying logic is often practical. Given that we use arguments and make inferences all the time, it only makes sense that we would want to learn to do these things better.  Once people begin to study logic, however, they often realize that it is a fascinating topic in its own right. Thus, the study of logic quickly moves from being a practical business to a theoretical endeavor people pursue for its own sake.
 
 \newglossaryentry{metareasoning}
 {
@@ -94,7 +93,7 @@ description={The use of metareasoning to improve our reasoning in practical situ
 \newglossaryentry{critical thinker}
 {
 name=critical thinker,
-description={A person who has both sharpened their reasoning abilities using metareasoning and deploys those sharpened abilities in real world situations..}
+description={A person who has both sharpened their reasoning abilities using metareasoning and deploys those sharpened abilities in real world situations.}
 }
 
 \newglossaryentry{informal logic}
@@ -133,8 +132,7 @@ Logic is different from \textsc{\gls{rhetoric}}, which is the study of effective
 % Statement, Argument, Premise, Conclusion
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\section{Statement, Argument, Premise, Conclusion}
-\label{sec:SAPC}
+\section{Statement, Argument, Premise, Conclusion}\label{sec:partsofarguments}
 
 \newglossaryentry{statement}
 {
@@ -150,11 +148,11 @@ description={A property of some objects (such as bits of language, maps, or diag
 
 So far we have defined logic as the study of argument and outlined its relationship to related fields. To go any further, we are going to need a more precise definition of what exactly an argument is. We have said that an argument is not simply two people disagreeing; it is an attempt to prove something using evidence. More specifically, an argument is composed of statements. In logic, we define a \textsc{\gls{statement}} \label{def:statement} as a unit of language that can be true or false. That means that statements are \textsc{\gls{truth evaluable}} \label{def:truth_evaluable}. All of the items below are statements.
 
-\begin{enumerate}[label=(\Alph*)]
-	\item \label{itm:t.rex_true}\emph{Tyrannosaurus rex} went extinct 65 million years ago.
-	\item \label{itm:t.rex_false}\emph{Tyrannosaurus rex} went extinct last week.
-	\item \label{itm:t.rex_unknown}On this exact spot, 100  million years ago, a \emph{T. rex} laid a clutch of eggs.
-	\item \label{itm:silly}Abraham Lincoln is the king of Jupiter.
+\begin{enumerate}
+	\item \label{itm:trex-true} \emph{Tyrannosaurus rex} went extinct 65 million years ago.
+	\item \label{itm:trex-false} \emph{Tyrannosaurus rex} went extinct last week.
+	\item \label{itm:trex-unknown} On this exact spot, 100  million years ago, a \emph{T. rex} laid a clutch of eggs.
+	\item \label{itm:silly} Abraham Lincoln is the king of Mars.
 	\item \label{itm:moral}Murder is wrong.
 	\item \label{itm:opinion1}Abortion is murder.
 	\item \label{itm:opinion2}Abortion is a woman's right.
@@ -164,16 +162,24 @@ So far we have defined logic as the study of argument and outlined its relations
 	\item \label{itm:history}The murder of logician Richard Montague was never solved.
 \end{enumerate}
 
-Because a statement is something that can be true \emph{or} false, statements include truths like \ref{itm:t.rex_true} and falsehoods like \ref{itm:t.rex_false}. A statement can also be something that that must either be true or false, but we don't know which, like \ref{itm:t.rex_unknown}. A statement can be something that is completely silly, like \ref{itm:silly}. Statements in logic include statements about morality, like \ref{itm:moral}, and things that in other contexts might be called ``opinions,'' like \ref{itm:opinion1} and \ref{itm:opinion2}. People disagree strongly about whether \ref{itm:opinion1} or \ref{itm:opinion2} are true, but it is definitely possible for one of them to be true. The same is true about \ref{itm:opinion3}, although it is a less important issue than \ref{itm:opinion1} and \ref{itm:opinion2}. A statement in logic can also simply give a definition, like \ref{itm:definition}. This sort of statement announces that we plan to use words a certain way, which is different from statements that describe the world, like \ref{itm:t.rex_true}, or statements about morality, like \ref{itm:opinion1}. Statements can include nonsense words like \ref{itm:nonsense}, because we don't really need to know what the statement is about to see that it is the sort of thing that can be true or false. All of this relates back to the content neutrality of logic. The statements we study can be about dinosaurs, abortion, Lady Gaga, and even the history of logic itself, as in statement \ref{itm:history}, which is true.
+Because a statement is something that can be true \emph{or} false, statements include truths like \ref{itm:trex-true} and falsehoods like \ref{itm:trex-false}.
+A statement can also be something that that must either be true or false, but we don't know which, like \ref{itm:trex-unknown}.
+A statement can be something that is completely silly, like \ref{itm:silly}.
+Statements in logic include statements about morality, like \ref{itm:moral}, and things that in other contexts might be called ``opinions,'' like \ref{itm:opinion1} and \ref{itm:opinion2}.
+People disagree strongly about whether \ref{itm:opinion1} or \ref{itm:opinion2} are true, but it is definitely possible for one of them to be true. The same is true about \ref{itm:opinion3}, although it is a less important issue than \ref{itm:opinion1} and \ref{itm:opinion2}.
+A statement in logic can also simply give a definition, like \ref{itm:definition}.
+This sort of statement announces that we plan to use words a certain way, which is different from statements that describe the world, like \ref{itm:trex-true}, or statements about morality, like \ref{itm:opinion1}.
+Statements can include nonsense words like \ref{itm:nonsense}, because we don't really need to know what the statement is about to see that it is the sort of thing that can be true or false.
+All of this relates back to the content neutrality of logic.
+The statements we study can be about dinosaurs, abortion, Lady Gaga, and even the history of logic itself, as in statement \ref{itm:history}, which is true.
 
 We are treating statements primarily as units of language or strings of symbols, and most of the time the statements you will be working with will just be words printed on a page. However, it is important to remember that statements are also what philosophers call ``speech acts.'' They are actions people take when they speak (or write). If someone makes a statement they are typically telling other people that they believe the statement to be true, and will back it up with evidence if asked to. When people make statements, they always do it in a context---they make statements at a place and a time with an audience. Often the context statements are made in will be important for us, so when we give examples, statements, or arguments we will sometimes include a description of the context. When we do that, we will give the context in \textit{italics.} See Figure \ref{fig:statements_and_context} for examples. \label{context_marker} For the most part, the context for a statement or argument will be important in the chapters on critical thinking, when we are pursing the study of logic for practical reasons. In the chapters on formal logic, context is less important, and we will be more likely to skip it.
 
-\begin{figure}
-\begin{mdframed}[style=mytableclearbox]
-\includegraphics*[width=\linewidth]{img/statement_and_contexts}
-\end{mdframed}
-\caption{A statement in different contexts, or no context.} \label{fig:statements_and_context}
-\end{figure}
+\begin{figure*}
+\includegraphics[width=\linewidth]{statement_and_contexts}
+\caption{A statement in different contexts, or no context.}
+\label{fig:statements_and_context}
+\end{figure*}
 
 
 ``Statements'' in this text will \emph{not} include questions, commands, exclamations, or sentence fragments. Someone who asks a \emph{question} like ``Does the grass need to be mowed?'' is typically not claiming that anything is true or false. \emph{Questions} do not count as statements, but \emph{answers} usually will. ``What is this course about?'' is not a statement. An answer to that question such as ``No one knows what this course is about,'' is a statement.
@@ -247,8 +253,9 @@ When people give arguments to each other, they typically use words like ``theref
 
 
 \begin{table}
-\begin{longtabu} to \textwidth {X[1.2,p]X[8,p]}
+\begin{longtabu} to \textwidth {X[4,p]X[8,p]}
 \textbf{Premise Indicators:} & because, as, for, since, given that, for the reason that \\
+& \\
 \textbf{Conclusion Indicators:} & therefore, thus, hence, so, consequently, it follows that, in conclusion, as a result, then, must, accordingly, this implies that, this entails that, we may infer that \\
 \end{longtabu}
 \caption{Premise and Conclusion Indicators.}
@@ -381,16 +388,13 @@ We call this kind of passage an expository passage. In an \textsc{\gls{expositor
 
 Deciding whether a passage is an argument or an expository passage is complicated by the fact that sometimes people argue by example:
 
-\begin{adjustwidth}{2em}{0em}
-\begin{longtabu} to \textwidth {X[1.2,p]X[8,p]}
+\begin{longtabu} to \textwidth {X[3,p]X[8,p]}
 \textbf{Steve:} & Kenyans are better distance runners than everyone else. \\
 \textbf{Monica:} & Oh come on, that sounds like an exaggeration of a stereotype that isn't even true.\\
 \textbf{Steve:} & What about Dennis Kimetto, the Kenyan who set the world record for running the marathon? And you know who the previous record holder was: Emmanuel Mutai, also Kenyan. \\
 \end{longtabu}
-\end{adjustwidth}
-\vspace{-1.5cm}
 
-Here Steve has made a general statement about all Kenyans. Monica clearly doubts this claim, so Steve backs it up with some examples that seem to match his generalization. This isn't a very strong way to argue: moving from two examples to statement about all Kenyans is probably going to be a kind of bad argument known as a hasty generalization. (This mistake is covered in the complete version of this text in the chapter on induction Chapter \ref{chap:induction} on induction. \label{ver_var}) The point here however, is that Steve is just offering it as an argument.
+Here Steve has made a general statement about all Kenyans. Monica clearly doubts this claim, so Steve backs it up with some examples that seem to match his generalization. This isn't a very strong way to argue: moving from two examples to statement about all Kenyans is probably going to be a kind of bad argument known as a hasty generalization. (This mistake is covered in the complete version of this text in the chapter on induction Chapter \ref{ch:induction} on induction.) The point here however, is that Steve is just offering it as an argument.
 
 The key to telling the difference between expository passages and arguments by example is whether there is a conclusion that they audience needs to be convinced of. In the passage from the psychology textbook, ``Eysenck advocated three major behavioral techniques'' doesn't really work as a conclusion for an argument. The audience, students in an introductory psychology course, aren't likely to challenge this assertion, the way Monica  challenges Steve's overgeneralizing claim.
 
@@ -410,7 +414,9 @@ description={A nonargumentative passage that describes a sequence of events or a
 
 We will use the term \textsc{\gls{narrative}} \label{def:narrative} loosely to refer to any passage that gives a sequence of events or actions. A narrative can be fictional or nonfictional. It can be told in regular temporal sequence or it can jump around, forcing the audience to try to reconstruct a temporal sequence. A narrative can describe a short sequence of actions, like Hermione taking a newspaper from an owl, or a grand sweep of events, like this passage about the  rise and fall of an empire in the ancient near east:
 
-\begin{quotation}\noindent The Guti were finally expelled from Mesopotamia by the Sumerians of Erech (\textit{c}. 2100), but it was left to the kings of Ur's famous third dynasty to re-establish the Sargonoid frontiers and write the final chapter of the Sumerian History. The dynasty lasted through the twenty first century at the close of which the armies of Ur were overthrown by the Elamites and Amorites \citep{McEvedy1967}. \end{quotation}
+\begin{quotation}
+The Guti were finally expelled from Mesopotamia by the Sumerians of Erech (\textit{c}. 2100), but it was left to the kings of Ur's famous third dynasty to re-establish the Sargonoid frontiers and write the final chapter of the Sumerian History. The dynasty lasted through the twenty first century at the close of which the armies of Ur were overthrown by the Elamites and Amorites \citep{McEvedy1967}.
+\end{quotation}
 
 This passage does not feature individual people performing specific actions, but it is still united by character and action. Instead of Hermione at breakfast, we have the Sumarians in Mesopotamia. Instead of retrieving a message from an owl, the conquer the Guti, but then are conquered by the Elamites and Amorites. The important thing is that the statements in a narrative are not related as premises and conclusion. Instead, they are all events which are united common characters acting in specific times and places.
 
@@ -418,6 +424,7 @@ This passage does not feature individual people performing specific actions, but
 
 
 \section*{Key Terms}
+\begin{fullwidth}
 \begin{multicols}{2}
 \begin{sortedlist}
 \sortitem{Logic}{}
@@ -446,3 +453,4 @@ This passage does not feature individual people performing specific actions, but
 \sortitem{Practical argument}{}
 \end{sortedlist}
 \end{multicols}
+\end{fullwidth}

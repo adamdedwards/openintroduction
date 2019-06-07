@@ -1,63 +1,17 @@
-\documentclass[nobib]{tufte-book}
-\usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
+\documentclass[twoside]{tufte-book}
 
 %glossary and indexing stuff
 \usepackage[toc, nopostdot, numberedsection]{glossaries}
 \usepackage{datatool}
-%\newglossary*{catstatements}{Chapter \ref{chap:catstatements} Key Terms}
-%\newglossary*{catsyllogisms}{Key Terms}
 \renewcommand{\glsnamefont}[1]{\makefirstuc{#1}}
 \makeglossaries
 
 %General packages
 \usepackage{answers,textcomp,float,anyfontsize}
 \usepackage{url,syntonly,turnstile}
-\usepackage{libertine,nimbusmono}
-%\usepackage{libertinust1math}
-%\usepackage[scaled]{beramono}
 \usepackage[normalem]{ulem}
-\usepackage{fixltx2e,wasysym,tocloft,fancyref,etoolbox}
-%\usepackage{amsthm} for some reason, this conflicts with the fitch.sty part of openlogic.sty.
-
-%%% Bibstuff
-\usepackage[authordate,autocite=inline,backend=biber, natbib]{biblatex-chicago}
-\bibliography{tex/z-openlogic}
-% To typeset the bibliography, you need to run "biber --output-safechars openintroduction" from the command line. You can't use the function within TeXworks, because it doen't have the --output-safechars flag. Without that flag, biber is unable to handle many characters used for Sanskrit words, like the n with a dot under it.
-
-
-%%%  graphics packages %%%
-\usepackage{tikz}
-\usetikzlibrary{shapes,backgrounds,matrix,arrows,decorations,positioning,arrows.new,calc}
-\usepackage{graphicx}
-\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
-\graphicspath{{img/}}
-
-
-%%%    Table and figure packages %%%
-\usepackage[singlelinecheck=false, skip=0pt]{caption} %left aligns captions for tables, moves them closer to table.
-\usepackage{tabularx}
-\usepackage{longtable}
-\usepackage{tabu}
-\usepackage[framemethod=1]{mdframed}
-\usepackage{wrapfig} %I used this to put a frame around tables.
-\tabulinesep=.75ex
-\usepackage{colortbl}
-%\floatstyle{ruled}
-%\restylefloat{figure}
-\usepackage[export]{adjustbox}
-\usepackage{multirow}
-\usepackage{rotating}
-\usepackage{booktabs}
-
-%linking and bookmarks in the pdf.
-\usepackage{hyperref}
-\hypersetup{pdftex,colorlinks=true,allcolors=blue}
-\usepackage{hypcap}
-
-\usepackage{philosophy}
-\usepackage{kormanize}
-\usepackage{aristotle}
+\usepackage{fixltx2e,wasysym,fancyref,etoolbox}
+\usepackage{packages/logicbook} % Slowly moving everything into a single package for the book, as needed.
 
 \title{For All X: \\ Midwest \\ Collaboration}
 \author[Adam Edwards]{Adam Edwards}
@@ -70,39 +24,34 @@
 %\label{blank_prob_set} %uncomment this tag and typeset twice to create a blank problem set sheet. Don't use with \label{showanswers} uncommented
 
 \frontmatter
-
 \pagestyle{empty}
-\setlength{\parindent}{0pt}
-\setlength{\parskip}{\baselineskip}
 \include{tex/00-cover}
 \include{tex/01-frontmatter}
 
-\setlength{\parskip}{0em}
-\cftpagenumbersoff{part}
+\begin{fullwidth}\tableofcontents\end{fullwidth}
+
+\include{tex/02-aboutthisbook}
+\include{tex/03-acknowledgements}
+\pagestyle{fancy}
 
 \begin{fullwidth}
-\tableofcontents
-\end{fullwidth}
-
-%\include{tex/02-aboutthisbook}
-%\include{tex/03-acknowledgements}
-
-\mainmatter
-
 \listoffigures
 \newpage
 \listoftables
+\end{fullwidth}
+
+\mainmatter
 
 \part{Basic Concepts}\label{part:basic_concepts}
 \setlength{\parindent}{1em}
 
 \include{tex/10-whatislogic}
 \include{tex/11-basicevaluation}
-%\include{tex/12-whatisformallogic}
+\include{tex/12-whatisformallogic}
 
 \part{Critical Thinking}\label{part:critical_thinking}
-%\include{tex/50-whatiscriticalthinking}
-%\include{tex/51-informalfallacies}
+\include{tex/50-whatiscriticalthinking}
+\include{tex/51-informalfallacies}
 %\include{tex/52-incompletearguments}
 %\include{tex/53-emotions}
 %\include{tex/54-generalizations}
@@ -111,14 +60,14 @@
 %\include{tex/57-maps}
 %\include{tex/58-practicalarguments}
 
-%\part{Categorical Logic}\label{part:cat_logic}
-%\include{tex/20-categoricalstatements}
+\part{Categorical Logic}\label{part:cat_logic}
+\include{tex/20-categoricalstatements}
 %\include{tex/21-categoricalsyllogisms}
 %\include{tex/23-aristotles-syllogistic}
 %\include{tex/24-categoricalreduction}
 %\include{tex/25-relevance}
 
-%\part{Propositional Logic}\label{part:prop_logic}
+\part{Propositional Logic}\label{part:prop_logic}
 %\include{tex/30-propositional}
 %\include{tex/31-truthtables}
 %\include{tex/32-naturaldeduction}
@@ -188,28 +137,13 @@
 
 \include{tex/A0-notation}
 
-%Bibstuff
-%If the {part:critical_thinking} label is found, LaTeX will typeset separate bibliographies for sample passages and logical sources.
 
-
-\defbibnote{sample}{\textit{ \large  This bibliography includes all sources except for those that were used as examples for logical analysis, either in the main text or problem sets}}
-
-\printbibliography [keyword=samplepassage, title=Bibliography of Sample Passages, prenote=sample, heading=bibnumbered] %for separate bibs sample passages and general citations
-
-\printbibliography [notkeyword=samplepassage, title=References, heading=bibnumbered] %for separate bibs sample passages and general citations
-
-{\printbibliography[heading=bibnumbered]} %single bib for non-CT version
-
-
-%%The way I’ve set this up now is that there is one bib for sample passages and one bib for everything else. This means that it would not be possible to put one entry in both bibliographies. (This might be needed for Aristotle.) To do that, you will need to define a separate logicsource category
-
-
-\setglossarysection{part}
+\setglossarysection{chapter}
 \begin{fullwidth}
 \printglossaries
 \end{fullwidth}
 
-%\include{tex/A1-quickreference}
-%\include{tex/A2-backmatter}
+\include{tex/A1-quickreference}
+\include{tex/A2-backmatter}
 
 \end{document}

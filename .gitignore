@@ -60,6 +60,10 @@ Temporary Items
 *.lot
 *.gz
 *.new.code.tex
-openintroduction.toc
-openlogic.xdy
-openintroduction.out
+*.toc
+*.xdy
+*.out
+*.maf
+*.mtc
+*.mtc0
+*.fdb_latexmk
