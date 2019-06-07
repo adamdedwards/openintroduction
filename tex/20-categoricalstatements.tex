@@ -1,0 +1,871 @@
+\chapter{Categorical Statements}
+\label{chap:catstatements}
+\markright{Chap. \ref{chap:catstatements}: Categorical Statements}
+\setlength{\parindent}{1em}
+
+% *********************************************
+% * Quantified Categorical Statements
+% **********************************************
+
+\section{Quantified Categorical Statements}
+\label{sec:qcatstatements}
+
+Back in Chapter \ref{Chap:what_is_logic}, we saw that a statement was a unit of language that could be true or false. In this chapter and the next we are going to look at a particular kind of statement, called a quantified categorical statement, and begin to develop a formal theory of how to create arguments using these statements. This kind of logic is generally called ``categorical'' or ``Aristotelian'' logic, because it was originally invented by the great logician and philosopher Aristotle in the fourth century \textsc{bce}. This kind of logic dominated the European and Islamic worlds for 20 centuries afterward, and was expanded in all kinds of fascinating ways, some of which we will look at here.
+
+Consider the following propositions:
+
+\begin{enumerate}[label=(\alph*)]
+    \item \label{itm:dogs} All dogs are mammals.
+    \item \label{itm:physicists} Most physicists are smart.
+    \item \label{itm:teachers} Few teachers are rock climbers.
+    \item \label{itm:no_dogs} No dogs are cats.
+    \item \label{itm:americans} Some Americans are doctors.
+    \item \label{itm:adults}Some adults are not logicians.
+    \item \label{itm:canadians} Thirty percent of Canadians speak French.
+    \item \label{itm:chair} One chair is missing.
+\end{enumerate}
+
+\newglossaryentry{quantified categorical statement}
+{
+  %type=catstatements,
+  name=quantified categorical statement,
+  description={A statement that makes a claim about a certain quantity of the members of a class or group.}
+}
+
+These are all examples of quantified categorical statements. A  \textsc{\gls{quantified categorical statement}} \label{def:quantified_categorical_statement} is a statement that makes a claim about a certain quantity of the members of a class or group. (Sometimes we will just call these ``categorical statements'') Statement \ref{itm:dogs}, for example, is about the class of dogs and the class of mammals. These statements make no mention of any particular members of the categories or classes or types they are about. The propositions are also \textit{quantified} in that they state \textit{how many} of the things in one class are also members of the other. For instance, statement \ref{itm:physicists} talks about \textit{most} physicists, while statement \ref{itm:teachers} talks about \textit{few} teachers.
+
+\newglossaryentry{quantifier}
+{
+  %type=catstatements,
+  name=quantifier,
+  description={The part of a categorical sentence that specifies a portion of a class.}
+}
+
+\newglossaryentry{subject class}
+{
+  %type=catstatements,
+  name=subject class,
+  description={The first class named in a quantified categorical statement.}
+}
+
+\newglossaryentry{predicate class}
+{
+  %type=catsyllogisms,
+  name=predicate class,
+  description={The second class named in a quantified categorical statement.}
+  }
+
+\newglossaryentry{copula}
+{
+  name=copula,
+  description={The form of the verb ``to be'' that links subject and predicate.}
+}
+
+Categorical statements can be broken down into four parts: the quantifier, the subject term, the predicate term, and the copula. The \textsc{\gls{quantifier}} \label{def:quantifier} is the part of a categorical sentence that specifies a portion of a class. It is the ``how many'' term. The quantifiers in the sentences above are all, most, few, no, some, thirty percent, and one. Notice that the ``no'' in sentence \ref{itm:no_dogs} counts as a quantifier, the same way zero counts as a number. The subject and predicate terms are the two classes the statement talks about. The \textsc{\gls{subject class}} \label{def:subject_class} is the first class mentioned in a quantified categorical statement, and the \textsc{\gls{predicate class}} \label{def:predicate_class} is the second. In sentence \ref{itm:americans}, for instance, the subject class is the class of Americans and the predicate class is the class of doctors.  The \textsc{\gls{copula}} \label{def:copula} is simply the form of the verb ``to be'' that links subject and predicate. Notice that the quantifier is always referring to the subject. The statement ``Thirty percent of Canadians speak French'' is saying something about a portion of Canadians, not about a portion of French speakers.
+
+Sentence \ref{itm:canadians} is a little different than the others. In sentence \ref{itm:canadians} the subject is the class of Canadians and the predicate is the class of people who speak French. That's not quite the way it is written, however. There is no explicit copula, and instead of giving a noun phrase for the predicate term, like ``people who speak French,'' it has a verb phrase, ``speak French.'' If you are asked to identify the copula and predicate for a sentence like this, you should say that the copula is implicit and transform the verb phrase into a noun phrase. You would do something similar for sentence \ref{itm:chair}: the subject term is ``chair,'' and the predicate term is ``things that are missing.'' We will go into more detail about these issues in Section \ref{sec:transformation}.
+
+
+\begin{figure}
+\includegraphics*[width=\linewidth]{img/partsofacategoricalstatement}
+\caption{Parts of a quantified categorical statement.}
+\label{fig:Partsofacategoricalstatement}
+\end{figure}
+
+In the previous chapter we noted that formal logic achieves content neutrality by replacing some or all of the ordinary words in a statement with symbols. For categorical logic, we are only going to be making one such substitution. Sometimes we will replace the classes referred to in a quantified categorical statement with capital letters that act as variables. Typically we will use the letter $S$ when referring to the class in the subject term and $P$ when referring to the predicate term, although sometimes more letters will be needed. Thus the sentence ``Some Americans are doctors,'' above, will sometimes become ``Some $S$ are $P$.'' The sentence ``No dogs are cats'' will sometimes become``No $S$ is $P$.''
+
+% **********************************
+% * Quantity, Quality, and Distribution     *
+% **********************************
+
+\section{Quantity, Quality, Distribution, and Venn Diagrams}\label{sec:QQDVD}
+
+Ordinary English contains all kinds of quantifiers, including the counting numbers themselves. In this chapter and the next, however, we are only going to deal with two quantifiers: ``all,'' and ``some.'' We are restricting ourselves to the quantifiers ``all'' and ``some'' because they are the ones that can easily be combined to create valid arguments using the system of logic that was invented by Aristotle. We will deal with other quantifiers in Chapter \ref{chap:induction}, on induction. There we will talk about much more specific quantified statements, like ``Thirty percent of Canadians speak French,'' and do a little bit of work with modern statistical methods.
+
+\newglossaryentry{quantity}
+{
+name=quantity,
+description={The portion of the subject class described by a categorical statement. Generally ``some'' or ``none.''}
+}
+
+\newglossaryentry{universal}
+{
+name=universal,
+description={The quantity of a statement that uses the quantifier ``all.''}
+}
+
+\newglossaryentry{particular}
+{
+name=particular,
+description={The quantity of a statement that uses the quantifier ``some.''}
+}
+
+The quantifier used in a statement is said to give the \textsc{\gls{quantity}} \label{def:Quantity} of the statement. Statements with the quantifier ``All'' are said to be ``\textsc{\gls{universal}}'' and those with the quantifier ``some'' are said to be ``\textsc{\gls{particular}}.''
+
+Here ``some'' will just mean ``at least one.'' So, ``some people in the room are standing'' will be true even if there is only one person standing. Also, because ``some'' means ``at least one,'' it is compatible with ``all'' statements. If I say ``some people in the room are standing'' it might actually be that \textit{all} people in the room are standing, because if all people are standing, then at least one person is standing. This can sound a little weird, because in ordinary circumstances, you wouldn't bother to point out that something applies to some members of a class when, in fact, it applies to all of them. It sounds odd to say ``\textit{some} dogs are mammals,'' when in fact they \textit{all} are. Nevertheless, when ``some'' means ``at least one'' it is perfectly true that some dogs are mammals.
+
+
+\newglossaryentry{quality}
+{
+name=quality,
+description={The status of a categorical statement as affirmative or negative.}
+}
+
+\newglossaryentry{negative}
+{
+name=negative,
+description={The quality of a statement containing a ``not'' or ``no.''}
+}
+
+\newglossaryentry{affirmative}
+{
+name=affirmative,
+description={The quality of a statement without a ``not'' or a ``no.''}
+}
+
+
+
+\newglossaryentry{statement mood}
+{
+name=statement mood,
+description={The classification of a categorical statement based on its quantity and quality.}
+}
+
+\newglossaryentry{mood-A statement}
+{
+name=mood-A statement,
+description={A quantified categorical statement of the form ``All $S$ are $P$.''}
+}
+
+\newglossaryentry{mood-E statement}
+{
+name=mood-E statement,
+description={A quantified categorical statement of the form ``No $S$ are $P$.''}
+}
+
+\newglossaryentry{mood-I statement}
+{
+name=mood-I statement,
+description={A quantified categorical statement of the form ``Some $S$ are $P$.''}
+}
+
+\newglossaryentry{mood-O statement}
+{
+name=mood-O statement,
+description={A quantified categorical statement of the form ``Some $S$ are not $P$.''}
+}
+
+
+
+In addition to talking about the quantity of statements, we will talk about their \textsc{\gls{quality}}. \label{defQuality} The quality of a statement refers to whether the statement is negated. Statements that include the words ``no'' or ``not'' are \textsc{\gls{negative}}, and other statements are \textsc{\gls{affirmative}}. Combining quantity and quality gives us four basic types of quantified categorical statements, which we call the \textsc{\glspl{statement mood}} or just ``moods.'' The four moods are labeled with the letters A, E, I, and O. Statements that are universal and affirmative are \textsc{\glspl{mood-A statement}}. Statements that are universal and negative are \textsc{\glspl{mood-E statement}}. Particular and affirmative statements are \textsc{\glspl{mood-I statement}}, and particular and negative statements are \textsc{\glspl{mood-O statement}}. (See Table \ref{tab:moods}.)
+
+
+Aristotle didn't actually use those letters to name the kinds of categorical propositions. His later followers writing in Latin came up with the idea. They remembered the labels because the ``A'' and the ``I'' were in the Latin word ``\textbf{a}ff\textbf{i}rmo,'' (``I affirm'') and the ``E'' and the ``O'' were in the Latin word ``n\textbf{e}g\textbf{o}'' (``I deny'').
+
+\begin{table}[t]
+\begin{tabu}{p{.1\linewidth}p{.3\linewidth}p{.3\linewidth}}
+  \underline{Mood}& \underline{Form} & \underline{Example} \\
+A & All $S$ are $P$ & All dogs are mammals. \\
+E & No S are $P$ & No dogs are reptiles. \\
+I & Some $S$ are $P$ & Some birds can fly. \\
+O & Some $S$ are not $P$ & Some birds cannot fly.\\
+\end{tabu}
+\caption{The four moods of a categorical statement} \label{tab:moods}
+\end{table}
+
+\newglossaryentry{distribution}
+{
+name=distribution,
+description={A property of the terms of a categorical statement that is present when the statement makes a claim about the whole term.}
+}
+
+The \textsc{\gls{distribution}} of a categorical statement refers to how the statement describes its subject and predicate class. A term in a sentence is said to be distributed \label{def:Distribution} if a claim is being made about the whole class. In the sentence ``All dogs are mammals,'' the subject class, dogs, is distributed, because the quantifier ``All'' refers to the subject. The sentence is asserting that every dog out there is a mammal. On the other hand, the predicate class, mammals, is not distributed, because the sentence isn't making a claim about all the mammals. We can infer that at least some of them are dogs, but we can't infer that all of them are dogs. So in mood-A statements, only the subject is distributed.
+
+On the other hand, in an I sentence like ``Some birds can fly'' the subject is not distributed. The quantifier ``some'' refers to the subject, and indicates that we are not saying something about all of that subject. We also aren't saying anything about all flying things, either. So in mood-I statements, neither subject nor predicate is distributed.
+
+Even though the quantifier always refers to the subject, the predicate class can be distributed as well. This happens when the statement is negative. The sentence ``No dogs are reptiles'' is making a claim about all dogs: they are all not reptiles. It is also making a claim about all reptiles: they are all not dogs. So mood-E statements distribute both subject and predicate. Finally, negative particular statements (mood-O) have only the predicate class distributed. The statement ``some birds cannot fly'' does not say anything about all birds. It does, however say something about all flying things: the class of all flying things excludes some birds.
+
+The quantity, quality, and distribution of the four forms of a categorical statement are given in Table \ref{tab:quantity}. The general rule to remember here is that universal statements distribute the subject, and negative statements distribute the predicate.
+
+
+\begin{table}[b]
+\begin{tabu}{p{.1\linewidth}p{.2\linewidth}p{.15\linewidth}p{.15\linewidth}p{.4\linewidth}}
+ \underline{Mood} & \underline{Form} &  \underline{Quantity} & \underline{Quality} & \underline{Terms Distributed} \\
+A & All $S$ are $P$ & Universal &  Affirmative & S\\
+E & No $S$ are $P$ & Universal & Negative & S and P\\
+I & Some $S$ are $P$ & Particular & Affirmative & None\\
+O &Some $S$ are not $P$ & Particular &Negative & P \\
+\end{tabu}
+\caption{Quantity, quality, and distribution.}\label{tab:quantity}
+\end{table}
+
+\newglossaryentry{Venn diagram}
+{
+name=Venn diagram,
+description={A diagram that represents categorical statements using circles that stand for classes.}
+}
+
+
+In 1880 English logician John Venn published two essays on the use of diagrams with circles to represent categorical propositions (Venn \cite*{Venn1880a}, \cite*{Venn1880b}). Venn noted that the best use of such diagrams so far had come from the brilliant Swiss mathematician Leonhard Euler, but they still had many problems, which Venn felt could be solved by bringing in some ideas about logic from his fellow English logician George Boole. Although Venn only claimed to be building on the long logical tradition he traced, since his time these kinds of circle diagrams have been known as \textsc{\glspl{Venn diagram}}.
+
+In this section we are going to learn to use Venn diagrams to represent our four basic types of categorical statement. Later in this chapter, we will find them useful in evaluating arguments. Let us start with a statement in mood A: ``All $S$ are $P$.'' We are going to use one circle to represent $S$ and another to represent $P$. There are a couple of different ways we could draw the circles if we wanted to represent ``All $S$ are $P$.'' One option would be to draw the circle for $S$ entirely inside the circle for $P$, as in Figure \ref{fig:euler_circles}
+
+
+
+\begin{figure}
+\begin{center}
+\includegraphics{OriginalVenn}
+\end{center}
+\caption{Venn's original diagram for an mood-A statement (Venn \citep{Venn1880a}). Screencap from Google Books by J.  Robert Loftis.}
+\end{figure}
+
+
+It is clear from Figure \ref{fig:euler_circles} that all $S$ are in fact $P$. And outside of college logic classes, you may have seen people use a diagram like this to represent a situation where one group is a subclass of another. You may have even seen people call concentric circles like this a Venn diagram. But Venn did not think we should put one circle entirely inside the other if we just want to represent ``All $S$ is $P$.'' Technically speaking Figure \ref{fig:euler_circles} shows Euler circles.
+
+Venn pointed out that the circles in Figure \ref{fig:euler_circles} don't just say that ``All $S$ are $P$.'' They also says that ``All $P$ are $S$'' is false. But we don't necessarily know that if we have only asserted ``All $S$ are $P$.'' The statement ``All $S$ are $P$'' leaves it open whether the $S$ circle should be smaller than or the same size as the $P$ circle.
+
+Venn suggested that to represent just the content of a single proposition, we should always begin by drawing partially overlapping circles. This means that we always have spaces available to represent the four possible ways the terms can combine:
+
+
+
+
+If we want to say that something does exist in a region, we put an ``x'' in it. This is the diagram for ``Some $S$ are $P$'':
+
+
+
+If a region of a Venn diagram is blank, if it is neither shaded nor has an x in it, it could go either way. Maybe such things exist, maybe they do not.
+
+The Venn diagrams for all four basic forms of categorical statements are in Figure \ref{fig:fourvenns}. Notice that when we draw diagrams for the two universal forms, A and E, we do not draw any x's. For these forms we are only ruling out possibilities, not asserting that things actually exist. This is part of what Venn learned from Boole, and we will see its importance in Section \ref{sec:ExistentialImport}.
+
+\newglossaryentry{translation key}
+{
+name=translation key,
+description={A list that assigns English phrases or sentences to variable names. Also called a ``symbolization key''  or simply a ``dictionary.''}
+}
+
+Finally, notice that so far, we have only been talking about categorical statements involving the variables $S$ and $P$. Sometimes, though, we will want to represent statements in regular English. To do this, we will include a key saying what the variables $S$ and $P$ represent in this case. We will call a list that assigns English phrases or sentences to variable names a \textsc{\gls{translation key}}.\label{def:translation_key} These are sometimes also called ``symbolization keys'' or simply just ``dictionaries.'' As our logical systems get more complicated, the symbolization keys will get more complicated. For now, though, they just consist of a note saying what the $S$ and $P$ stand for. For instance, this is the diagram for ``No dogs are reptiles.''
+
+
+
+
+
+% *****************************************************
+% * Transforming English into logically structured English.        *
+% *****************************************************
+
+\section{Transforming English into Logically Structured English} \label{sec:transformation}
+
+\newglossaryentry{logically structured English}
+{
+name=logically structured English,
+description={English that has been regimented into a standard form to make its logical structure clear and to remove ambiguity. A stepping stone to full-fledged formal languages.}
+}
+
+Because the four basic forms are stated using variables, they have a great deal of generality. We can expand on that generality by showing how many different kinds of English sentences can be represented as sentences in our four basic forms. We already touched on this a little in section \ref{sec:qcatstatements}, when we look at sentences like ``Thirty percent of Canadians speak French.'' There we saw that the predicate was not explicitly a class. We needed to change ``speak French'' to ``people who speak French.'' In this section, we are going to expand on that to show how ordinary English sentences can be transformed into something we will call ``logically structured English.'' \textsc{\gls{logically structured English}} \label{def:LSE} is English that has been put into a standardized form that allows us to see its logical structure more clearly and removes ambiguity.  Doing this is a step towards the creation of formal languages, which we will start doing in Chapter \ref{chap:SL}.
+
+Transforming English sentences into logically structured English is fundamentally a matter of understanding the meaning of the English sentence and then finding the logically structured English statements with the same or similar meaning. Sometimes this will require judgment calls. English, like any natural  language, is fraught with ambiguity. One of our goals with logically structured English is to reduce the amount of ambiguity. Clarifying ambiguous sentences will always require making judgments that can be questioned. Things will only get harder when we start using full blown formal languages in Chapter \ref{chap:SL}, which are supposed to be completely free of ambiguity.
+
+\newglossaryentry{standard form for a categorical statement}
+{
+name=standard form for a categorical statement,
+description={A categorical statement that has been put into logically structured English, with the following elements in the following order: (1) The quantifiers ``all,'' ``some,'' or ``no''; (2) the subject term; (3) the copula ``are'' or ``are not''; and (4) the predicate term.}
+}
+
+
+To transform a quantified categorical statement into logically structured English, we have to put all of its elements in a fixed order and be sure they are all of the right type. All statements must begin with the quantifies ``All'' or ``Some'' or the negated quantifier ``No.'' Next comes the subject term, which must be a plural noun, a noun phrase, or a variable that stands for any plural noun or noun phrase. Then comes the copula ``are'' or the negated copula ``are not.'' Last is the predicate term, which must also be a plural noun or noun phrase. We also specify that you can only say ``are not'' with the quantifier ``some,'' that way the universal negative statement is always phrased ``No $S$ are $P$,'' not ``All S are not $P$.'' Taken together, these criteria define the \textsc{\gls{standard form for a categorical statement}} in logically structured English. \label{def:standard_form_cat_statement}
+
+The subsections below identify different kinds of changes you might need to make to put a statement into logically structured English. Sometimes translating a sentence will require using multiple changes.
+
+\subsection{Change the Predicate into a Noun Phrase}
+\label{subsec:predicate_noun_phrase}
+In section \ref{sec:qcatstatements} we saw that ``Some Canadians speak French'' has a verb phrase ``speaks French'' instead of a copula and a plural noun phrase. To transform these sentences into logically structured English, you need to add the copula and turn all the terms into plural nouns or plural noun phrases. Adding a plural noun phrase means you have to come up with some category, like ``people'' or ``animals.'' When in doubt, you can always use the most general category, ``things.'' Below are some examples
+
+\begin{longtabu}{p{.5\linewidth}p{.5\linewidth}}
+\underline{English} &
+\underline{Logically Structured English} \\
+\endhead
+No cats bark. &
+No cats are animals that bark.  \\
+
+All birds can fly. &
+All birds are animals that can fly.  \\
+
+Some thoughts should be left unsaid. &
+Some thoughts are things that should be left unsaid.
+\end{longtabu}
+
+\noindent Sometimes English sentences will have a copula and an adjective or adjective phrase as the predicate. These need to be changed to noun phrases, just as the verb phrases did.
+
+\begin{longtabu}{p{.5\linewidth}p{.5\linewidth}}
+\underline{English} &
+\underline{Logically Structured English}  \\
+\endhead
+Some roses are red. &
+Some roses are red flowers. \\
+
+Football players are strong. &
+All football players are strong persons. \\
+
+Some names are hurtful. &
+Some names are hurtful things.
+\end{longtabu}
+
+\noindent Again, you will have to come up with a category for the predicate, and when it doubt, you can just use ``things.''
+
+\subsection{Standardize the Quantifier}
+\label{subsec:standardize_quantifier}
+
+English has a wide variety of ways to express quantity. We need to reduce all of these to either ``all'' or ``some,'' plus negations.  Here are some examples
+
+\begin{longtabu}{p{.5\linewidth}p{.5\linewidth}}
+\underline{English} &
+\underline{Logically Structured English} \\
+\endhead
+
+Most people with a PhD in psychology are female. &
+Some people with a PhD in psychology are female. \\
+
+Among the things that Sylvia inherited was a large mirror &
+Some things that Sylvia inherited were large mirrors\\
+
+There are Americans that are doctors. &
+Some Americans are doctors. \\
+
+At least a few Americans are doctors.&
+Some Americans are doctors. \\
+
+A man is walking down the street. &
+Some men are things that are walking down the street.\\
+
+
+Every day is a blessing. &
+All days are blessings. \\
+
+Whatever is a dog is not a cat. &
+No dogs are cats. \\
+
+Not a single dog is a cat. &
+No dogs are cats. \\
+
+Take nothing for granted &
+No things are things that should be taken for granted \\
+
+Something is rotten in Denmark &
+Some things are things that are rotten in Denmark\\
+
+Everything is coming up roses &
+All things are things that are coming up roses\\
+
+
+``What does not destroy me, makes me stronger.'' --Friedrich Nietzsche &
+All things that do not destroy me are things that make me stronger. \\
+
+
+\end{longtabu}
+
+Notice in the last case we are losing quite a bit of information when we transform the sentence into logically structured English. ``Most'' means more that fifty percent, while ``some'' could be any percentage less than a hundred. This is simply a price we have to pay in creating a standard logical form. As we will see when we move to constructing artificial languages in Chapter \ref{chap:SL}, no logical language has the expressive richness of a natural language.
+
+Sometimes universal statements in English don't have an explicit quantifier. Instead they use a plural noun or indefinite article to express generality.
+
+\begin{longtabu}{p{.5\linewidth}p{.5\linewidth}}
+\underline{English} &
+\underline{Logically Structured English} \\
+\endhead
+Boots are footwear. &
+All boots are footwear.\\
+
+Giraffes are tall. &
+All giraffes are tall things.\\
+
+A dog is not a cat. &
+No dogs are cats.\\
+
+A lion is a fierce creature. &
+All lions are fierce creatures.\\
+
+\end{longtabu}
+
+\noindent Notice that in the second sentence we had to make two changes, adding both the words ``All'' and ``things.''
+
+In the last two sentences, the indefinite article ``a'' is being used to create a kind of generic sentence. Not all sentences using the indefinite article work this way. The list before this one included the example ``A man is walking down the street.'' This sentence is not talking about all men generically. It is talking about a specific man whose identity is unknown. Here the indefinite article is being used like a nonstandard version of the quantifier ``some,'' which is why it appeared in the earlier list. You will have to use your good judgment and understanding of context to know when the indefinite article is being used like the word ``all'' and when it is being used like the word ``some.''
+
+English also uses specialized adverbial phrases as quantifiers for people, places and times. If we want to talk about all people, we use a specialized quantifier like ``everyone,'' ``someone'' or ``no one.'' We use ``everywhere,'' ``somehwere,'' and ``nowhere'' for places, and ``always,'' ``sometimes,'' and ``never'' for times.  All of these need to be transformed into using the simple quantifiers ``all'' or ``some,'' plus negations.
+
+\tabulinesep=1.25ex
+\begin{longtabu}{p{.5\linewidth}p{.5\linewidth}}
+\underline{English} &
+\underline{Logically Structured English} \\
+\endhead
+Someone in America is a doctor. &
+Some Americans are doctors. \\
+
+Not everyone who is an adult is a logician. &
+Some adults are not logicians. \\
+
+``Whenever you need me, I'll be there.'' -- Michael Jackson &
+All times that you need me are times that I will be there. \\
+
+``We are never, ever, ever getting back together.'' -- Taylor Swift &
+No times are times when we will get back together.\\
+
+``Whoever fights with monsters should be careful lest he thereby become a monster.'' --Friedrich Nietzsche &
+All persons who fight with monsters are persons who should be careful lest they become a monster.\\
+
+\end{longtabu}
+%\tabulinesep=.75ex
+
+\subsection{Standardize Alternative Universal Forms}
+\label{subsec:alternative_universals}
+
+Many constructions in English can be represented as universal statements in Logically Structured English, either affirmative (A) or negative (E)
+
+For instance, it turns out that statements about individual people or specific objects can be represented by A or E statements. This is not something Aristotle originally noticed. For him a statement like ``Socrates is mortal,'' for Aristotle, were neither universal nor particular. They were a third class he called ``singular.'' The power of categorical logic was expanded considerably when it was realized singular statements can converted into universal statements. The trick is to add a phrase like ``All things identical to\ldots'' to our singular sentence. Essentially we are adding a universal quantifier that only picks out one specific object.
+
+\begin{longtabu}{p{.5\linewidth}p{.5\linewidth}}
+\underline{English} &
+\underline{Logically Structured English} \\
+\endhead
+Socrates is mortal.&
+All persons identical with Socrates are mortal. \\
+
+The Empire State Building is tall. &
+All things identical to The Empire State Building are tall things. \\
+
+Ludwig was not happy. &
+No people identical with Ludwig are happy people. \\
+
+\end{longtabu}
+
+
+%
+%\subsection{``It Is False That''}
+%
+%In English, we can say ``It is false that \ldots'' or ``It is not the case that \ldots'' to indicate that a statement is false. A lawyer, for instance, might say ``It is not the case that you signed the consent form before the doctor did the procedure.'' In logically structured English, we can make these simpler by converting the negated proposition to its contradictory. A negated A statement will become an O statement, and vice versa. Likewise a negating E statement will become and I statement, and vice versa. See the examples below. This time we have marked their form A, E, I or O, with a ``not-'' for the cases where they are negated.
+%
+%\begin{tabu}{p{.5\linewidth}p{.5\linewidth}}
+%\underline{English} &
+%\underline{Logically Structured English} \\
+%
+%\textbf{not-A}: It is not the case that all dogs are pets &
+%\textbf{O}: Some dogs are not pets.\\
+%
+%\textbf{not-I}: It is not the case that some dogs are reptiles &
+%\textbf{E}: No dogs are reptiles\\
+%
+%\textbf{not-E}: It is not the case that no dogs are pets &
+%\textbf{I}: Some dogs are pets \\
+%
+%\textbf{not-O}: It is not the case that some dogs are not mammals &
+%\textbf{A}: All dogs are mammals.
+%\end{tabu}
+
+Another kind of statement that can be transformed into a universal statement is a conditional. A conditional is a statement of the form ``If \ldots then \ldots.'' They will become a big focus of our attention starting in Chapter \ref{chap:SL} when we begin introducing modern formal languages. They are not given special treatment in the Aristotelian tradition, however. Instead, where we can, we just treat them as categorical generalizations:
+
+\begin{longtabu}{p{.5\linewidth}p{.5\linewidth}}
+\underline{English} &
+\underline{Logically Structured English} \\
+\endhead
+If something is a cat, then it is a felines. &
+All cats are feline.\\
+
+If something is a dog, then it's not a cat. &
+No dogs are cats. \\
+\end{longtabu}
+
+The word ``only'' is used in a couple of different constructions in English that can be represented as universal statements. The first kind are called ``exclusive propositions.'' These are statements that say the subject excludes everything except what is in the predicate. For instance the sentence ``Only people over 21 may drink'' says that the class of people who may drink excludes everyone except those who are over 21. In English exclusive propositions are created using the words ``only,'' ``none but,'' or ``none except.'' These statements become A statements when translated into logically structured English. So ``Only people over 21 may drink'' becomes ``If you may drink, you  are over 21.'' It is important to see that in each case these words are used to introduce the predicate, not the subject. In the sentence ``Only people over 21 may drink,'' the term ``people over 21'' is actually the  predicate, and ``people who may drink'' is the subject.
+
+\begin{longtabu}{p{.5\linewidth}p{.5\linewidth}}
+\underline{English} &
+\underline{Logically Structured English} \\
+\endhead
+Only people over 21 may drink. &
+All people who drink are over 21.\\
+
+No one, except those with a ticket, may enter the theater. &
+All people who enter the theater have a ticket. \\
+
+None but the strong survive. &
+All people who survive are strong people. \\
+\end{longtabu}
+
+
+Sentences with ``The only'' are a little different than sentences regular exclusive propositions, which just have ``only'' in them. The sentence ``Humans are the only animals that talk on cell phones'' should be translated as ``All animals who talk on cell phones are humans.'' In this sentence, ``the only'' introduces the subject, rather than the predicate. The statement still asserts that the subject excludes everything except what is in the predicate, and we still represent them using mood A statements.
+
+\begin{longtabu}{p{.5\linewidth}p{.5\linewidth}}
+\underline{English} &
+\underline{Logically Structured English} \\
+\endhead
+Humans are the only animals who talk on cell phones. &
+All animals who talk on cell phones are human.\\
+
+Shrews are the only venomous mammal in North America. &
+All venomous mammals in North America are shrews.\\
+
+\end{longtabu}
+
+Transforming sentences into Logically Structured English requires judgment and attention to the nuances of meaning in English. You must be able to recognize which of the transformations describe above needs to be applied and apply it correctly. One frequent mistake by people starting out is to overgeneralize. We saw at the start of the subsection on alternative universal forms that singular propositions can be turned into universal propositions by adding the phrase ``Things identical to \ldots'' Once you get in the habit of doing this, it becomes tempting to add the phrase ``things identical to \ldots'' to everything, even when it isn't necessary or doesn't make sense. The sentence ``Fido is a dog'' should become ``all things identical to Fido are dogs'' in logically structured English, because ``Fido'' is a singluar term referring to an individual dog. But with the sentence ``dogs are mammals,'' you do not need to add the phrase ``All things identical to\ldots'', because ``dogs'' is already a collective noun, not an individual.
+
+The same is true for the phrases we use to transform adjective and verb phrases into noun phrases. The sentence ``No cats bark'' has to be changed, because ``bark'' is a verb, so it becomes ``No cats are animals that bark'' in Logically Structured English. But the sentence ``No cats are reptiles'' already has a noun, ``reptiles,'' for a predicate, so you do not need to transform it into ``No cats are animals that are reptiles.'' The key is not only knowing when o use the transformations we describe, but knowing when not to use them.
+
+
+
+% *****************************************
+% * Conversion, Obversion, and Contraposition   *
+% *****************************************
+
+\section{Conversion, Obversion, and Contraposition}
+\label{sec:conv_obv_cont}
+
+\newglossaryentry{truth value}
+{
+  name=truth value,
+  description={The status of a statement with relationship to truth. For  this textbook, this means the status of a statement as true or false}
+}
+
+Now that we have shown the wide range of statements that can be represented in our four standard logical forms A, E, I, and O, it is time to begin constructing arguments with them. The arguments we are going to look at are sometimes called ``immediate inferences'' because they only have one premise. We are going to learn to identify some valid forms of these one-premise arguments by looking at ways you can transform so that a true sentence will stay true and a false sentence will stay false. Remember that on page \pageref{def:Truth_value} we said that the \gls{truth value} of a sentence is simply whether the sentence is true or false. So we can say that the transformations we will be looking at here preserve the truth values of the sentences.
+
+Consider the statements, ``No dogs are reptiles'' and ``No reptiles are dogs.'' They have the same truth value and basically mean the same thing. On the other hand if you change ``All dogs are mammals'' into ``All mammals are dogs'' you turn a true sentence into a false one. In this section we are going to look at three ways of transforming categorical statements---conversion, obversion, and contraposition---and use Venn diagrams to determine whether these transformations also lead to a change in truth value. From there we can identify valid argument forms.
+
+\subsection{Conversion}
+
+\newglossaryentry{conversion}
+{
+name=conversion,
+description={The process of changing a sentence by reversing the subject and predicate.}
+}
+
+
+The two examples in the last paragraph are examples of conversion. \textsc{\gls{conversion}} \label{defConversion} is the process of transforming a categorical statement by switching the subject and the predicate. When you convert a statement, it keeps its form---an A statement remains an A statement, an E statement remains an E statement---however it might change its truth value.  The Venn diagrams in Figure \ref{fig:conversion} illustrate this.
+
+
+
+As you can see, the Venn diagram for the converse of an E statement is exactly the same as the original E statement, and likewise for I statements. This means that the two statements are logically equivalent. Recall that two statements are logically equivalent if they always have the same truth value. (See page \ref{def:logical_equivalence}). In this case, that means that if an E statement is true, then its converse is also true, and if an E statement is false, then its converse is also false. For instance, ``No dogs are reptiles'' is true, and so is ``No reptiles are dogs.'' On the other hand ``No dogs are mammals'' is false, and so is ``No mammals are dogs.''
+
+Likewise, if an I statement is true, its converse is true, and if an I statement is false, than its converse is false. ``Some dogs are pets'' is true, and so is ``Some pets are dogs.'' On the other hand ``Some dogs can fly'' is false and so is ``Some flying things are dogs.''
+
+The converses of A and O statements are not so illuminating. As you can see from the Venn diagrams, these statements are not identical to their converses. They also don't contradict their converses. If we know that an A or O statement is true, we still don't know anything about their converses. We say their truth value is undetermined.
+
+Because E and I statements are logically equivalent to their converses, we can use them to construct valid arguments. Recall from Chapter 2 (page \pageref{def:valid}) that an argument is valid if it is impossible for its conclusion to be false whenever its premises are true. Because E and I are logically equivalent to their converses, the two argument forms in Figure \ref{fig:conversion_arguments} are valid.
+
+
+\begin{kormanize}
+\premise{No $S$ are $P$.}
+\conclusion{No $P$ are $S$.}
+\end{kormanize}
+
+
+\begin{kormanize}
+\premise{Some $S$ are $P$.}
+\conclusion{Some  $P$ are $S$.}
+\end{kormanize}
+
+Notice that these are argument forms, with variables in the place of the key terms. This means that these arguments will be valid no matter what; $S$ and $P$ could be people, or squirrels, or the Gross Domestic Product of industrialized nations, or anything, and the arguments are still valid. While these particular argument forms may seem trivial and obvious, we are beginning to see some of the power of formal logic here. We have uncovered a very general truth about the nature of validity with these two argument forms.
+
+The truth value of the converses of A and O statements, on the other hand, are undetermined by the truth value of the original statements. This means we cannot construct valid arguments from them. Imagine you have an argument with an A or O statement as its premise and the converse of that statement as the conclusion. Even if the premise is true, we know nothing about the truth of the conclusion. So there are no valid argument forms to be found here.
+
+\subsection{Obversion}
+
+\newglossaryentry{complement}
+{
+name=complement,
+description={The class of everything that is not in a given class.}
+}
+
+
+Obversion is a more complex process. To understand what an obverse is, we first need to define the complement of a class. The \textsc{\gls{complement}} \label{def:Complement} of a class is everything that is not in the class. So the complement of the class of dogs is everything that is not a dog, including not just cats, but battleships, pop songs, and black holes. In English we can easily create a name for the complement of any class using the prefix ``non-''. So the complement of the class of dogs is the class of non-dogs. We will use complements in defining both obversion and contraposition.
+
+\newglossaryentry{obversion}
+{
+name=obversion,
+description={The process of transforming a categorical statement by changing its quality and replacing the predicate with its complement.}
+}
+
+
+The \textsc{\gls{obversion}} \label{def:Obversion} of a categorical proposition is a new proposition created by changing the quality of the original proposition and switching its predicate to its complement. Obversion is thus a two step process. Take, again, the proposition ``All dogs are mammals.'' For step 1, we change its quality, in this case going from affirmative to negative. That gives us ``No dogs are mammals.'' For step 2, we take the complement of the predicate. The predicate in this case is ``mammals'' so the complement is ``non-mammals.'' That gives us the obverse ``No dogs are non-mammals.''
+
+We can map this process out using Venn diagrams. Let's start with an A statement.
+
+
+Changing the quality turns it into an E statement.
+
+
+
+Now what happens when we take the complement of $P$? That means we will shade in all the parts of S that are non-$P$, which puts us back where we started. We still have an E statement, but it is now equivalent to the A statement.
+
+
+
+The final statement is logically equivalent to the original A statement. It has the same form as an E statement, but because we have changed the predicate, it is not logically equivalent to an A statement. As you can see from Figure \ref{fig:obversion} this is true for all four forms of categorical statement.
+This in turn gives us four valid argument forms, which are shown in Figure \ref{fig:obversion_arguments}
+
+
+
+One further note on complements. We don't just use complements to describe sentences that come out of obversion and contraposition. We can also perform these operations on statements that already have complements in them. Consider the sentence ``Some $S$ are non-$P$.'' This is its Venn diagram.
+
+
+
+How would we take the obverse of this statement? Step 1 is to change the quality, making it ``Some $S$ are not non-$P$.'' Now how do we take the complement of the predicate? We could write ``non-non-$P$,'' but if we think about it for a second, we'd realize that this is the same thing as $P$. So we can just write ``Some $S$ is not $P$.'' This is logically equivalent to the original statement, which is what we wanted.
+
+Taking the converse of ``Some $S$ are non-$P$'' also takes a moment of thought. We are supposed to reverse subject and predicate. But does that mean that the ``non-'' moves to the subject position along with the ``$P$''? Or does the ``non-'' now attach to the $S$? We saw that E and I statements kept their truth value after conversion, and we want this to still be true when the statements start out referring to the complement of some class. This means that the ``non-'' has to travel with the predicate, because ``Some $S$ are non-$P$'' will always have the same truth value as ``Some non-$P$ are $S$.'' Another way of thinking about this is that the ``non-'' is part of the name of the class that forms the predicate of ``Some $S$ are non-$P$.'' The statement is making a claim about a class, and that class happens to be defined as the complement of another class. So, the bottom line is when you take the converse of a statement where one of the terms is a complement, move the ``non-'' with that term.
+
+\subsection{Contraposition}
+
+\newglossaryentry{contraposition}
+{
+name=contraposition,
+description={The process of transforming a categorical statement by reversing subject and predicate and replacing them with their complements.}
+}
+
+
+\textsc{\gls{contraposition}} is a two-step process, like obversion, but it doesn't always lead to results that are logically equivalent to the original sentence. The contrapositive of a categorical sentence is the sentence that results from reversing subject and predicate and then replacing them with their complements. Thus ``All $S$ are $P$'' becomes ``All non-$P$ are non-$S$.''
+
+Figure \ref{fig:contraposition} shows the corresponding Venn diagrams. In this case, the shading around the outside of the two circles in the contraposed form of E is meant to indicate that nothing can lie outside the two circles. Everything must be $S$ or $P$ or both. Like conversion, applying contraposition to two of the forms gives us statements that are logically equivalent to the original. This time, though, it is forms A and O that come through the process without changing their truth value.
+
+
+
+This then gives us two valid argument forms, shown in Figure \ref{fig:argument_contraposition}. If you have an argument with an A or O statement as its premise and the contraposition of that statement as the conclusion, you know it must be valid. Whenever the premise is true, the conclusion must be true, because the two statements are logically equivalent. On the other hand, if you had an E or an I statement as the premise, the truth of the conclusion is undetermined, so these arguments would not be valid.
+
+\subsection{Evaluating Short Arguments}
+\label{sec:ESA}
+So far we have seen eight valid forms of argument with one premise: two arguments that are valid by conversion, four that are valid by obversion, and two that are valid by contraposition. As we said, short arguments like these are sometimes called ``immediate inferences,'' because your brain just flits automatically from the truth of the premises to the truth of the conclusion. Now that we have identified these valid forms of inference, we can use this knowledge to see whether some of the arguments we encounter in ordinary language are valid. We can now tell in a few cases if our brain is right to flit so seamlessly from the premise to the conclusion.
+
+In the real world, the inferences we make are messy and hard to classify. Much of the complexity of this issue is tackled in the parts of the complete version of this text that cover critical thinking. Part \ref{part:CT_and_informal_logic} of this text, on critical thinking.} Right now we are just going to deal with a limited subset of inferences: immediate inferences that might be based on conversion, obversion, or contraposition. Let's start start with the uncontroversial premise ``All dogs are mammals.'' Can we infer from this that all non-mammals are non-dogs? In canonical form, the argument would look like this.
+
+%\pagebreak[4] %Note the hard page break. Delete if things start to drift.
+
+\begin{kormanize}
+\premise{ All dogs are mammals.}
+\conclusion{ All non-mammals are non-dogs.}
+\end{kormanize}
+
+Evaluating an immediate inference like this is a four step process. First, identify the subject and predicate classes. Second, draw the Venn diagram for the premise. Third, see if the Venn diagram shows that the conclusion must be true. If it must be, then the argument is valid. Finally, if the argument is valid, identify the process that makes it valid. (You can skip this step if the argument is invalid.)
+
+For the argument above, the result of the first two steps would look like this:
+
+
+
+The Venn diagram for the premise shades out the possibility that there are dogs that aren't mammals. For step three, we ask, does this mean the conclusion must be true?  In this case, it does. The same shading implies that everything that is not a mammal must also not be a dog. In fact, the Venn diagram for the premise and the Venn diagram for the conclusion are the same. So the argument is valid. This means that we must go on to step four and identify the process that makes it valid. In this case, the conclusion is created by reversing subject and predicate and taking their complements, which means that this is a valid argument by contraposition.
+
+Now, remember what it means for an argument to be valid. \label{valid_definition_reinforcement} As we said on page \pageref{def:valid}, an argument is valid if it is impossible for the premises to be true and the conclusion false. This means that we can have a valid argument with false premises, so long as it is the case that \emph{if} the premises were true, the conclusion would have to be true. So if the argument above is valid, then so is this one:
+
+\begin{kormanize}
+\premise{ All dogs are reptiles.}
+\conclusion{All non-reptiles are non-dogs.}
+\end{kormanize}
+
+The premise is now false: all dogs are not reptiles. However, \emph{if} all dogs were reptiles, then it would also have to be true that all non-reptiles are non-dogs. The Venn diagram works the same way.
+
+
+
+The Venn diagram for the premise still matches the Venn diagram for the conclusion. Only the labels have changed. The fact that this argument form remains true even with a false premise is just a variation on a theme we saw in
+Figure \ref{fig:valid_sound} when we saw a valid argument (with false premises) for the conclusion ``Socrates is a carrot.'' So arguments by transposition, just like any argument, can be valid even if they have false premises. The same is true for arguments by conversion and obversion.
+
+Arguments like these can also be invalid, even if they have true premises and a true conclusion. Remember that A statements are not logically equivalent to their converse. So this is an invalid argument with a true premise and a false conclusion:
+
+\begin{kormanize}
+\premise{ All dogs are mammals.}
+\conclusion{All mammals are dogs.}
+\end{kormanize}
+
+Our Venn diagram test shows that this is invalid. Steps one and two give us this for the premise:
+
+
+But this is the Venn diagram for the conclusion:
+
+
+
+This is an argument by conversion on an mood-A statement, which is invalid. The argument remains invalid, even if we substitute in a predicate where the conclusion happens to be true. For instance this argument is invalid.
+
+\begin{kormanize}
+\premise{  All dogs are \textit{Canis familiaris}.}
+\conclusion{ All \textit{Canis familiaris} are dogs.}
+\end{kormanize}
+
+The Venn diagrams for the premise and conclusion of this argument will be just like the ones for the previous argument, just with different labels. So even though the argument has a true premise and a true conclusion, it is still invalid, because it is possible for an argument of this form to have a true premise and a false conclusion. This is an unreliable argument form that just happened, in this instance, not to lead to a false conclusion. This again is just a variation on a theme we saw in Chapter \ref{chap:basicevaluation}, in Figure \ref{fig:invalid_paris}, when we saw an invalid argument for the conclusion that Paris was in France.
+
+
+% ***********************************
+% * The Traditional Square of Opposition *
+% ***********************************
+
+\section{The Traditional Square of Opposition}
+
+We have seen that conversion, obversion, and contraposition allow us to identify some valid one-premise arguments. There are actually more we can find out there, but investigating them is a bit more complicated. The original investigation made by the Aristotelian philosophers made an assumption that logicians no longer make.  To help you understand all sides of the issue, we will begin by looking at things in the traditional Aristotelian fashion, and then in the next section move on to the modern way of looking at things.
+
+When Aristotle was first investigating these four kinds of categorical statements, he noticed they they conflicted with each other in different ways. If you are just thinking casually about it, you might say that ``No $S$ is $P$'' is somehow ``the opposite'' of ``All $S$ is $P$.'' But isn't the real ``opposite'' of ``All $S$ is $P$'' actually ``Some $S$ is not $P$''?
+
+Aristotle, in his book \cite{Aristotle:interpretation}, notes that the real opposite of A is O, because one must always be true and the other false.  If we know that ``All dogs are mammals'' is true, then we know ``some dog is not a mammal'' is false. On the other hand, if ``All dogs are mammals'' is false then ``some dog is not a mammal'' must be true. Back on page \pageref{def:contradictory} we said that when two propositions must have opposite truth values they are called contradictories. Aristotle noted that A and O sentences are contradictory in this way. Forms E and I also form a contradictory pair. If ``Some dogs are mammals'' then ``No dogs are mammals'' is false, and if ``Some dogs are mammals'' is false, then ``No dogs are mammals'' is true.
+
+
+\newglossaryentry{contraries}
+{
+name=contraries,
+description={Two statements that can't both be true, but can both be false. A set two inconsistent sentences.}
+}
+
+
+Mood-A and mood-E statements are opposed to each other in a different way. Aristotle claimed that they can't both be true, but could both be false. Take the statements ``All dogs are strays'' and ``No dogs are strays.'' We know that they are both false, because some dogs are strays and others aren't. However, it is also clear that they could not both be true. When a pair of statements cannot both be true, but might both be false, the Aristotelian tradition says they are \textsc{\gls{contraries}}. \label{def:Contraries} Aristotle's idea of a pair of contraries is really just a specific case of a set of sentences that are \emph{inconsistent}, an idea that we looked at in Chapter \ref{chap:whatisformallogic}. (See page \ref{def:inconsistency})
+
+\newglossaryentry{square of opposition}
+{
+name=square of opposition,
+description={A way of representing the four basic propositions and the ways they relate to one another.}
+}
+
+
+These distinctions, plus a few other comments from Aristotle, were developed by his later followers into an idea that came to be known as the \textsc{\gls{square of opposition}} \label{def:Squareofopposition}. The square of opposition is simply the diagram you see in Figure \ref{fig:traditionalsquare}. It is a way of representing the four basic propositions and the ways they relate to one another.  As we said before, this way of picturing the proposition turned out to make a problematic assumption. To emphasize that this is no longer the way logicians view things, we will call this diagram the traditional square of opposition.
+
+The traditional square of opposition begins by picturing a square with A, E, I, and O at the four corners. The lines between the corners then represent the ways that the kinds of propositions can be opposed to each other. The diagonal lines between A and O and between E and I represent contradiction. These are pairs of propositions where one has to be true and the other false. The line across the top represents contraries. These are propositions that Aristotle thought could not both be true, although they might both be false.
+
+In Figure \ref{fig:traditionalsquare}, we have actually drawn each relationship as a pair of lines, representing the kinds of inferences you can make in that relationship. Contraries cannot both be true. So we know that if one is true, the other must be false. This is represented by the two lines going from a T to an F. Notice that there aren't any lines here that point from an F to something else. This is because you can't infer anything about contrary statements if you just know that one is false. For the contradictory statements, on the other hand, we have drawn double-headed arrows. This is because we know both that the truth of one statement implies that the other is false and that the falsity of one statement implies the truth of the other.
+
+\newglossaryentry{subcontraries}
+{
+name=subcontraries,
+description={Two categorical statements that cannot both be false, but might both be true.}
+}
+
+Contraries and contradictories just give us the diagonal lines and the top line of the square. There are still three other sides to investigate. Form I and form O are called \textsc{\gls{subcontraries}}. \label{defSubcontraries} In the traditional square of opposition, their situation is reversed from that of A and E. Statements of forms A and E cannot both be true, but they can both be false. Statements of forms I and O cannot both be false, but they can both be true. Consider the sentences ``Some people in the classroom are paying attention'' and ``Some people in the classroom are not paying attention.'' It is possible for them both to be true. Some people are paying attention and some aren't. But the two sentences couldn't both be false. That would mean that everyone in the room was neither paying attention nor not paying attention. But they have to be doing one or the other!
+
+This means that there are two inferences we can make about subcontraries. We know that if I is false, O must be true, and vice versa. This is represented in Figure \ref{fig:traditionalsquare} by arrows going from Fs on one side to Ts on the other. This is reversed from the way things were on the top of the square with the contraries. Notice that this time there are no arrows going away from a T. This is because we can't infer anything about subcontraries if all we know is that one is true
+
+\newglossaryentry{subalternation}
+{
+name=subalternation,
+description={The relationship between a universal categorical statement and the particular statement with the same quality.}
+}
+
+
+The trickiest relationship is the one between universal statements and their corresponding particulars. We call this \textsc{\gls{subalternation}}. Both of the statements in these pairs could be true, or they could both be false. However, in the traditional square of opposition, if the universal statement is true, its corresponding particular statement must also be true. For instance, ``All dogs are mammals'' implies that some dogs are mammals. Also, if the particular statement is false, then the universal statement must also be false. Consider the statement ``Some dinosaurs had feathers.'' If that statement is false, if no dinosaurs had feathers, then ``All dinosaurs have feathers'' must also be false. Something like this seems to be true on the negative side of the diagram as well. If ``No dinosaurs have feathers'' is true, then you would think that ``some dinosaurs do not have feathers'' is true. Similarly, if ``some dinosaurs do not have feathers'' is false, then ``No dinosaurs have feathers'' cannot be true either.
+
+In our diagram for the traditional square of opposition, we represent subalternation by a downward arrow for truth and an upward arrow for falsity. We can infer something here if we know the top is true, or if we know the bottom is false. In other situations, there is nothing we can infer.
+
+Note, by the way, that the language of subalternation works a little differently than the other relationships. With contradiction, we say that each sentence is the ``contradictory'' of the other. The relationship is symmetrical. With subalternation, we say that the particular sentence is the ``subaltern'' of the universal one, but not the other way around.
+
+People started using diagrams like this as early as the second century \textsc{ce} to explain Aristotle's ideas in \textit{On Interpretation} (See Parsons \cite*{Parsons1997}). Figure \ref{fig:apuleiussquare} shows one of the earliest surviving versions of the square of opposition, from a 9th century manuscript of a commentary on Aristotle attributed to the Roman writer Apuleius of Madaura. Although this particular manuscript dates from the 9th century, the commentary itself was written in the 2nd century, and copied by hand many times over before this one was made. Figure \ref{fig:majorsquare} shows a later illustration of the square, from a 16th century book by the Scottish philosopher and logician Johannes de Magistris.
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=.4]{ljs101}
+\end{center}
+\caption{One of the earliest surviving versions of the square of opposition, from a 9th century manuscript that includes a commentary on Aristotle by the African writer Apuleius of Madaura (\cite{Apuleius1987}). The manuscript is held Lawrence J. Schoenberg collection (LJS 101) at the University of Pennsylvania, who have kindly put a facsimile online (\url{http://dla.library.upenn.edu/dla/medren/detail.html?id=MEDREN_5186550}.)  Screencap by J. Robert Loftis.}
+\label{fig:apuleiussquare}
+\end{figure}
+
+
+\begin{figure}
+\begin{center}
+\includegraphics[scale=.5]{majorvenn2}
+\end{center}
+\caption{A 16th century illustration of the square of opposition from John Major's \textit{Introductorium Perutile in Aristotelicam Dialecticen} (\cite*[fol.L]{Major1527}). Screencap from Google Books by J.  Robert Loftis.}
+\label{fig:majorsquare}
+\end{figure}
+
+As with the processes of conversion, obversion, and contraposition, we can use the traditional square of opposition to evaluate arguments written in canonical form. It will help us here to introduce the phrase ``It is false that'' to some of our statements, so that we can make inferences from the truth of one proposition to the falsity of another. This, for instance, is a valid argument, because A and O statements are contradictories.
+
+
+\begin{kormanize}
+\premise{ All humans are mortal.}
+\conclusion{ It is false that some human is not mortal.}
+\end{kormanize}
+
+The argument above is an immediate inference, like the arguments we saw in the previous section, because it only has one premise. It is also similar to those arguments in that the conclusion is actually logically equivalent to the premise. This will not be the case for all immediate inferences based on the square of opposition, however. This is a valid argument, based on the subaltern relationship, but the premise and the conclusion are not logically equivalent.
+
+\begin{kormanize}
+\premise{ It is false that some humans are dinosaurs.}
+\conclusion{  It is false that all humans are dinosaurs.}
+\end{kormanize}
+
+
+% ****************************************************
+% * Existential Import and the Modern Square of Opposition    *
+% ****************************************************
+
+\section{Existential Import and the Modern Square of Opposition}
+\label{sec:ExistentialImport}
+
+The traditional square of opposition seems straightforward and fairly clever. Aristotle made an interesting distinction between contraries and contradictories, and subsequent logicians developed it into a nifty little diagram. So why did we have to keep saying things like ``Aristotle thought'' and ``according to the traditional square of opposition.'' What is wrong here?
+
+The traditional square of opposition goes awry because it makes assumptions about the existence of the things being talked about. Remember that when we drew the Venn diagram for ``All $S$ are $P$,'' we shaded out the area of $S$ that did not overlap with $P$ to show that nothing could exist there. We pointed out, though, that we did not put a little x in the intersection between $S$ and $P$. Statements of the form A ruled out the existence of one kind of thing, but they did not assert the existence of another. The A proposition, ``All dogs are mammals,'' denies the existence of any dog that is not a mammal, but it does not assert the existence of some dog that is a mammal. But why not? Dogs obviously do exist.
+
+The problem comes when you start to consider categorical statements about things that don't exist, for instance ``All unicorns have one horn.'' This seems like a true statement, but unicorns don't exist. Perhaps what we mean by ``All unicorns have one horn'' is that \emph{if} a unicorn existed, \emph{then} is would have one horn. But if we interpret the statement about unicorns that way, shouldn't we also interpret the statement about dogs that way? Really all we mean when we say ``All dogs are mammals'' is that if there were dogs, then they would be mammals. It takes an extra assertion to point out that dogs do, in fact, exist.
+
+\newglossaryentry{existential import}
+{
+name=existential import,
+description={An aspect of the meaning of a statement that which is present if the statement can only be true when the objects it describes exist.}
+}
+
+\newglossaryentry{vacuous truth}
+{
+name=vacuous truth,
+description={The kind of truth possessed by statements that do not have existential import and refer to objects that do not exist.}
+}
+
+The issue we are discussing here is called existential import. A sentence is said to have \textsc{\gls{existential import}} \label{def:Existential_import} if it asserts the existence of the things it is talking about. Figure \ref{fig:existential_import} shows the two ways you could draw Venn diagrams for an A statement, with the x, as in the traditional interpretation, and without, as in our interpretation. If you interpret A statements in the traditional way, they are always false when you are talking about things that don't exist. So, ``All unicorns have one horn'' is false in the traditional interpretation. On the other hand, in the modern interpretation all statements about things that don't exist are true. ``All unicorns have one horn'' simply asserts that there are no multi-horned unicorns, and this is true because there are no unicorns at all. We call this \textsc{\gls{vacuous truth}}. Something is vacuously true \label{def:Vacuous_truth} if it is true simply because it is about things that don't exist. Note that \emph{all} statements about nonexistent things become vacuously true if you assume they have no existential import, even a statement like ``All unicorns have more than one horn.'' A statement like this simply rules out the existence of unicorns with one horn or fewer, and these don't exist because unicorns don't exist. This is a complicated issue that will come up again starting in Chapter \ref{chap:SL} when we consider conditional statements. For now just assume that this makes sense because you can make up any stories you want about unicorns.
+
+
+
+Any statement can be read with or without existential import, even the particular ones. Consider the statements ``Some unicorns are rainbow colored'' and ``Some unicorns are not rainbow colored.'' You can argue that both of these statements are true, in the sense that if unicorns existed, they could come in many colors. If you say these statements are true, however, you are assuming that particular statements do not have existential import. As Terence Parsons (\cite*{Parsons1997}) points out, you can change the wording of particular categorical statements in English to make them seem like they do or do not have existential import. ``Some unicorns are not rainbow colored'' might have existential import, but ``not every unicorn is rainbow colored'' doesn't seem to.
+
+So what does this have to do with the square of opposition? A lot of the claims made in the traditional square of opposition depend on assumptions about which statements have existential import. For instance, Aristotle's claim that contrary statements cannot both be true requires that A statements have existential import. Think about the sentences ``All dragons breathe fire'' and ``no dragons breathe fire.'' If the first sentence has no existential import, then both sentences could actually be true. They are both ruling out the existence of certain kinds of dragons and are correct because no dragons exist.
+
+In fact, the entire traditional square of opposition falls apart if you assume that all four forms of a categorical statement have existential import. Parsons (\citep{Parsons1997}) shows how we can derive a contradiction in this situation. Consider the I statement ``Some dragons breathe fire.'' If you interpret it as having existential import, it is false, because dragons don't exist. But then its contradictory statement, the E statement ``No dragons breathe fire'' must be true. And if that statement is true, and has existential import, then its subaltern, ``Some dragon does not breathe fire'' is true. But if it has existential import, it can't be true, because dragons don't exist. In logic, the worst thing you can ever do is contradict yourself, but that is what we have just done. So we have to change the traditional square of opposition.
+
+ The way some textbooks talk about the problem, you'd think that for two thousand years logicians were simply ignorant about the problem of existential import and thus woefully confused about the square of opposition, until finally George Boole wrote \textit{The Laws of Thought}\cite{Boole1854} and found the one true solution to the problem. In fact, there was an extensive discussion of existential import from the 12th to the 16th centuries, mostly under the heading of the ``supposition'' of a term. Very roughly, we can say that the supposition of a term is the way it refers to objects, or what we now call the ``denotation'' of the term.\cite{Read2002}
+ So in ``All people are mortal'' the supposition of the subject term is all of the people out there in the world. Or, as the medievals sometimes put it, the subject term ``supposits'' all the people in the world.
+
+At least some medieval thinkers had a theory of supposition that made the traditional square of opposition work. Terrance Parsons (\citep{Parsons1997}, \citep{Parsons2008}) has argued for the importance of one solution, found most clearly in the writings of William of Ockham. Under this theory, affirmative forms A and I had existential import, but the negative forms E and O did not. We would say that a statement has existential import if it would be false whenever the subject or predicate terms refer to things that don't exist. To put the matter more precisely, we would say that the statement would be false whenever the subject or predicate terms ``fail to refer.'' Linguistic philosophers these days prefer say that a term ``fails to refer'' rather than saying that it ``refers to something that doesn't exist,'' because referring to things that don't exist seems impossible.
+
+In any case, Ockham describes the supposition of affirmative propositions the same way we would describe the reference of terms in those propositions. Again, if the proposition supposes the existence of something in the world, the medievals would say it ``supposits.''  Ockham says ``In affirmative propositions a term is always asserted to supposit for something. Thus, if it supposits for nothing the proposition is false'' (\citep{Ockham1343}, 206). On the other hand, failure to refer or to supposit actually supports the truth of negative propositions: ``in negative propositions the assertion is either that the term does not supposit for something or that it supposits for something of which the predicate is truly denied. Thus a negative proposition has two causes of truth'' (\citep{Ockham1343}, 206).
+
+So, for Ockham, affirmative statements about nonexistent objects are false. ``All unicorns have one horn'' and ``Some unicorns are rainbow colored'' are false, because there are no unicorns. Negative statements, on the other hand, are vacuously true. ``No unicorns are rainbow colored'' and ``No unicorns have one horn'' are both true. There are no rainbow colored unicorns out there, and no one horned unicorns out there, because there are no unicorns out there. The O statement ``Some unicorns are not rainbow colored'' is also vacuously true. This might be harder to see, but it helps to think of the statement as saying ``It is not the case that every unicorn is rainbow colored.''
+
+This way of thinking about existential import leaves the traditional square of opposition intact, even in cases where you are referring to nonexistent objects. Contraries still cannot both be true when you are talking about nonexistent objects, because the A proposition will be false, and the E vacuously true. ``All dragons breathe fire'' is false, because dragons don't exist, and ``No dragons breathe fire'' is vacuously true for the same reason. Similarly, subcontraries cannot both be false when talking about dragons and whatnot, because the I will always be false and the O will always be true. You can go through the rest of the relationships and show that similar arguments hold. \label{proving_trad_square}
+
+Boole proposed a different solution, which is now taken as the standard way to do things. Instead of looking at the division between positive and negative statements, Boole looked at the division between singular and universal propositions. The universal statements A and E do not have existential import, but the particular statements I and O do have existential import. Thus all particular statements about nonexistent things are false and all universal statements about nonexistent things are vacuously true.
+
+John Venn was building on the work of George Boole. His diagrams avoided the problems that Euler had by using a Boolean interpretation of mood-A statements, where they really just assert that something is impossible. In fact, the whole system of Venn diagrams embodies Boole's assumptions about existential import, as you can see in Figure \ref{fig:fourvenns}. The particular forms I and O have you draw an x, indicating that something exists. The other two forms just have us shade in regions to indicate that certain combinations of subject and predicate are impossible. Thus A and E statements like ``All dragons breathe fire'' or ``No dragons are friendly'' can be true, even though no dragons exist.
+
+Venn diagrams doesn't even have the capacity to represent Ockham's understanding of existential import. We can represent A statements as having existential import by adding an x, as we did on the right hand side of Figure \ref{fig:existential_import}. However, we have no way to represent the O form without existential import. We have to draw the x, indicating existence. We don't have a way of representing O form statements about nonexistent objects as vacuously true.
+
+The Boolean solution to the the question of existential import leaves us with a greatly restricted form of the square of opposition. Contrary statements are both vacuously true when you refer to nonexistent objects, because neither have existential import. Subcontrary statements are both false when you refer to nonexistent objects, because they do have existential import. Finally, the subalterns of vacuously true statements are false, while on the traditional square of opposition they had to be true. The only thing remaining from the traditional square of opposition is the relationship of contradiction, as you can see in Figure \ref{fig:modernsquare}.
+
+
+
+\section*{Key Terms}
+\begin{multicols}{2}
+\begin{sortedlist}
+\sortitem{Quantified categorical statement}{}
+\sortitem{Quantifier}{}
+\sortitem{Subject class}{}
+\sortitem{Predicate class}{}
+\sortitem{Copula}{}
+\sortitem{Truth value}{}
+\sortitem{Mood-A statement}{}
+\sortitem{Mood-E statement}{}
+\sortitem{Mood-I statement}{}
+\sortitem{Mood-O statement}{}
+\sortitem{Quantity}{}
+\sortitem{Quality}{}
+\sortitem{Logically structured English}{}
+\sortitem{Distribution}{}
+\sortitem{Complement}{}
+\sortitem{Converse}{}
+\sortitem{Obverse}{}
+\sortitem{Contraposition}{}
+\sortitem{Contradictories}{}
+\sortitem{Contraries}{}
+\sortitem{Square of opposition}{}
+\sortitem{Subcontraries}{}
+\sortitem{Subalternation}{}
+\sortitem{Existential import}{}
+\sortitem{Vacuous truth}{}
+\sortitem{Venn diagram}{}
+\sortitem{Standard form categorical statement}{}
+\sortitem{Universal}{}
+\sortitem{Particular}{}
+\sortitem{Affirmative}{}
+\sortitem{Negative}{}
+\sortitem{Translation key}{}
+\end{sortedlist}
+\end{multicols}

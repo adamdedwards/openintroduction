@@ -1,0 +1,124 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{philosophy}[2019/01/12 Some Commands for Doing Philosophy]
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Math Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{latexsym,amsmath,amssymb,amsthm,mathrsfs,mathtools,booktabs,array,bm,scalefnt,pgf,tikz,units}
+\usetikzlibrary{automata,positioning,arrows.meta,graphs}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Logical Symbols, etc.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\DeclarePairedDelimiter\set{\{}{\}}             % unordered set
+\DeclarePairedDelimiter\oset{\langle}{\rangle}  % ordered set
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}     % size/arity of set
+
+\newcommand{\p}{\mathcal{P}}
+\newcommand{\q}{\mathcal{Q}}
+
+\newcommand{\ci}{\mathrel{\bot}} % New symbol for conditional independence.
+\newcommand{\dsep}{\mathrel{\text{$\perp\mkern-10mu\perp$}}} % New symbol for d-separation.
+\newcommand{\cfc}{\mathrel{\Box\kern-1.5pt\raise1pt\hbox{$\mathord{\rightarrow}$}}} % New symbol for counterfactuals.
+\newcommand{\counterfactual}{\cfc} % Provides alternative commands for counterfactuals.
+\newcommand{\cff}{\cfc}
+\newcommand{\onlyif}{\mathrel{\rightarrow}}    % Provides a semantic command for the material conditional.
+\newcommand{\pos}{\mathop{\Diamond}}           % Provides a semantic command for modal logic possibility.
+\newcommand{\nec}{\mathop{\Box}}               % Provides a semantic command for modal logic necessity.
+\newcommand{\entails}{\mathrel{\Rightarrow}}   % Provides a semantic command for sequent proofs.
+\newcommand\ddfrac[2]{\frac{\displaystyle #1}{\displaystyle #2}}
+\newcommand{\given}{\mathrel{|}}
+\newcommand{\cm}{\ensuremath{\oset{V,E,A}}} % Creates a causal model
+%\newcommand{\val}{V_{\mathscr{I}}}
+
+\renewcommand{\iff}{\mathrel{\leftrightarrow}} % Renames the biconditional with the double arrow instead of triple bar.
+\renewcommand{\lnot}{\mathop{\sim}} % Renames the negation to be the tilde instead of the bent dash.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Fitchish Proofs
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcolumntype{A}{ >{$} r <{$} @{} >{${}} l <{$} }
+
+\newcounter{proofcount}[section]
+\newcounter{prooflines}[proofcount]
+\newcounter{assumptions}[proofcount]
+\newenvironment{myproof}{%
+  \stepcounter{proofcount}
+  \newcommand{\A}{~$\ensuremath{\text{A}}$\refstepcounter{assumptions}\label{a\theproofcount-\theassumptions}}
+  \newcommand{\ecj}{~$\ensuremath{\land\text{E}}$~}
+  \newcommand{\icj}{~$\ensuremath{\land\text{I}}$~}
+  \newcommand{\edj}{~$\ensuremath{\lor\text{E}}$~}
+  \newcommand{\idj}{~$\ensuremath{\lor\text{I}}$~}
+  \newcommand{\eif}{~$\ensuremath{\onlyif\text{E}}$~}
+  \newcommand{\iif}{~$\ensuremath{\onlyif\text{I}}$~}
+  \newcommand{\ebc}{~$\ensuremath{\iff\text{E}}$~}
+  \newcommand{\ibc}{~$\ensuremath{\iff\text{I}}$~}
+  \newcommand{\eno}{~$\ensuremath{\lnot\text{E}}$~}
+  \newcommand{\ino}{~$\ensuremath{\lnot\text{I}}$~}
+  \newcommand{\proofline}[2]{\refstepcounter{prooflines}\theprooflines\label{pl\theproofcount-\theprooflines} & $\ensuremath{##1}$ & $\ensuremath{##2}$ \\}
+
+  \vspace{0.5cm}
+  \begin{figure}[!ht]
+  \centering
+  \begin{tabular}{c |@{\hskip 2em} A  @{\hskip 3em}A }
+}%
+{%
+  \end{tabular}
+  \caption{Proof}
+  \label{proof:\arabic{proofcount}}
+  \end{figure}
+  \vspace{0.5cm}
+}%
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Causal Models
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tikzset{->,
+         >=latex,
+         auto,
+         node distance=2cm,
+         thick,
+         main node/.style={circle,
+                            draw,
+                            thick,
+                            fill=gray!10,
+                            inner sep=0pt,
+                            minimum size=1cm
+         }
+}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Sorted Lists
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\sortitem}[2]{%
+  \DTLnewrow{list}%
+  \DTLnewdbentry{list}{label}{#1}%
+  \DTLnewdbentry{list}{description}{#2}%
+}
+
+\newenvironment{sortedlist}
+  {% \begin{sortedlist}
+  \DTLifdbexists{list}{\DTLcleardb{list}}{\DTLnewdb{list}}%
+  }{% \end{sortedlist}
+  \DTLsort{label}{list}%
+  \begin{enumerate}%
+    \DTLforeach*{list}{\theLabel=label,\theDesc=description}{%
+      \item \textbf{\theLabel} \theDesc}%
+  \end{enumerate}%
+  }
+
+
+
+
+
+
+\endinput%

@@ -10,6 +10,7 @@ The intended audience of this textbook is students in introductory logic courses
 
 ## Contact
 
-For questions regarding this version of For All X, please contact Adam Edwards at [adamdedwards.com][1]
+For questions regarding this version of For All X, please contact Adam Edwards at [https://adamedw.com][1] or [https://philosophy.substack.com][2]
 
 [1]: https://adamedw.com
+[2]: https://philosophy.substack.com

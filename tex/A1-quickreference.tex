@@ -1,0 +1,183 @@
+
+\chapter{Quick Reference}\label{app:quickreference}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Characteristic Truth Tables %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Characteristic Truth Tables}
+
+\begin{tabular}{c|c}
+$\p$ & $\lnot\p$\\
+\hline
+T & F\\
+F & T
+\end{tabular}
+\hspace{1in}
+\begin{tabular}{c|c|c|c|c|c}
+$\p$ & $\q$ & $\p\land\q$ & $\p\lor\q$ & $\p\onlyif\q$ & $\p\iff\q$\\
+\hline
+T & T & T & T & T & T\\
+T & F & F & T & F & F\\
+F & T & F & T & T & F\\
+F & F & F & F & T & T
+\end{tabular}
+
+
+%\vfill
+
+%**************************************
+% 		Symbolization 						*
+%**************************************
+
+\section{Symbolization}
+
+\subsection{Sentential Connectives (chapter \ref{chap:SL})}
+
+\begin{longtabu} to \textwidth {X[1,r] X[1,1]}
+It is not the case that $P$. & $\lnot P$\\
+Either $P$, or $Q$. & $(P \lor Q)$\\
+Neither $P$, nor $Q$. & $\lnot(P \lor Q)$\ or \ $(\lnot P \land \lnot Q)$\\
+Both $P$, and $Q$. & $(P \land Q)$\\
+If $P$, then $Q$. & $(P \onlyif Q)$\\
+$P$ only if $Q$. & $(P \onlyif Q)$\\
+$P$ if and only if $Q$. & $(P \iff Q)$\\
+Unless $P$, $Q$. & $(P \lor Q)$\\
+$P$ unless $Q$. & $(P \lor Q)$\\
+\\
+\end{longtabu}
+
+\subsection{Predicates (chapter \ref{chap:QL})}
+
+
+\begin{longtabu} to \textwidth {X[1,r] X[1,1]}
+All $F$s are $G$s. & $\forall x(Fx \onlyif Gx)$\\
+Some $F$s are $G$s. & $\exists x(Fx \land Gx)$\\
+Not all $F$s are $G$s. & $\lnot\forall x(Fx \onlyif Gx)$\ or\ $\exists x(Fx \land \lnot Gx)$\\
+No $F$s are $G$s. & $\forall x(Fx \onlyif\lnot Gx)$\ or\ $\lnot\exists x(Fx \land Gx)$\\
+\end{longtabu}
+\subsection*{Identity (section \ref{sec.identity})}
+\begin{longtabu}{X[1.6,r,m]X[1.5,1,m]}
+Only $j$ is $G$. & $\forall x(Gx \iff x=j)$\\
+Everything besides $j$ is $G$. & $\forall x(x \neq j \onlyif Gx)$\\
+$j$ is more $R$ than anyone else. & $\forall x(x\neq j \onlyif Rjx)$\\
+The $F$ is $G$. & $\exists x(Fx \land \forall y(Fy \onlyif x=y) \land Gx)$
+\end{longtabu}
+\vspace{-12pt}
+\begin{longtabu}{X[r,p,m]X[1,p,m]}
+\multicolumn{2}{c}{\emph{`The F is not G' can be translated two ways:}} \\
+It is not the case that the F is G. (wide)& $\lnot\exists x(Fx \land \forall y(Fy \onlyif x=y) \land Gx)$\\
+The $F$ is non-$G$. (narrow) & $\exists x(Fx \land \forall y(Fy \onlyif x=y) \land \lnot Gx)$
+\end{longtabu}
+
+
+%****************************************
+%* Using Identity to Symbolize Quantities
+%****************************************
+
+% BEGIN: symbolizing cardinality
+
+\section{Using identity to symbolize quantities}
+\subsection{There are at least $n$ $F$s.}
+
+\begin{longtabu} to \textwidth {X[1,r] X[7,1]}
+\textbf{one} & $\exists xFx$ \\
+
+\textbf{two} & $\exists x_1\exists x_2(Fx_1 \land Fx_2 \land x_1 \neq x_2)$\\
+
+\textbf{three} & $\exists x_1\exists x_2\exists x_3(Fx_1 \land Fx_2 \land Fx_3 \land x_1 \neq x_2 \land x_1 \neq x_3 \land x_2 \neq x_3)$\\
+
+\textbf{four} & $\exists x_1\exists x_2\exists x_3\exists x_4 (Fx_1 \land Fx_2 \land Fx_3 \land Fx_4 \land x_1 \neq x_2 \land x_1 \neq x_3 \land x_1 \neq x_4 \land x_2 \neq x_3 \land x_2 \neq x_4 \land x_3 \neq x_4)$\\
+
+\textbf{n} & $\exists x_1\cdots\exists x_n(Fx_1 \land\cdots\land Fx_n \land x_1 \neq x_2 \land\cdots\land x_{n-1}\neq x_n)$ \\
+
+\end{longtabu}
+
+
+\subsection{There are at most $n$ $F$s.}
+
+
+One way to say `at most $n$ things are $F$' is to put a negation sign in front of one of the symbolizations above and say $\lnot$ `at least $n+1$ things are $F$.' Equivalently:
+
+\begin{longtabu} to \textwidth {X[1,r] X[7,1]}
+\textbf{one} &  $\forall x_1\forall x_2\bigl[(Fx_1 \land Fx_2) \onlyif x_1=x_2\bigr]$  \\
+\vspace{6pt}
+\textbf{two}  & \vspace{3pt} $\forall x_1\forall x_2\forall x_3\bigl[(Fx_1 \land Fx_2 \land Fx_3) \onlyif (x_1=x_2 \lor x_1=x_3 \lor x_2=x_3)\bigr]$ \\
+
+\textbf{three} & $\forall x_1\forall x_2\forall x_3\forall x_4\bigl[(Fx_1 \land Fx_2 \land Fx_3 \land Fx_4) \onlyif (x_1=x_2 \lor x_1=x_3 \lor x_1=x_4 \lor x_2=x_3 \lor x_2=x_4 \lor x_3=x_4)\bigr]$ \\
+
+\textbf{n} & $\forall x_1\cdots\forall x_{n+1}
+\bigl[(Fx_1\land \cdots \land Fx_{n+1}) \onlyif (x_1=x_2 \lor \cdots \lor x_n=x_{n+1})\bigr]$
+\end{longtabu}
+
+\subsection{There are exactly $n$ $F$s.}
+
+
+One way to say `exactly $n$ things are $F$' is to conjoin two of the symbolizations above and say `at least $n$ things are $F$' $\land$ `at most $n$ things are $F$.' The following equivalent formulae are shorter:
+\begin{longtabu} to \textwidth {X[1,r] X[7,l]}
+\textbf{zero} & $\forall x\lnot Fx$ \\
+
+\textbf{one} & $\exists x\bigl[Fx \land \lnot\exists y(Fy \land x\neq y)\bigr]$ \\
+
+\textbf{two} &  $\exists x_1\exists x_2\bigl[Fx_1 \land Fx_2 \land x_1 \neq x_2 \land \lnot\exists y\bigl(Fy \land y\neq x_1 \land y \neq x_2\bigr) \bigr]$ \\
+
+\textbf{three} & $\exists x_1\exists x_2\exists x_3\bigl[Fx_1 \land Fx_2 \land Fx_3 \land x_1 \neq x_2 \land x_1 \neq x_3 \land x_2 \neq x_3 \land \lnot\exists y(Fy \land y \neq x_1 \land y \neq x_2 \land y\neq x_3) \bigr]$ \\
+
+\textbf{n} & $\exists x_1\cdots\exists x_n\bigl[Fx_1 \land\cdots\land Fx_n  \land x_1 \neq x_2 \land\cdots\land x_{n-1}\neq x_n \land  \lnot\exists y(Fy \land y\neq x_1 \land \cdots \land y\neq x_n)\bigr]$ \\
+%\item[one] $\exists x\forall y\bigl[Fx \land (Fy \onlyif y = x)\bigr]$
+%\item[two] $\exists x\exists y\forall z\Bigl(Fx \land Fy \land \bigl[Fz \onlyif (z=x \lor z=y)\bigr] \land x \neq y\Bigr)$
+%\item[three] $\exists x_1\exists x_2\exists x_3\forall y\Bigl(Fx_1 \land Fx_2 \land Fx_3 \land [Fy \onlyif (y=x_1 \lor y=x_2 \lor y=x_3)] \land x_1 \neq x_2 \land x_1 \neq x_3 \land x_2 \neq x_3\Bigr)$
+%\item[n] $\exists x_1\cdots\exists x_n\forall y\Bigl(Fx_1 \land\cdots\land Fx_n \land \bigl[Fy \onlyif (y=x_1 \lor \cdots \lor y=x_n)\bigr] \land x_1 \neq x_2 \land\cdots\land x_{n-1}\neq x_n\Bigr)$
+\end{longtabu}
+
+\subsection{Specifying the size of the UD}
+
+Removing $F$ from the symbolizations above produces sentences that talk about the size of the UD. For instance, `there are at least 2 things (in the UD)' may be symbolized as $\exists x\exists y(x \neq y)$.
+
+%\begin{table}
+%	Sometimes it is easier to show something by providing proofs than it is by providing models. Sometimes it is the other way round.
+%	\begin{center}
+%	\begin{tabular*}{\textwidth}{p{10em}|p{10em}|p{10em}|}
+%	\cline{2-3}
+%	 & {\centerline{YES}} & {\centerline{NO}}\\
+%	\cline{2-3}
+%	Is \p a tautology? & prove $\vdash\p$ & give a model in which \p is false\\
+%	\cline{2-3}
+%	Is \p a contradiction? &  prove $\vdash\lnot\p$ & give a model in which \p is true\\
+%	\cline{2-3}
+%	Is \p contingent? & give a model in which \p is true and another in which \p is false & prove $\vdash\p$ or $\vdash\lnot\p$\\
+%	\cline{2-3}
+%	Are \p and \q equivalent? & prove \mbox{$\p\vdash\q$} and \mbox{$\q\vdash\p$}  & give a model in which \p and \q have different truth values\\
+%	\cline{2-3}
+%	Is the set \model{A} consistent? & give a model in which all the sentences in \model{A} are true & taking the sentences in \model{A}, prove \q and \lnot\q\\
+%	\cline{2-3}
+%	Is the argument \mbox{`\script{P}, \therefore\ \script{C}'} valid? & prove $\script{P}\vdash\script{C}$ & give a model in which \script{P} is true and \script{C} is false\\
+%	\cline{2-3}
+%	\end{tabular*}
+%	\end{center}
+%\end{table}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% % Basic Proof Rules
+%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%% eliminate page numbers
+%%\pagestyle{empty}
+%%\twocolumn
+%
+%
+%%  BEGIN: Rules of proof
+%% change margins so that all the rules will fit
+%\setlength{\topmargin}{0 in}
+%\setlength{\headheight}{0 in}
+%\setlength{\headsep}{0 in}
+%\setlength{\textheight}{9 in}
+%%\setlength{\evensidemargin}{0.25 in}
+%%\setlength{\oddsidemargin}{0.25 in}
+%\setlength{\textwidth}{6 in}
+%\newpage
+%% This starts a new page and skips a page if necessary so as
+%% to start on an even numbered page.
+%% That way, the rules of proof will be on facing pages.
+%% It fills it in with a somewhat gratuitous reference table.
+%\ifthenelse{\isodd{\thepage}}{
+%%	\ \vspace{2 in}\par\centerline{[ This page intentionally left blank. ]}
+%%	\newpage
+%}{}

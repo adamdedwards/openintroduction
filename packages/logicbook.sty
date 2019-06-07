@@ -1,0 +1,86 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{logicbook}[2019/06/06 Logic Book Style]
+
+\newcommand{\version}{0.2}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% fonts
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage[T1]{fontenc}
+\RequirePackage{libertine}
+%\RequirePackage{gentium}
+\RequirePackage[scaled=1.05]{nimbusmononarrow}
+%\RequirePackage[scaled]{beramono}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% graphics
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\RequirePackage[margin=1in]{geometry}
+\RequirePackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{img/}}
+\RequirePackage{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% typographics
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\RequirePackage[titles]{tocloft}
+\RequirePackage[inline]{enumitem}
+%\RequirePackage[sc]{titlesec}
+%\RequirePackage[bookmarks]{hyperref}
+\hypersetup{pdftex,colorlinks=true,allcolors=blue}
+\RequirePackage{hypcap}
+
+\RequirePackage{multicol,setspace,epigraph,units,tabularx,tabu,lipsum,microtype,minitoc,longtable,multirow,colortbl,rotating}
+
+\RequirePackage{fancyhdr}
+\fancyhf{}
+\fancyhead[LE,LO]{\small\scshape\MakeUppercase{\leftmark}}
+\fancyfoot[CE,CO]{\thepage}
+%\renewcommand{\headrulewidth}{0.1px}
+\setlength\headheight{14pt}
+
+\newcommand{\openepigraph}[2]{%
+  \normalsize
+  \noindent{#1}\\% epigraph
+
+  \vspace{0.5cm}
+
+  \noindent{#2}% author
+}
+
+%\setlist{noitemsep}
+\setlength{\itemsep}{2pt}
+
+\RequirePackage{packages/philosophy}
+\RequirePackage{packages/aristotle}
+\RequirePackage{packages/kormanize}
+
+\usetikzlibrary{shapes,backgrounds,matrix,arrows,decorations,positioning,arrows.new,calc}
+
+\setcounter{secnumdepth}{0}
+%\titleformat{\chapter}[display]
+%  {\itshape\Huge}{Chapter \thechapter:~}{}{}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% index and bibliography
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\RequirePackage{makeidx}
+%\RequirePackage[sort,comma]{natbib}
+\setcounter{tocdepth}{1}
+\newtheorem{theorem}{Theorem}[chapter]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[chapter]
+
+\tabulinesep=1mm
+
+\setlength{\cftbeforechapskip}{2ex}
+\setlength{\cftbeforesecskip}{0.5ex}
+
+
+\renewcommand*\cftchapdotsep{\cftdotsep}
+\renewcommand*\cftchapaftersnum{.}
+\renewcommand{\cftchapfont}{\scshape\large}

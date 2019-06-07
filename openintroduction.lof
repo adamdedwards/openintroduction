@@ -1,118 +1,37 @@
-\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
-\defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{About this Book}{7}{chapter*.2}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Acknowledgments}{9}{chapter*.3}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The ob/ob mouse (left), a laboratory mouse which has been genetically engineered to be obese, and an ordinary mouse (right). Photo from \cite {WikimediaCommons2006}.}}{25}{section.1.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.2}{\ignorespaces A statement in different contexts, or no context.}}{27}{Item.11}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {1.3}{\ignorespaces Arguments vs. Explanations.}}{43}{section.1.4}
-\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{What Is Logic?}{19}{chapter.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces The boardgame Clue.}}{19}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces The ob/ob mouse (left), a laboratory mouse which has been genetically engineered to be obese, and an ordinary mouse (right). Photo from \citet {WikimediaCommons2006}.}}{22}{figure.1.2}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces A statement in different contexts, or no context.}}{24}{figure.1.3}
+\contentsline {xpart}{Basic Concepts}{19}{part.1}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.1}{\ignorespaces A \textbf {valid} argument.}}{55}{Item.82}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.2}{\ignorespaces A \textbf {valid} argument}}{56}{Item.84}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.3}{\ignorespaces An \textbf {invalid} argument.}}{57}{Item.86}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.4}{\ignorespaces An \textbf {invalid} argument.}}{58}{Item.88}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.5}{\ignorespaces An \textbf {invalid} argument}}{58}{Item.90}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.6}{\ignorespaces An \textbf {invalid} argument}}{59}{Item.92}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.7}{\ignorespaces These two arguments are valid, but only the one on the right is sound}}{59}{Item.96}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.8}{\ignorespaces An argument that is \textbf {valid} but not \textit {sound}}}{60}{Item.98}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Neither argument is valid, but one is strong and one is weak}}{68}{Item.145}
-\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{The Basics of Evaluating Argument}{35}{chapter.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Neither argument is valid, but one is strong and one is weak}}{45}{figure.2.1}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{What is Formal Logic?}{49}{chapter.3}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Two examples of valid arguments.}}{49}{figure.3.1}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Parts of a quantified categorical statement.}}{99}{Item.271}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Euler Circles}}{103}{section.4.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Venn's original diagram for an mood-A statement (Venn \cite *{Venn1880a}). Screencap from Google Books by J. Robert Loftis.}}{103}{section.4.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.4}{\ignorespaces *}}{106}{section.4.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Venn Diagrams for the Four Basic Forms of a Categorical Statement}}{106}{section.4.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Conversions of the Four Basic Forms}}{119}{subsection*.13}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Valid Arguments by Conversion}}{120}{subsection*.13}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.8}{\ignorespaces *}}{122}{subsection*.14}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Obversions of the Four Basic Forms}}{122}{subsection*.14}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Valid argument forms by obversion}}{123}{Item.385}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.11}{\ignorespaces *}}{125}{Item.385}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Contrapositions the Four Basic Forms}}{125}{subsection*.15}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Valid argument forms from contraposition}}{125}{Item.387}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.14}{\ignorespaces *}}{128}{Item.388}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.15}{\ignorespaces *}}{128}{Item.389}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.16}{\ignorespaces *}}{128}{Item.390}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.17}{\ignorespaces *}}{128}{Item.390}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.18}{\ignorespaces The traditional square of opposition}}{134}{section.4.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.19}{\ignorespaces One of the earliest surviving versions of the square of opposition, from a 9th century manuscript that includes a commentary on Aristotle by the African writer Apuleius of Madaura (\cite {Apuleius1987}). The manuscript is held Lawrence J. Schoenberg collection (LJS 101) at the University of Pennsylvania, who have kindly put a facsimile online (\url {http://dla.library.upenn.edu/dla/medren/detail.html?id=MEDREN_5186550}.) Screencap by J. Robert Loftis.}}{137}{section.4.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.20}{\ignorespaces A 16th century illustration of the square of opposition from John Major's \textit {Introductorium Perutile in Aristotelicam Dialecticen} (\cite *[fol.L]{Major1527}). Screencap from Google Books by J. Robert Loftis.}}{137}{section.4.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Interpretations of A: ``All $S$ are $P$.''}}{144}{section.4.6}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {4.22}{\ignorespaces The modern square of opposition}}{149}{section.4.6}
-\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{What is Critical Thinking?}{61}{chapter.4}
+\contentsline {xpart}{Critical Thinking}{61}{part.2}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Venn diagrams for the eight universal statements that can occur in the premises.}}{161}{subsection*.17}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Venn diagrams for the eight particular statements that can occur in the premises.}}{163}{subsection*.17}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {5.3}{\ignorespaces The oldest surviving version of the ``Barbara, Celarent...'' poem, from William of Sherwood (\cite *{Sherwood1275}). The manuscript is held at the Biblioth\`eque Nationale de France, ms. Lat. 16617, \url {http://gallica.bnf.fr/ark:/12148/btv1b9066740r}}}{169}{subsection*.18}
-\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Informal Fallacies}{63}{chapter.5}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.1}{\ignorespaces This is Cupcake. The fact that she is a dog is a \textit {sufficient} condition for her to be a mammal. She also likes socks.}}{211}{Item.708}
-\defcounter {refsection}{0}\relax 
-\contentsline {figure}{\numberline {6.2}{\ignorespaces The antecedent of a material conditional is a sufficient condition for the consequent, while the consequent is a necessary condition for the antecedent.}}{211}{Item.708}
-\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Categorical Statements}{83}{chapter.6}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Parts of a quantified categorical statement.}}{84}{figure.6.1}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Venn's original diagram for an mood-A statement (Venn \citep {Venn1880a}). Screencap from Google Books by J. Robert Loftis.}}{87}{figure.6.2}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces One of the earliest surviving versions of the square of opposition, from a 9th century manuscript that includes a commentary on Aristotle by the African writer Apuleius of Madaura (\@tufte@normal@cite {Apuleius1987}). The manuscript is held Lawrence J. Schoenberg collection (LJS 101) at the University of Pennsylvania, who have kindly put a facsimile online (\url {http://dla.library.upenn.edu/dla/medren/detail.html?id=MEDREN_5186550}.) Screencap by J. Robert Loftis.}}{102}{figure.6.3}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces A 16th century illustration of the square of opposition from John Major's \textit {Introductorium Perutile in Aristotelicam Dialecticen} (\@tufte@normal@cite *[fol.L]{Major1527}). Screencap from Google Books by J. Robert Loftis.}}{104}{figure.6.4}
+\contentsline {xpart}{Categorical Logic}{83}{part.3}
+\contentsline {xpart}{Propositional Logic}{111}{part.4}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Other Symbolic Notation}{113}{appendix.A}
+\contentsline {xpart}{Appendices}{113}{part.5}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Glossary}{117}{appendix.B}
 \addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
+\contentsline {xchapter}{Quick Reference}{121}{appendix.C}
 \contentsfinish 
