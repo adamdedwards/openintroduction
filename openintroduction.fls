@@ -1046,6 +1046,11 @@ INPUT tex/52-cognitivebiases.tex
 INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplr9t.vf
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmr.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr8r.tfm
+INPUT img/survivorship-bias.png
+INPUT ./img/survivorship-bias.png
+INPUT ./img/survivorship-bias.png
+INPUT ./img/survivorship-bias.png
+INPUT ./img/survivorship-bias.png
 OUTPUT tex/20-categoricalstatements.aux
 INPUT tex/20-categoricalstatements.tex
 INPUT tex/20-categoricalstatements.tex
