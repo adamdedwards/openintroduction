@@ -20,18 +20,21 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Informal Fallacies}{63}{chapter.5}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Categorical Statements}{83}{chapter.6}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Parts of a quantified categorical statement.}}{84}{figure.6.1}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Venn's original diagram for an mood-A statement (Venn \citep {Venn1880a}). Screencap from Google Books by J. Robert Loftis.}}{87}{figure.6.2}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces One of the earliest surviving versions of the square of opposition, from a 9th century manuscript that includes a commentary on Aristotle by the African writer Apuleius of Madaura (\@tufte@normal@cite {Apuleius1987}). The manuscript is held Lawrence J. Schoenberg collection (LJS 101) at the University of Pennsylvania, who have kindly put a facsimile online (\url {http://dla.library.upenn.edu/dla/medren/detail.html?id=MEDREN_5186550}.) Screencap by J. Robert Loftis.}}{102}{figure.6.3}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces A 16th century illustration of the square of opposition from John Major's \textit {Introductorium Perutile in Aristotelicam Dialecticen} (\@tufte@normal@cite *[fol.L]{Major1527}). Screencap from Google Books by J. Robert Loftis.}}{104}{figure.6.4}
-\contentsline {xpart}{Categorical Logic}{83}{part.3}
-\contentsline {xpart}{Propositional Logic}{111}{part.4}
+\contentsline {xchapter}{Cognitive Biases}{81}{chapter.6}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces A diagram of the locations where damage was recorded on bombers during WWII. Source: \url {https://commons.wikimedia.org/wiki/File:Survivorship-bias.png}}}{86}{figure.6.1}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Other Symbolic Notation}{113}{appendix.A}
-\contentsline {xpart}{Appendices}{113}{part.5}
+\contentsline {xchapter}{Categorical Statements}{91}{chapter.7}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Parts of a quantified categorical statement.}}{92}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Venn's original diagram for an mood-A statement (Venn \citep {Venn1880a}). Screencap from Google Books by J. Robert Loftis.}}{95}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces One of the earliest surviving versions of the square of opposition, from a 9th century manuscript that includes a commentary on Aristotle by the African writer Apuleius of Madaura (\@tufte@normal@cite {Apuleius1987}). The manuscript is held Lawrence J. Schoenberg collection (LJS 101) at the University of Pennsylvania, who have kindly put a facsimile online (\url {http://dla.library.upenn.edu/dla/medren/detail.html?id=MEDREN_5186550}.) Screencap by J. Robert Loftis.}}{110}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces A 16th century illustration of the square of opposition from John Major's \textit {Introductorium Perutile in Aristotelicam Dialecticen} (\@tufte@normal@cite *[fol.L]{Major1527}). Screencap from Google Books by J. Robert Loftis.}}{112}{figure.7.4}
+\contentsline {xpart}{Categorical Logic}{91}{part.3}
+\contentsline {xpart}{Propositional Logic}{119}{part.4}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Glossary}{117}{appendix.B}
+\contentsline {xchapter}{Other Symbolic Notation}{121}{appendix.A}
+\contentsline {xpart}{Appendices}{121}{part.5}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Quick Reference}{121}{appendix.C}
+\contentsline {xchapter}{Glossary}{125}{appendix.B}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Quick Reference}{131}{appendix.C}
 \contentsfinish 

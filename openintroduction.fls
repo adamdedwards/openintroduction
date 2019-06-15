@@ -718,6 +718,8 @@ INPUT tex/50-whatiscriticalthinking.aux
 INPUT tex/50-whatiscriticalthinking.aux
 INPUT tex/51-informalfallacies.aux
 INPUT tex/51-informalfallacies.aux
+INPUT tex/52-cognitivebiases.aux
+INPUT tex/52-cognitivebiases.aux
 INPUT tex/20-categoricalstatements.aux
 INPUT tex/20-categoricalstatements.aux
 INPUT tex/A0-notation.aux
@@ -1038,6 +1040,12 @@ INPUT tex/50-whatiscriticalthinking.tex
 OUTPUT tex/51-informalfallacies.aux
 INPUT tex/51-informalfallacies.tex
 INPUT tex/51-informalfallacies.tex
+OUTPUT tex/52-cognitivebiases.aux
+INPUT tex/52-cognitivebiases.tex
+INPUT tex/52-cognitivebiases.tex
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplr9t.vf
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr8r.tfm
 OUTPUT tex/20-categoricalstatements.aux
 INPUT tex/20-categoricalstatements.tex
 INPUT tex/20-categoricalstatements.tex
@@ -1118,6 +1126,8 @@ INPUT tex/50-whatiscriticalthinking.aux
 INPUT tex/50-whatiscriticalthinking.aux
 INPUT tex/51-informalfallacies.aux
 INPUT tex/51-informalfallacies.aux
+INPUT tex/52-cognitivebiases.aux
+INPUT tex/52-cognitivebiases.aux
 INPUT tex/20-categoricalstatements.aux
 INPUT tex/20-categoricalstatements.aux
 INPUT tex/A0-notation.aux
