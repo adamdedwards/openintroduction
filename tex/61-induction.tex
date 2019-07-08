@@ -1,0 +1,66 @@
+\chapter{Inductive Logic}
+\markright{Chap \ref{ch:inductivelogic}: Inductive Logic}
+\label{ch:inductivelogic}
+\setlength{\parindent}{1em}
+
+Recall the how we evaluate inductive arguments from chapter~\ref{ch:basicevaluation}. There we said that inductive arguments have similar evaluative standards to deductive arguments. Both kinds of argument can be evaluated for its form and for its content. We can evaluate the \emph{form} of an inductive argument by asking whether it is \gls{strong} or \gls{weak}. Once we establish that an inductive argument is strong, we can ask whether its premises are true to determine if the argument is \gls{cogent}.
+
+You may have noticed that the definition of a strong inductive argument is somewhat vague. An inductive argument is strong just in case the premises would make the conclusion more likely, if they were true. But how \emph{much} more likely? After all, consider the following inductive argument:
+
+\begin{kormanize}
+\premise{The first number of the winning lottery ticket is 7.}
+\premise{The first number of my lottery ticket is 7.}
+\conclusion{Therefore, I have the winning lottery ticket.}
+\end{kormanize}
+
+Of course, these premises \emph{do} support the conclusion somewhat. They make the conclusion more likely to be true. But is this really a strong argument? Should I \emph{believe} or \emph{endorse} the conclusion on the basis of these premises? Probably not.
+
+Unfortunately there is no universally agreed-upon standard for how much evidential support some premises must provide a conclusion in order for the argument to be inductively strong. However, there is a wealth of formal inductive methods that have tried to make these evidential standards more rigorous and clear. These methods rely on the mathematical field of probability theory to provide a basis for probabilistic and inductive logics. In part~\ref{part:probability} we'll discuss the theory of probability in much more detail, but for now let's examine the basics.
+
+\section{What is probability?}
+
+Probability is a measure of something. Philosophers and logicians disagree about exactly \emph{what} probability is a measure \emph{of}, and these disagreements fall roughly into two camps.
+
+One group of philosophers asserts that probability is a measure of the long-term \emph{frequency} of events. That is, if we measure some event happening or not happening over a period of time, the probability of that event is simply the ratio of the number of times it did happen divided by the number of times it \emph{could have} happened.
+
+Another group of philosophers asserts that probability isn't a measure of frequencies, but a measure of our \emph{confidence} that an event will occur. That is, probability measures the degree of belief that we should adopt with respect to some proposition.
+
+These aren't the only views that philosophers have defended, and you can probably think of other things that probability could measure. For now, we'll avoid these tricky philosophical problems and simply discuss some of the formal machinery of probability theory. Everything we say here will obtain whether you endorse one or another of these views.
+
+In earlier chapters, we assigned a \gls{truth value} to propositions. We said that propositions can be either true or false. In this chapter, we are going to assign probability values to propositions, but with one caveat. Each atomic proposition will describe an \textsc{\gls{atomic event}}, by which we mean events that are mutually exclusive and exhaustive.
+
+\newglossaryentry{atomic event}
+{
+name=Atomic Event,
+description={}
+}
+
+Consider rolling a six-sided die. Each event is one of the possible faces the die could land on. Because the die can't land on more than one side in a single roll and can't fail to land on one of the sides, these are our atomic events. We will assign a probability to each of these events using the notation ``$pr(E)$'' where `$E$' is shorthand for the event.
+
+Now let's consider some of the rules that our probability values must follow.
+
+\section{The Axioms of Probability}
+
+The axioms of probability were first expressed in this form by Soviet mathematician Andrey Kolmogorov in his book \textit{Foundations of the Theory of Probability} in 1933. These axioms are as follows:
+
+\begin{description}
+\item{Non-negativity} For any event $E$, $pr(E)\ge 0$
+\item{Normality} $pr(\Omega) = 1$
+\item{Finite additivity} $pr(A \lor B) = pr(A) + pr(B)$ for every $A$ and $B$ such that $A \land B$ is false.
+\end{description}
+
+\newglossaryentry{Kolmogorov axioms}
+{
+name=Kolmogorov Axioms,
+description={The three foundational axioms of probability theory: non-negativity, normality, and finite additivity.}
+}
+
+Let's unpack these axioms one at a time.
+
+The first, non-negativity, says that the probability of any event must be greater than or equal to zero. In other words, all probability measures are positive numbers.
+
+The second, normality, says that the probability of the entire event space (every possible event) is equal to one. Logicians typically use the omega symbol ($\Omega$) to denote the entire event space. This has a few implications. One is that we know that \emph{some} event in the events under consideration must occur. That is, among all of the events that we are considering, one of them is the event that will \emph{actually} occur. Another implication of this axiom is that a probability of 1 is the maximum value that a probability measure can be. Between non-negativity and normality we know that all probability measure values are between 0 and 1, inclusive.
+
+In the six-sided die example, the consequence of this axiom is that the probability of rolling \emph{some} number 1-6 is equal to 1.
+
+Finally, finite additivity is an axiom of probability which says that the probability that two mutually exclusive events, $A$ and $B$, occur is simply the sum of the probabilities of each of the events. Consider our six-sided die example again. The probability of rolling a 2 or a 4 is simply the probability of rolling each of them summed together: pr(roll two or roll four) = pr(roll two) + pr(roll four).

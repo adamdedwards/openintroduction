@@ -1,0 +1,153 @@
+\chapter{Mill's Methods}
+\markright{Chap \ref{ch:millsmethods}: Mill's Methods}
+\label{ch:millsmethods}
+\setlength{\parindent}{1em}
+
+John Stuart Mill (1806--1873) was a British philosopher who, among other things, developed the ethical theory of Utilitarianism and made contributions to the philosophy of science. In what have come to be known as ``Mill's methods'' he developed a systematized set of methods for identifying when something is a cause.
+
+These methods are discussed in detail in Mill's book, \textit{A System of Logic}, which is available on the Internet Archive.\footnote{
+\href{https://archive.org/details/systemofratiocin00milluoft/page/n6}{Mill (1843) A System of Logic}}
+
+\section{Direct method of agreement}
+
+\begin{displayquote}
+    If two or more instances of the phenomenon under investigation have only one circumstance in common, the circumstance in which alone all the instances agree, is the cause (or effect) of the given phenomenon.
+
+    -- John Stuart Mill, \textit{A System of Logic}, Vol. 1. p. 454.
+\end{displayquote}
+
+For a property to be a necessary condition it must always be present if the effect is present. Since this is so, then we are interested in looking at cases where the effect is present and taking note of which properties, among those considered to be 'possible necessary conditions' are present and which are absent. Obviously, any properties which are absent when the effect is present cannot be necessary conditions for the effect. Consider a case from epidemiology. Imagine you are a medieval plague doctor trying to identify the cause of plague in several nearby towns. Table~\ref{tbl:agreement} lists several towns and some of their features.
+
+\begin{table}[h!]
+\begin{tabu} to \textwidth {X[2] X[c] X[c] X[c] X[c] X[c]}
+\textbf{Town Name} & \textbf{Near swamp?} & \textbf{Town well?} & \textbf{Port city?} & \textbf{Cremate dead?} & \textbf{Plague?}\\ \hline
+Aberdyfi    & no  & yes & yes & yes & yes \\
+Berkton     & yes & yes & yes & no  & yes \\
+Caelfall    & no  & no  & yes & no  & yes \\
+Domburton   & yes & no  & yes & yes & yes \\
+Eelry       & yes & no  & yes & no  & yes \\
+Fournemouth & yes & yes & yes & no  & yes \\
+\end{tabu}
+\label{tbl:agreement}
+\caption{The Method of Agreement}
+\end{table}
+
+The idea behind the method of agreement is that we can identify the cause of something by identifying the other property that all appearances of the cause share in common. In table~\ref{tbl:agreement}, we ought to conclude that the cause of the plague is being near a port city, since that is the one thing all towns with the plague have in common.
+
+\section{Method of Difference}
+
+\begin{displayquote}
+    If an instance in which the phenomenon under investigation occurs, and an instance in which it does not occur, have every circumstance save one in common, that one occurring only in the former; the circumstance in which alone the two instances differ, is the effect, or cause, or a necessary part of the cause, of the phenomenon.
+
+    -- John Stuart Mill, \textit{A System of Logic}, Vol. 1. p. 455.
+\end{displayquote}
+
+The method of difference, by contrast to the method of agreement, identifies the only difference between the situations in which the cause occurs and situations in which it doesn't occur.
+
+\begin{table}[h!]
+\begin{tabu} to \textwidth {X[2] X[c] X[c] X[c] X[c] X[c]}
+\textbf{Town Name} & \textbf{Near swamp?} & \textbf{Town well?} & \textbf{Port city?} & \textbf{Cremate dead?} & \textbf{Plague?}\\ \hline
+Quathwaite  & yes & yes & yes & yes & yes \\
+Ruthorham   & no  & yes & yes & yes & no \\
+Saxondale   & yes & yes & yes & yes & yes \\
+Tarnstead   & yes & yes & yes & yes & yes \\
+\end{tabu}
+\label{tbl:difference}
+\caption{The Method of Difference}
+\end{table}
+
+In table~\ref{tbl:difference}, the town of Ruthorham is the only one which isn't built near a swamp. Thus, according to the method of difference we ought to conclude that being built near a swamp is a cause of plague outbreak.
+
+
+\section{Joint method of agreement and difference}
+
+\begin{displayquote}
+    If two or more instances in which the phenomenon occurs have only one circumstance in common, while two or more instances in which it does not occur have nothing in common save the absence of that circumstance; the circumstance in which alone the two sets of instances differ, is the effect, or cause, or a necessary part of the cause, of the phenomenon.
+
+    -- John Stuart Mill, \textit{A System of Logic}, Vol. 1. p. 463.
+\end{displayquote}
+
+Also called simply the ``joint method,'' this principle simply represents the application of the methods of agreement and difference.
+
+\begin{table}[h!]
+\begin{tabu} to \textwidth {X[2] X[c] X[c] X[c] X[c] X[c]}
+\textbf{Town Name} & \textbf{Near swamp?} & \textbf{Town well?} & \textbf{Port city?} & \textbf{Cremate dead?} & \textbf{Plague?}\\ \hline
+Glenarm      & yes & yes & yes & no  & yes \\
+Harmstead    & yes & no  & yes & yes & no \\
+Ilfracombe   & no  & yes & yes & yes & yes \\
+Jaren's Well & no  & yes & yes & no  & yes \\
+Kilerth      & yes & yes & yes & yes & yes \\
+\end{tabu}
+\label{tbl:joint}
+\caption{The Joint Method}
+\end{table}
+
+In table~\ref{tbl:joint} we should conclude that the presence of a town well causes the plague.
+
+\section{Method of Residue}
+
+\begin{displayquote}
+    Subduct from any phenomenon such part as is known by previous inductions to be the effect of certain antecedents, and the residue of the phenomenon is the effect of the remaining antecedents.
+
+    -- John Stuart Mill, \textit{A System of Logic}, Vol. 1. p. 465.
+\end{displayquote}
+
+If a range of factors are believed to cause a range of phenomena, and we have matched all the factors, except one, with all the phenomena, except one, then the remaining phenomenon can be attributed to the remaining factor.
+
+\begin{table}[h!]
+\begin{tabu} to \textwidth {X[2] X[c] X[c] X[c] X[c] X[c] X[c]}
+\textbf{Town Name} & \textbf{Near swamp?} & \textbf{Town well?} & \textbf{Port city?} & \textbf{Swamp fever?} & \textbf{Giardia?} & \textbf{Plague?}\\ \hline
+Urmkirkey      & yes & no  & yes & yes & no  & yes \\
+Violl's Garden & yes & yes & no  & yes & yes & no  \\
+Warrington     & no  & yes & yes & no  & yes & no  \\
+Xynnar         & no  & yes & no  & yes & yes & no  \\
+Yellowseed     & no  & no  & yes & no  & no  & yes \\
+\end{tabu}
+\label{tbl:residue}
+\caption{The Method of Residue}
+\end{table}
+
+In table~\ref{tbl:residue}, suppose that we know that swamp fever is caused by being near a swamp and giardia is caused by a contaminated town well. The method of residue suggests that the only potential cause left---in this case being a port city---is the cause of plague.
+
+\section{Method of Concomitant Variation}
+
+\begin{displayquote}
+    Whatever phenomenon varies in any manner whenever another phenomenon varies in some particular manner, is either a cause or an effect of that phenomenon, or is connected with it through some fact of causation.
+
+    -- John Stuart Mill, \textit{A System of Logic}, Vol. 1. p. 470.
+\end{displayquote}
+
+If across a range of circumstances leading to a phenomenon, some property of the phenomenon varies in tandem with some factor existing in the circumstances, then the phenomenon can be associated with that factor. For instance, suppose that various samples of water, each containing both salt and lead, were found to be toxic. If the level of toxicity varied in tandem with the level of lead, one could attribute the toxicity to the presence of lead.
+
+The method of concomitant variation can be represented as in table~\ref{tbl:variation}, where we can see that the further from a swamp the town is, the lower the population with plague. Thus, we know that distance from a swamp varies in accordance with plague so on this method we should conclude that the swamp is a cause of plague.
+
+\begin{table}[h!]
+\begin{tabu} to \textwidth {X[1] X[2,c] X[2,c]}
+\textbf{Town Name} & \textbf{Proximity to swamp} & \textbf{Percent of population with plague}\\ \hline
+Laencaster & 111km & 2\%  \\
+Mirfield   & 40km  & 6\% \\
+Newsham    & 15km  & 18\% \\
+Oldham     & 5km   & 37\% \\
+Porthcrawl & 2km   & 78\%  \\
+\end{tabu}
+\label{tbl:variation}
+\caption{The Method of Concomitant Variation}
+\end{table}
+
+Unlike the preceding four methods, the method of concomitant variation doesn't involve the elimination or inclusion of any features or effects. According to this method, when one property value increases or decreases this results in a change in the value of another property.
+
+However, we know that this method (like the other of Mill's methods) is no guarantee that we've identified the cause correctly. It's possible that our potential cause is merely \emph{associated} with the effect, rather than causing it either directly or indirectly.
+
+Another important feature of Mill's methods is that they assume we have already determined the list of potential causes to examine. It is certainly possible that we've left the true cause off the list entirely!
+
+\section*{Key Terms}
+\begin{fullwidth}
+\begin{sortedlist}
+\sortitem{Mill's methods}{}
+\sortitem{Method of Concomitant Variation}{}
+\sortitem{Method of Residue}{}
+\sortitem{Joint Method}{}
+\sortitem{Method of Agreement}{}
+\sortitem{Method of Difference}{}
+\end{sortedlist}
+\end{fullwidth}

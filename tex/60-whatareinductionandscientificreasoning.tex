@@ -1,550 +1,268 @@
-\chapter{Proofs in Quantified Logic}
-\markright{Chap \ref{chap:proofsinQL}: Proofs in QL}
-\label{chap:proofsinQL}
+\chapter{What are Induction and Scientific Reasoning?}
+\markright{Chap \ref{ch:inductionandscience}: Induction and Science}
+\label{ch:inductionandscience}
 \setlength{\parindent}{1em}
 
-% ******************************************
-%  *                       6.1 Rules for Quantifiers             *
-%******************************************
+\section{Introduction}
 
-\section{Rules for Quantifiers}
+Earlier in our discussion of logic we made the distinction between deductive and inductive forms of inference. Recall that while deduction and deductive inferences are inferences that attempt to guarantee the truth of the conclusion on the basis of the premises, induction and inductive inferences attempt something less ambitious. In short, induction is any form of inference in which the premises are not intended to logically entail or guarantee their conclusion, but merely to provide some support to it. In this part of the book we'll be examining inductive logic in more detail, with special attention paid to a rigorous form of inductive reasoning as applied in the sciences.
 
-For proofs in QL, we use all of the basic rules of SL plus four new basic rules: both introduction and elimination rules for each of the quantifiers.
+Before we begin, you may be asking yourself, ``Why should we care about inductive reasoning at all?'' After all, deductive inferences \emph{guarantee} their conclusions and that's the best kind of evidential support you could hope for! Shouldn't we just spend all of our time focusing on making deductive inferences?
 
-Since all of the derived rules of SL are derived from the basic rules, they will also hold in QL. We will add another derived rule, a replacement rule called quantifier negation.
+This is a reasonable complaint, and one worth taking seriously. While valid deduction is the absolute best form of evidential support a conclusion can receive, we should care about induction as well, for at least the following reasons.
 
-\subsection{Universal elimination}
+First, many of the inferences people make every day are inductive, not deductive. Consider just the inferences you make when you go to the refrigerator to make a sandwich. Suppose you reason as follows:
 
-If you have $\forall x Ax$, it is legitimate to infer that anything is an $A$. You can infer $Aa$, $Ab$, $Ac$, $Ad_3$--- in short, you can infer $A\script{c}$ for any constant \script{c}. This is the general form of the universal elimination rule ($\forall$E):
+\begin{kormanize}
+\premise{Yesterday I bought sandwich ingredients and put them in my refrigerator.}
+\conclusion{So, today there are sandwich ingredients in my refrigerator.}
+\end{kormanize}
 
-\begin{proof}
-	\have[m]{a}{\forall \script{x}\script{A}}
-	\have[\ ]{c}{\script{A}[\script{c}|\script{x}]} \Ae{a}
-\end{proof}
+Of course, the conclusion isn't entailed by that premise. Perhaps your roommate ate all of the cold cuts, cheese, and vegetables that you bought at the store yesterday in a late night binge. If so, then the conclusion obviously would not follow from the premise. Okay, but we can deal with this by adding another premise, such as ``No one has touched my sandwich ingredients since I put them in the refrigerator.'' Still, the conclusion does not follow \emph{deductively} from these premises since it could be that while no one has touched them the power went out in your building and all of the food in your refrigerator has gone bad!
 
-$\script{A}[\script{c}|\script{x}]$ is a substitution instance of $\forall\script{x}\script{A}$. The symbols for a substitution instance are not symbols of QL, so you cannot write them in a proof. Instead, you write the subsituted sentence with the constant \script{c} replacing all occurrences of the variable \script{x} in \script{A}. For example:
+We could go on and on like this, but the point is that most of the inferences we make are not in the form of a deductively valid argument. We often reason on limited evidence, or via less than valid forms of inference. So it is worthwhile to understand how inductive inference functions.
 
-\begin{proof}
-	\hypo{a}{\forall x(Mx \eif Rxd)}
-	\have{c}{Ma \eif Rad} \Ae{a}
-	\have{d}{Md \eif Rdd} \Ae{a}
-\end{proof}
+A second reason to care about inductive inference is that deductive inferences are fundamentally \emph{limited}. By this I mean to emphasize the logician and philosopher C. S. Peirce's term for inductive inference: \textsc{\gls{ampliative logic}}. By ampliative, Peirce meant that the premises `amplify' what can be deductively inferred from them. That is, the premises go beyond their deductive entailments.
 
+\newglossaryentry{ampliative logic}
+{
+name=Ampliative Logic,
+description={Ampliative logic is another term for inductive logic, or a logic the inferences of which do not guarantee or logically entail the truth of the conclusion on the basis of the premises. See also \gls{inductive logic}.}
+}
 
-\subsection{Existential introduction}
+Ampliative inference is just another word for inductive inference, but the point is the same. Inductive inferences tell us something about the world that is not already contained in the premises. For example, consider this classic deductive argument from categorical logic:
 
-When is it legitimate to infer $\exists x Ax$? If you know that something is an $A$--- for instance, if you have $Aa$ available in the proof.
+\begin{kormanize}
+\premise{All dogs like peanut butter.}
+\premise{Rose is a dog.}
+\conclusion{So, Rose likes peanut butter.}
+\end{kormanize}
 
-This is the existential introduction rule ($\exists$I):
+Now consider that if you \emph{accept} the premises, then there's an important sense in which the conclusion doesn't tell you anything you didn't already know. You haven't learned anything about the world from this argument (assuming you already knew the premises). However, contrast that argument with the following inductive `version': 
 
-\begin{proof}
-	\have[m]{a}{\script{A}}
-	\have[\ ]{c}{\exists \script{x}\script{A}[\script{x}||\script{c}]} \Ei{a}
-\end{proof}
+\begin{kormanize}
+\premise{Most dogs like peanut butter.}
+\premise{Rose is a dog.}
+\conclusion{So, Rose likes peanut butter.}
+\end{kormanize}
 
-It is important to notice that $\script{A}[\script{x}||\script{c}]$ is not the same as a substitution instance. We write it with two bars to show that the variable \script{x} does not need to replace all occurrences of the constant \script{c}. You can decide which occurrences to replace and which to leave in place. For example:
+Obviously, the conclusion isn't entailed by these premises (the argument isn't valid). However, if you come to know the conclusion on the basis of these premise you \emph{do} learn something new; namely, you learn that Rose is one of the majority of dogs who like peanut butter. 
 
-\begin{proof}
-	\hypo{a}{Ma \eif Rad}
-	\have{b}{\exists x(Ma \eif Rax)} \Ei{a}
-	\have{c}{\exists x(Mx \eif Rxd)} \Ei{a}
-	\have{d}{\exists x(Mx \eif Rad)} \Ei{a}
-	\have{e}{\exists y\exists x(Mx \eif Ryd)} \Ei{d}
-	\have{f}{\exists z\exists y\exists x(Mx \eif Ryz)} \Ei{e}
-\end{proof}
+A final consideration for why induction is important is simply that most scientific inferences are made as inductive, rather than deductive, inferences. The logic of science and statistics is fundamentally inductive, not deductive. To gain a better understanding of science it is extremely important to understand how inductive inference functions.
 
+Before moving on to the next chapters, we'll spend the remainder of this chapter discussing some basic concepts in the history and philosophy of science in order to give some context for later discussions.
 
-\subsection{Universal introduction}
-A universal claim like $\forall x Px$ would be proven if {every} substitution instance of it had been proven, if every sentence $Pa$, $Pb$, $\ldots$ were available in a proof. Alas, there is no hope of proving \emph{every} substitution instance. That would require proving $Pa$, $Pb$, $\ldots$, $Pj_2$, $\ldots$, $Ps_7$, $\ldots$, and so on to infinity. There are infinitely many constants in QL, and so this process would never come to an end.
+\section{Early Scientific Method}
 
-Consider a simple argument: $\forall x Mx$, \therefore\ $\forall y My$
+The history of philosophy is the history of science. Aristotle wrote lengthy treatises on the nature of mechanics and dynamics, on biology, geology, and optics. For most of history there was no sharp distinction between the scientist (a term invented by the philosopher and scientist William Whewell in 1833) and the philosopher.
 
-It makes no difference to the meaning of the sentence whether we use the variable $x$ or the variable $y$, so this argument is obviously valid. Suppose we begin in this way:
+One of the things that characterizes the early development of the scientific method is a commitment to \textsc{\gls{empiricism}}. Empiricism is the view that the only, or perhaps the primary, source of knowledge is sensory evidence or the experience of the senses. This view is contrasted with \textsc{\gls{rationalism}}, which says that the source of knowledge is the internal mechanisms of reason.
 
-\begin{proof}
-	\hypo{x}{\forall x Mx} \by{want $\forall y My$}{}
-	\have{a}{Ma} \Ae{x}
-\end{proof}
+\newglossaryentry{empiricism}
+{
+name=Empiricism,
+description={Empiricism is a view in epistemology according to which the only, or perhaps the primary, source of knowledge is sensory evidence or the experience of the senses. See also \gls{rationalism}.}
+}
 
-We have derived $Ma$. Nothing stops us from using the same justification to derive $Mb$, $\ldots$, $Mj_2$, $\ldots$, $Ms_7$, $\ldots$, and so on until we run out of space or patience. We have effectively shown the way to prove $M\script{c}$ for any constant \script{c}. From this, $\forall x Mx$ follows.
+\newglossaryentry{rationalism}
+{
+name=Rationalism,
+description={Rationalism is the view in epistemology that knowledge comes from internal mechanisms of reason or rationality. See also \gls{empiricism}.}
+}
 
-\begin{proof}
-	\hypo{x}{\forall x Mx}
-	\have{a}{Ma} \Ae{x}
-	\have{y}{\forall y My} \Ai{a}
-\end{proof}
+Both of these views have had their philosophical defenders and both have a lot of evidence that we can acquire knowledge in the way recommended by the view. Consider, for example, proofs in geometry. The truths of mathematics in general, and geometry in particular, seem to be true no matter what. That is, these truths don't depend on making certain kinds of observations or collecting any evidence. Thus, the rationalists say, truths of this kind of derivable from pure reason. Notice that even though you and I may have made observations of a certain kind in our geometry class in order to come to know these truths, this doesn't undermine the rationalist position that such observations are not \emph{required} in order to know geometric proofs. Strict empiricists, on the other hand, maintain that mathematical \emph{concepts} require some kind of of observation and that a being of pure reason and no senses (if such a thing is possible) would not be able to create these concepts from nothing. 
 
-It is important here that $a$ was just some arbitrary constant. We had not made any special assumptions about it. If $Ma$ were a premise of the argument, then this would not show anything about \emph{all} $y$. For example:
+Which of these views do you find more compelling? Think about where knowledge might come from and what kinds of powers are necessary in order to know things about the world. We'll focus on empiricism for now, but think about the truths of logic and their source. Are these truths the result of sensory observations or reason?
 
-\begin{proof}
-	\hypo{x}{\forall x Rxa}
-	\have{a}{Raa} \Ae{x}
-	\have{y}{\forall y Ryy} \by{not allowed!}{}
-\end{proof}
+Early empiricists noticed very quickly that there are better and worse ways to observe the world around us. As a result they attempted to develop \emph{methods} that would codify and regulate the best ways to make empirical observations and make inferences on the basis of those observations. This is an ongoing process.
+
+There is no one ``scientific method'' that describes the best way to observe, predict, and model the world. Philosophers of science have been engaged in the centuries-long development of various scientific methods to help us make better inferences. 
+
+Starting with Sir Francis Bacon's \textit{Novum Organum} and Rene Descartes' \textit{Discourse on the Method} and ' \textit{Principles of Philosophy} in the 17th century, philosophers of science have generally agreed that a central feature of science is the development of a \textsc{\gls{hypothesis}}. A hypothesis is simply a proposition that may or may not be true and that is subjected to some form of confirmation or disconfirmation.
 
 
-This is the schematic form of the universal introduction rule ($\forall$I):
-
-\begin{proof}
-	\have[m]{a}{\script{A}}
-	\have[\ ]{c}{\forall \script{x}\script{A}[\script{x}|\script{c}]^\ast} \Ai{a}
-\end{proof}
-$^\ast$ \script{c} must not occur in any undischarged assumptions.
-
-Note that we can do this for any constant that does not occur in an undischarged assumption and for any variable.
-
-Note also that the constant may not occur in any \emph{undischarged} assumption, but it may occur as the assumption of a subproof that we have already closed. For example, we can prove $\forall z(Dz \eif Dz)$ without any premises.
-
-\begin{proof}
-	\open
-		\hypo{f1}{Df}\by{want $Df$}{}
-		\have{f2}{Df}\by{R}{f1}
-	\close
-	\have{ff}{Df \eif Df}\ci{f1-f2}
-	\have{zz}{\forall z(Dz \eif Dz)}\Ai{ff}
-\end{proof}
+\newglossaryentry{hypothesis}
+{
+name=Hypothesis,
+description={A hypothesis is a proposition that may or may not be true and can be subjected to confirmation or disconfirmation.}
+}
 
 
-\subsection{Existential elimination}
-A sentence with an existential quantifier tells us that there is \emph{some} member of the UD that satisfies a formula. For example, $\exists x Sx$ tells us (roughly) that there is at least one $S$. It does not tell us \emph{which} member of the UD satisfies $S$, however. We cannot immediately conclude $Sa$, $Sf_{23}$, or any other substitution instance of the sentence. What can we do?
+Bacon's method was to begin with the simplest and most obvious observations and then use these observations to confirm or disconfirm hypotheses at greater levels of generality. Descartes, on the other hand, began by doubting the truth of everything that his senses presented to him and trying to identify hypotheses that could not possibly be doubted (such as the famous \emph{cogito ergo sum}, or ``I think, therefore I am.''). Descartes then used this foundation of indubitable truths to derive more commonplace beliefs.
 
-Suppose that we knew both $\exists x Sx$ and $\forall x(Sx \eif Tx)$. We could reason in this way:
-\begin{quote}
-Since $\exists x Sx$, there is something that is an $S$. We do not know which constants refer to this thing, if any do, so call this thing $\Omega$. From $\forall x(Sx \eif Tx)$, it follows that if $\Omega$ is an $S$, then it is a $T$. Therefore $\Omega$ is a $T$.  Because $\Omega$ is a $T$, we know that $\exists x Tx$.
-\end{quote}
-In this paragraph, we introduced a name for the thing that is an $S$. We called it $\Omega$, so that we could reason about it and derive some consequences from there being an $S$. Since $\Omega$ is just a bogus name introduced for the purpose of the proof and not a genuine constant, we could not mention it in the conclusion. Yet we could derive a sentence that does not mention $\Omega$; namely, $\exists x Tx$. This sentence does follow from the two premises.
+\section{The Hypothetico-Deductive Model}
 
-We want the existential elimination rule to work in a similar way. Yet since Greek letters like $\Omega$ are not symbols of QL, we cannot use them in formal proofs. Instead, we will use constants of QL which do not otherwise appear in the proof. A constant that is used to stand in for whatever it is that satisfies an existential claim is called a \define{proxy}. Reasoning with the proxy must all occur inside a subproof, and the proxy cannot be a constant that is doing work elsewhere in the proof.
+The \textsc{\gls{hypothetico-deductive model}} of scientific inference is a proposed logical form of inference that explains how scientific hypotheses can be confirmed or disconfirmed.
 
-This is the schematic form of the existential elimination rule ($\exists$E): 
+\newglossaryentry{hypothetico-deductive model}
+{
+name=Hypothetico-Deductive Model,
+description={}
+}
 
-\begin{proof}
-	\have[m]{a}{\exists \script{x}\script{A}}
-	\open	
-		\hypo[n]{b}{\script{A}[\script{c}|\script{x}]^\ast}
-		\have[p]{c}{\script{B}}
-	\close
-	\have[\ ]{d}{\script{B}} \Ee{a,b-c}
-\end{proof}
-$^\ast$ The constant \script{c} must not appear in $\exists\script{x}\script{A}$, in \script{B}, or in any undischarged assumption.
+The hypothetico-deductive model is one of the more basic methods common to all scientific disciplines, whether it is economics, physics, or biochemistry. Its application can be divided into four stages:
 
-With this rule, we can give a formal proof that $\exists x Sx$ and $\forall x(Sx \eif Tx)$ together entail $\exists x Tx$. The structure of the proof is effectively the same as the English-language argument with which we began, except that the subproof uses the constant ``$a$'' rather than the bogus name $\Omega$.
-
-\begin{proof}
-	\hypo{es}{\exists x Sx}
-	\hypo{ast}{\forall x(Sx \eif Tx)}\by{want $\exists x Tx$}{}
-	\open
-		\hypo{s}{Sa}
-		\have{st}{Sa \eif Ta}\Ae{ast}
-		\have{t}{Ta} \ce{s,st}
-		\have{et1}{\exists x Tx}\Ei{t}
-	\close
-	\have{et2}{\exists x Tx}\Ee{es,s-et1}
-\end{proof}
-
-\subsection{Quantifier negation}
-
-When translating from English to QL, we noted that $\enot\exists x\enot\script{A}$ is logically equivalent to $\forall x\script{A}$. In QL, they are provably equivalent. We can prove one half of the equivalence with a rather gruesome proof:
-
-\begin{proof}
-	\hypo{Aa}{\forall x Ax} \by{want $\enot\exists x\enot Ax$}{}
-	\open
-		\hypo{Ena}{\exists x \enot Ax}\by{for reductio}{}
-		\open
-			\hypo{nc}{\enot Ac}\by{for $\exists$E}{}
-			\open
-				\hypo{Aa2}{\forall x Ax}\by{for reductio}{}
-				\have{c2}{Ac}\Ae{Aa}
-				\have{nc2}{\enot Ac}\by{R}{nc}
-			\close
-			\have{nAa}{\enot\forall x Ax}\ni{Aa2-nc2}
-		\close
-		\have{nAa3}{\enot\forall x Ax}\Ee{nc-nAa}
-		\have{Aa3}{\forall x Ax}\by{R}{Aa}
-	\close
-	\have{nEna}{\enot\exists x \enot Ax}\ni{Ena-nAa3}
-\end{proof}
-
-In order to show that the two sentences are genuinely equivalent, we need a second proof that assumes $\enot\exists x\enot\script{A}$ and derives $\forall x\script{A}$. We leave that proof as an exercise for the reader.
-
-It will often be useful to translate between quantifiers by adding or subtracting negations in this way, so we add two derived rules for this purpose. These rules are called quantifier negation (QN):
-\begin{center}
-\begin{tabular}{rl}
-$\enot\forall\script{x}\script{A} \nsststile{}{} \hspace{.5em} \sststile{}{} \exists\script{x}\enot\script{A}$\\
-$\enot\exists\script{x}\script{A} \nsststile{}{}  \hspace{.5em} \sststile{}{} \forall\script{x}\enot\script{A}$
-& QN
-\end{tabular}
-\end{center}
-Since QN is a replacement rule, it can be used on whole sentences or on subformulae.
-
-%%%%%%%%%   		Practice problems for Section 6.1                %%%%
-
-% rob: I put all the quantification problems from the original chapter 6 that don't involve identity or models in this section. 
-
-\practiceproblems
-
-\setlength{\parindent}{0pt}
-
-\problempart
-\label{pr.justifyQLproof}
-Provide a justification (rule and line numbers) for each line of proof that requires one.
-
-\begin{enumerate}[label=\arabic*)]
-\begin{multicols}{2}
-\begin{minipage}{\linewidth}
-\item \textcolor{white}{.} \\  %$\vdash \exists x Mx \eor \forall x\enot Mx$
-\vspace{-24pt}
-\begin{proof}
-	\open
-		\hypo{p1}{\enot (\exists x Mx \eor \forall x\enot Mx)}
-		\have{p2}{\enot \exists x Mx \eand \enot \forall x\enot Mx}{}
-		\have{p3}{\enot \exists x Mx}{}
-		\have{p4}{\forall x\enot Mx}{}
-		\have{p5}{\enot \forall x\enot Mx}{}
-	\close
-\have{n}{\exists x Mx \eor \forall x\enot Mx} {}
-\end{proof}
-\end{minipage}
-
-\pagebreak[4]
-\item \textcolor{white}{.} \\ %$\{\forall x(\exists y)(Rxy \eor Ryx),\forall x\enot Rmx\}\vdash\exists xRxm$
-\vspace{-16pt}
-\begin{proof}
-\hypo{p1}{\forall x\exists y(Rxy \eor Ryx)}
-\hypo{p2}{\forall x\enot Rmx}
-\have{3}{\exists y(Rmy \eor Rym)}{}
-	\open
-		\hypo{a1}{Rma \eor Ram}
-		\have{a2}{\enot Rma}{}
-		\have{a3}{Ram}{}
-		\have{a4}{\exists x Rxm}{}
-	\close
-\have{n}{\exists x Rxm} {}
-\end{proof}
-
-\vspace{2ex}
-
-\item \textcolor{white}{.} \\ %$\{\forall x(\exists yLxy \eif \forall zLzx), Lab\} \vdash \forall xLxx$
-\vspace{-16pt}
-\begin{proof} 
-\hypo{1}{\forall x(\exists yLxy \eif \forall zLzx)}
-\hypo{2}{Lab}
-\have{3}{\exists y Lay \eif \forall zLza}{}
-\have{4}{\exists y Lay} {}
-\have{5}{\forall z Lza} {}
-\have{6}{Lca}{}
-\have{7}{\exists y Lcy \eif \forall zLzc}{}
-\have{8}{\exists y Lcy}{}
-\have{9}{\forall z Lzc}{}
-\have{10}{Lcc}{}
-\have{11}{\forall x Lxx}{}
-\end{proof}
-
-
-
-\item \textcolor{white}{.} \\ % $\{\forall x(Jx \eif Kx), \exists x\forall y Lxy, \forall x Jx\} \vdash \exists x(Kx \eand Lxx)$
-\vspace{-16pt}
-\begin{proof}
-\hypo{a}{\forall x(Jx \eif Kx)}
-\hypo{b}{\exists x\forall y Lxy}
-\hypo{c}{\forall x Jx}
-\have{d}{Ja}{}
-\have{e}{Ja \eif Ka}{}
-\have{f}{Ka}{}
-\open
-	\hypo{2}{\forall y Lay}
-	\have{3}{Laa}{}
-	\have{4}{Ka \eand Laa}{}
-	\have{5}{\exists x(Kx \eand Lxx)}{}
-\close
-\have{j}{\exists x(Kx \eand Lxx)}{}
-\end{proof}
-\end{multicols}
+\begin{enumerate}
+\item Identify the hypothesis to be tested.
+\item Generate predictions from the hypothesis.
+\item Perform experiments to check whether predictions are correct.
+\item If the predictions are correct, then the hypothesis is confirmed. Otherwise, the hypothesis is disconfirmed.
 \end{enumerate}
 
-\problempart Without using the QN rule, prove $\enot\exists x\enot\script{A} \sststile{}{} \forall x\script{A}$
+Suppose your portable music player fails to switch on. You might then consider the hypothesis that perhaps the batteries are dead. So you decide to test whether this is true. Given this hypothesis you predict that the music player should work properly if you replace the batteries with new ones. So you proceed to replace the batteries, which is the ``experiment'' for testing the prediction. If the player works again, then your hypothesis is confirmed, and so you throw away the old batteries. If the player still does not work, then the prediction is false, and the hypothesis is disconfirmed. So you might reject your original hypothesis and come up with an alternative one to test, e.g. the batteries are ok but your music player is broken.
 
-\problempart
-\label{pr.someQLproofs}
-Provide a proof of each claim.
-\begin{earg}
-\item $\sststile{}{}  \forall x Fx \eor \enot \forall x Fx$
-\item $\{\forall x(Mx \eiff Nx), Ma\eand\exists x Rxa\}\sststile{}{}  \exists x Nx$
-\item $\{\forall x(\enot Mx \eor Ljx), \forall x(Bx\eif Ljx), \forall x(Mx\eor Bx)\}\sststile{}{}  \forall xLjx$
-\item $\forall x(Cx \eand Dt)\sststile{}{}  \forall xCx \eand Dt$
-\item $\exists x(Cx \eor Dt)\sststile{}{}  \exists x Cx \eor Dt$
-\end{earg}
+The example above helps us illustrate a few points about science and the hypothetico-deductive method.
 
-\problempart
-%Provide a proof of the argument about Billy on p.~\pageref{surgeon2}.
-
-In the previous chapter (p.~\pageref{surgeon2}), we gave the following example
-
-	\begin{quote}
-	
-	
-	The hospital will only hire a skilled surgeon. All surgeons are greedy. Billy is a surgeon, but is not skilled. Therefore, Billy is greedy, but the hospital will not hire him.
-	
-	\begin{ekey}
-	\item[UD:] people
-	\item[Gx:] $x$ is greedy.
-	\item[Hx:] The hospital will hire $x$.
-	\item[Rx:] $x$ is a surgeon.
-	\item[Kx:] $x$ is skilled.
-	\item[b:] Billy
-	\end{ekey}
-	
-	\begin{earg}
-	\label{surgeon2}
-	\item[] $\forall x\bigl[\enot (Rx \eand Kx) \eif \enot Hx\bigr]$
-	\item[] $\forall x(Rx \eif Gx)$
-	\item[] $Rb \eand \enot Kb$
-	\item[\therefore] $Gb \eand \enot Hb$
-	\end{earg}
-	
-	\end{quote}
-
-Prove the symbolized argument. 
-
-\problempart \label{pr.BarbaraEtc.proof1} \iflabelexists{chap:catstatements}{On page \pageref{table:full_twentyfour} you were introduced to the twenty-four valid Aristotelian syllogisms, and on page \pageref{venn_proofs} you were able to show 15 of these valid using Venn diagrams.  Now that we have translated them into QL (see page \pageref{pr.BarbaraEtc}) we can actually prove all of them valid. In this section, you will prove the unconditional forms. I have omitted Datisi and Ferio because their proofs are trivial variations on Darii and Ferison.}{On page \pageref{pr.BarbaraEtc} you translated the basic categorical syllogisms studied by Aristotle and his followers into QL. Now you need to provide derivations for some of them.}
-
-\begin{enumerate}[label=\arabic*), topsep=0pt, parsep=0pt, itemsep=3pt]
-\item \textbf{Barbara:} All $B$s are $C$s. All $A$s are $B$s.
-	\therefore\  All $A$s are $C$s.
-\item \textbf{Baroco:} All $C$s are $B$s. Some $A$ is not $B$.
-	\therefore\  Some $A$ is not $C$.
-\item \textbf{Bocardo:} Some $B$ is not $C$. All $B$s are $A$s.
-	\therefore\  Some $A$ is not $C$.
-\item\textbf{Celantes:} No $B$s are $C$s. All $A$s are $B$s.
-	\therefore\  No $C$s are $A$s.
-\item\textbf{Celarent:} No $B$s are $C$s. All $A$s are $B$s.
-	\therefore\  No $A$s are $C$s.
-\item\textbf{Campestres:} All $C$s are $B$s. No $A$s are $B$s.
-	\therefore\  No $A$s are $C$s.
-\item\textbf{Cesare:} No $C$s are $B$s. All $A$s are $B$s.
-	\therefore\  No $A$s are $C$s.
-\item\textbf{Dabitis:} All $B$s are $C$s. Some $A$ is $B$.
-	\therefore\  Some $C$ is $A$.
-\item\textbf{Darii:} All $B$s are $C$s. Some $A$ is $B$.
-	\therefore\  Some $A$ is $C$.
-\item\textbf{Disamis:} Some $B$ is $C$. All $B$s are $A$s.
-	\therefore\  Some $A$ is $C$.
-\item\textbf{Ferison:} No $B$s are $C$s. Some $B$ is $A$.
-	\therefore\  Some $A$ is not $C$.
-\item\textbf{Festino:} No $C$s are $B$s. Some $A$ is $B$.
-	\therefore\  Some $A$ is not $C$.
-\item\textbf{Frisesomorum:} Some $B$ is $C$. No $A$s are $B$s.
-	\therefore\  Some $C$ is not $A$.
+\begin{enumerate}
+\item A scientific hypothesis must be testable.
+\item Confirmation is not truth.
+\item Disconfirmation need not be falsity.
 \end{enumerate}
 
+Let's consider these points one by one.
 
-\problempart
-\label{pr.BarbaraEtc.proof2}
-Now prove the conditionally valid syllogisms using QL. Symbolize each of the following and add the additional assumptions ``There is an $A$'' and ``There is a $B$.'' Then prove that the supplemented arguments forms are valid in QL. Calemos and Cesaro have been skipped because they are trivial variations of Camestros and Celaront. 
+First, notice that for us to apply the hypothetico-deductive method we must be able to test our hypothesis. The hypothetico-deductive method tells us that our hypothesis must be capable of being tested, but the method doesn't tell us (a) how to test our hypothesis or (b) how to distinguish between a testable or untestable hypothesis.
 
-\begin{enumerate}[label=\arabic*), topsep=0pt, parsep=0pt, itemsep=3pt]
+If a hypothesis cannot be tested, we cannot find evidence to show that it is probable or not. In that case it cannot be part of scientific knowledge. Consider the hypothesis that there are ghosts that have no causal efficacy, that we cannot neither see nor interact with, and which can never be detected directly or indirectly. This hypothesis is defined in such a way to exclude the possibility of being tested. It might still be true and there might be such ghosts, but we would never be in a position to know and so this cannot be a scientific hypothesis.
 
-\item\textbf{Barbari:} All $B$s are $C$s. All $A$s are $B$s.
-	\therefore\  Some $A$ is $C$.
-\item\textbf{Celaront:} No $B$s are $C$s. All $A$s are $B$s.
-	\therefore\  Some $A$ is not $C$.
-\item\textbf{Camestros:} All $C$s are $B$s. No $A$s are $B$s.
-	\therefore\  Some $A$ is not $C$.
-\item\textbf{Darapti:} All $A$s are $B$s. All $A$s are $C$s.
-	\therefore\  Some $B$ is $C$.
-\item\textbf{Felapton:} No $B$s are $C$s. All $A$s are $B$s.
-	\therefore\  Some $A$ is not $C$.
-\item\textbf{Baralipton:} All $B$s are $C$s. All $A$s are $B$s.
-	\therefore\  Some $C$ is $A$.
-\item\textbf{Fapesmo:} All $B$s are $C$s. No $A$s are $B$s.
-	\therefore\  Some $C$ is not $A$.
+Second, notice that confirming the predictions of a hypothesis increases the probability that a hypothesis is correct. But in itself this does not prove conclusively that the hypothesis is correct.
+
+To see why this is the case, we might represent our reasoning as follows:
+
+\begin{kormanize}
+\premise{If H then P.}
+\premise{P.}
+\conclusion{Therefore H.}
+\end{kormanize}
+
+\newglossaryentry{process of confirmation}
+{
+name=Process of Confirmation,
+description={}
+}
+
+Here H is our hypothesis ``the batteries are dead", and P is the prediction ``the player will function when the batteries are replaced.'' This pattern of reasoning is of course not valid, since there might be reasons other than H that also bring about the truth of P. For example, it might be that the original batteries are actually fine, but they were not inserted properly. Replacing the batteries would then restore the loose connection. So the fact that the prediction is true does not prove that the hypothesis is true. We need to consider alternative hypotheses and see which is more likely to be true and which provides the best explanation of the prediction. (Or we can also do more testing!)
+
+Finally, consider that disconfirmation is sometimes not enough to demonstrate the falsity of the hypothesis. Very often a hypothesis generates a prediction only when given additional assumptions (auxiliary hypotheses). In such cases, when a prediction fails the hypothesis might still be correct.
+
+Looking back at our example again, when we predict that the player will work again when the batteries are replaced, we are assuming that there is nothing wrong with the player. But it might turn out that this assumption is wrong. In such situations the falsity of the prediction does not logically entail the falsity of the hypothesis. We might depict the situation by this argument : ( H=The batteries are dead, A=The player is not broken.)
+
+\begin{kormanize}
+\premise{If both H and A, then P.}
+\premise{It is not the case that P.}
+\conclusion{Therefore, it is not the case that H.}
+\end{kormanize}
+
+This argument is of course not valid. When P is false, what follows is not that H is false, only that the conjunction of H and A is false. So there are three possibilities : (a) H is false but A is true, (b) H is true but A is false, or (c) both H and A are false. So we should argue instead :
+
+\begin{kormanize}
+\premise{If both H and A, then P.}
+\premise{It is not the case that P.}
+\conclusion{Therefore, it is not the case that both H and A are true.}
+\end{kormanize}
+
+Returning to our earlier example, if the player still does not work when the batteries are replaced, this does not prove conclusively that the original batteries are not dead. This tells us that when we apply the hypothetico-deductive method, we need to examine the additional assumptions that are invoked when deriving the predictions. If we are confident that the assumptions are correct, then the falsity of the prediction would be a good reason to reject the hypothesis. On the other hand, if the hypothesis we are testing has been extremely successful, then we need to be extremely cautious before we reject a hypothesis on the basis of a single false prediction. These additional assumptions used in testing a hypothesis are known as ``auxiliary hypotheses.''
+
+\newglossaryentry{process of disconfirmation}
+{
+name=Process of Disconfirmation,
+description={}
+}
+
+\section{The Demarcation Criterion}
+
+How do we distinguish between a scientific and non-scientific hypothesis? Since the philosopher of science Karl Popper, philosophers have referred to the quality or property that distinguishes between science and non-science as the \textsc{\gls{demarcation criterion}}. According to Popper, the demarcation criterion was that a scientific hypothesis must be \textsc{\gls{falsifiable}}, whereas a pseudoscientific or non-scientific hypothesis was not falsifiable.
+
+\newglossaryentry{demarcation criterion}
+{
+name=Demarcation Criterion,
+description={The demarcation criterion is the feature of a hypothesis that distinguishes it as scientific or non-scientific.}
+}
+
+\newglossaryentry{falsifiable}
+{
+name=Falsifiable,
+description={A hypothesis is falsifiable if there is some evidence or observation that would demonstrate that the hypothesis is false.}
+}
+
+An example of a falsifiable hypothesis is hypothesis that \text{the Earth is flat}. This hypothesis is falsifiable because it can be subjected to several tests such as measuring the angle of approaching ships, shadows, the position of the moon and its path in the sky in different parts of the Earth, and by launching a rocket and making a direct observation that the Earth is not flat. That the Earth is round is likewise falsifiable because it can be falsified by subjecting it to similar tests. The difference between these hypotheses isn't that one is ``more'' scientific than the other; they are equally scientific according to Popper's criterion.
+
+However, there is one important difference between them: one is false and the other is true! The Earth is round and not flat, and we've subjected these hypotheses to many, many tests that have successfully falsified the flat Earth hypothesis and failed to falsify the round Earth hypothesis.\footnote{The epistemic and logical features are an interesting and growing area of philosophical and psychological research.}
+
+An example of an unfalsifiable hypothesis would be the hypothesis that reading Tarot cards will give you insight into your true purpose in life. You can't know that the hypothesis is \emph{false}, since it is vague and relies on a specific interpretation and value system. Another non-falsifiable hypothesis is that God exists. This hypothesis is consistent with any observation, since if the hypothesis is true then it can be used to explain any outcome.
+
+That these hypotheses are non-scientific doesn't mean they aren't meaningful, interesting, or worthwhile. They may also be true or false. What the demarcation criterion tells us is that these hypotheses aren't scientific or amenable to scientific testing. Many ethical, aesthetic, political, theological, philosophical and moral questions are non-scientific.
+
+An important distinction, and the one that Popper initially set out to establish, is between scientific hypotheses and \textsc{\gls{pseudoscience}}. Pseudoscientific hypotheses are not falsifiable---so, according to Popper, they are non-scientific---but they \emph{claim to be} scientific by adopting certain practices or rhetorical moves that scientists adopt. Typically, a perfectly fine scientific hypothesis---such as the flat Earth hypothesis---will become pseudoscientific when it is not rejected appropriately. By adopting a scientific stance, its defenders can claim a kind of epistemic or logical authority that they do not have. 
+
+For example, it is pseudoscientific to defend the flat Earth hypothesis for seemingly scientific reasons while refusing to acknowledge the enormous body of evidence that the hypothesis is false. Alternatively pseudoscientific hypotheses are defended by conducting flawed experiments that do not establish what they purport to establish. Another example of a pseudoscientific hypothesis is young Earth creationism, which explains the existence of fossils and geological evidence for the age of the Earth by appeal to God or another non-falsifiable hypothesis. 
+
+\newglossaryentry{pseudoscience}
+{
+name=Pseudoscience,
+description={A theory or hypothesis is pseudoscientific when it fails to meet the demarcation criterion but adopts rhetorical or argumentative practices that appear to be scientific.}
+}
+
+One of the central philosophical challenges is that it is often unclear from the evidence available whether we should consider an ordinary scientific experiment to have falsified a hypothesis outright, or whether we should reject a different, auxiliary hypothesis. This is something that defenders of pseudoscience will often exploit. For example, antivaccination defenders will explain away the numerous falsifications of their hypothesis that vaccinations cause autism or are laced with deadly toxins by claiming that these studies do not replicate. In fact, replication of experimental results is a serious concern in scientific research and so their concern \emph{seems} scientific. However, the studies that reject antivaccination have been extremely well established and replicated\footnote{See e.g. Taylor et. al 2014 (\href{https://www.ncbi.nlm.nih.gov/pubmed/24814559}{link}) for a recent meta-analysis of this research.} so this concern is unwarranted. But knowing when we should reject a hypothesis is a topic of ongoing debate in the philosophy of science.
+
+\section{When should we reject a hypothesis?}
+
+When a hypothesis makes a false prediction, sometimes it can be difficult to know whether we should reject the hypothesis or whether there is something wrong with the auxiliary hypotheses. For example, astronomers in the 19th century found that Newtonian physics could not fully explain planet Mercury's orbit. It turns out that this is because Newtonian physics makes some incorrect assumptions about the structure of space and time, and you need relativity to give a more accurate prediction of the orbit. However, when astronomers discovered Uranus in 1781, they also found out that its orbit was different from the predictions of Newtonian physics. But then scientists realized that it could be explained if there was an additional planet which affected Uranus, and Neptune was subsequently discovered as a result.
+
+Thus, in the case of Mercury's orbit the theory of Newtonian mechanics was falsified and the behavior of the orbit was only explained once we developed relativity theory. However, in the case of Uranus's orbit an auxiliary hypothesis (that another planet existed in the vicinity of Uranus) explained the deviation from the prediction of Newtonian mechanics. 
+
+In 2011, scientists in Italy reported that their experiment seemed to have shown that some subatomic particles could travel faster than the speed of light, which would seem to show that relativity is wrong. But on closer inspection, it was discovered that there was a problem with the experimental setup. So if a hypothesis has been very successful, even when a result seems to show that hypothesis is wrong, we need to make sure that the evidence is strong and reliable, and try to replicate the result and eliminate alternative explanations.
+
+\section{Causation}
+
+Causal relationships are an extremely important part of what we know. It matters to us that our actions are efficacious. If you take medicine for an illness, it matters whether the medicine \emph{cured} your illness or that you just happened to get better.
+
+Philosophers of science have been interested in causation since Aristotle. Aristotle defined four kinds of causation: effective causation, material causation, formal causation, and final causation. The kind of causation that most people have in mind nowadays is what Aristotle called effective causation. That is, the effective cause of an object like a chair is the series of actions taken by a machine or carpenter to construct the chair.
+
+By material cause, Aristotle meant the substance out of which the object is made. So, in our chair example the material cause would be the wood, nails, fabric, and so on. This is contrasted for Aristotle with the formal cause, which is the abstract form of the object or its design. Many different chairs may share a formal cause while differing with respect to their material causes.
+
+Finally, there is the final cause of an object. The final cause of something is the purpose or function that it was built to perform. For our chair, presumably, the final cause would be for someone to sit on.
+
+Our philosophical and scientific understanding of causation has come a long way since Aristotle. Now we recognize that there are many conditions that need to be met in order to establish a causal hypothesis. One advancement over Aristotle's discussion of causation is the distinction between necessary and sufficient conditions.
+
+A \textsc{\gls{necessary condition}} for something is a state of affairs that \emph{must} obtain in order for the effect to occur. For example, oxygen is a necessary condition for fire. The basic idea is that a necessary condition is something that is needed in order for the cause to have its expected effect. Necessary conditions are often treated as `background conditions' because they aren't enough on their own to bring about an effect but they are, well, necessary.
+
+A \textsc{\gls{sufficient condition}} is a state of affairs that is enough on its own for an effect to come about. For example, caffeine withdrawal is a sufficient condition for a headache. A sufficient condition is often treated like the `active' cause of some effect because, given appropriate background conditions, a sufficient condition obtaining will bring about an effect.
+
+\newglossaryentry{necessary condition}
+{
+name=necessary condition,
+description={A necessary condition is a state of affairs that must obtain in order for an effect to come about. For example, oxygen is a necessary condition for fire.}
+}
+
+\newglossaryentry{sufficient condition}
+{
+name=sufficient condition,
+description={A sufficient condition is a state of affairs that is enough on its own for an effect to come about. For example, caffeine withdrawal is a sufficient condition for a headache.}
+}
+
+Generally speaking, we are interested in both necessary and sufficient conditions for some effect to understand how the effect is brought about. However, we often struggle to identify the precise necessary and sufficient conditions to bring about all the effects we care about understanding. For this reason we will try to identify when two properties or states of affairs are associated.
+
+Consider whether two properties are associated in a system that we are interested in. For example, suppose as economists we are interested in the relationship between the top marginal tax rate and the unemployment rate. Pundits and politicians often claim that wealthy people are so-called ``job creators'' and that raising the top marginal tax rate will cause an increase in unemployment. Suppose that their evidence is that when the top marginal tax rate in the United States was higher, unemployment was higher as well. In the United States in 1965, the top federal income tax rate was for every dollar earned over \$1.6 million was 70\%.\footnote{This amount has been adjusted for inflation; the unadjusted amount was \$200,000.} In 2015, the top federal income tax rate for every dollar earned over approximately \$400,000 was 39.6\%. Meanwhile, according to the U.S. Bureau of Labor Statistics the unemployment rate in 1965 was 4\% while in 2015 it was 5\%. Clearly, there is no association between the top marginal tax rate and the unemployment rate. This means that these two rates are \textsc{\gls{independent}}. When two properties or variables are independent, knowing the value of one of them is not informative about the value of the other.
+
+\newglossaryentry{independent}
+{
+name=Independent,
+description={Two properties or variables are independent if there is no association between them. That is, $X$ and $Y$ are independent if $pr(X|Y)=pr(X)$.}
+}
+
+Suppose, however, that there are other reasons to think the two features are associated. An association between two features X and Y can be explained in one of four possible ways.
+
+\begin{enumerate}
+\item X causes Y.
+\item Y causes X.
+\item X and Y are both caused by a common cause, Z.
+\item X and Y are coincidentally associated.
 \end{enumerate}
 
+There are many associations that are merely coincidentally associated. You can see some of these associations here: \href{https://www.tylervigen.com/spurious-correlations}{link}.
 
-
-\problempart
-Provide a proof of each claim.
-\begin{enumerate}[label=\arabic*), topsep=0pt, parsep=0pt, itemsep=3pt]
-\item $\forall x \forall y Gxy \sststile{}{} \exists x Gxx$
-\item $\forall x \forall y (Gxy \eif Gyx) \sststile{}{} \forall x\forall y (Gxy \eiff Gyx)$
-\item $\{\forall x(Ax\eif Bx), \exists x Ax\} \sststile{}{} \exists x Bx$
-\item $\{Na \eif \forall x(Mx \eiff Ma), Ma, \enot Mb\}\sststile{}{} \enot Na$
-\item $\sststile{}{}\forall z (Pz \eor \enot Pz)$
-\item $\sststile{}{}\forall x Rxx\eif \exists x \exists y Rxy$
-\item $\sststile{}{}\forall y \exists x (Qy \eif Qx)$
-\end{enumerate}
-
-\problempart
-Show that each pair of sentences is provably equivalent.
-\begin{enumerate}[label=\arabic*), topsep=0pt, parsep=0pt, itemsep=3pt]
-\item $\forall x (Ax\eif \enot Bx) \nsststile{}{} \hspace{.5em} \sststile{}{}\enot\exists x(Ax \eand Bx)$
-\item $\forall x (\enot Ax\eif Bd) \nsststile{}{} \hspace{.5em} \sststile{}{} \forall x Ax \eor Bd$
-\item $\exists x Px \eif Qc \nsststile{}{} \hspace{.5em} \sststile{}{}\forall x (Px \eif Qc)$
-%\item $Rca \eiff \forall x Rxa$, $\forall x(Rca \eiff Rxa)$  rob: I'm embarassed to say I can't solve this one. 
-\end{enumerate}
-
-
-
-\problempart
-Show that each of the following is provably inconsistent.
-\begin{enumerate}[label=\arabic*), topsep=0pt, parsep=0pt, itemsep=3pt]
-\item \{$Sa\eif Tm$, $Tm \eif Sa$, $Tm \eand \enot Sa$\}
-\item \{$\enot\exists x \exists y Lxy$, $Laa$\}
-\item \{$\forall x(Px \eif Qx)$, $\forall z(Pz \eif Rz)$, $\forall y Py$, $\enot Qa \eand \enot Rb$\}
-\end{enumerate}
-
-
-
-
-\problempart
-\label{pr.likes}
-Write a symbolization key for the following argument, translate it, and prove it:
-\begin{quote}
-There is someone who likes everyone who likes everyone that he likes. Therefore, there is someone who likes himself.
-\end{quote}
-
-
-
-%\problempart
-%Look back at Part \ref{pr.QLarguments} on p.~\pageref{pr.QLarguments}. For each argument: If it is valid in QL, give a proof. If it is invalid, construct a model to show that it is invalid.
-
-
-\problempart
-\label{pr.QLequivornot}
-For each of the following pairs of sentences: If they are logically equivalent in QL, give proofs to show this. If they are not, construct a model to show this.
-\begin{enumerate}[label=\arabic*), topsep=0pt, parsep=0pt, itemsep=3pt]
-\item $\forall x Px \eif Qc \nsststile{}{} \hspace{.5em} \sststile{}{}\forall x (Px \eif Qc)$
-\item $\forall x Px \eand Qc\nsststile{}{} \hspace{.5em} \sststile{}{}\forall x (Px \eand Qc)$
-\item $Qc \eor \exists x Qx\nsststile{}{} \hspace{.5em} \sststile{}{}\exists x (Qc \eor Qx)$
-\item $\forall x\forall y \forall z Bxyz\nsststile{}{} \hspace{.5em} \sststile{}{}\forall x Bxxx$
-\item $\forall x\forall y Dxy\nsststile{}{} \hspace{.5em} \sststile{}{}\forall y\forall x Dxy$
-\item $\exists x\forall y Dxy\nsststile{}{} \hspace{.5em} \sststile{}{}\forall y\exists x Dxy$
-\end{enumerate}
-
-\problempart
-\label{pr.QLvalidornot}
-For each of the following arguments: If it is valid in QL, give a proof. If it is invalid, construct a model to show that it is invalid.
-\begin{enumerate}[label=\arabic*), topsep=0pt, parsep=0pt, itemsep=3pt]
-\item $\forall x\exists y Rxy \sststile{}{} \exists y\forall x Rxy$
-\item $\exists y\forall x Rxy \sststile{}{} \forall x\exists y Rxy$
-\item $\exists x(Px \eand \enot Qx) \sststile{}{} \forall x(Px \eif \enot Qx)$
-\item $\{\forall x(Sx \eif Ta)$, $Sd\} \sststile{}{}Ta$
-\item $\{\forall x(Ax\eif Bx)$, $\forall x(Bx \eif Cx)\} \sststile{}{} \forall x(Ax \eif Cx)$
-\item $\{\exists x(Dx \eor Ex)$, $\forall x(Dx \eif Fx)\} \sststile{}{} \exists x(Dx \eand Fx)$
-\item $\forall x\forall y(Rxy \eor Ryx)\sststile{}{} Rjj$
-\item $\exists x\exists y(Rxy \eor Ryx)\sststile{}{}Rjj$
-\item $\{\forall x Px \eif \forall x Qx$, $\exists x \enot Px\}\sststile{}{}\exists x \enot Qx$
-\item $\{\exists x Mx \eif \exists x Nx$, $\enot \exists x Nx\}\sststile{}{} \forall x \enot Mx$
-\end{enumerate}
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%                         6.2 Rules for Identity %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Rules for Identity}
-The identity predicate is not part of QL, but we add it when we need to symbolize certain sentences. For proofs involving identity, we add two rules of proof.
-
-Suppose you know that many things that are true of $a$ are also true of $b$. For example: $Aa\eand Ab$, $Ba\eand Bb$, $\enot Ca\eand\enot Cb$, $Da\eand Db$, $\enot Ea\eand\enot Eb$, and so on. This would not be enough to justify the conclusion $a=b$. (See p.~\pageref{model.nonidentity}.) In general, there are no sentences that do not already contain the identity predicate that could justify the conclusion $a=b$. This means that the identity introduction rule will not justify $a=b$ or any other identity claim containing two different constants.
-
-However, it is always true that $a=a$. In general, no premises are required in order to conclude that something is identical to itself. So this will be the identity introduction rule, abbreviated {=}I:
-
-\begin{proof}
-	\have[\ \,\,\,]{x}{\script{c}=\script{c}} \by{=I}{}
-\end{proof}
-
-Notice that the {=}I rule does not require referring to any prior lines of the proof. For any constant \script{c}, you can write $\script{c}=\script{c}$ on any point with only the {=}I rule as justification.
-
-If you have shown that $a=b$, then anything that is true of $a$ must also be true of $b$. For any sentence with $a$ in it, you can replace some or all of the occurrences of $a$ with $b$ and produce an equivalent sentence. For example, if you already know $Raa$, then you are justified in concluding $Rab$, $Rba$, $Rbb$. Recall that $\script{A}[\script{a}||\script{b}]$ is the sentence produced by replacing \script{a} in \script{A} with \script{b}. This is not the same as a substitution instance, because \script{b} may replace some or all occurrences of \script{a}. The identity elimination rule ({=}E) justifies replacing terms with other terms that are identical to it:
-\begin{proof}
-	\have[m]{e}{\script{a}=\script{b}}
-	\have[n]{a}{\script{A}}
-	\have[\ ]{ea1}{\script{A}[\script{a}||\script{b}]} \by{=E}{e,a}
-	\have[\ ]{ea2}{\script{A}[\script{b}||\script{a}]} \by{=E}{e,a}
-\end{proof}
-
-%The basic rules for conjunction can be valuable in a proof even if there are no conjunctions in any of the assumptions; the basic rules for disjunction can be used even if there are no disjunctions in any assumptions; and similarly for the other basic rules. The rules for identity are different, in that there must be an identity claim in some assumption in order for the rules to do any work. Other than the trivial identity that we can introduce with the {=}I rule
-
-
-%do not apply we can now prove that identity is \emph{transitive}: If $a=b$ and $b=c$, then $a=c$. The proof proceeds in this way:
-%\begin{proof}
-%	\open
-%		\hypo{p}{a=b \eand b=c}\by{want $a=c$}{}
-%		\have{ab}{a=b}\ae{p}
-%		\have{bc}{b=c}\ae{p}
-%		\have{ac}{a=c}\by{{=}E}{ab,bc}
-%	\close
-%	\have{conc}{(a=b \eand b=c)\eif a=c} \ci{p-ac}
-%\end{proof}
-
-
-%As an example, consider this argument:
-%\begin{quote}
-%There is only one button in my pocket. There is a blue button in my pocket. Therefore, there is no button in my pocket that is not blue.
-%\end{quote}
-%We begin by defining a symbolization key:
-%\begin{ekey}
-%\item{UD:} buttons in my pocket
-%\item{Bx:} $x$ is blue.
-%\end{ekey}
-%\begin{proof}
-%	\hypo{one}{\forall x\forall y\ x=y}
-%	\hypo{eb}{\exists x Bx} \by{want $\enot\exists x \enot Bx$}{}
-%	\open
-%		\hypo{be1}{Be}
-%		\have{ef1}{e=f}\Ae{one}
-%		\have{bf1}{Bf}\by{{=}E}{ef1,be1}
-%	\close
-%	\have{bf}{Bf}\Ee{eb,be1-bf1}
-%	\have{ab}{\forall x Bx}\Ai{bf}
-%	\have{nnab}{\enot\enot\forall x Bx}\by{DN}{ab}
-%	\have{nenb}{\enot\exists x\enot Bx}\by{QN}{nnab}
-%\end{proof}
-
-To see the rules in action, consider this proof:
-\begin{proof}
-	\hypo{one}{\forall x\forall y\ x=y}
-	\hypo{eb}{\exists x Bx}
-	\hypo{Abnc}{\forall x(Bx \eif \enot Cx)}
-		\by{want $\enot\exists x Cx$}{}
-	\open
-		\hypo{be1}{Be}
-		\have{ef1}{\forall y\ e=y}\Ae{one}
-		\have{ef2}{e=f}\Ae{ef1}
-		\have{bf1}{Bf}\by{{=}E}{ef2,be1}
-		\have{bnc1}{Bf\eif\enot Cf}\Ae{Abnc}
-		\have{ncf1}{\enot Cf}\ce{bnc1,bf1}
-	\close
-	\have{cf}{\enot Cf}\Ee{eb,be1-ncf1}
-	\have{Anc}{\forall x \enot Cx}\Ai{cf}
-	\have{nEc}{\enot\exists x Cx}\by{QN}{Anc}
-\end{proof}
-
-%\section*{Summary of definitions}
-%\begin{itemize}
-%\item A sentence \script{A} is a \define{theorem} if and only if $\vdash\script{A}$.
-%
-%\item Two sentences \script{A} and \script{B} are \define{provably equivalent} if and only if $\script{A}\vdash\script{B}$ and $\script{B}\vdash\script{A}$.
-%
-%\item $\{\script{A}_1,\script{A}_2,\ldots\}$ is \define{provably inconsistent} if and only if, for some sentence \script{B}, $\{\script{A}_1,\script{A}_2,\ldots\}\vdash(\script{B} \eand \enot \script{B})$.
-%\end{itemize}
-
-\practiceproblems
-
-
-\problempart
-\label{pr.identity}
-Provide a proof of each claim.
-\begin{enumerate}[label=\arabic*), topsep=0pt, parsep=0pt, itemsep=3pt] 
-\item $\{Pa \eor Qb, Qb \eif b=c, \enot Pa\}\sststile{}{} Qc$
-\item $\{m=n \eor n=o, An\}\sststile{}{} Am \eor Ao$
-\item $\{\forall x x=m, Rma\}\sststile{}{} \exists x Rxx$
-\item $\enot \exists x x \neq m \sststile{}{} \forall x\forall y (Px \eif Py)$
-\item $\forall x\forall y(Rxy \eif x=y)\sststile{}{} Rab \eif Rba$
-\item $\{\exists x Jx, \exists x \enot Jx\}\sststile{}{} \exists x \exists y x\neq y$
-%\item $\{\forall x(x=n \eiff Mx), \forall x(Ox \eand \eor Mx)\}\sststile{}{} On$
-\item $\{\exists x Dx, \forall x(x=p \eiff Dx)\}\sststile{}{} Dp$
-\item $\{\exists x [(Kx \eand Bx) \eand \forall y(Ky \eif x=y)], Kd\}\sststile{}{} Bd$
-\item $\sststile{}{} Pa \eif \forall x(Px \eor x \neq a)$
-\end{enumerate}
+In~\ref{part:causation} we'll discuss causation and causal modeling in more detail. However, to understand the formalization of causation that has been happening in philosophy and machine learning in the last few decades we'll first need the underlying probability theory. That means we'll need to formalize our inductive logic.
 
 
 
@@ -552,5 +270,17 @@ Provide a proof of each claim.
 
 
 
-
-
+\section*{Key Terms}
+\begin{fullwidth}
+\begin{sortedlist}
+\sortitem{Hypothesis}{}
+\sortitem{Hypothetico-deductive method}{}
+\sortitem{Necessary condition}{}
+\sortitem{Sufficient condition}{}
+\sortitem{Process of confirmation}{}
+\sortitem{Process of disconfirmation}{}
+\sortitem{Pseudoscience}{}
+\sortitem{Independence}{}
+\sortitem{Causation}{}
+\end{sortedlist}
+\end{fullwidth}
