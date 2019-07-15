@@ -1,24 +1,8 @@
 \documentclass[twoside]{tufte-book}
-
-%glossary and indexing stuff
-\usepackage[toc, nopostdot, numberedsection]{glossaries}
-\usepackage{datatool}
-\renewcommand{\glsnamefont}[1]{\makefirstuc{#1}}
-\makeglossaries
-
-%General packages
-\usepackage{answers,textcomp,float,anyfontsize}
-\usepackage{url,syntonly,turnstile}
-\usepackage[normalem]{ulem}
-\usepackage{fixltx2e,wasysym,fancyref,etoolbox}
-\usepackage{csquotes}
-\usepackage{packages/logicbook} % Slowly moving everything into a single package for the book, as needed.
-
+\usepackage{packages/logicbook}
 \title{For All X: \\ Midwest \\ Collaboration}
 \author[Adam Edwards]{Adam Edwards}
 \date{\today}
-
-
 \begin{document}
 
 %\label{showanswers} %uncomment this tag and typeset twice to show answers
@@ -29,122 +13,120 @@
 \include{tex/00-cover}
 \include{tex/01-frontmatter}
 
-\begin{fullwidth}\tableofcontents\end{fullwidth}
+\begin{fullwidth}
+    \tableofcontents
+\end{fullwidth}
 
 \include{tex/02-aboutthisbook}
 \include{tex/03-acknowledgements}
+\include{tex/04-dedication}
 \pagestyle{fancy}
 
 \begin{fullwidth}
-\listoffigures
-\newpage
-\listoftables
+    \listoffigures
+    \newpage
+    \listoftables
 \end{fullwidth}
 
 \mainmatter
 
-\part{Basic Concepts}\label{part:basic_concepts}
-\setlength{\parindent}{1em}
+%\part{Basic Concepts}\label{part:basic_concepts}
+    %\include{tex/10-whatislogic}
+    %\include{tex/11-basicevaluation}
+    %\include{tex/12-whatisformallogic}
 
-\include{tex/10-whatislogic}
-\include{tex/11-basicevaluation}
-\include{tex/12-whatisformallogic}
-
-\part{Critical Thinking}\label{part:critical_thinking}
-\include{tex/50-whatiscriticalthinking}
-\include{tex/51-informalfallacies}
-\include{tex/52-cognitivebiases}
-%\include{tex/52-incompletearguments}
-%\include{tex/53-emotions}
-%\include{tex/54-generalizations}
-%\include{tex/55-analogy}
-%\include{tex/56-sources}
-%\include{tex/57-maps}
-%\include{tex/58-practicalarguments}
+%\part{Critical Thinking}\label{part:critical_thinking}
+    %\include{tex/50-whatiscriticalthinking}
+    %\include{tex/51-informalfallacies}
+    %\include{tex/52-cognitivebiases}
+    %\include{tex/52-incompletearguments}
+    %\include{tex/53-emotions}
+    %\include{tex/54-generalizations}
+    %\include{tex/55-analogy}
+    %\include{tex/56-sources}
+    %\include{tex/57-maps}
+    %\include{tex/58-practicalarguments}
 
 \part{Categorical Logic}\label{part:cat_logic}
-\include{tex/20-categoricalstatements}
-%\include{tex/21-categoricalsyllogisms}
-%\include{tex/23-aristotles-syllogistic}
-%\include{tex/24-categoricalreduction}
-%\include{tex/25-relevance}
+    %\include{tex/20-categoricalstatements}
+    \include{tex/21-categoricalsyllogisms}
+    %\include{tex/23-aristotles-syllogistic}
+    %\include{tex/24-categoricalreduction}
+    %\include{tex/25-relevance}
 
-\part{Propositional Logic}\label{part:prop_logic}
-%\include{tex/30-propositional}
-%\include{tex/31-truthtables}
-%\include{tex/32-naturaldeduction}
-%\include{tex/33-existentialgraphs}
+%\part{Propositional Logic}\label{part:prop_logic}
+    %\include{tex/30-propositional}
+    %\include{tex/31-truthtables}
+    %\include{tex/32-naturaldeduction}
+    %\include{tex/33-existentialgraphs}
 
 %\part{Predicate \& Quantifier Logic}\label{part:pred_logic}
-%\include{tex/40-predicate}
-%\include{tex/41-semanticsforql}
-%\include{tex/42-proofsinql}
-%\include{tex/43-quantification}
-%\include{tex/44-alternativequantifiers}
+    %\include{tex/40-predicate}
+    %\include{tex/41-semanticsforql}
+    %\include{tex/42-proofsinql}
+    %\include{tex/43-quantification}
+    %\include{tex/44-alternativequantifiers}
 
 %\part{Modal Logic}\label{part:modal_logic}
-%\include{tex/45-basicmodality}
-%\include{tex/46-kripkeframes}
-%\include{tex/47-accessibility}
-%\include{tex/48-actuality}
-%\include{tex/49-alternativemodals}
+    %\include{tex/45-basicmodality}
+    %\include{tex/46-kripkeframes}
+    %\include{tex/47-accessibility}
+    %\include{tex/48-actuality}
+    %\include{tex/49-alternativemodals}
 
-\part{Inductive Logic and Scientific Reasoning}\label{part:inductive_scientific}
-\include{tex/60-whatareinductionandscientificreasoning}
-\include{tex/61-induction}
-\include{tex/62-millsmethods}
-%\include{tex/63-causation-explanation}
-%\include{tex/64-scientificanalogy}
-%\include{tex/65-experimentalmethods}
-%\include{tex/66-randomization}
-%\include{tex/67-control}
-%\include{tex/68-paradoxesofinduction}
+%\part{Inductive Logic and Scientific Reasoning}\label{part:inductive_scientific}
+    %\include{tex/60-whatareinductionandscientificreasoning}
+    %\include{tex/61-induction}
+    %\include{tex/62-millsmethods}
+    %\include{tex/63-causation-explanation}
+    %\include{tex/64-scientificanalogy}
+    %\include{tex/65-experimentalmethods}
+    %\include{tex/66-randomization}
+    %\include{tex/67-control}
+    %\include{tex/68-paradoxesofinduction}
 
 %\part{Set Theory}\label{part:set_theory}
-%\include{tex/70-introsettheory}
-%\include{tex/71-relations}
-%\include{tex/72-size}
-%\include{tex/73-algebra}
-%\include{tex/74-axiomofchoice}
+    %\include{tex/70-introsettheory}
+    %\include{tex/71-relations}
+    %\include{tex/72-size}
+    %\include{tex/73-algebra}
+    %\include{tex/74-axiomofchoice}
 
 %\part{Probability Theory}\label{part:probability}
-%\include{tex/80-introprobability}
-%\include{tex/81-conditionalprob}
-%\include{tex/82-bayes}
-%\include{tex/83-randomvariables}
+    %\include{tex/80-introprobability}
+    %\include{tex/81-conditionalprob}
+    %\include{tex/82-bayes}
+    %\include{tex/83-randomvariables}
 
 %\part{Statistical Inference}\label{part:statistics}
-%\include{tex/84-basicinference}
-%\include{tex/85-regression}
-%\include{tex/86-error}
-%\include{tex/87-significance}
-%\include{tex/88-estimation}
+    %\include{tex/84-basicinference}
+    %\include{tex/85-regression}
+    %\include{tex/86-error}
+    %\include{tex/87-significance}
+    %\include{tex/88-estimation}
 
 %\part{Causal Inference}\label{part:causation}
-%\include{tex/90-correlations}
-%\include{tex/91-causalordering}
-%\include{tex/92-causalinference}
-%\include{tex/93-graphicalstructure}
-%\include{tex/94-predictions}
+    %\include{tex/90-correlations}
+    %\include{tex/91-causalordering}
+    %\include{tex/92-causalinference}
+    %\include{tex/93-graphicalstructure}
+    %\include{tex/94-predictions}
 
 %\part{Moral Reasoning}\label{part:morality}
-%\include{tex/95-moralreasoning}
-%\include{tex/96-imperatives}
-%\include{tex/97-hypotheticalimperatives}
-%\include{tex/98-morallaws}
-
+    %\include{tex/95-moralreasoning}
+    %\include{tex/96-imperatives}
+    %\include{tex/97-hypotheticalimperatives}
+    %\include{tex/98-morallaws}
 
 \part{Appendices}\label{part:appendices}
 \appendix
 
-\include{tex/A0-notation}
-
-
 \setglossarysection{chapter}
 \begin{fullwidth}
-\printglossaries
+    \printglossaries
 \end{fullwidth}
 
+\include{tex/A0-notation}
 \include{tex/A1-quickreference}
 \include{tex/A2-backmatter}
 

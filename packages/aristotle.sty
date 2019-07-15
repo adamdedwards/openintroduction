@@ -1,16 +1,16 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{aristotle}[2019/01/12 Aristotle]
 
-\RequirePackage{tikz,xcolor,ifthen}
+\RequirePackage{pgf,tikz,xcolor,ifthen}
 
-\definecolor{empty} {hsb}{0.000,0.0,0.5}
+\definecolor{empty} {hsb}{0.000,0.0,0.25}
 \definecolor{major} {hsb}{0.000,0.8,1.0}
 \definecolor{minor} {hsb}{0.333,0.8,1.0}
 \definecolor{middle}{hsb}{0.667,0.8,1.0}
 
-\def\majorcircle{ ( 30:1.2cm) circle (1.8cm)}
-\def\minorcircle{ (150:1.2cm) circle (1.8cm)}
-\def\middlecircle{(270:1.2cm) circle (1.8cm)}
+\def\majorcircle{ (330:1.2cm) circle (1.8cm)}
+\def\minorcircle{ (210:1.2cm) circle (1.8cm)}
+\def\middlecircle{( 90:1.2cm) circle (1.8cm)}
 
 \newcounter{SyllogismCount}
 
@@ -37,28 +37,28 @@
     \fill[empty] \middlecircle;
 \end{scope}
 }
-    
+
 \newcommand{\APS}{
 \begin{scope}[even odd rule, overlay] % All P is S.
     \clip \minorcircle (A) rectangle (B);
     \fill[empty] \majorcircle;
 \end{scope}
 }
-    
+
 \newcommand{\APM}{
 \begin{scope}[even odd rule, overlay] % All P is M.
     \clip \middlecircle (A) rectangle (B);
     \fill[empty] \majorcircle;
 \end{scope}
 }
-    
+
 \newcommand{\ASM}{
 \begin{scope}[even odd rule, overlay] % All S is M.
     \clip \middlecircle (A) rectangle (B);
     \fill[empty] \minorcircle;
 \end{scope}
 }
-    
+
 \newcommand{\ASP}{
 \begin{scope}[even odd rule, overlay] % All S is P.
     \clip \majorcircle (A) rectangle (B);
@@ -139,14 +139,58 @@
 \newcommand{\OPSx}{\IP}
 
 
+\begin{scope} [line width=0.5mm] %fill opacity=0.2,
+    \draw[black!80!white] \majorcircle  node {};
+    \draw[black!80!white] \minorcircle  node {};
+    \draw[black!80!white] \middlecircle node {};
+%    \fill[major]  \majorcircle;
+%    \fill[minor]  \minorcircle;
+%    \fill[middle] \middlecircle;
+\end{scope}
+}
+{
+\end{tikzpicture}
+}
+
+\newenvironment{binaryvenn}{%
+\begin{tikzpicture}
+\coordinate (A) at (current bounding box.south west);
+\coordinate (B) at (current bounding box.north east);
+\node[black] at (145:2.4cm) {\Large S};
+\node[black] at (35:2.4cm) {\Large P};
 \begin{scope} [fill opacity=0.2,line width=0.5mm]
     \draw[black!50!white] \majorcircle  node {};
     \draw[black!50!white] \minorcircle  node {};
-    \draw[black!50!white] \middlecircle node {};
-    \fill[major]  \majorcircle;
-    \fill[minor]  \minorcircle;
-    \fill[middle] \middlecircle;
+%    \fill[major]  \majorcircle;
+%    \fill[minor]  \minorcircle;
 \end{scope}
+
+\newcommand{\rightA}{%
+\begin{scope}[even odd rule, overlay]
+    \clip \minorcircle (A) rectangle (B);
+    \fill[empty] \majorcircle;
+\end{scope}
+}
+
+\newcommand{\leftA}{
+\begin{scope}[even odd rule, overlay]
+    \clip \majorcircle (A) rectangle (B);
+    \fill[empty] \minorcircle;
+\end{scope}
+}
+
+\newcommand{\centerE}{
+\begin{scope}
+    \clip \minorcircle;
+    \fill[empty] \majorcircle;
+\end{scope}
+}
+
+\newcommand{\centerI}{\draw[-,black]  (270:0.2cm) node {\scalebox{1.4}{$\times$}};}
+\newcommand{\leftO}{\draw[-,black] (180:1.4cm) node{\scalebox{1.4}{$\times$}};}
+\newcommand{\rightO}{\draw[-,black] (0:1.4cm) node{\scalebox{1.4}{$\times$}};}
+
+
 }
 {
 \end{tikzpicture}

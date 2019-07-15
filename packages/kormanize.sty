@@ -1,9 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesPackage{kormanize}[2018/11/18 Kormanize Environment for Arguments]
+\RequirePackage{alphalph}
 
 \newcommand{\proposition}[1]{\mbox{\ref{#1}}}
 
-\newcounter{argument}[chapter]
+\newcounter{argument}[section]
 \newcounter{proposition}[argument]
 
 \newcommand{\proplabel}[2]{\begingroup
@@ -12,7 +13,7 @@
     \phantomsection\label{#1}\endgroup
 }
 
-\newenvironment{kormanize}[1][\Alph{argument}]{%
+\newenvironment{kormanize}[1][\AlphAlph{\value{argument}}]{%
 
 \newcommand{\premise}[2][#1\arabic{proposition}]{%
   \refstepcounter{proposition}\item[\proplabel{prop:##1}{(##1)}]~##2

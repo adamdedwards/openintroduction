@@ -3,38 +3,16 @@
 \addvspace {10\p@ }
 \contentsline {xchapter}{Acknowledgments}{9}{chapter*.3}
 \addvspace {10\p@ }
-\contentsline {xchapter}{What Is Logic?}{19}{chapter.1}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The boardgame Clue.}}{19}{figure.1.1}
-\contentsline {figure}{\numberline {1.2}{\ignorespaces The ob/ob mouse (left), a laboratory mouse which has been genetically engineered to be obese, and an ordinary mouse (right). Photo from \citet {WikimediaCommons2006}.}}{22}{figure.1.2}
-\contentsline {figure}{\numberline {1.3}{\ignorespaces A statement in different contexts, or no context.}}{24}{figure.1.3}
-\contentsline {xpart}{Basic Concepts}{19}{part.1}
+\contentsline {xchapter}{Dedication}{13}{chapter*.4}
 \addvspace {10\p@ }
-\contentsline {xchapter}{The Basics of Evaluating Argument}{35}{chapter.2}
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Neither argument is valid, but one is strong and one is weak}}{45}{figure.2.1}
+\contentsline {xchapter}{Categorical Syllogisms}{21}{chapter.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces The oldest surviving version of the ``Barbara, Celarent...'' poem, from William of Sherwood. The manuscript is held at the Biblioth\`eque Nationale de France, ms. Lat. 16617, \url {http://gallica.bnf.fr/ark:/12148/btv1b9066740r}}}{29}{figure.1.1}
+\contentsline {xpart}{Categorical Logic}{21}{part.1}
+\contentsline {xpart}{Appendices}{33}{part.2}
 \addvspace {10\p@ }
-\contentsline {xchapter}{What is Formal Logic?}{49}{chapter.3}
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Two examples of valid arguments.}}{49}{figure.3.1}
+\contentsline {xchapter}{Glossary}{35}{appendix.A}
 \addvspace {10\p@ }
-\contentsline {xchapter}{What is Critical Thinking?}{61}{chapter.4}
-\contentsline {xpart}{Critical Thinking}{61}{part.2}
+\contentsline {xchapter}{Other Symbolic Notation}{37}{appendix.B}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Informal Fallacies}{63}{chapter.5}
-\addvspace {10\p@ }
-\contentsline {xchapter}{Cognitive Biases}{81}{chapter.6}
-\contentsline {figure}{\numberline {6.1}{\ignorespaces A diagram of the locations where damage was recorded on bombers during WWII. Source: \url {https://commons.wikimedia.org/wiki/File:Survivorship-bias.png}}}{86}{figure.6.1}
-\addvspace {10\p@ }
-\contentsline {xchapter}{Categorical Statements}{93}{chapter.7}
-\contentsline {figure}{\numberline {7.1}{\ignorespaces Parts of a quantified categorical statement.}}{94}{figure.7.1}
-\contentsline {figure}{\numberline {7.2}{\ignorespaces Venn's original diagram for an mood-A statement (Venn \citep {Venn1880a}). Screencap from Google Books by J. Robert Loftis.}}{97}{figure.7.2}
-\contentsline {figure}{\numberline {7.3}{\ignorespaces One of the earliest surviving versions of the square of opposition, from a 9th century manuscript that includes a commentary on Aristotle by the African writer Apuleius of Madaura (\@tufte@normal@cite {Apuleius1987}). The manuscript is held Lawrence J. Schoenberg collection (LJS 101) at the University of Pennsylvania, who have kindly put a facsimile online (\url {http://dla.library.upenn.edu/dla/medren/detail.html?id=MEDREN_5186550}.) Screencap by J. Robert Loftis.}}{112}{figure.7.3}
-\contentsline {figure}{\numberline {7.4}{\ignorespaces A 16th century illustration of the square of opposition from John Major's \textit {Introductorium Perutile in Aristotelicam Dialecticen} (\@tufte@normal@cite *[fol.L]{Major1527}). Screencap from Google Books by J. Robert Loftis.}}{114}{figure.7.4}
-\contentsline {xpart}{Categorical Logic}{93}{part.3}
-\contentsline {xpart}{Propositional Logic}{121}{part.4}
-\addvspace {10\p@ }
-\contentsline {xchapter}{Other Symbolic Notation}{123}{appendix.A}
-\contentsline {xpart}{Appendices}{123}{part.5}
-\addvspace {10\p@ }
-\contentsline {xchapter}{Glossary}{127}{appendix.B}
-\addvspace {10\p@ }
-\contentsline {xchapter}{Quick Reference}{133}{appendix.C}
+\contentsline {xchapter}{Quick Reference}{41}{appendix.C}
 \contentsfinish 
