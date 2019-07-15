@@ -1,0 +1,316 @@
+
+\practiceproblems
+\noindent\problempart Using the symbolization key given, translate each English-language sentence into SL.
+\label{pr.monkeysuits}
+\begin{description}
+\item[M:] Those creatures are men in suits.
+\item[C:] Those creatures are chimpanzees.
+\item[G:] Those creatures are gorillas.
+\end{description}
+
+\begin{longtabu}{p{.1\linewidth}p{.9\linewidth}}
+\textbf{Example}: & If those creatures are not men in suits, they are gorillas. \\
+\textbf{Answer}: & $\lnot M \onlyif G$ \\
+\end{longtabu}
+
+
+\begin{exercises}
+\item Those creatures are not men in suits. \answer{$\lnot M$}
+\item Those creatures are men in suits, or they are not. \answer{$M \lor \lnot M$}
+\item Those creatures are either gorillas or chimpanzees. \answer{$G \lor C$}
+\item Those creatures are not gorillas, but they are not chimpanzees either. \answer{$\lnot G \land \lnot C$}
+\item Those creatures cannot be both gorillas and men in suits. \answer{$\lnot(G \land M)$}
+\item If those creatures are not gorillas, then they are men in suits \answer{$\lnot G \onlyif M$}
+\item Those creatures are men in suits only if they are not gorillas. \answer{$M \onlyif \lnot G$}
+\item Those creatures are chimpanzees if and only if they are not gorillas. \answer{$C \iff G$}
+\item Those creatures are neither gorillas nor chimpanzees. \answer{$~(G \lor C).$} %See p.34, sentence 19, and p. 156
+\item Unless those creatures are men in suits, they are either chimpanzees or they are gorillas. \answer{$M \lor (C \lor G)$}
+\end{exercises}
+
+%If					X
+%only if				X
+%if and only if		X
+%but				X
+%unless				X
+%not both      		X
+%neither nor			X
+
+%added and changed problems to get a better distribution of kinds of problems.
+
+\noindent\problempart Using the symbolization key given, translate each English-language sentence into SL.
+\begin{description}
+\item[A:] Mister Ace was murdered.
+\item[B:] The butler did it.
+\item[C:] The cook did it.
+\item[D:] The Duchess is lying.
+\item[E:] Mister Edge was murdered.
+\item[F:] The murder weapon was a frying pan.
+\end{description}
+\begin{exercises}
+\item Either Mister Ace or Mister Edge was murdered. % {\color{red} $A \lor E$}  \vspace{1ex}
+\item If Mister Ace was murdered, then the cook did it. % {\color{red} $A \onlyif C$} \vspace{1ex}
+\item If Mister Edge was murdered, then the cook did not do it. % {\color{red} $E \onlyif \lnot C} \vspace{1ex}
+\item Either the butler did it, or the Duchess is lying. % {\color{red} $B \lor D$} \vspace{1ex}
+\item The cook did it only if the Duchess is lying. % {\color{red} $C \onlyif D$} \vspace{1ex}
+\item If the murder weapon was a frying pan, then the culprit must have been the cook. % {\color{red} $F \onlyif C$} \vspace{1ex}
+\item If the murder weapon was not a frying pan, then the culprit was neither the cook nor the butler. % {\color{red} $\lnot F \onlyif \lnot(C \or B) \vspace{1ex}
+\item Mister Ace was murdered if and only if Mister Edge was not murdered. % {\color{red} $A \iff \lnot E$} \vspace{1ex}
+\item The Duchess is lying, unless it was Mister Edge who was murdered. % {\color{red} $D \lor A$} \vspace{1ex}
+\item Mister Ace was murdered, but not with a frying pan. % {\color{red} $A \land \lnot F$} \vspace{1ex}
+\item The butler and the cook did not both do it. % {\color{red} $\lnot(B \enad C)$} \vspace{1ex}
+\item Of course the Duchess is lying! % {\color{red}$D$} \vspace{1ex}
+\end{exercises}
+
+%If  			x
+%only if             x
+%if and only if   x
+%but			x
+%unless			x
+%not both		x
+%neither nor		x
+
+%changed problems to get a better distribution of kinds of problems.
+
+
+\noindent\problempart Using the symbolization key given, translate each English-language sentence into SL.
+\label{pr.avacareer}
+\begin{description}
+\item[E$_1$:] Ava is an electrician.
+\item[E$_2$:] Harrison is an electrician.
+\item[F$_1$:] Ava is a firefighter.
+\item[F$_2$:] Harrison is a firefighter.
+\item[S$_1$:] Ava is satisfied with her career.
+\item[S$_2$:] Harrison is satisfied with his career.
+\end{description}
+\begin{exercises}
+\item Ava and Harrison are both electricians. \answer{$E_1 \land E_2$}
+\item If Ava is a firefighter, then she is satisfied with her career. \answer{$F_1 \onlyif S_1$}
+\item Ava is a firefighter, unless she is an electrician. \answer{$F_1 \lor E_1$}
+\item Harrison is an unsatisfied electrician. \answer{$E_2 \land \lnot S_2$}
+\item Neither Ava nor Harrison is an electrician. \answer{$\lnot(E_1 \lor E_2)$}
+\item Both Ava and Harrison are electricians, but neither of them find it satisfying. \answer{$(E_1 \land E_2) \land \lnot (S_1 \lor S_2)$}
+\item Harrison is satisfied only if he is a firefighter. \answer{$S_2 \onlyif F_2$}
+\item If Ava is not an electrician, then neither is Harrison, but if she is, then he is too. \answer{$(\lnot E_1 \onlyif \lnot E_2) \land (E_1 \onlyif E_2)$}
+\item Ava is satisfied with her career if and only if Harrison is not satisfied with his. \answer{$S_1 \iff \lnot S_2$}
+\item If Harrison is both an electrician and a firefighter, then he must be satisfied with his work. \answer{$(E_2 \land F_2) \onlyif S_2$}
+\item It cannot be that Harrison is both an electrician and a firefighter. \answer{$\lnot (E_2 \land F_2)$}
+\item Harrison and Ava are both firefighters if and only if neither of them is an electrician. \answer{$(F_1 \land F_2) \iff \lnot (E_1 \lor E_2)$} \vspace{1ex}
+\end{exercises}
+
+%If					x
+%only if				x
+%if and only if		x
+%but				x
+%unless				x
+%not both			x
+%neither nor			x
+
+\noindent\problempart Using the symbolization key given, translate each English-language sentence into SL.
+\label{pr.jazzinstruments}
+\begin{description}
+\item[J$_1$:] John Coltrane played tenor sax.
+\item[J$_2$:] John Coltrane played soprano sax.
+\item[J$_3$:] John Coltrane played tuba
+\item[M$_1$:] Miles Davis played trumpet
+\item[M$_2$:]Miles Davis played tuba
+\end{description}
+
+\begin{exercises}
+\item John Coltrane played tenor and soprano sax. %{\color{red} $J_1 \land J_2$} \vspace{1ex}
+\item Neither Miles Davis nor John Coltrane played tuba. %{\color{red} $\lnot(M_2 \lor J_3)$ or $\lnot M_2 \land \lnot J_3$} \vspace{1ex}
+\item John Coltrane did not play both tenor sax and tuba.  %{\color{red} $\lnot(J_1 \land J_3)$ or $\lnot J_1 \lor \lnotJ_3$} \vspace{1ex}
+\item John Coltrane did not play tenor sax unless he also played soprano sax. %{\color{red} $\lnot J_1 \lor J_2$} \vspace{1ex}
+\item John Coltrane did not play tuba, but Miles Davis did. %{\color{red} $\lnotJ_3 \land M_2$} \vspace{1ex}
+\item Miles Davis played trumpet only if he also played tuba. %{\color{red} $M_1 \iff M_2$} \vspace{1ex}
+\item If Miles Davis played trumpet, then John Coltrane played at least one of these three instruments: tenor sax, soprano sax, or tuba. %{\color{red} $M_1 \onlyif (J_1 \lor (J_2 \lor J_3))&} \vspace{1ex}
+\item If John Coltrane played tuba then Miles Davis played neither trumpet nor tuba. %{\color{red} $J_3 \onlyif \lnot(M_1 \lor M_2)$ or $J_3 \onlyif (\lnot M_1 \land \lnot M_2)$  } \vspace{1ex}
+\item Miles Davis and John Coltrane both played tuba if and only if Coltrane did not play tenor sax and Miles Davis did not play trumpet. %{\color{red} $(J_3 \land M_2) \iff \lnotJ_1 & \lnot M_1)$ or $(J_3 \land M_2) \iff \lnot (J_1 \lor M_1)$} \vspace{1ex}
+\end{exercises}
+%If					x
+%only if				x
+%if and only if		x
+%but				x
+%unless				x
+%not both			x
+%neither nor			x
+
+
+\noindent\problempart
+\label{pr.spies}
+Give a symbolization key and symbolize the following sentences in SL. \\
+\answer{
+\begin{description}
+\item[A:] Alice is a spy
+\item [B:] Bob is a spy
+\item [C:] The code has been broken
+\item [D:] The German embassy is in an uproar
+\end{description}
+}
+\begin{exercises}
+\item Alice and Bob are both spies. \answer{$A \land B$ }
+\item If either Alice or Bob is a spy, then the code has been broken. \answer{$(A \lor B) \onlyif C$}
+\item If neither Alice nor Bob is a spy, then the code remains unbroken. \answer{$\lnot(A \lor B) \onlyif \lnot C$}
+\item The German embassy will be in an uproar, unless someone has broken the code. \answer{$D \lor C$}
+\item Either the code has been broken or it has not, but the German embassy will be in an uproar regardless. \answer{$(C \lor \lnot C) \land D$}
+\item Either Alice or Bob is a spy, but not both. \answer{$(A \lor B) \land \lnot (A \land B)$}
+\end{exercises}
+
+%If
+%only if
+%if and only if
+%but
+%unless
+%not both
+%neither nor
+
+\noindent\problempart Give a symbolization key and symbolize the following sentences in SL.
+%\begin{description}
+%\item[A:] Gregor plays first base
+%\item[B:] The team will lose
+%\item[C:] There is a miracle
+%\item[D:] Gregor's mom will bake cookies.
+%\end{description}
+
+\begin{exercises}
+\item If Gregor plays first base, then the team will lose. %{\color{red} $A \onlyif B$ \vspace{1ex}}
+\item The team will lose unless there is a miracle. %{\color{red}$B \lor C$ \vspace{1ex}}
+\item The team will either lose or it won't, but Gregor will play first base regardless. % {\color{red}$(B \lor \lnot B) \land A$ \vspace{1ex}}
+\item Gregor's mom will bake cookies if and only if Gregor plays first base.% {\color{red}$C \iff A$ \vspace{1ex}}
+\item If there is a miracle, then Gregor's mom will not bake cookies. %{\color{red} $C \onlyif \lnot D$}
+\end{exercises}
+
+
+\noindent\problempart For each argument, write a symbolization key and translate the argument  into SL, putting the argument in canonical form.
+
+\begin{longtabu}{p{.1\linewidth}p{.9\linewidth}}
+\textbf{Example}: &  If Dorothy plays the piano in the morning, then Roger wakes up cranky. Dorothy plays piano in the morning unless she is distracted. So if Roger does not wake up cranky, then Dorothy must be distracted. \\
+\textbf{Answer}: & {\color{white}.} \vspace{-20pt} \begin{description}
+\item[A:] Dorothy plays the piano in the morning
+\item[B:] Roger wakes up cranky
+\item[C:] Dorothy is distracted
+\end{description}\\
+& {\color{white}.} \vspace{-22pt} \begin{kormanize*}
+\item $A \onlyif B$
+\item  $A \lor C$
+\itemc[.1] $\lnot B \onlyif C$
+\end{kormanize*}\\
+\end{longtabu}
+
+\begin{exercises}
+
+\item It will either rain or snow on Tuesday. If it rains on Tuesday, Neville will be sad. If it snows on Tuesday, Neville will be cold. Therefore, Neville will either be sad or cold on Tuesday.
+
+\answer{
+\begin{description}
+\item[A:]  It will rain on Tuesday
+\item[B:]  It will snow on Tuesday
+\item[C:]  Neville will be sad
+\item[D:]  Neville will be cold
+\end{description}
+
+\begin{kormanize*}
+\item $A \lor B$
+\item $A \onlyif C$
+\item $B \onlyif D$
+\itemc[.1]  $C \lor D$
+\end{kormanize*}
+}
+
+\item If Zoog remembered to do his chores, then things are clean but not neat. If he forgot, then things are neat but not clean. Therefore, things are either neat or clean---but not both.
+
+\answer{
+\begin{description}
+\item[A:] Zoog remembered to do his chores.
+\item[B:] Things are clean
+\item[C:] Things are neat %\end{description}
+\end{description}
+
+\begin{kormanize*}
+\item  $A \onlyif (B \land \lnot C)$
+\item  $\lnot A \onlyif (\lnot B \land C)$
+\itemc[.2]  $(B \lor C) \land \lnot (B \land C)$
+\end{kormanize*}
+}
+
+\end{exercises}
+
+
+\noindent\problempart For each argument, write a symbolization key and translate the argument as well as possible into SL. The part of the passage in italics is there to provide context for the argument, and doesn't need to be symbolized.
+
+\begin{exercises}
+\item It is going to rain soon. I know because my leg is hurting, and my leg hurts if it’s going to rain.
+
+%{\color{red}
+%\begin{description}
+%\item[A:]
+%\item[B:]
+%\item[C:]  %\end{description}
+
+%begin{\kormanize}
+%\item[1.]
+%\item[2.]
+%\item[$\therefore$]
+%}
+
+\item  \emph{Spider-man tries to figure out the bad guy’s plan.} If Doctor Octopus gets the uranium, he will blackmail the city. I am certain of this because if Doctor Octopus gets the uranium, he can make a dirty bomb, and if he can make a dirty bomb, he will blackmail the city.
+
+%{\color{red}
+%\begin{description}
+%\item[A:]
+%\item[B:]
+%\item[C:]  %\end{description}
+
+%begin{\kormanize}
+%\item[1.]
+%\item[2.]
+%\item[$\therefore$]
+%}
+
+\item \emph{A westerner tries to predict the policies of the Chinese government.} If the Chinese government cannot solve the water shortages in Beijing, they will have to move the capital. They don’t want to move the capital. Therefore they must solve the water shortage. But the only way to solve the water shortage is to divert almost all the water from the Yangzi river northward. Therefore the Chinese government will go with the project to divert water from the south to the north.
+
+
+
+%{\color{red}
+%\begin{description}
+%\item[A:]
+%\item[B:]
+%\item[C:]  %\end{description}
+
+%begin{\kormanize}
+%\item[1.]
+%\item[2.]
+%\item[$\therefore$]
+%}
+
+\end{exercises}
+
+
+
+
+\noindent\problempart
+\begin{exercises}
+\item Are there any sentences of SL that contain no sentence letters? Why or why not? \answer{\\ No, because the rules for creating sentences begin with sentence letters and then apply connectives and more sentence letters. There is no way to remove the sentence letters that you start with.}
+\item In the chapter, we symbolized an \emph{exclusive or} using \lor, \land, and \lnot. How could you translate an \emph{exclusive or} using only two connectives? Is there any way to translate an \emph{exclusive or} using only one kind of connective? \answer{ \\ The exclusive or (sometimes written xor) is true whenever the two sides of it have opposite truth values. This is the reverse of what the biconditional does. Thus you can represent the xor like this: \lnot(A \iff B). You can't get rid of any more connectives, though. If you had a single connective in the sentence, it would have to be equivalent on its own to the exclusive or, and none of our connectives work like that. Some systems do introduce a separate symbol for the exclusive or, often a plus sign: +.}
+\end{exercises}
+
+
+
+
+%\solutions
+%\problempart
+%\label{pr.wiffSL}
+%For each of the following: (a) Is it a wff of SL? (b) Is it a sentence of SL, allowing for notational conventions?
+%\begin{kormanize}
+%\item $(A)$
+%\item $J_{374} \lor \lnot J_{374}$
+%\item $\lnot \lnot \lnot \lnot F$
+%\item $\lnot \land S$
+%\item $(G \land \lnot G)$
+%\item $\script{A} \onlyif \script{A}$
+%\item $(A \onlyif (A \land \lnot F)) \lor (D \iff E)$
+%\item $[(Z \iff S) \onlyif W] \land [J \lor X]$
+%\item $(F \iff \lnot D \onlyif J) \lor (C \land D)$
+%\end{kormanize}
+
+
+%%%%    Key term list

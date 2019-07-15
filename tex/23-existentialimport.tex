@@ -1,3 +1,7 @@
+\chapter{Existential Import}\label{ch:existentialimport}
+\markright{Ch. \ref{ch:existentialimport}: Existential Import}
+
+
 
 \section{Existential Import and Conditionally Valid Forms}
 
@@ -171,7 +175,7 @@ description={A fallacy committed in an Aristotelian syllogism where the middle t
 
 Consider these two arguments:
 
-\begin{tabu}{X[.5\linewidth] X[.5\linewidth]}
+\begin{tabu}{X[1,l] X[1,l]}
 
 \begin{kormanize}
 \premise{All $M$ are $P$.}
@@ -528,7 +532,7 @@ Arguments are composed of statements, so all of the guidelines we discussed for 
 
 The indicator words let us know the conclusion is the sentence in the middle of this passage, ``At least one bird in the world is not a person.'' The quantifier in this sentence is nonstandard. As we saw on page \pageref{subsec:nonstandard_quantifiers} ``at least one'' should be changed to ``some.'' That would give us ``Some birds are not people'' for the conclusion. Similar changes need to be made to the two premises. Thus the argument and translation key look like this:
 
-\begin{tabu}{{X[1,l,p]X[1,l,p]}}
+\begin{tabu}{{X[1,l] X[1,l]}}
 \begin{description}
 \item[$S$:] Birds
 \item[$M$:] Penguins
@@ -552,7 +556,7 @@ Another issue that can come up in ordinary language arguments is the use of syno
 
 You might think this argument can't be a proper syllogism, because it has four terms in it: Ad\'{e}lie penguins, \emph{Pygoscelis adeliae}, Sphenisciformes, and things that can fly. However, a quick trip to Wikipedia can confirm that \emph{Pygoscelis adeliae} is just the scientific name from the Ad\'{e}lie penguin, and for that matter ``Sphenisciformes'' are just penguins. So really, the argument just has three terms, and there is no problem representing the argument  like this:
 
-\begin{tabu}{{X[1,l,p]X[1,l,p]}}
+\begin{tabu}{{X[1,l] X[1,l]}}
 \begin{description}
 \item[$S$:] Ad\'{e}lie penguins
 \item[$M$:] Penguins
@@ -576,7 +580,7 @@ Generally speaking, arguments involving different names for the same person can 
 
 ``Bertrand Russell'' and ``Mr. Russell'' are names for the same person, so we can represent them using the same variable. Back on page \pageref{subsec:singular_propositions} we learned that names for individuals need to be transformed into classes using phrases like ``objects identical with \ldots'' or ``people identical with \ldots.''  Thus the argument turns out to be Celarent's best friend, Barbara (AAA-I):
 
-\begin{tabu}{{X[1.25,l,p]X[1,l,p]}}
+\begin{tabu}{{X[1.25,l] X[1,l]}}
 \begin{description}
 \item[$S$:] People identical with Bertrand Russell
 \item[$M$:] Logicians
@@ -600,7 +604,7 @@ Bertrand Russell did not believe in God. I know this because Mr. Russell was not
 
 Here again we need to use one variable for both ``Bertrand Russell'' and ``Mr. Russell.'' But we also have to change the verb phrase ``believes in God'' into a predicate term (see page \pageref{subsec:nonstandard_verbs}). The main trick here is to transform the verb phrase ``believes in God'' and the singular terms referring to Bertrand Russell in a way that will match. The trick is to use the word ``people'' each time. ``Believes in God'' becomes ``people who believe in God,'' and the two names for Bertrand Russell need to become ``people identical with Bertrand Russell.'' By including the word ``people'' in each case, we ensure that the terms will be comparable.
 
-\begin{tabu}{{X[2,l,p]X[1,l,p]}}
+\begin{tabu}{{X[2,l]X[1,l]}}
 \begin{description}
 \item[$S$:] People identical to Bertrand Russell
 \item[$M$:] Christians
@@ -620,7 +624,7 @@ The argument here is AEE-1, which is invalid. It violates rule 2, because $P$ is
 
 In the last subsection, we saw that we can represent synonyms using the same variable, thus reducing the number of terms in an argument down to the three terms required for an Aristotelian syllogism. Something similar can be done when you have terms that are complements of other terms. Back on page \pageref{def:Complement} we said that the complement of a class was the class of things that are not in the original class. So the complement of the class ``penguins'' is everything that is not a penguin. Sometimes, if you have an argument with more than three terms, you can reduce the number of terms down to three, because some of the terms are complements of each other, like ``penguins'' and ``non-penguins.''
 
- Consider the following argument, which talks about the stoics, an ancient philosophical school and pioneers in logical thinking. \nix{[insert historical sidebar ref]}
+Consider the following argument, which talks about the stoics, an ancient philosophical school and pioneers in logical thinking.
 
 \begin{quotation}
 No stoics are non-logicians, and all non-philosophers are non-stoics. Therefore all logicians are philosophers.
@@ -629,7 +633,7 @@ No stoics are non-logicians, and all non-philosophers are non-stoics. Therefore 
 This argument has six terms: stoics, logicians, philosophers, non-stoics, non-logicians, and non-philosophers. Since the second three are all complements of the first, we should be able to reduce the number of terms to three. Once we do this, we might find that the argument is valid---it looks like it might be Barbara. We can begin by assigning $S$, $M$, and $P$ to the terms ``stoics,'' ``logicians,'' and ``philosophers.'' We can then represent the other six terms as non-$S$, non-$M$, and non-$P$.
 
 
-\begin{tabu}{{X[1,l,p]X[1,l,p]}}
+\begin{tabu}{{X[1,l]X[1,l]}}
 
 \begin{description}
 \item[$S$:] Logicians
@@ -675,7 +679,7 @@ All dogs in the park must be leashed. Some unleashed pets in the park are cats. 
 
 To make this argument work, we need to get the predicate of the major premise to match the subject of the minor premise. The first step is just turning the verb phrase ``must be leashed'' into a noun phrase that matches ``unleashed pets.'' We also should use the qualification ``in the park'' consistently across the terms.
 
-\begin{tabu}{{X[1,l,p]X[1,l,p]}}
+\begin{tabu}{{X[1,l] X[1,l]}}
 
 \begin{description}
 \item[$S$:] Cats in the park
@@ -715,7 +719,7 @@ description={An argument where a premise or conclusion has been left unstated.}
 }
 
 
-In the real world, arguments are often presented with pieces missing. The missing piece could be an important premise or sometimes even the conclusion.  Arguments with parts missing are called \textsc{\glspl{enthymeme}}. \label{def:enthymeme} We discuss them extensively in the chapter on incomplete arguments in the full version of this text. \label{ver_var} \nix{Chapter \ref{ch:incomplete_arguments}.} Here we will be dealing with them specifically as they are used with Aristotelian syllogisms. Because we are now dealing with more real-world arguments, we will return to our practice of giving the context in italics before passages (see page \pageref{context_marker}). Remember, that this context is not a part of the argument. It is just there to help interpret the passage.
+In the real world, arguments are often presented with pieces missing. The missing piece could be an important premise or sometimes even the conclusion.  Arguments with parts missing are called \textsc{\glspl{enthymeme}}. \label{def:enthymeme} We discuss them extensively in the chapter on incomplete arguments in the full version of this text. Here we will be dealing with them specifically as they are used with Aristotelian syllogisms. Because we are now dealing with more real-world arguments, we will return to our practice of giving the context in italics before passages (see page \pageref{context_marker}). Remember, that this context is not a part of the argument. It is just there to help interpret the passage.
 
 The simplest and most common reason one might leave out a part of an Aristotelian syllogism is brevity. Sometimes part of an argument is common knowledge or completely obvious from the context and simply doesn't need to be said. Consider this common inference that might pop into your head one afternoon:
 
@@ -770,7 +774,7 @@ But wait, is this implicit premise even true? Actually it isn't---the Cayenne it
 
 When filling in missing parts of an enthymeme it is important to remember the principle of charity. The principle of charity says that we should try to interpret other people in a way that makes reasoning coherent and their beliefs reasonable. (See Chapter \ref{ch:incomplete_arguments}.) With the example of the salesperson above, one might argue that we were not being as charitable as we could have been. Perhaps the salesperson didn't expect us to believe that \textit{all} hybrids get good gas mileage. Perhaps they only expected us to believe that \textit{most} hybrids get good gas mileage.
 
-If you interpret the argument this way, you are getting a more believable premise in exchange for a weaker inference. The original argument had the strongest possible inference---it was genuinely valid. If you change the major premise to something involving ``most,'' you will have an argument that is at best strong, not  valid. The premise is now believable, but the inference is fallible.  (This kind of trade-off is discussed more extensively in Chapter \ref{ch:incomplete_arguments}) Also note that if you do decide to use ``most'' when filling in the missing premise, the argument becomes inductive, and thus is something that you would evaluate using the tools from the parts of the complete version of this textbook on inductive and scientific reasoning, \nix{Part \ref{part:inductive_scientific} of this textbook,} \label{ver_var} not the tools of Aristotelian logic. In this section we will only be looking at enthymemes where you fill in premises in a way that yields Aristotelian syllogisms.
+If you interpret the argument this way, you are getting a more believable premise in exchange for a weaker inference. The original argument had the strongest possible inference---it was genuinely valid. If you change the major premise to something involving ``most,'' you will have an argument that is at best strong, not  valid. The premise is now believable, but the inference is fallible.  (This kind of trade-off is discussed more extensively in Chapter \ref{ch:incomplete_arguments}) Also note that if you do decide to use ``most'' when filling in the missing premise, the argument becomes inductive, and thus is something that you would evaluate using the tools from the parts of this textbook on inductive and scientific reasoning, not the tools of Aristotelian logic. In this section we will only be looking at enthymemes where you fill in premises in a way that yields Aristotelian syllogisms.
 
 Sometimes enthymemes are missing a conclusion, rather than a premise. Consider this example:
 
@@ -1076,7 +1080,7 @@ Actually, once you note that the first two premises violate Rule 3 for Aristotel
 Rather than filling in all the missing intermediate conclusions, we can see directly whether a sorites is valid by applying the rules we went over in Section  \ref{sec:rules_and_fallacies}. To spare you from flipping back and forth too much in the text, let's repeat the five basic rules here, modified so that they work with the longer arguments we are discussing.
 
 \begin{quotation}
-\begin{tabu}{p{.1\linewidth}p{.9\linewidth}}
+\begin{tabu}{X[1] X[9]}
 \textbf{Rule 1}: & Each middle term in a valid categorical sorites argument must be distributed at least once. \\
 \textbf{Rule 2}: & If a term is distributed in the conclusion of a valid categorical sorites argument, then it must also be distributed in one of the premises. \\
 \textbf{Rule 3}: & A valid Aristotelian syllogism cannot have two or more negative premises. \\
@@ -1098,15 +1102,13 @@ To evaluate an sorites argument using the rules, it helps not only to have the a
  \end{kormanize}
 
 \begin{table}
-[style=mytablehalfbox, userdefinedwidth=.6\textwidth]
-\begin{tabu}{p{.1\linewidth}p{.4\linewidth}p{.5\linewidth}}
+\begin{tabu}{X[1] X[4] X[5]}
  \underline{Mood} & \underline{Form} & \underline{Terms Distributed} \\
 A & All $S$ are $P$ & S\\
 E & No $S$ are $P$ &  S and P\\
 I & Some $S$ are $P$ & None\\
 O &Some $S$ are not $P$ & P \\
 \end{tabu}
-
 \caption{Moods and distribution}\label{tab:distribution_reminder}
 \end{table}
 

@@ -1,18 +1,78 @@
 \addvspace {10\p@ }
-\contentsline {xchapter}{About this Book}{7}{chapter*.2}
+\contentsline {xchapter}{About this Book}{9}{chapter*.2}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Acknowledgments}{9}{chapter*.3}
+\contentsline {xchapter}{Acknowledgments}{11}{chapter*.3}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Dedication}{13}{chapter*.4}
+\contentsline {xchapter}{Dedication}{15}{chapter*.4}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Categorical Syllogisms}{21}{chapter.1}
-\contentsline {figure}{\numberline {1.1}{\ignorespaces The oldest surviving version of the ``Barbara, Celarent...'' poem, from William of Sherwood. The manuscript is held at the Biblioth\`eque Nationale de France, ms. Lat. 16617, \url {http://gallica.bnf.fr/ark:/12148/btv1b9066740r}}}{29}{figure.1.1}
-\contentsline {xpart}{Categorical Logic}{21}{part.1}
-\contentsline {xpart}{Appendices}{33}{part.2}
+\contentsline {xchapter}{What Is Logic?}{23}{chapter.1}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces The boardgame Clue.}}{23}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces The ob/ob mouse (left), a laboratory mouse which has been genetically engineered to be obese, and an ordinary mouse (right). Photo from \citet {WikimediaCommons2006}.}}{26}{figure.1.2}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces A statement in different contexts, or no context.}}{28}{figure.1.3}
+\contentsline {xpart}{Basic Concepts}{23}{part.1}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Glossary}{35}{appendix.A}
+\contentsline {xchapter}{The Basics of Evaluating Argument}{39}{chapter.2}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Neither argument is valid, but one is strong and one is weak}}{49}{figure.2.1}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Other Symbolic Notation}{37}{appendix.B}
+\contentsline {xchapter}{What is Formal Logic?}{53}{chapter.3}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Two examples of valid arguments.}}{53}{figure.3.1}
 \addvspace {10\p@ }
-\contentsline {xchapter}{Quick Reference}{41}{appendix.C}
+\contentsline {xchapter}{What is Critical Thinking?}{65}{chapter.4}
+\contentsline {xpart}{Critical Thinking}{65}{part.2}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Informal Fallacies}{67}{chapter.5}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Cognitive Biases}{85}{chapter.6}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces A diagram of the locations where damage was recorded on bombers during WWII. Source: \url {https://commons.wikimedia.org/wiki/File:Survivorship-bias.png}}}{90}{figure.6.1}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Categorical Statements}{97}{chapter.7}
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Parts of a quantified categorical statement.}}{98}{figure.7.1}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces Euler diagrams from Scottish philosopher William Hamilton's \textit {Lectures on Logic}.}}{101}{figure.7.2}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Venn's original diagram for an mood-A statement (Venn \citep {Venn1880a}). Screencap from Google Books by J. Robert Loftis.}}{101}{figure.7.3}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces A basic Venn diagram.}}{102}{figure.7.4}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces A Venn diagram for a mood-A sentence.}}{102}{figure.7.5}
+\contentsline {figure}{\numberline {7.6}{\ignorespaces A Venn diagram for a mood-I sentence.}}{102}{figure.7.6}
+\contentsline {figure}{\numberline {7.7}{\ignorespaces Venn diagrams for all four categorical moods.}}{103}{figure.7.7}
+\contentsline {xpart}{Categorical Logic}{97}{part.3}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Categorical Syllogisms}{111}{chapter.8}
+\contentsline {figure}{\numberline {8.1}{\ignorespaces The four Venn diagrams for mood A sentences.}}{116}{figure.8.1}
+\contentsline {figure}{\numberline {8.2}{\ignorespaces The two Venn diagrams for mood E sentences.}}{116}{figure.8.2}
+\contentsline {figure}{\numberline {8.3}{\ignorespaces It is ambiguous where the X should go on this Venn diagram.}}{116}{figure.8.3}
+\contentsline {figure}{\numberline {8.4}{\ignorespaces We place the X on the border between these regions to indicate that it \emph {could} be in either.}}{116}{figure.8.4}
+\contentsline {figure}{\numberline {8.5}{\ignorespaces The X is forced into region 3 because we know that nothing can be in region 4.}}{117}{figure.8.5}
+\contentsline {figure}{\numberline {8.6}{\ignorespaces The X is forced into region 3 because we know that nothing can be in region 4.}}{117}{figure.8.6}
+\contentsline {figure}{\numberline {8.7}{\ignorespaces Basic Venn diagrams for all particular categorical sentences. Note that syllogisms with universal sentences may shade some regions and force the X off the border and completely into one of the regions.}}{118}{figure.8.7}
+\contentsline {figure}{\numberline {8.8}{\ignorespaces ``All $M$ are $P$.''}}{118}{figure.8.8}
+\contentsline {figure}{\numberline {8.9}{\ignorespaces ``All $M$ are $P$.'' and ``All $S$ are $M$.''}}{118}{figure.8.9}
+\contentsline {figure}{\numberline {8.10}{\ignorespaces ``All $P$ are $M$.''}}{119}{figure.8.10}
+\contentsline {figure}{\numberline {8.11}{\ignorespaces ``All $P$ are $M$.'' and ``All $S$ are $M$.''}}{119}{figure.8.11}
+\contentsline {figure}{\numberline {8.12}{\ignorespaces ``All $S$ are $M$.''}}{120}{figure.8.12}
+\contentsline {figure}{\numberline {8.13}{\ignorespaces ``Some $M$ are $P$.'' and ``All $S$ are $M$.''}}{120}{figure.8.13}
+\contentsline {figure}{\numberline {8.14}{\ignorespaces ``All $M$ are $S$.''}}{120}{figure.8.14}
+\contentsline {figure}{\numberline {8.15}{\ignorespaces ``Some $M$ are $P$.'' and ``All $M$ are $S$.''}}{120}{figure.8.15}
+\contentsline {figure}{\numberline {8.16}{\ignorespaces The oldest surviving version of the ``Barbara, Celarent...'' poem, from William of Sherwood. The manuscript is held at the Biblioth\`eque Nationale de France, ms. Lat. 16617, \url {http://gallica.bnf.fr/ark:/12148/btv1b9066740r}}}{121}{figure.8.16}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Existential Import}{123}{chapter.9}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Propositional Logic}{159}{chapter.10}
+\contentsline {figure}{\numberline {10.1}{\ignorespaces This is Cupcake. The fact that she is a dog is a \textit {sufficient} condition for her to be a mammal. She also likes socks.}}{173}{figure.10.1}
+\contentsline {figure}{\numberline {10.2}{\ignorespaces The antecedent of a material conditional is a sufficient condition for the consequent, while the consequent is a necessary condition for the antecedent.}}{173}{figure.10.2}
+\contentsline {xpart}{Propositional Logic}{159}{part.4}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Truth Tables}{181}{chapter.11}
+\addvspace {10\p@ }
+\contentsline {xchapter}{What are Induction and Scientific Reasoning?}{189}{chapter.12}
+\contentsline {xpart}{Inductive Logic and Scientific Reasoning}{189}{part.5}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Inductive Logic}{199}{chapter.13}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Mill's Methods}{203}{chapter.14}
+\contentsline {xpart}{Appendices}{209}{part.6}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Glossary}{211}{appendix.A}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Other Symbolic Notation}{221}{appendix.B}
+\addvspace {10\p@ }
+\contentsline {xchapter}{Quick Reference}{225}{appendix.C}
 \contentsfinish 
