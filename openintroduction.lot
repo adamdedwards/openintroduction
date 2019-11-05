@@ -24,95 +24,91 @@
 \defcounter {refsection}{0}\relax 
 \contentsline {xchapter}{The Basics of Evaluating Argument}{37}{chapter.2}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{What is Formal Logic?}{51}{chapter.3}
+\contentsline {table}{\numberline {2.2}{\ignorespaces These two arguments are valid, but only the one on the right is sound}}{42}{table.2.2}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{What is Critical Thinking?}{63}{chapter.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {xpart}{Critical Thinking}{63}{part.2}
+\contentsline {xchapter}{What is Formal Logic?}{53}{chapter.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Informal Fallacies}{65}{chapter.5}
+\contentsline {xchapter}{Informal Fallacies}{65}{chapter.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {xpart}{Critical Thinking}{65}{part.2}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Cognitive Biases}{83}{chapter.6}
+\contentsline {xchapter}{Cognitive Biases}{85}{chapter.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Categorical Statements}{95}{chapter.7}
+\contentsline {xchapter}{Categorical Statements}{97}{chapter.6}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.1}{\ignorespaces The four moods of categorical statements}}{98}{table.7.1}
+\contentsline {table}{\numberline {6.1}{\ignorespaces The four moods of categorical statements}}{100}{table.6.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {7.2}{\ignorespaces Quantity, quality, and distribution.}}{98}{table.7.2}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Quantity, quality, and distribution.}}{100}{table.6.2}
 \defcounter {refsection}{0}\relax 
-\contentsline {xpart}{Categorical Logic}{95}{part.3}
-\defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Categorical Syllogisms}{107}{chapter.8}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.1}{\ignorespaces The sixty-four moods of the Aristotelian syllogism}}{108}{table.8.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.2}{\ignorespaces The four figures of the Aristotelian syllogism}}{109}{table.8.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {8.3}{\ignorespaces The 15 unconditionally valid syllogisms.}}{117}{table.8.3}
+\contentsline {xpart}{Categorical Logic}{97}{part.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Existential Import}{119}{chapter.9}
+\contentsline {xchapter}{Categorical Syllogisms}{111}{chapter.7}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {9.2}{\ignorespaces All 24 Valid Syllogisms}}{121}{table.9.2}
+\contentsline {table}{\numberline {7.1}{\ignorespaces The sixty-four moods of the Aristotelian syllogism}}{112}{table.7.1}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {9.3}{\ignorespaces Moods and distribution}}{148}{table.9.3}
+\contentsline {table}{\numberline {7.2}{\ignorespaces The four figures of the Aristotelian syllogism}}{113}{table.7.2}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Propositional Logic}{155}{chapter.10}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {10.1}{\ignorespaces The Sentential Connectives.}}{158}{table.10.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {xpart}{Propositional Logic}{155}{part.4}
+\contentsline {table}{\numberline {7.3}{\ignorespaces The 15 unconditionally valid syllogisms.}}{121}{table.7.3}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{What are Induction and Scientific Reasoning?}{175}{chapter.11}
+\contentsline {xchapter}{Propositional Logic}{125}{chapter.8}
 \defcounter {refsection}{0}\relax 
-\contentsline {xpart}{Inductive Logic and Scientific Reasoning}{175}{part.5}
+\contentsline {table}{\numberline {8.1}{\ignorespaces The Sentential Connectives.}}{128}{table.8.1}
 \defcounter {refsection}{0}\relax 
-\addvspace {10\p@ }
-\defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Inductive Logic}{185}{chapter.12}
+\contentsline {xpart}{Propositional Logic}{125}{part.4}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Mill's Methods}{189}{chapter.13}
+\contentsline {xchapter}{Truth Tables}{143}{chapter.9}
 \defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {13.1}{\ignorespaces The Method of Agreement}}{190}{table.13.1}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {13.2}{\ignorespaces The Method of Difference}}{190}{table.13.2}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {13.3}{\ignorespaces The Joint Method}}{191}{table.13.3}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {13.4}{\ignorespaces The Method of Residue}}{191}{table.13.4}
-\defcounter {refsection}{0}\relax 
-\contentsline {table}{\numberline {13.5}{\ignorespaces The Method of Concomitant Variation}}{192}{table.13.5}
-\defcounter {refsection}{0}\relax 
-\contentsline {xpart}{Appendices}{195}{part.6}
+\contentsline {table}{\numberline {9.2}{\ignorespaces The characteristic truth tables for the connectives of SL.}}{145}{table.9.2}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Glossary}{197}{appendix.A}
+\contentsline {xchapter}{What are Induction and Scientific Reasoning?}{151}{chapter.10}
+\defcounter {refsection}{0}\relax 
+\contentsline {xpart}{Inductive Logic and Scientific Reasoning}{151}{part.5}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Other Symbolic Notation}{209}{appendix.B}
+\contentsline {xchapter}{Inductive Logic}{161}{chapter.11}
 \defcounter {refsection}{0}\relax 
 \addvspace {10\p@ }
 \defcounter {refsection}{0}\relax 
-\contentsline {xchapter}{Quick Reference}{211}{appendix.C}
+\contentsline {xchapter}{Mill's Methods}{165}{chapter.12}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {12.1}{\ignorespaces The Method of Agreement}}{166}{table.12.1}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {12.2}{\ignorespaces The Method of Difference}}{166}{table.12.2}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {12.3}{\ignorespaces The Joint Method}}{167}{table.12.3}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {12.4}{\ignorespaces The Method of Residue}}{167}{table.12.4}
+\defcounter {refsection}{0}\relax 
+\contentsline {table}{\numberline {12.5}{\ignorespaces The Method of Concomitant Variation}}{168}{table.12.5}
+\defcounter {refsection}{0}\relax 
+\contentsline {xpart}{Appendices}{171}{part.6}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Glossary}{173}{appendix.A}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Other Symbolic Notation}{181}{appendix.B}
+\defcounter {refsection}{0}\relax 
+\addvspace {10\p@ }
+\defcounter {refsection}{0}\relax 
+\contentsline {xchapter}{Quick Reference}{185}{appendix.C}
 \contentsfinish 

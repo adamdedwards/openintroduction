@@ -173,6 +173,14 @@ INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/enumitem/enumitem.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/enumitem/enumitem.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/hypcap.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/oberdiek/hypcap.sty
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/textgreek/textgreek.sty
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/textgreek/textgreek.sty
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/greek-fontenc/lgrenc.def
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/greek-fontenc/lgrenc.def
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/greek-inputenc/lgrenc.dfu
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/greek-inputenc/lgrenc.dfu
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/greek-fontenc/greek-fontenc.def
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/greek-fontenc/greek-fontenc.def
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/latexsym.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/latexsym.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/amsmath/amsmath.sty
@@ -292,20 +300,20 @@ INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/generic/pgf/libraries/pgflib
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/generic/pgf/modules/pgfmodulematrix.code.tex
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/tabu/tabu.sty
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/tabu/tabu.sty
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/varwidth/varwidth.sty
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/varwidth/varwidth.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/longtable.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/longtable.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/multirow/multirow.sty
+INPUT C:/Program Files/MiKTeX 2.9/tex/latex/multirow/multirow.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/epigraph/epigraph.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/epigraph/epigraph.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/units/units.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/units/units.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/units/nicefrac.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/units/nicefrac.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/tabularx.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/tabularx.sty
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/tabu/tabu.sty
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/tabu/tabu.sty
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/varwidth/varwidth.sty
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/varwidth/varwidth.sty
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/lipsum/lipsum.sty
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/lipsum/lipsum.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/microtype/microtype.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/microtype/microtype.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/microtype/microtype-pdftex.def
@@ -544,10 +552,6 @@ INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/minitoc/english.mld
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/minitoc/english.mld
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/minitoc/english.mld
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/minitoc/english.mld
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/longtable.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/tools/longtable.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/multirow/multirow.sty
-INPUT C:/Program Files/MiKTeX 2.9/tex/latex/multirow/multirow.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/colortbl/colortbl.sty
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/colortbl/colortbl.sty
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/graphics/rotating.sty
@@ -652,12 +656,16 @@ INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/blx-compat.de
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/blx-compat.def
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/biblatex.def
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/biblatex.def
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/bbx/authoryear.bbx
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/bbx/authoryear.bbx
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/bbx/authortitle-ticomp.bbx
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/bbx/authortitle-ticomp.bbx
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/bbx/authortitle.bbx
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/bbx/authortitle.bbx
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/bbx/standard.bbx
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/bbx/standard.bbx
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/cbx/authoryear.cbx
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/cbx/authoryear.cbx
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/cbx/authortitle-ticomp.cbx
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/cbx/authortitle-ticomp.cbx
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/cbx/authortitle-icomp.cbx
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/cbx/authortitle-icomp.cbx
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/biblatex.cfg
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/biblatex/biblatex.cfg
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/glossaries/base/glossaries.sty
@@ -734,8 +742,6 @@ INPUT tex/11-basicevaluation.aux
 INPUT tex/11-basicevaluation.aux
 INPUT tex/12-whatisformallogic.aux
 INPUT tex/12-whatisformallogic.aux
-INPUT tex/50-whatiscriticalthinking.aux
-INPUT tex/50-whatiscriticalthinking.aux
 INPUT tex/51-informalfallacies.aux
 INPUT tex/51-informalfallacies.aux
 INPUT tex/52-cognitivebiases.aux
@@ -744,10 +750,10 @@ INPUT tex/20-categoricalstatements.aux
 INPUT tex/20-categoricalstatements.aux
 INPUT tex/21-categoricalsyllogisms.aux
 INPUT tex/21-categoricalsyllogisms.aux
-INPUT tex/23-existentialimport.aux
-INPUT tex/23-existentialimport.aux
 INPUT tex/30-propositional.aux
 INPUT tex/30-propositional.aux
+INPUT tex/31-truthtables.aux
+INPUT tex/31-truthtables.aux
 INPUT tex/60-whatareinductionandscientificreasoning.aux
 INPUT tex/60-whatareinductionandscientificreasoning.aux
 INPUT tex/61-induction.aux
@@ -763,6 +769,8 @@ INPUT tex/A2-backmatter.aux
 OUTPUT openintroduction.aux
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ts1cmr.fd
 INPUT C:/Program Files/MiKTeX 2.9/tex/latex/base/ts1cmr.fd
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/cbfonts-fd/lgrcmr.fd
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/cbfonts-fd/lgrcmr.fd
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/libertine/t1linuxlibertinet-tlf.fd
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/tex/latex/libertine/t1linuxlibertinet-tlf.fd
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
@@ -930,6 +938,13 @@ INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmri
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineTI-tlf-t1.vf
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1--base.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1.tfm
 INPUT openintroduction.toc
 INPUT openintroduction.toc
@@ -959,18 +974,6 @@ OUTPUT openintroduction.toc
 OUTPUT tex/02-aboutthisbook.aux
 INPUT tex/02-aboutthisbook.tex
 INPUT tex/02-aboutthisbook.tex
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-t1.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-t1.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineTI-tlf-t1.vf
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1--base.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineT-tlf-sc-t1.vf
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-t1--base.tfm
 OUTPUT tex/03-acknowledgements.aux
 INPUT tex/03-acknowledgements.tex
 INPUT tex/03-acknowledgements.tex
@@ -997,18 +1000,21 @@ INPUT tex/10-whatislogic.tex
 INPUT tex/10-whatislogic.tex
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1.tfm
+OUTPUT openintroduction.glsdefs
 INPUT img/clue.jpg
 INPUT ./img/clue.jpg
 INPUT ./img/clue.jpg
 INPUT ./img/clue.jpg
 INPUT ./img/clue.jpg
-OUTPUT openintroduction.glsdefs
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-t1.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineTI-tlf-t1.vf
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1--base.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineT-tlf-sc-t1.vf
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-t1--base.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineTB-tlf-t1.vf
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1--base.tfm
 INPUT img/Fatmouse.jpg
 INPUT ./img/Fatmouse.jpg
 INPUT ./img/Fatmouse.jpg
@@ -1021,10 +1027,6 @@ INPUT ./img/statement_and_contexts.png
 INPUT ./img/statement_and_contexts.png
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineTI-tlf-t1.vf
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1--base.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9t.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr9t.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/zplmr7m.tfm
@@ -1054,6 +1056,15 @@ INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/zplmb7
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/wasy/wasy9.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/wasy/wasy7.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineTI-tlf-t1.vf
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTI-tlf-t1--base.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineT-tlf-t1.vf
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1--base.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-t1.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-t1.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-t1.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineT-tlf-sc-t1.vf
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-sc-t1--base.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineTB-tlf-t1.vf
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1--base.tfm
@@ -1070,32 +1081,33 @@ INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmr.
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7y.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
+INPUT img/argument_evaluation_chart.png
+INPUT ./img/argument_evaluation_chart.png
+INPUT ./img/argument_evaluation_chart.png
+INPUT ./img/argument_evaluation_chart.png
+INPUT ./img/argument_evaluation_chart.png
 OUTPUT tex/12-whatisformallogic.aux
 INPUT tex/12-whatisformallogic.tex
 INPUT tex/12-whatisformallogic.tex
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7t.vf
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmr10.tfm
-OUTPUT tex/50-whatiscriticalthinking.aux
-INPUT tex/50-whatiscriticalthinking.tex
-INPUT tex/50-whatiscriticalthinking.tex
 OUTPUT tex/51-informalfallacies.aux
 INPUT tex/51-informalfallacies.tex
 INPUT tex/51-informalfallacies.tex
 OUTPUT tex/52-cognitivebiases.aux
 INPUT tex/52-cognitivebiases.tex
 INPUT tex/52-cognitivebiases.tex
+INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplr9t.vf
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr8r.tfm
 INPUT img/survivorship-bias.png
 INPUT ./img/survivorship-bias.png
 INPUT ./img/survivorship-bias.png
 INPUT ./img/survivorship-bias.png
 INPUT ./img/survivorship-bias.png
-INPUT C:/Program Files/MiKTeX 2.9/fonts/vf/adobe/palatino/pplr9t.vf
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmr.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr8r.tfm
 OUTPUT tex/20-categoricalstatements.aux
 INPUT tex/20-categoricalstatements.tex
 INPUT tex/20-categoricalstatements.tex
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1.tfm
 INPUT img/euler_diagrams.png
 INPUT ./img/euler_diagrams.png
 INPUT ./img/euler_diagrams.png
@@ -1121,8 +1133,6 @@ INPUT ./img/2venn5.png
 INPUT ./img/2venn5.png
 INPUT ./img/2venn5.png
 INPUT ./img/2venn5.png
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineTB-tlf-t1.vf
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineTB-tlf-t1--base.tfm
 INPUT img/2venn2.png
 INPUT ./img/2venn2.png
 INPUT img/2venn4.png
@@ -1306,13 +1316,6 @@ INPUT ./img/barbara.png
 INPUT ./img/barbara.png
 INPUT ./img/barbara.png
 INPUT ./img/barbara.png
-OUTPUT tex/23-existentialimport.aux
-INPUT tex/23-existentialimport.tex
-INPUT tex/23-existentialimport.tex
-INPUT img/2venn0.png
-INPUT ./img/2venn0.png
-INPUT img/3venn0.png
-INPUT ./img/3venn0.png
 OUTPUT tex/30-propositional.aux
 INPUT tex/30-propositional.tex
 INPUT tex/30-propositional.tex
@@ -1329,6 +1332,21 @@ INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinBi
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinBiolinumT-tlf-t1.vf
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinBiolinumT-tlf-t1--base.tfm
+OUTPUT tex/31-truthtables.aux
+INPUT tex/31-truthtables.tex
+INPUT tex/31-truthtables.tex
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7y.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmsy10.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr8r.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7v.vf
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmr.tfm
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7m.vf
+INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmri.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
+INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplri8r.tfm
 OUTPUT tex/60-whatareinductionandscientificreasoning.aux
 INPUT tex/60-whatareinductionandscientificreasoning.tex
 INPUT tex/60-whatareinductionandscientificreasoning.tex
@@ -1347,18 +1365,9 @@ INPUT tex/A0-notation.tex
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/libertine/LinLibertineT-tlf-ts1.vf
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/libertine/LinLibertineT-tlf-ts1--base.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7v.vf
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmex10.tfm
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmr.tfm
 OUTPUT tex/A1-quickreference.aux
 INPUT tex/A1-quickreference.tex
 INPUT tex/A1-quickreference.tex
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7m.vf
-INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmri.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/adobe/palatino/pplri8r.tfm
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/vf/public/mathpazo/zplmr7m.vf
 INPUT C:/Users/adame/AppData/Roaming/MiKTeX/2.9/fonts/tfm/public/mathpazo/fplmri.tfm
 INPUT C:/Program Files/MiKTeX 2.9/fonts/tfm/public/cm/cmmi10.tfm
@@ -1390,8 +1399,6 @@ INPUT tex/11-basicevaluation.aux
 INPUT tex/11-basicevaluation.aux
 INPUT tex/12-whatisformallogic.aux
 INPUT tex/12-whatisformallogic.aux
-INPUT tex/50-whatiscriticalthinking.aux
-INPUT tex/50-whatiscriticalthinking.aux
 INPUT tex/51-informalfallacies.aux
 INPUT tex/51-informalfallacies.aux
 INPUT tex/52-cognitivebiases.aux
@@ -1400,10 +1407,10 @@ INPUT tex/20-categoricalstatements.aux
 INPUT tex/20-categoricalstatements.aux
 INPUT tex/21-categoricalsyllogisms.aux
 INPUT tex/21-categoricalsyllogisms.aux
-INPUT tex/23-existentialimport.aux
-INPUT tex/23-existentialimport.aux
 INPUT tex/30-propositional.aux
 INPUT tex/30-propositional.aux
+INPUT tex/31-truthtables.aux
+INPUT tex/31-truthtables.aux
 INPUT tex/60-whatareinductionandscientificreasoning.aux
 INPUT tex/60-whatareinductionandscientificreasoning.aux
 INPUT tex/61-induction.aux
