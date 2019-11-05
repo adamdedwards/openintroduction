@@ -15,7 +15,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % graphics
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\RequirePackage[margin=1in]{geometry}
 \RequirePackage{graphicx}
 \setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
 \graphicspath{{img/}}
@@ -31,6 +30,7 @@
 \hypersetup{pdftex,colorlinks=true,allcolors=blue}
 \RequirePackage{hypcap}
 
+\RequirePackage[artemisia]{textgreek}
 \RequirePackage{latexsym}
 \RequirePackage{amsmath}
 \RequirePackage{amssymb}
@@ -43,17 +43,16 @@
 \RequirePackage{scalefnt}
 \RequirePackage{pgf}
 \RequirePackage{tikz}
+\RequirePackage{tabu}
+\RequirePackage{longtable}
+\RequirePackage{multirow}
 \RequirePackage{multicol}
 \RequirePackage{setspace}
 \RequirePackage{epigraph}
 \RequirePackage{units}
-\RequirePackage{tabularx}
-\RequirePackage{tabu}
-\RequirePackage{lipsum}
+%\RequirePackage{tabularx}
 \RequirePackage{microtype}
 \RequirePackage{minitoc}
-\RequirePackage{longtable}
-\RequirePackage{multirow}
 \RequirePackage{colortbl}
 \RequirePackage{rotating}
 
@@ -96,8 +95,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \RequirePackage{makeidx}
-%\RequirePackage[sort,comma]{natbib}
-\setcounter{tocdepth}{1}
+\RequirePackage[style=authortitle-ticomp,maxbibnames=99,sorting=nyt]{biblatex}
+\renewcommand{\cite}[2][0pt]{\sidenote[][#1]{\fullcite{#2}}}
+\setcounter{tocdepth}{0}
 \newtheorem{theorem}{Theorem}[chapter]
 \theoremstyle{definition}
 \newtheorem{definition}{Definition}[chapter]
@@ -110,11 +110,6 @@
 \renewcommand*\cftchapdotsep{\cftdotsep}
 \renewcommand*\cftchapaftersnum{.}
 \renewcommand{\cftchapfont}{\scshape\large}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% index and bibliography
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 
 \RequirePackage[toc, nopostdot, numberedsection]{glossaries}
 \RequirePackage{datatool}

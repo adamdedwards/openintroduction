@@ -15,7 +15,7 @@ Arguments are supposed to lead us to the truth but they don't always succeed. Th
 \conclusion{ So, you should take an umbrella.}
 \end{kormanize}
 
-If premise (1) is false---if it is sunny outside---then the argument gives you no reason to carry an umbrella. The argument has failed its job. Premise (2) could also be false: Even if it is raining outside, you might not need an umbrella. You might wear a rain poncho or keep to covered walkways and still avoid getting soaked. Again, the argument fails because a premise is false. An argument with false premises can not lead us to a true conclusion.
+If premise (A1) is false---supposing it really is sunny outside---then the argument gives you no reason to carry an umbrella. The argument has failed its job. Premise (A2) could also be false: Even if it is raining outside, you might not need an umbrella. You might wear a rain poncho or keep to covered walkways and still avoid getting soaked. Again, the argument fails because a premise is false. An argument with false premises can not lead us to a true conclusion.
 
 Even if an argument has all true premises, there is still a second way it can fail. Consider another example:
 
@@ -25,7 +25,7 @@ Even if an argument has all true premises, there is still a second way it can fa
 \conclusion{ You are a logic student.}
 \end{kormanize}
 
-This is not a terrible argument. The premises are true. Most people who read this book \emph{are} logic students. Yet, it is possible for someone besides a logic student to read this book. If your friend who is not currently in a logic class read this book, they would not immediately become a logic student. So the premises of this argument, even though they are true, do not guarantee the truth of the conclusion. The evidential support between premises and conclusion is not a guarantee. This criterion is about the \emph{structure} of the argument, and how the premises and the conclusion are related to one another. There are better and worse ways that the premises of an argument can supply evidential support to its conclusion. Compare the example above with this one:
+This is not a terrible argument. The premises are true. Most people who read this book \emph{are} logic students. Yet, it is possible for someone besides a logic student to read this book. If your friend who is not currently in a logic class read this book, they would not immediately become a logic student. So the premises of this argument, even though they are true, do not guarantee the truth of the conclusion. The evidential support between premises and conclusion is not a guarantee. This criterion is about the \emph{structure} of the argument, and how the premises and the conclusion are related to one another. There are better and worse ways that the premises of an argument can supply evidential support to the argument's conclusion. Compare the example above with this one:
 
 \begin{kormanize}
 \premise{ You are reading this book.}
@@ -33,7 +33,7 @@ This is not a terrible argument. The premises are true. Most people who read thi
 \conclusion{ You are a professional surfer.}
 \end{kormanize}
 
-This argument should strike you as substantially worse than the previous one, even if you really are a professional surfer! Suppose the premises are both true. It still would seem pretty unlikely that the premises are very good reason to think that the conclusion is true. Just because there's at least one professional surfer who read this book, it doesn't follow that that person is you. Even though both of these arguments fail to guarantee their conclusions, one does seem better than the other. We'll be discussing why some arguments that fail this second citerion may still be worthwhile arguments.
+This argument should strike you as substantially worse than the previous one, even if you really are a professional surfer! Suppose the premises are both true. It still would seem pretty unlikely that the premises are very good reason to think that the conclusion is true. Just because there's at least one professional surfer who read this book, it doesn't follow that that person is you. Even though both of these arguments fail to guarantee their conclusions, one does seem better than the other. We'll be discussing why some arguments that fail this second criterion may still be worthwhile arguments.
 
 To sum up, for any argument there are two ways that it could fail. First, one or more of the premises might be false.  Second, the premises might fail to support the conclusion. Even if the premises were true, the form of the argument might be weak, meaning that there is little to no evidential support from premises to conclusion.
 
@@ -54,29 +54,32 @@ In logic, we are mostly concerned with evaluating the quality of inferences, not
 
 The strongest possible evidential support would be for the premises to somehow force the conclusion to be true. This kind of inference is called \textsc{\gls{valid}}. Lets make this notion a bit more precise:
 
-%\begin{definition}[Valid]
-  An argument is valid if and only if it is impossible for the premises to be true and the conclusion false.
-%\end{definition}
+\begin{definition}[Valid]\label{def:valid_impossible}
+  An argument is valid if and only if it is logically impossible for the premises to be true and the conclusion false.
+\end{definition}
 
-The important thing to see is that the definition is about what \textit{would} happen if the premises were true. It doesn't state that the premises actually \textit{are} true. This is why our definition is about what is possible or impossible. The argument is valid if, when you imagine the premises are true, you are somehow forced into imagining that the conclusion is also true. Consider the argument in Figure \ref{fig:Gaga_valid}
+An alternative, but equivalent, definition for validity is the following:
 
+\begin{definition}[Valid]\label{def:valid_necessary}
+  An argument is valid if and only if the truth of the premises necessitates the truth of the conclusion.
+\end{definition}
 
+The important thing to see is that the definition is about what \textit{would} happen if the premises were true. It doesn't state that the premises actually \textit{are} true. This is why our definition is about what is possible or impossible. The argument is valid if, when you imagine the premises are true, you are somehow forced into imagining that the conclusion is also true. Consider the argument in figure~\ref{arg:gaga_valid}
+
+\begin{figure}
 \begin{kormanize}
 \premise{Lady Gaga is from Mars.}
 \conclusion{Lady Gaga is from the fourth planet from our sun.}
 \end{kormanize}
+\caption{A valid argument.}
+\label{arg:gaga_valid}
+\end{figure}
 
 The American pop star Lady Gaga is not from Mars. (She's from New York City.) Nevertheless, if you grant that she is from Mars, you \emph{also} have to grant that she is from the fourth planet from our sun, because Mars simply is the fourth planet form our sun. Therefore this argument is valid.
 
-This way of understanding validity is based on what you can imagine, but not everyone is convinced that the imagination is a reliable tool in logic. That is why definitions like \ref{itm:necessary} and \ref{itm:our_def} talk about what is necessary or impossible. If the premises are true, the conclusion necessarily must be true. Alternately, it is impossible for the premises to be true and the conclusion false. The idea here is that instead of talking about the imagination, we will just talk about what can or cannot happen at the same time. The fundamental notion of validity remains the same, however: the truth of the premises would simply guarantee the truth of conclusion.
+This way of understanding validity is based on what you can imagine, but not everyone is convinced that the imagination is a reliable tool in logic. That is why definitions like \ref{def:valid} talk about what is necessary or impossible. If the premises are true, the conclusion necessarily must be true. Alternately, it is impossible for the premises to be true and the conclusion false. The idea here is that instead of talking about the imagination, we will just talk about what can or cannot happen at the same time. The fundamental notion of validity remains the same, however: the truth of the premises would simply guarantee the truth of conclusion.
 
 So, assessing validity means wondering about whether the conclusion would be true \textit{if} the premises were true. This means that valid arguments can have false conclusions. This is important to keep in mind because people naturally tend to think that any argument must be good if they agree with the conclusion. And the more passionately people believe in the conclusion, the more likely we are to think that any argument for it must be brilliant. Conversely, if the conclusion is something we don't believe in, we naturally tend to think the argument is poor. And the more we don't like the conclusion, the less likely we are to like the argument.
-
-%\newglossaryentry{myside fallacy}
-%{
-%name=myside fallacy,
-%description={The common mistake of evaluating an argument based merely on whether one agrees or disagrees with the conclusion.}
-%}
 
 
 \newglossaryentry{cognitive bias}
@@ -93,36 +96,36 @@ name=confirmation bias,
 description={The tendency to discount or ignore evidence and arguments that contradict one's current beliefs.}
 }
 
-There is a particular cognitive bias that makes it hard for us to recognize when a poor argument is being given for a conclusion we agree with. It is called ``confirmation bias'' and it is in many ways the mother of all cognitive biases.  \textsc{\Gls{confirmation bias}} \label{def:confirmation_bias} is the tendency to discount or ignore evidence and arguments that contradict one's current beliefs. It really pervades all of our thinking, right down to our perceptions. We'll discuss confirmation bias in more detail in chapter~\ref{ch:cognitivebiases}.
+There is a particular cognitive bias that makes it hard for us to recognize when a poor argument is being given for a conclusion we agree with. It is called ``confirmation bias'' and it is in many ways the source of all cognitive biases.  \textsc{\Gls{confirmation bias}} \label{def:confirmation_bias} is the tendency to discount or ignore evidence and arguments that contradict one's current beliefs. It really pervades all of our thinking, right down to our perceptions. We'll discuss confirmation bias in more detail in chapter~\ref{ch:cognitivebiases}.
 
-Because of confirmation bias, we need to train ourselves to recognize valid arguments for conclusions we think are false. Remember, an argument is valid if it is impossible for the premises to be true and the conclusion false. This means that you can have valid arguments with false conclusions, they just have to also have false premises. Consider the example in Figure \ref{fig:valid_oranges}
+Because of confirmation bias, we need to train ourselves to recognize valid arguments for conclusions we think are false. Remember, an argument is valid if it is impossible for the premises to be true and the conclusion false. This means that you can have valid arguments with false conclusions, they just have to also have false premises. Consider the example in figure~\ref{arg:valid_oranges}
 
-
+\begin{figure}[!ht]
 \begin{kormanize}
 \premise{ Oranges are either fruits or musical instruments.}
 \premise{ Oranges are not fruits.}
 \conclusion{ Oranges are musical instruments.}
-%\caption{A \textbf{valid} argument}
-%\label{fig:valid_oranges}
 \end{kormanize}
-
+\caption{A valid argument.}
+\label{arg:valid_oranges}
+\end{figure}
 
 %\label{valid_arg_false_premises}
 
 The conclusion of this argument is ridiculous. Nevertheless, it follows validly from the premises. This is a valid argument. \emph{If} both premises were true, \emph{then} the conclusion would necessarily be true.
 
-This shows that a valid argument does not need to have true premises or a true conclusion. Conversely, having true premises and a true conclusion is not enough to make an argument valid. Consider the example in Figure \ref{fig:invalid_paris}
+This shows that a valid argument does not need to have true premises or a true conclusion. Conversely, having true premises and a true conclusion is not enough to make an argument valid. Consider the example in Figure \ref{arg:invalid_paris}
 
 
-%\begin{figure}[b]
+\begin{figure}[!ht]
 \begin{kormanize}
 \premise{ London is in England.}
 \premise{ Beijing is in China.}
 \conclusion{Paris is in France.}
 \end{kormanize}
-%\caption{An \textbf{invalid} argument.} \label{fig:invalid_paris}
-%\end{figure}
-%\label{invalid_true_premises_and_conclusion}
+\caption{An invalid argument.}
+\label{arg:invalid_paris}
+\end{figure}
 
 
 \newglossaryentry{invalid}
@@ -131,6 +134,10 @@ name=invalid,
 description={A property of arguments that holds when the premises do not force the truth of the conclusion. The opposite of valid.}
 }
 
+\begin{definition}[Valid]
+  An argument is valid if and only if it is impossible for the premises to be true and the conclusion false.
+\end{definition}
+
 
 The premises and conclusion of this argument are, as a matter of fact, all true. This is a terrible argument, however, because the premises have nothing to do with the conclusion. Imagine what would happen if Paris declared independence from the rest of France. Then the conclusion would be false, even though the premises would both still be true. Thus, it is \emph{logically possible} for the premises of this argument to be true and the conclusion false. The argument is not valid.  If an argument is not valid, it is called \textsc{\gls{invalid}}. \label{def:invalid} As we shall see, this term is a little misleading, because less than perfect arguments can be very useful. But before we do that, we need to look more at the concept of validity.
 
@@ -138,24 +145,27 @@ In general, then, the \textit{actual} truth or falsity of the premises, if known
 
 Figure \ref{fig:invalid_animals} has another invalid argument:
 
+\begin{figure}[!ht]
 \begin{kormanize}
 \premise{ All dogs are mammals.}
 \premise{ All dogs are animals.}
 \conclusion{ All animals are mammals.}
 \end{kormanize}
-%\caption{An \textbf{invalid} argument.} \label{fig:invalid_animals}
+\caption{An \textbf{invalid} argument.} \label{fig:invalid_animals}
+\end{figure}
 
 In this case, we can see that the argument is invalid by looking at the truth of the premises and conclusion. We know the premises are true. We know that the conclusion is false. This is the one circumstance that a valid argument is supposed to make impossible.
 
 Some invalid arguments are hard to detect because they resemble valid arguments. Consider the one in Figure \ref{fig:invalid_stimulus}
 
+\begin{figure}[!ht]
 \begin{kormanize}
 \premise{ An economic stimulus package will allow the U.S. to avoid a depression.}
 \premise{ There is no economic stimulus package}
 \conclusion{[.3] The U.S. will go into a depression.}
 \end{kormanize}
-%\caption{An \textbf{invalid} argument} \label{fig:invalid_stimulus}
-
+\caption{An \textbf{invalid} argument} \label{fig:invalid_stimulus}
+\end{figure}
 
 This reasoning is not valid since the premises do not \textit{definitively} support the conclusion. To see this, assume that the premises are true and then ask, ``Is it possible that the conclusion could be false in such a situation?". There is no inconsistency in taking the premises to be true without taking the conclusion to be true. The first premise says that the stimulus package will allow the U.S. to avoid a depression, but it does not say that a stimulus package is the \textit{only }way to avoid a depression. Thus, the mere fact that there is no stimulus package does not necessarily mean that a depression will occur.
 
@@ -190,6 +200,7 @@ description={A property of arguments that holds if the argument is valid and has
 
 If an argument is not only valid, but also has true premises, we call it \textsc{\gls{sound}}. \label{def:sound} ``Sound'' is the highest compliment you can pay an argument. If logic is the study of virtue in argument, sound arguments are the most virtuous. We said in Section \ref{sec:two_ways} that there were two ways an argument could go wrong, either by having false premises or weak inferences. Sound arguments have true premises and undeniable inferences. If someone gives a sound argument in a conversation, you have to believe the conclusion, or else you are irrational.
 
+\begin{table}[!ht]
 \begin{longtabu}{X[1,c] X[1,c]}
 \begin{kormanize}
 \premise{ Socrates is a person.}
@@ -197,17 +208,16 @@ If an argument is not only valid, but also has true premises, we call it \textsc
 \conclusion{Therefore, Socrates is a carrot.}
 \end{kormanize}
 &
-
 \begin{kormanize}
 \premise{ Socrates is a person.}
 \premise{ All people are mortal.}
 \conclusion{Therefore, Socrates is mortal.}
 \end{kormanize}
 \\
-\textbf{Valid, but not sound}&
-\textbf{Valid and sound}
+\textbf{Valid, but not sound} & \textbf{Valid and sound} \\
 \end{longtabu}
-%\caption{These two arguments are valid, but only the one on the right is sound} \label{fig:valid_sound}
+\caption{These two arguments are valid, but only the one on the right is sound} \label{fig:valid_sound}
+\end{table}
 
 The argument on the left in Figure \ref{fig:valid_sound} is valid, but not sound. The argument on the right is both valid and sound.
 
@@ -219,7 +229,7 @@ Often it is easy to tell the difference between validity and soundness if you ar
 \premise{ Every Irishman drinks Guinness.}
 \premise{ Smith is an Irishman.}
 \conclusion{ Smith drinks Guinness.}
-%\label{fig:valid_unsound}
+\label{fig:valid_unsound}
 \end{kormanize}
 
 
@@ -227,7 +237,7 @@ You might have a general sense that the argument in Figure \ref{fig:valid_unsoun
 
 The important thing to remember is that validity is not about the actual truth or falsity of the statements in the argument. Instead, it is about the way the premises and conclusion are put together. It is really about the \emph{form} of the argument. A valid argument has perfect logical form. The premises and conclusion have been put together so that the truth of the premises is incompatible with the falsity of the conclusion.
 
-A general trick for determining whether an argument is valid is to try to come up with just one way in which the premises could be true but the conclusion false. If you can think of one (just one! anything at all! but no violating the laws of physics!), the reasoning is \textit {invalid.}
+A general trick for determining whether an argument is valid is to try to come up with just one way in which the premises could be true but the conclusion false. If you can think of one (just one! anything at all! but no violating the laws of physics!), the reasoning is \textit{invalid.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Strong, Cogent, Deductive, Inductive}\label{sec:strongcogent}
@@ -417,7 +427,7 @@ This inference is strong. The premises establish a record of days of rainfall th
 \conclusion{(Male) homosexuality is an abomination.}
 \end{kormanize}
 
-This inference is an appeal to a source. In brief, you should think about whether the source is reliable, biased, or whether the claim is consistent with what other authorities on the subject say. You should apply all these criteria to this argument for yourself. You should ask what issues, if any, the Bible is reliable on. If you believe humans had any role in writing the Bible, you can ask about what biases and agendas they might have had. And you can think about what other sources---religious texts or moral experts---say on this issue. You can certainly find many who disagree. We can also evaluate the context of the specific verse (Leviticus 18:22) that the premise refers to. It is important to note that here we are not evaluating the inference by taking a position on whether the premise is true (it is) or conclusion is true (it isn't). When evaluating an inference we are evaluating the \emph{degree of evidential support} that the premises confer on the conclusion. Perhaps an appeal to a religious text is very good (if defeasible) evidence for some conclusion, perhaps it isn't.
+This inference is an appeal to a source. In brief, you should think about whether the source is reliable, biased, or whether the claim is consistent with what other authorities on the subject say. You should apply all these criteria to this argument for yourself. You should ask what issues, if any, the Bible is reliable on. If you believe humans had any role in writing the Bible, you can ask about what biases and agendas they might have had. And you can think about what other sources---religious texts or moral experts---say on this issue. You can certainly find many who disagree. We can also evaluate the context of the specific verse (Leviticus 18:22) that the premise refers to. It is important to note that here we are not evaluating the inference by taking a position on whether the premise is true (it is) or conclusion is true (it isn't). When evaluating an inference we are evaluating the \emph{degree of evidential support} that the premises confer on the conclusion. Perhaps an appeal to a religious text is very good (but still fallible) evidence for some conclusions but not others.
 
 \begin{kormanize}
     \premise{Some professional philosophers published books in 2007.}
@@ -434,7 +444,13 @@ This reasoning is weak. Both premises use the word ``some'' which doesn't tell y
 
 No one would sincerely make an inference like this. It is presented here as an example only: it is clearly weak. It's hard to see how the premise justifies the conclusion to any extent at all.
 
-To sum up this section, we have seen that there are two styles of reasoning, deductive and inductive. The former tries to use valid arguments, while the latter contents itself to give arguments that are strong.
+To sum up this section, we have seen that there are two styles of reasoning, deductive and inductive. The former tries to use valid arguments, while the latter contents itself to give arguments that are strong. The diagram in figure~\ref{fig:argument_chart} expresses these relationships.
+
+\begin{figure*}[!ht]
+\includegraphics{argument_evaluation_chart}
+\caption{A chart describing the basics of argument evaluation. Source: \url{https://commons.wikimedia.org/wiki/File:Argument_terminology_used_in_logic.png}}
+\label{fig:argument_chart}
+\end{figure*}
 
 \section*{Key Terms}
 \begin{fullwidth}

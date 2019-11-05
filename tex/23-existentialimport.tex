@@ -1,14 +1,12 @@
 \chapter{Existential Import}\label{ch:existentialimport}
 \markright{Ch. \ref{ch:existentialimport}: Existential Import}
 
-
-
 \section{Existential Import and Conditionally Valid Forms}
 
 \label{sec:conditionally_valid_forms}
 In the last section, we mentioned that you can prove more syllogisms valid if you make different assumptions about existential import. Recall that a statement has existential import if, when you assert the statement, you are also asserting the existence of the things the statement talks about. (See page \pageref{def:Existential_import}.) So if you interpret a mood-A statement as having existential import, it not only asserts ``All $S$ is $P$,'' it also asserts ``There are some $S$.'' or, equivalently, ``Some $S$ exist.'' Thus the mood-A statement ``All unicorns have one horn'' is false, if it is taken to have existential import, because unicorns do not exist. It is probably true, however, if you do not imagine the statement as having existential import. If anything is true of unicorns, it is that they would have one horn if they existed.\footnote{Existence is a complex topic in philosophy, including the truth conditions for evaluating sentences like ``Frodo Baggins is a hobbit.'' or ``Unicorns have one horn.'' See e.g. the Stanford Encyclopedia of Philosophy article on Fictional Entities: \href{https://plato.stanford.edu/entries/fictional-entities/}{https://plato.stanford.edu/entries/fictional-entities/}}
 
-We saw in section \ref{sec:ExistentialImport} that before Boole, Aristotelian thinkers had all sorts of opinions about existential import, or, as they put it, whether a term ``supposits.'' This generally led them to recognize additional syllogism forms as valid. You can see this pretty quickly if you just remember the traditional square of opposition. The traditional square allowed for many more valid immediate inferences than the modern square. It stands to reason that traditional ideas about existential import will also allow for more valid syllogisms.
+We saw in chapter \ref{ch:catsyllogisms} that before Boole, Aristotelian thinkers had all sorts of opinions about existential import, or, as they put it, whether a term ``supposits.'' This generally led them to recognize additional syllogism forms as valid. You can see this pretty quickly if you just remember the traditional square of opposition. The traditional square allowed for many more valid immediate inferences than the modern square. It stands to reason that traditional ideas about existential import will also allow for more valid syllogisms.
 
 Our system of Venn diagrams can't represent all of the alternative ideas about existential import. For instance, it has no way of representing Ockham's belief that mood-O statements do \emph{not} have existential import. Nevertheless, it would be nice if we could expand our system of Venn diagrams to show that some syllogisms are valid if you make additional assumptions about existence.
 
@@ -21,13 +19,6 @@ Consider the argument Barbari (AAI-1).
 \end{kormanize}
 
 You won't find this argument in the list of unconditionally valid forms in Table \ref{tab:unconditionally_valid}. This is because under Boolean assumptions about existence it is not valid. The Venn diagram, which follows Boolean assumptions, shows this.
-
-
-%\begin{figure}
-%\centering
-
-%\end{figure}
-
 
 
 This is essentially the same argument as Barbara, but the mood-A statement in the conclusion has been replaced by a mood-I statement. We can see from the diagram that the mood-A statement ``All $S$ are $P$'' is true. There is no place to put an $S$ other than in the overlap with $P$. But we don't actually know the mood-I statement ``Some $S$ is $P$,'' because we haven't drawn an x in that spot. Really, all we have shown is that \emph{if} an $S$ existed, it would be $P$.
@@ -43,18 +34,12 @@ Because the mood-A statement is actually two statements on the traditional inter
 \conclusion{Some $S$ are $P$}
 \end{kormanize}
 
-Here the asterisk indicates that we are looking at an implicit premise that has been made explicit. This is similar to what we did in Chapter \ref{ch:incomplete_arguments} on adding warrants. Now that we have an extra premise, we can add it to our Venn diagram. Since there is only one place for the $S$ to be, we know where to put our x.
-
-%\begin{figure}
-%\centering
-
-%\end{figure}
-
+Here the asterisk indicates that we are looking at an implicit premise that has been made explicit. Now that we have an extra premise, we can add it to our Venn diagram. Since there is only one place for the $S$ to be, we know where to put our x.
 
 
 \newglossaryentry{critical term}
 {
-name=critical term,
+name={critical term},
 description={the term that names things that must exist in order for a conditionally valid argument to be actually valid.}
 }
 
@@ -62,24 +47,18 @@ In this argument $S$ is what we call the ``critical term.'' The \textsc{\gls{cri
 
 We have used Venn diagrams to show that Barbari is valid once you include the additional premise. Using this method we can identify nine more forms, on top of the previous 15, that are valid if we add the right existence assumptions (Table \ref{tab:full_twentyfour})
 
-\begin{table}
+\begin{table*}[!ht]
+\begin{longtabu}{X[1,c] X[1,c] X[1,c] X[1,c]}
+\multicolumn{4}{c}{Unconditionally Valid (Boolean Interpretation)} \\
+\textbf{Figure 1} & \textbf{Figure 2} & \textbf{Figure 3} & \textbf{Figure 4} \\ \midrule
+Barbara (AAA)  & Camestres (AEE) & Disamis (IAI) & Calemes (AEE)  \\
+Celarent (EAE) & Cesare (EAE)    & Bocardo (OAO) & Dimatis (IAI)  \\
+Ferio (EIO)    & Festino (EIO)   & Ferison (EIO) & Fresison (EIO) \\
+Darii (AII)    & Baroco (AOO)    & Datisi (AII)  &                \\
+\end{longtabu}
 \begin{longtabu}{X[1,c] X[1,c] X[1,c] X[1,c] X[1,c]}
-
-\textbf{Figure 1} & \textbf{Figure 2} & \textbf{Figure 3} & \textbf{Figure 4} & \textbf{Condition} \\
-\endhead
-
-\multirow{5}{*}{Unconditionally Valid (Boolean Interpretation)}
-
-Barbara (AAA)  & Camestres (AEE) & Disamis (IAI) & Calemes (AEE)  & \\
-Celarent (EAE) & Cesare (EAE)    & Bocardo (OAO) & Dimatis (IAI)  & \\
-Ferio (EIO)    & Festino (EIO)   & Ferison (EIO) & Fresison (EIO) & \\
-Darii (AII)    & Baroco (AOO)    & Datisi (AII)  &                & \\
-
-&&&&\\
-\hline
-&&&&\\
-
-\multirow{5}{*}{Conditionally Valid (Aristotelian Interpretation)}
+\multicolumn{5}{c}{Conditionally Valid (Aristotelian Interpretation)} \\
+\textbf{Figure 1} & \textbf{Figure 2} & \textbf{Figure 3} & \textbf{Figure 4} & \textbf{Condition} \\ \midrule
 Barbari (AAI)   & Camestros (AEO) &                & Calemos (AEO) & $S$ exists \\
 Celaront (EAO)  & Cesaro (EAO)    &                &               & $S$ exists \\
                 &                 & Felapton (EAO) & Fesapo (EAO)  & $M$ exists \\
@@ -88,7 +67,7 @@ Celaront (EAO)  & Cesaro (EAO)    &                &               & $S$ exists 
 \end{longtabu}
 \caption{All 24 Valid Syllogisms}
 \label{tab:full_twentyfour}
-\end{table}
+\end{table*}
 
 Thus we now have an expanded method for evaluating arguments using Venn diagrams. To evaluate an argument, we first use a Venn diagram to determine whether it is unconditionally valid. If it is, then we are done. If it is not, then we see if adding an existence assumption can make it conditionally valid. If we can add such an assumption, add it to the list of premises and put an x in the relevant part of the Venn diagram. If we cannot make the argument valid by including additional existence assumptions, we say it is completely invalid.
 
@@ -100,7 +79,7 @@ Let's run through a couple examples. Consider the argument EAO-3.
 \conclusion{Some $S$ are not $P$.}
 \end{kormanize}
 
-First we use the regular Venn digram method to see whether the argument is unconditionally valid.
+First we use the regular Venn diagram method to see whether the argument is unconditionally valid.
 
 
 %\begin{figure}
@@ -333,7 +312,7 @@ This rule is a little different than the previous ones, because it really only a
 
 This syllogism is not part of the core 15 valid syllogisms we identified with the Venn diagram method using Boolean assumptions about existential import. The premises never assert the existence of something, but the conclusion does. And this is something that is generally true under the Boolean interpretation. Universal statements never have existential import and particular statements always do. Therefore you cannot derive a particular statement from two universal statements.
 
-Some textbooks act as if the ancient Aristotelians simply overlooked this rule. They say things like ``the traditional account paid no attention to the problem of existential import'' which is simply false. As we have seen, the Latin part of the Aristotelian tradition engaged in an extensive discussion of the issue from the 12th to the 16th centuries, under the heading ``supposition of terms'' \citep{Read2002}. And at least some people, like William of Ockham, had consistent theories that show why syllogisms like Barbari were valid \citep{Parsons2008}.
+Some textbooks act as if the ancient Aristotelians simply overlooked this rule. They say things like ``the traditional account paid no attention to the problem of existential import'' which is simply false. As we have seen, the Latin part of the Aristotelian tradition engaged in an extensive discussion of the issue from the 12th to the 16th centuries, under the heading ``supposition of terms'' \cite{Read2002}. And at least some people, like William of Ockham, had consistent theories that show why syllogisms like Barbari were valid \cite{Parsons2008}.
 
 In this textbook, we handle the existential import of universal statements by adding a premise, where appropriate, which makes the existence assumption explicit. So Barbari should look like this.
 
@@ -350,7 +329,7 @@ Adding this premise merely gives a separate line in the proof for an idea that O
 
 \subsection{Proving the Rules}
 
-For each rule, we have presented an argument that any syllogism that breaks that rule is invalid. It turns out that the reverse is also true. If a syllogism obeys all five of these rules, it must be valid. In other words, these rules are \emph{sufficient} to characterize validity for Aristotelian syllogisms. \nix{(For a discussion of the term ``sufficient'' see page [ref]).} It is good practice to actually walk through a proof that these five rules are sufficient for validity. After all, that sort of proof is what formal logic is really all about. The proof below follows Hurley (\cite*	{Hurley2014}).
+For each rule, we have presented an argument that any syllogism that breaks that rule is invalid. It turns out that the reverse is also true. If a syllogism obeys all five of these rules, it must be valid. In other words, these rules are \emph{sufficient} to characterize validity for Aristotelian syllogisms. It is good practice to actually walk through a proof that these five rules are sufficient for validity. After all, that sort of proof is what formal logic is really all about. The proof below follows Hurley (\cite{Hurley2014}).
 
 Imagine we have a syllogism that obeys the five rules above. We need to show that it must be valid. There are four possibilities to consider: the conclusion is either mood A, mood E, mood I, or mood O.
 
@@ -859,9 +838,9 @@ In other cases, the rules given in Section \ref{sec:rules_and_fallacies} can be 
 % *                      Sorites Categorical Arguments      *
 % *******************************************
 
-\section{Sorites Categorical Arguments }
+\section{Sorites Categorical Arguments}\label{sec:sorites}
 
-The Aristotelian tradition mostly focused on syllogisms with two premises; however, there are fun things we can do with longer arguments. These were explored, among other places, in a 19th century textbook called \textit{Symbolic Logic} \citep{Dodgson1896}, by the mathematician and logician Charles Lutwidge Dodgson. (Dodgson is actually better known by his pen name, Lewis Carroll, under which he wrote the children's classics \textit{Alice's Adventures in Wonderland} and \textit{Through the Looking Glass}.)
+The Aristotelian tradition mostly focused on syllogisms with two premises; however, there are fun things we can do with longer arguments. These were explored, among other places, in a 19th century textbook called \textit{Symbolic Logic} \cite{Dodgson1896}, by the mathematician and logician Charles Lutwidge Dodgson. (Dodgson is actually better known by his pen name, Lewis Carroll, under which he wrote the children's classics \textit{Alice's Adventures in Wonderland} and \textit{Through the Looking Glass}.)
 
 \newglossaryentry{sorites categorical argument}
 {
@@ -869,7 +848,7 @@ name=sorites categorical argument,
 description={A categorical argument with more than two premises.}
 }
 
-Categorical arguments with more than two premises are called \textsc{\glspl{sorites categorical argument}}, \label{def:sorites_categorical_arguments} or just ``Sorites'' (pronounced ``sore-EYE-tease'') for short. The name comes from the Greek word ``Soros'' meaning ``heap.'' This kind of sorites should not be confused with the sorites paradoxes we talk about in the chapter on real world evaluation in the complete version of this text, \label{ver_var} \nix{Chapter \ref{ch:realworldevaluation},} which were arguments that exploited vague premises.
+Categorical arguments with more than two premises are called \textsc{\glspl{sorites categorical argument}}, \label{def:sorites_categorical_arguments} or just ``Sorites'' (pronounced ``sore-EYE-tease'') for short. The name comes from the Greek word ``\textSigma\textomikron\textrho\textomikron\textvarsigma'' meaning ``heap.'' This kind of sorites should not be confused with the sorites paradoxes, which are arguments that exploit vague premises.
 
 Here is a simple example of a categorical sorites.
 
@@ -896,7 +875,7 @@ Because the form of the argument above is an extension of the standard form of a
 \end{kormanize}
 };
 
-\draw [myarrow1, ->] (1.5,-.75) .. controls (3.25, -.75) and (3.25, .5) .. (5.1, .4);
+\draw [->] (1.5,-.75) .. controls (3.25, -.75) and (3.25, .5) .. (5.1, .4);
 
 \node at (8,0)[text width=6cm] {
 \begin{kormanize}
@@ -1008,7 +987,7 @@ If you look at the first two premises, you can easily see that they entail ``All
 
 \node at (-.1, -1.5) {\textbf{Barbara (AAA-I)}};
 
-\draw [myarrow1, ->] (1.1, -.55) .. controls (2.4, -.5) and (2.4, .5) .. (3.3, .45);
+\draw [->] (1.1, -.55) .. controls (2.4, -.5) and (2.4, .5) .. (3.3, .45);
 %
 %\filldraw [red] (0,0) circle (.1cm);
 %\filldraw [red] (2.4, -.5) circle (.1cm);
@@ -1053,7 +1032,7 @@ Here the first two premises are negative, so we know by Rule 3 that there is no 
 
 \node at (-.1, -1.5) {\textbf{Incomplete}};
 
-\draw [myarrow1, ->] (1.1, -.55) .. controls (2.4, -.5) and (2.4, .5) .. (3.3, .45);
+\draw [->] (1.1, -.55) .. controls (2.4, -.5) and (2.4, .5) .. (3.3, .45);
 %
 %\filldraw [red] (0,0) circle (.1cm);
 %\filldraw [red] (2.4, -.5) circle (.1cm);
@@ -1166,7 +1145,7 @@ Recall that John Venn's original insight was that we should always begin by arra
 
 \begin{figure}
 \centering
-\includepdf[pages=-,pagecommand={},width=\textwidth]{figures/2venn0.pdf}
+\includegraphics[width=0.6\textwidth]{2venn0}
 \end{figure}
 
 \noindent where area 1 represents things that are $S$ but not $P$, area 2 represents things that are both  $S$ and $P$, area 3 represents things that are only $P$, and area 4 represents things that are neither $S$ nor $P$.
@@ -1175,15 +1154,14 @@ Three terms give us eight possibilities to represent, so we draw the diagram lik
 
 \begin{figure}
 \centering
-%\begin{syllogism}
-%\end{syllogism}
+\includegraphics[width=0.6\textwidth]{3venn0}
 \end{figure}
 
 A four-term sorites will have 16 possible combinations of terms. To represent all of these, we will need to stretch out our circles into ellipses.
 
 
 
-The diagram is complex, and it takes some practice to learn to work with it. However, the basic methods for using it are the same as with the three-term diagram. Consider this argument, taken from Lewis Carroll's logic textbook \citep{Dodgson1896}.
+The diagram is complex, and it takes some practice to learn to work with it. However, the basic methods for using it are the same as with the three-term diagram. Consider this argument, taken from Lewis Carroll's logic textbook \cite{Dodgson1896}.
 
 \begin{kormanize}
 \premise{Nobody who is despised can manage a crocodile.}

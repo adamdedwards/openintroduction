@@ -155,6 +155,12 @@
 \end{tikzpicture}
 }
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Two Item Venn
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \newenvironment{binaryvenn}{%
 \begin{tikzpicture}
 \coordinate (A) at (current bounding box.south west);
@@ -193,6 +199,26 @@
 \newcommand{\leftO}{\draw[-,black] (180:1.4cm) node{\scalebox{1.4}{$\times$}};}
 \newcommand{\rightO}{\draw[-,black] (0:1.4cm) node{\scalebox{1.4}{$\times$}};}
 
+
+}
+{
+\end{tikzpicture}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Ellipse (Four Item Venn)
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newenvironment{quadvenn}{%
+\begin{tikzpicture}
+\coordinate (A) at (current bounding box.south west);
+\coordinate (B) at (current bounding box.north east);
+\begin{scope} [fill opacity=0.2,line width=0.5mm]
+    \draw[black!80!white,rotate around={-45:(0,0)}] (0,0) ellipse (2cm and 1cm);
+    \draw[black!80!white,rotate around={45:(0,0)}] (0,0) ellipse (2cm and 1cm);
+    \draw[black!80!white,rotate around={-45:(0,0)}] (0,-1.25) ellipse (2cm and 1cm);
+    \draw[black!80!white,rotate around={45:(0,0)}] (0,-1.25) ellipse (2cm and 1cm);
+\end{scope}
 
 }
 {

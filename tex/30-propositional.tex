@@ -141,13 +141,13 @@ $\iff$    & biconditional& ``$\ldots$ if and only if $\ldots$''\\
 \section{Negation}
 Consider how we might symbolize these sentences:
 
-\begin{description}
-\item[\ex{not1}] Mary is in Barcelona.
-\item[\ex{not2}] Mary is not in Barcelona.
-\item[\ex{not3}] Mary is somewhere other than Barcelona.
-\end{description}
+\begin{enumerate}
+\item Mary is in Barcelona. \label{itm:not1}
+\item Mary is not in Barcelona. \label{itm:not2}
+\item Mary is somewhere other than Barcelona. \label{itm:not3}
+\end{enumerate}
 
-In order to symbolize sentence \ref{not1}, we will need one sentence letter. We can provide a symbolization key:
+In order to symbolize sentence \ref{itm:not1}, we will need one sentence letter. We can provide a symbolization key:
 
 \begin{description}
 \item[B:]Mary is in Barcelona.
@@ -158,22 +158,22 @@ Note that here we are giving $B$ a different interpretation than we did in the p
 \newglossaryentry{negation}
 {
 name=negation,
-description={The symbol \lnot, used to represent words and phrases that function like the English word ``not''.}
+description={The symbol \(\lnot\), used to represent words and phrases that function like the English word ``not''.}
 }
 
-Now, sentence \ref{not1} is simply $B$. Sentence \ref{not2} is obviously related to sentence \ref{not1}: it is basically \ref{not1} with a ``not'' added. We could put the sentence partly our symbolic language by writing ``Not $B$.'' This means we do not want to introduce a different sentence letter for \ref{not2}. We just need a new symbol for the ``not'' part. Let's use the symbol `\lnot,' which we will call \textsc{\gls{negation}}. \label{def:negation} Now we can translate `Not $B$' to $\lnot B$.
+Now, sentence \ref{itm:not1} is simply $B$. Sentence \ref{itm:not2} is obviously related to sentence \ref{itm:not1}: it is basically \ref{itm:not1} with a ``not'' added. We could put the sentence partly our symbolic language by writing ``Not $B$.'' This means we do not want to introduce a different sentence letter for \ref{itm:not2}. We just need a new symbol for the ``not'' part. Let's use the symbol `$\lnot$,' which we will call \textsc{\gls{negation}}. \label{def:negation} Now we can translate `Not $B$' to $\lnot B$.
 
-Sentence \ref{not3} is about whether or not Mary is in Barcelona, but it does not contain the word ``not.'' Nevertheless, it is obviously logically equivalent to sentence \ref{not2}. They both say that if you are looking for Mary, you shouldn't look in Barcelona. Remember that in section \ref{def:logical_equivalence}, we said that two sentences in English are logically equivalent if they always have the same truth value. For our purposes, this means that they basically say the same thing. It is clear then that \ref{not2} and \ref{not3} are logically equivalent, so we can translate them both as $\lnot B$.
+Sentence \ref{itm:not3} is about whether or not Mary is in Barcelona, but it does not contain the word ``not.'' Nevertheless, it is obviously logically equivalent to sentence \ref{itm:not2}. They both say that if you are looking for Mary, you shouldn't look in Barcelona. Remember that in section \ref{def:logical_equivalence}, we said that two sentences in English are logically equivalent if they always have the same truth value. For our purposes, this means that they basically say the same thing. It is clear then that \ref{itm:not2} and \ref{itm:not3} are logically equivalent, so we can translate them both as $\lnot B$.
 
 Consider these further examples:
-\begin{description}
-\item[\ex{not4}] The widget can be replaced if it breaks.
-\item[\ex{not5}] The widget is irreplaceable.
-\item[\ex{not5b}] The widget is not irreplaceable.
-\end{description}
+\begin{enumerate}
+\item The widget can be replaced if it breaks. \label{itm:not4}
+\item The widget is irreplaceable. \label{itm:not5}
+\item The widget is not irreplaceable. \label{itm:not5b}
+\end{enumerate}
 
-If we let $R$ mean ``The widget is replaceable'', then sentence \ref{not4} can be translated as $R$. Sentence \ref{not5} means the opposite of sentence \ref{not4}, so we can translate it $\lnot R$. Sentence \ref{lnot5b} adds another negation to sentence \ref{not5}. We know, as competent English speakers, that the two negations cancel each other out, so that sentence \ref{lnot5b} is equivalent to sentence \ref{not4}. But the fact that two negations cancel each other out is a part of the logic of English that we actually want to capture with our formal language SL.
-So we will represent the two negations in sentence \ref{not5b} as two negations in SL: $\lnot $\lnot$ R$. We will now have to be sure that in SL the sentences $R$ and $\lnot \lnot R$ mean the same thing.
+If we let $R$ mean ``The widget is replaceable'', then sentence \ref{itm:not4} can be translated as $R$. Sentence \ref{itm:not5} means the opposite of sentence \ref{itm:not4}, so we can translate it $\lnot R$. Sentence \ref{itm:not5b} adds another negation to sentence \ref{itm:not5}. We know, as competent English speakers, that the two negations cancel each other out, so that sentence \ref{itm:not5b} is equivalent to sentence \ref{itm:not4}. But the fact that two negations cancel each other out is a part of the logic of English that we actually want to capture with our formal language SL.
+So we will represent the two negations in sentence \ref{itm:not5b} as two negations in SL: $\lnot\lnot R$. We will now have to be sure that in SL the sentences $R$ and $\lnot \lnot R$ mean the same thing.
 
 As the above examples begin to indicate, English has all kinds of ways to negate a sentence.  Sometimes we use an explicit ``not.'' Sometimes we use a prefix like the ``ir-'' in ``irreplaceable.'' SL has just one way to form a negation: slap a $\lnot$ in front of the sentence. There is an English expression, however, that always occurs in the same place in an English sentence as the $\lnot$ occurs in the sentence SL. The English phrase is ``It is not the case that.'' Although this phrase sounds awkward, it always occurs in front of the sentence it is negating, just as the symbol $\lnot$ does. This makes it useful in translating sentences from SL back into English. $\lnot R$ can be translated ``it is not the case that this widget is replaceable.'' In the earlier example, $\lnot B$ can be translated ``It is not the case that Mary is in Barcelona.''
 
@@ -183,13 +183,13 @@ A sentence can be symbolized as $\lnot\mathcal{A}$ can always be paraphrased in 
 
 Sometimes negations in English do not function as neatly as the $\lnot$ does in SL, because two things aren't perfect opposites. Consider these sentences:
 
-\begin{description}
-\item[\ex{not6}] Elliott is happy.
-\item[\ex{not7}] Elliott is unhappy.
-\end{description}
+\begin{enumerate}
+\item Elliott is happy. \label{itm:not6}
+\item Elliott is unhappy. \label{itm:not7}
+\end{enumerate}
 
 
-If we let $H$ mean ``Elliot is happy'', then we can symbolize sentence \ref{not6} as $H$, but does \ref{not7} really mean the same thing as $\lnot H$? Saying ``Elliott is unhappy'' indicates that Elliott is actively sad. But $\lnot H$ can be paraphrase as simply ``It is not the case that Elliott is happy,'' which might merely mean that Elliott is just feeling neutral. As we saw on page \pageref{def:bivalent}, the logics we discuss in this textbook are \emph{bivalent}. Statements are only either true or false. Everything is in black and white, and issues like Elliott's fine gradations in mood cannot be directly represented in our system. So in SL, sentences \ref{not6} and  \ref{not7} would generally be represented by separate sentence letters.
+If we let $H$ mean ``Elliot is happy'', then we can symbolize sentence \ref{itm:not6} as $H$, but does \ref{itm:not7} really mean the same thing as $\lnot H$? Saying ``Elliott is unhappy'' indicates that Elliott is actively sad. But $\lnot H$ can be paraphrase as simply ``It is not the case that Elliott is happy,'' which might merely mean that Elliott is just feeling neutral. As we saw on page \pageref{def:bivalent}, the logics we discuss in this textbook are \emph{bivalent}. Statements are only either true or false. Everything is in black and white, and issues like Elliott's fine gradations in mood cannot be directly represented in our system. So in SL, sentences \ref{itm:not6} and  \ref{itm:not7} would generally be represented by separate sentence letters.
 
 One way of capturing the meaning of a sentential connective is to make a table which shows how the connective changes the meaning of the sentences it is applied to. The negation simply reverses the truth value of any sentence it is put in front of. For any sentence $\mathcal{A}$: If $\mathcal{A}$ is true, then $\lnot\mathcal{A}$ is false. If $\lnot\mathcal{A}$ is true, then $\mathcal{A}$ is false. Using T for true and F for false, we can summarize this in a \emph{characteristic truth table} for negation:
 
@@ -208,56 +208,57 @@ We will discuss truth tables at greater length in the next chapter.
 
 \section{Conjunction}
 Consider these sentences:
-\begin{description}
-\item[\ex{and1}]Adam is athletic.
-\item[\ex{and2}]Barbara is athletic.
-\item[\ex{and3}]Adam is athletic, and Barbara is also athletic.
-\end{description}
+\begin{enumerate}
+\item Alex is athletic. \label{itm:and1}
+\item Barbara is athletic. \label{itm:and2}
+\item Alex is athletic, and Barbara is also athletic. \label{itm:and3}
+\end{enumerate}
 
-We will need separate sentence letters for \ref{and1} and \ref{and2}, so we define this symbolization key:
+We will need separate sentence letters for \ref{itm:and1} and \ref{itm:and2}, so we define this symbolization key:
+
 \begin{description}
-\item[A:] Adam is athletic.
+\item[A:] Alex is athletic.
 \item[B:] Barbara is athletic.
 \end{description}
-
 
 \newglossaryentry{conjunction}
 {
 name=conjunction,
-description={The symbol \land, used to represent words and phrases that function like the English word ``and.''}
+description={The symbol \(\land\), used to represent words and phrases that function like the English word ``and.''}
 }
 
 \newglossaryentry{conjunct}
 {
 name=conjunct,
-description={A sentences joined to another by a conjunction.}
+description={A sentence joined to another by a conjunction.}
 }
 
-Sentence \ref{and1} can be symbolized as $A$. Sentence \ref{and2} can be symbolized as $B$. Sentence \ref{and3} can be paraphrased as ``$A$ and $B$.'' In order to fully symbolize this sentence, we need another symbol. We will use \land. We translate ``$A$ and $B$'' as $A\land B$. The logical connective \land is called the \textsc{\gls{conjunction}}, \label{def:conjunction} and $A$ and $B$ are each called \textsc{\glspl{conjunct}}. \label{def:conjunct}
+Sentence \ref{itm:and1} can be symbolized as $A$. Sentence \ref{itm:and2} can be symbolized as $B$. Sentence \ref{itm:and3} can be paraphrased as ``$A$ and $B$.'' In order to fully symbolize this sentence, we need another symbol.
+We will use $\land$. We translate ``$A$ and $B$'' as $A\land B$. The logical connective $\land$ is called the \textsc{\gls{conjunction}}, \label{def:conjunction} and $A$ and $B$ are each called \textsc{\glspl{conjunct}}. \label{def:conjunct}
 
-Notice that we make no attempt to symbolize ``also'' in sentence \ref{and3}. Words like ``both'' and ``also'' function to draw our attention to the fact that two things are being conjoined. They are not doing any further logical work, so we do not need to represent them in SL.
+Notice that we make no attempt to symbolize ``also'' in sentence \ref{itm:and3}. Words like ``both'' and ``also'' function to draw our attention to the fact that two things are being conjoined. They are not doing any further logical work, so we do not need to represent them in SL.
 
 Some more examples:
-\begin{description}
-\item[\ex{and4}]Barbara is athletic and energetic.
-\item[\ex{and5}]Barbara and Adam are both athletic.
-\item[\ex{and6}]Although Barbara is energetic, she is not athletic.
-\item[\ex{and7}]Barbara is athletic, but Adam is more athletic than she is.
-\end{description}
+\begin{enumerate}
+\item Barbara is athletic and energetic. \label{itm:and4}
+\item Barbara and Alex are both athletic. \label{itm:and5}
+\item Although Barbara is energetic, she is not athletic. \label{itm:and6}
+\item Barbara is athletic, but Alex is more athletic than she is. \label{itm:and7}
+\end{enumerate}
 
-Sentence \ref{and4} is obviously a conjunction. The sentence says two things about Barbara, so in English it is permissible to refer to Barbara only once. It might be tempting to try this when translating the argument: Since $B$ means ``Barbara is athletic'', one might paraphrase the sentences as ``$B$ and energetic.'' This would be a mistake. Once we translate part of a sentence as $B$, any further structure is lost. $B$ is an atomic sentence; it is nothing more than true or false. Conversely, ``energetic'' is not a sentence; on its own it is neither true nor false. We should instead paraphrase the sentence as ``$B$ and Barbara is energetic.'' Now we need to add a sentence letter to the symbolization key. Let $E$ mean ``Barbara is energetic.'' Now the sentence can be translated as $B \land E$.
+Sentence \ref{itm:and4} is obviously a conjunction. The sentence says two things about Barbara, so in English it is permissible to refer to Barbara only once. It might be tempting to try this when translating the argument: Since $B$ means ``Barbara is athletic'', one might paraphrase the sentences as ``$B$ and energetic.'' This would be a mistake. Once we translate part of a sentence as $B$, any further structure is lost. $B$ is an atomic sentence; it is nothing more than true or false. Conversely, ``energetic'' is not a sentence; on its own it is neither true nor false. We should instead paraphrase the sentence as ``$B$ and Barbara is energetic.'' Now we need to add a sentence letter to the symbolization key. Let $E$ mean ``Barbara is energetic.'' Now the sentence can be translated as $B \land E$.
 \marginnote{
 A sentence can be symbolized as $\mathcal{A} \land \mathcal{B}$ if it can be paraphrased in English as `Both $\mathcal{A}$, and $\mathcal{B}$.' Each of the conjuncts must be a sentence.
 }
 
-Sentence \ref{and5} says one thing about two different subjects. It says of both Barbara and Adam that they are athletic, and in English we use the word ``athletic'' only once. In translating to SL, it is important to realize that the sentence can be paraphrased as, ``Barbara is athletic, and Adam is athletic.'' This translates as $B \land A$.
+Sentence \ref{itm:and5} says one thing about two different subjects. It says of both Barbara and Alex that they are athletic, and in English we use the word ``athletic'' only once. In translating to SL, it is important to realize that the sentence can be paraphrased as, ``Barbara is athletic, and Alex is athletic.'' This translates as $B \land A$.
 
-Sentence \ref{and6} is a bit more complicated. The word ``although'' sets up a contrast between the first part of the sentence and the second part. Nevertheless, the sentence says both that Barbara is energetic and that she is not athletic. In order to make each of the conjuncts an atomic sentence, we need to replace ``she'' with ``Barbara.''
+Sentence \ref{itm:and6} is a bit more complicated. The word ``although'' sets up a contrast between the first part of the sentence and the second part. Nevertheless, the sentence says both that Barbara is energetic and that she is not athletic. In order to make each of the conjuncts an atomic sentence, we need to replace ``she'' with ``Barbara.''
 
-So we can paraphrase sentence \ref{and6} as, ``\emph{Both} Barbara is energetic, \emph{and} Barbara is not athletic.'' The second conjunct contains a negation, so we paraphrase further: ``\emph{Both} Barbara is energetic \emph{and} \emph{it is not the case that} Barbara is athletic.'' This translates as $E \land \lnot B$.
+So we can paraphrase sentence \ref{itm:and6} as, ``\emph{Both} Barbara is energetic, \emph{and} Barbara is not athletic.'' The second conjunct contains a negation, so we paraphrase further: ``\emph{Both} Barbara is energetic \emph{and} \emph{it is not the case that} Barbara is athletic.'' This translates as $E \land \lnot B$.
 
-Sentence \ref{and7} contains a similar contrastive structure. It is irrelevant for the purpose of translating to SL, so we can paraphrase the sentence as ``\emph{Both} Barbara is athletic, \emph{and} Adam is more athletic than Barbara.'' (Notice that we once again replace the pronoun ``she'' with her name.) How should we translate the second conjunct? We already have the sentence letter $A$ which is about Adam's being athletic and $B$ which is about Barbara's being athletic, but neither is about one of them being more athletic than the other. We need a new sentence letter. Let $R$ mean ``Adam is more athletic than Barbara.'' Now the sentence translates as $B \land R$.
-\marginnote{Sentences that can be paraphrased ``$\mathcal{A}, but \mathcal{B}$'' or ``$Although \mathcal{A}, \mathcal{B}$'' are best symbolized using conjunction  $\mathcal{A} \land \mathcal{B}$.}
+Sentence \ref{itm:and7} contains a similar contrastive structure. It is irrelevant for the purpose of translating to SL, so we can paraphrase the sentence as ``\emph{Both} Barbara is athletic, \emph{and} Alex is more athletic than Barbara.'' (Notice that we once again replace the pronoun ``she'' with her name.) How should we translate the second conjunct? We already have the sentence letter $A$ which is about Alex's being athletic and $B$ which is about Barbara's being athletic, but neither is about one of them being more athletic than the other. We need a new sentence letter. Let $R$ mean ``Alex is more athletic than Barbara.'' Now the sentence translates as $B \land R$.
+\marginnote{Sentences that can be paraphrased ``$\mathcal{A}$, but $\mathcal{B}$'' or ``Although $\mathcal{A}, \mathcal{B}$'' are best symbolized using conjunction  $\mathcal{A} \land \mathcal{B}$.}
 
 It is important to keep in mind that the sentence letters $A$, $B$, and $R$ are atomic sentences. Considered as symbols of SL, they have no meaning beyond being true or false. We have used them to symbolize different English language sentences that are all about people being athletic, but this similarity is completely lost when we translate to SL. No formal language can capture all the structure of the English language, but as long as this structure is not important to the argument there is nothing lost by leaving it out.
 
@@ -266,12 +267,12 @@ For any sentences $\mathcal{A} and \mathcal{B}$, $\mathcal{A} \land \mathcal{B}$
 
 \begin{table}
 \begin{tabular}{c|c|c}
-$\mathcal{A}$ & $\mathcal{B}$ & $\mathcal{A} \land \mathcal{B}$\\
+$\mathcal{A}$ & $\mathcal{B}$ & $\mathcal{A} \land \mathcal{B}$ \\
 \hline
-T & T & T\\
-T & F & F\\
-F & T & F\\
-F & F & F
+T & T & T \\
+T & F & F \\
+F & T & F \\
+F & F & F \\
 \end{tabular}
 \end{table}
 
@@ -282,10 +283,10 @@ Conjunction is symmetrical because we can swap the conjuncts without changing th
 
 \section{Disjunction}
 Consider these sentences:
-\begin{description}
-\item[\ex{or1}]Either Denison will play golf with me, or he will watch movies.
-\item[\ex{or2}]Either Denison or Ellery will play golf with me.
-\end{description}
+\begin{enumerate}
+\item Either Denison will play golf with me, or he will watch movies. \label{itm:or1}
+\item Either Denison or Ellery will play golf with me. \label{itm:or2}
+\end{enumerate}
 
 For these sentences we can use this symbolization key:
 
@@ -307,15 +308,12 @@ name=disjunct,
 description={A sentences joined to another by a disjunction.}
 }
 
+Sentence \ref{itm:or1} is ``Either $D$ or $M$.'' To fully symbolize this, we introduce a new symbol. The sentence becomes $D \lor M$. The $\lor$ connective is called \textsc{\gls{disjunction}}, \label{def:disjunction} and $D$ and $M$ are called \textsc{\glspl{disjunct}}. \label{def:disjunct}
 
-
-Sentence \ref{or1} is ``Either $D$ or $M$.'' To fully symbolize this, we introduce a new symbol. The sentence becomes $D \lor M$. The $\lor$ connective is called \textsc{\gls{disjunction}}, \label{def:disjunction} and $D$ and $M$ are called \textsc{\glspl{disjunct}}. \label{def:disjunct}
-
-Sentence \ref{or2} is only slightly more complicated. There are two subjects, but the English sentence only gives the verb once. In translating, we can paraphrase it as ``Either Denison will play golf with me, or Ellery will play golf with me.'' Now it obviously translates as $D \lor E$.
+Sentence \ref{itm:or2} is only slightly more complicated. There are two subjects, but the English sentence only gives the verb once. In translating, we can paraphrase it as ``Either Denison will play golf with me, or Ellery will play golf with me.'' Now it obviously translates as $D \lor E$.
 \marginnote{
 A sentence can be symbolized as $\mathcal{A}\lor\mathcal{B}$ if it can be paraphrased in English as ``Either $\mathcal{A}$ or $\mathcal{B}$.'' Each of the disjuncts must be a sentence.
 }
-
 
 \newglossaryentry{exclusive or}
 {
@@ -329,16 +327,15 @@ name=inclusive or,
 description={A kind of disjunction that allows for the possibility that both disjuncts are true. The inclusive or says ``This or that, or both.''}
 }
 
+The English word ``or'' is somewhat ambiguous. Sometimes in English, when we say ``this or that,'' we mean that either option is possible, but not both. For instance, if a restaurant menu says, ``Entr\'ees come with either soup or salad'' we naturally assume you can have soup, or you can have salad; but, if you want \emph{both} soup \emph{and} salad, then you will have to pay extra. This kind of disjunction is called an \textsc{\gls{exclusive or}} \label{def:exclusive_or}, because it excludes the possibility that both disjuncts are true.
 
-The English word ``or'' is somewhat ambiguous. Sometimes in English, when we say ``this or that,'' we mean that either option is possible, but not both. For instance, if a  restaurant menu says, ``Entr\'ees come with either soup or salad'' we naturally assume you can have soup, or you can have salad; but, if you want \emph{both} soup \emph{and} salad, then you will have to pay extra. This kind of disjunction is called an \textsc{\gls{exclusive or}} \label{def:exclusive_or}, because it excludes the possibility that both disjuncts are true.
-
-At other times, the word ``or'' allows for the possibility that both disjuncts might be true. This is probably the case with sentence \ref{or2}, above. I might play with Denison, with Ellery, or with both Denison and Ellery. Sentence \ref{or2} merely says that I will play with \emph{at least} one of them. The \textsc{\gls{inclusive or}}\label{def:inclusive _or} is the kind of disjunction that allows for the possibility that both disjuncts are true. The inclusive or says ``This or that, or both.''
+At other times, the word ``or'' allows for the possibility that both disjuncts might be true. This is probably the case with sentence \ref{itm:or2}, above. I might play with Denison, with Ellery, or with both Denison and Ellery. Sentence \ref{itm:or2} merely says that I will play with \emph{at least} one of them. The \textsc{\gls{inclusive or}}\label{def:inclusive _or} is the kind of disjunction that allows for the possibility that both disjuncts are true. The inclusive or says ``This or that, or both.''
 
 To goal of a formal language is to remove ambiguity, so we need to pick one of these ors. SL follows tradition and uses the symbol $\lor$ to represent an \emph{inclusive or}. This winds up being reflected in the characteristic truth table for the $\lor$. The sentence $D \lor E$ is true if $D$ is true, if $E$ is true, or if both $D$ and $E$ are true. It is false only if both $D$ and $E$ are false. The truth table looks like this:
 
 \begin{center}
 \begin{tabular}{c|c|c}
-$$\mathcal{A}$ & $$\mathcal{B}$ & $$\mathcal{A} \lor $\mathcal{B}$ \\
+$\mathcal{A}$ & $\mathcal{B}$ & $\mathcal{A} \lor \mathcal{B}$ \\
 \hline
 T & T & T\\
 T & F & T\\
@@ -347,33 +344,33 @@ F & F & F
 \end{tabular}
 \end{center}
 
-Like conjunction, disjunction is symmetrical. $$\mathcal{A} \lor $\mathcal{B}$ is logically equivalent to $$\mathcal{B} \lor $\mathcal{A}$.
+Like conjunction, disjunction is symmetrical. $\mathcal{A}\lor\mathcal{B}$ is logically equivalent to $\mathcal{B}\lor\mathcal{A}$.
 
 \section{Conditional}
 
 \newglossaryentry{conditional}
 {
 name=conditional,
-description={The symbol \onlyif, used to represent words and phrases that function like the English phrase ``if \ldots then.''}
+description={The symbol $\onlyif$, used to represent words and phrases that function like the English phrase ``if \ldots then.''}
 }
 
 \newglossaryentry{antecedent}
 {
 name=antecedent,
-description={The sentence to the left of a conditional..}
+description={The sentence to the left of a conditional. The ``if'' clause in an if\ldots then sentence.}
 }
 
 \newglossaryentry{consequent}
 {
 name=consequent,
-description={The sentence to the right of a conditional.}
+description={The sentence to the right of a conditional. The ``then'' clause in an if\ldots then sentence.}
 }
 
 We already met the conditional at the start of this section, when we were discussing the sentence ``If there is an apple on the table, Jenny made it to class,'' which became $A \onlyif B$. The symbol $\onlyif$ is called a \textsc{\gls{conditional}}. \label{def:conditional} The sentence on the left-hand side of the conditional ($R$ in this example) is called the \textsc{\gls{antecedent}}. \label{def:antecedent}.  The sentence on the right-hand side ($B$) is called the \textsc{\gls{consequent}}. \label{def:consequent}
 
 Like the English word ``or,'' the English phrase ``if\ldots then\ldots'' has some ambiguity. Consider our original example, ``If there is an apple on the table, Jenny made it to class.'' The statements tells us what we should infer if there is an apple on the table, but what if there \emph{isn't} an apple on the table. Does that guarantee that Jenny did not make it to class? It could be that an apple on the table is a clear sign that Jenny made it to class, because no one else would put an apple on the table, but nevertheless Jenny sometimes comes to class without putting an apple on the table.
 
-We can get a good sense of the decision we face if we try to write up the characteristic truth table for the conditional. The first two lines are easy. The sentence``If $\mathcal{A}, then $\mathcal{B}'' means that if $\mathcal{A} is true, then so is $\mathcal{B}. This would be confirmed by the situation where both $\mathcal{A} and $\mathcal{B} are true, but falsified by the situation where $\mathcal{A} is true and $\mathcal{B} is false. In terms of our example, if we came to class and found the apple there, but Jenny absent, we would know that the statement ``If there is an apple on the table, Jenny made it to class'' is false. But if we came to class and found both Jenny and the apple present, we could say that the statement ``If there is an apple on the table, Jenny made it to class'' is true. That gives us this much of a truth table.
+We can get a good sense of the decision we face if we try to write up the characteristic truth table for the conditional. The first two lines are easy. The sentence``If $\mathcal{A}$, then $\mathcal{B}$'' means that if $\mathcal{A}$ is true, then so is $\mathcal{B}$. This would be confirmed by the situation where both $\mathcal{A}$ and $\mathcal{B}$ are true, but falsified by the situation where $\mathcal{A}$ is true and $\mathcal{B}$ is false. In terms of our example, if we came to class and found the apple there, but Jenny absent, we would know that the statement ``If there is an apple on the table, Jenny made it to class'' is false. But if we came to class and found both Jenny and the apple present, we could say that the statement ``If there is an apple on the table, Jenny made it to class'' is true. That gives us this much of a truth table.
 
 
 \begin{center}
@@ -403,17 +400,17 @@ F & F & T
 The conditional is asymmetrical. You cannot swap the antecedent and consequent without changing the meaning of the sentence, because $\mathcal{A} \onlyif\mathcal{B}$ and $\mathcal{B}\onlyif\mathcal{A}$ are not logically equivalent.
 
 %\begin{kormanize}
-%\item[\ex{if3}] Everytime a bell rings, an angel earns its wings.
-%\item[\ex{if4}] Bombs always explode when you cut the red wire.
+%\item[\label{if3}] Everytime a bell rings, an angel earns its wings.
+%\item[\label{if4}] Bombs always explode when you cut the red wire.
 %\end{kormanize}
 
 Not all sentences of the form ``If$\ldots$, then$\ldots$'' are conditionals. Consider this sentence:
 
-\begin{description}
-\item[\ex{if5}] If anyone wants to see me, then I will be on the porch.
-\end{description}
+\begin{enumerate}
+\item If anyone wants to see me, then I will be on the porch. \label{itm:if5}
+\end{enumerate}
 
-When I say this, it means that I will be on the porch, regardless of whether anyone wants to see me or not---but if someone did want to see me, then they should look for me there. If we let $P$ mean ``I will be on the porch,'' then sentence \ref{if5} can be translated simply as $P$.
+When I say this, it means that I will be on the porch, regardless of whether anyone wants to see me or not---but if someone did want to see me, then they should look for me there. If we let $P$ mean ``I will be on the porch,'' then sentence \ref{itm:if5} can be translated simply as $P$.
 
 %%%%%%%%%%%%%%%% 6.2.5 Biconditional
 
@@ -425,7 +422,7 @@ name=biconditional,
 description={A sentential connective, written as double headed arrow, $\iff$, used to represent a situation where $A$ implies  $B$ and $B$ implies $A$. This is also the situation where $A$ and $B$ are logically equivalent. This is often expressed by the English phrase ``if and only if.''}
 }
 
-The conditional was an asymmetric connective. The sentence $A \onlyif B$ does not mean the same thing as the sentence $B \onlyif A$. It is convenient to have a single symbol that combines the meaning of these two sentences. The \textsc{\gls{biconditional}}\label{def:bicondional}---written as double headed arrow, $\iff$---is a sentential connective used to represent a situation where $A$ implies $B$ and $B$ implies $A$.
+The conditional was an asymmetric connective. The sentence $A \onlyif B$ does not mean the same thing as the sentence $B \onlyif A$. It is convenient to have a single symbol that combines the meaning of these two sentences. The \textsc{\gls{biconditional}}\label{def:bicondional}, written as double headed arrow: $\iff$, is a sentential connective used to represent a situation where $A$ implies $B$ and $B$ implies $A$.
 
 To draw up the characteristic truth table for the biconditional, we need to think about the situations where $A \onlyif B$ and $B \onlyif A$ are false. The sentence $A \onlyif B$ is only false when $A$ is true and $B$ is false. For $B \onlyif A$ the reverse is true. It is false when $B$ is true and $A$ is false. Our biconditional $A \iff B$ needs to avoid both of these situations to be true, because it is only true when $A \onlyif B$ and $B \onlyif A$ are true. This, then, is the characteristic truth table for the biconditional. It says that the biconditional is true when the truth values of the two sides match.
 
@@ -468,15 +465,15 @@ The fact that we can write these more complicated sentences means we can actuall
 Because our connectives can be put together in different ways, some English sentences can be represented equally well by multiple sentences in SL. English sentences involving the word ``unless'' are a case in point.
 
 \begin{kormanize}
-\item[\ex{unless1}] Unless you wear a jacket, you will catch cold.
-\item[\ex{unless2}] You will catch cold unless you wear a jacket.
+\item[\label{unless1}] Unless you wear a jacket, you will catch cold.
+\item[\label{unless2}] You will catch cold unless you wear a jacket.
 \end{kormanize}
 
 These are basically two different version of the same English sentence. The only difference is that in one case, the ``unless'' clause comes first, and in the other it comes second. Let $J$ mean ``You will wear a jacket'' and let $C$ mean ``You will catch a cold.'' We can paraphrase sentence \ref{unless1} as ``Unless $J$, $C$.'' This means that if you do not wear a jacket, then you will catch cold. With this in mind, we might translate it as $\lnot J \onlyif C$. It also means that if you do not catch a cold, then you must have worn a jacket; with this in mind, we might translate it as $\lnot C \onlyif J$.
 
 Which of these is the correct translation of sentence \ref{unless1}? Both translations are correct, because the two translations are logically equivalent in SL. Sentence \ref{unless2}, in English, is logically equivalent to sentence \ref{unless1}. So, it also can be translated as either $\lnot J \onlyif D$ or $\lnot D \onlyif J$.
 
-When symbolizing sentences like sentence \ref{unless1} and sentence \ref{unless2}, it is easy to get turned around. We have two different versions of the English sentence and two different versions of the sentence in SL. The important thing to see here is that none of these sentences are equivalent to $J \onlyif $\lnot$ D$. The negated statement must be the antecedent to the conditional.
+When symbolizing sentences like sentence \ref{unless1} and sentence \ref{unless2}, it is easy to get turned around. We have two different versions of the English sentence and two different versions of the sentence in SL. The important thing to see here is that none of these sentences are equivalent to $J \onlyif \lnot D$. The negated statement must be the antecedent to the conditional.
 
 If this is too many options to keep track of, there is a simpler alternative. It turns out that any ``unless'' statement is actually equivalent to an ``or'' statement. Both statements \ref{unless1} and  \ref{unless2} mean that you will wear a jacket or---if you do not wear a jacket---then you will catch a cold. So we can translate them as $J \lor D$. (You might worry that the ``or'' here should be an \emph{exclusive or}. However, the sentences do not exclude the possibility that you might \emph{both} wear a jacket \emph{and} catch a cold; jackets do not protect you from all the possible ways that you might catch a cold.)
 \marginnote{
@@ -485,13 +482,13 @@ If a sentence can be paraphrased as ``Unless $\mathcal{A}, \mathcal{B}$,'' then 
 
 \section{Only}
 
-In section \ref{sec:transformation}, we saw that the word ``only'' could reverse the meaning of a statement in Mood A. ``All dogs are mammals'' means something different than ``Only dogs are mammals,'' the first one is true but the second one is false. Something similar happens with conditional statements in SL.%this is the preamble for texts that include categorical logic
+In section \ref{sec:transformation}, we saw that the word ``only'' could reverse the meaning of a statement in Mood A. ``All dogs are mammals'' means something different than ``Only dogs are mammals,'' the first one is true but the second one is false. Something similar happens with conditional statements in SL.
 The word ``only'' can reverse the meaning of a conditional sentence in SL.
 For the following sentences, let $R$ mean ``You will cut the red wire'' and $B$ mean ``The bomb will explode.''
 
 \begin{description}
-\item[\ex{if1}] If you cut the red wire, then the bomb will explode.
-\item[\ex{if2}] The bomb will explode only if you cut the red wire.
+\item[\label{if1}] If you cut the red wire, then the bomb will explode.
+\item[\label{if2}] The bomb will explode only if you cut the red wire.
 \end{description}
 
 Sentence \ref{if1} can be translated partially as ``If $R$, then $B$.'' Sentence \ref{if2} is also a conditional. Since the word ``if'' appears in the second half of the sentence, it might be tempting to symbolize this in the same way as sentence \ref{if1}. That would be a mistake.
@@ -500,13 +497,13 @@ The conditional $R\onlyif B$ says that \emph{if} $R$ were true, \emph{then} $B$ 
 
 It is important to remember that the connective $\onlyif$ says only that, if the antecedent is true, then the consequent is true. It says nothing about the \emph{causal} connection between the two events. Translating sentence \ref{if2} as $B \onlyif R$ does not mean that the bomb exploding would somehow have caused you cutting the wire. Both sentence \ref{if1} and \ref{if2} suggest that, if you cut the red wire, you cutting the red wire would be the cause of the bomb exploding. They differ on the \emph{logical} connection. If sentence \ref{if2} were true, then an explosion would tell us---those of us safely away from the bomb---that you had cut the red wire. Without an explosion, sentence \ref{if2} tells us nothing.
 \marginnote{
-The paraphrased sentence ``$\mathcal{A} only if $\mathcal{B}'' is logically equivalent to ``If $\mathcal{A}, then $\mathcal{B}.''
+The paraphrased sentence ``$\mathcal{A}$ only if $\mathcal{B}$'' is logically equivalent to ``If $\mathcal{A}$, then $\mathcal{B}$.''
 }
 
 Things can get a bit more complicated, because English also allows you to reverse the order of the clauses. Think about this sentence
 
 \begin{description}
-\item[\ex{if3}] The bomb will explode, if you cut the red wire
+\item[\label{if3}] The bomb will explode, if you cut the red wire
 \end{description}
 
 This is just sentence \ref{if1} with the order of the clauses reversed, so it still means $R \onlyif B$. Changing the order of the English clauses does not change the sentence in SL, but adding the word ``only'' does.
@@ -518,9 +515,9 @@ If this gets confusing, just remember this rule:
 
 Because ``if'' and ``only if'' have opposite meanings, when we put them together, we get the biconditional. Consider these sentences:
 \begin{description}
-\item[\ex{iff1}] The figure on the board is a triangle only if it has exactly three sides.
-\item[\ex{iff2}] The figure on the board is a triangle if it has exactly three sides.
-\item[\ex{iff3}] The figure on the board is a triangle if and only if it has exactly three sides.
+\item[\label{iff1}] The figure on the board is a triangle only if it has exactly three sides.
+\item[\label{iff2}] The figure on the board is a triangle if it has exactly three sides.
+\item[\label{iff3}] The figure on the board is a triangle if and only if it has exactly three sides.
 \end{description}
 
 Let $T$ mean ``The figure is a triangle'' and $S$ mean ``The figure has three sides.'' Sentence \ref{iff1}, for reasons discussed above, can be translated as $T\onlyif S$. Sentence \ref{iff2} is importantly different. It can be paraphrased as ``If the figure has three sides, then it is a triangle.'' So it can be translated as $S\onlyif T$.
@@ -576,30 +573,30 @@ The conditional symbol in SL represents a sufficient condition, at least when re
 Tricky things happen when you combine a negation with a conjunction or disjunction, so it is worth taking a closer look here. Consider these sentences
 
 \begin{description}
-\item[\ex{or3}] Either you will not have soup, or you will not have salad.
-\item[\ex{or4}] You will have neither soup nor salad.
+\item[\label{itm:or3}] Either you will not have soup, or you will not have salad.
+\item[\label{itm:or4}] You will have neither soup nor salad.
 \end{description}
 
-We let $S_1$ mean that you get soup and $S_2$ mean that you get salad. Sentence \ref{or3} can be paraphrased in this way: ``Either \emph{it is not the case that} you get soup, or \emph{it is not the case that} you get salad.'' Translating this requires both disjunction and negation. It becomes $\lnot S_1 \lor \lnot S_2$.
+We let $S_1$ mean that you get soup and $S_2$ mean that you get salad. Sentence \ref{itm:or3} can be paraphrased in this way: ``Either \emph{it is not the case that} you get soup, or \emph{it is not the case that} you get salad.'' Translating this requires both disjunction and negation. It becomes $\lnot S_1 \lor \lnot S_2$.
 
-Sentence \ref{or4} also requires negation. It can be paraphrased as, ``\emph{It is not the case that} either you get soup or you get salad.'' We need some way of indicating that the negation does not just negate the right or left disjunct, but rather negates the entire disjunction. In order to do this, we put parentheses around the disjunction: ``It is not the case that $(S_1 \lor S_2)$.'' This becomes simply $\lnot (S_1 \lor S_2)$. Notice that the parentheses are doing important work here. The sentence $\lnot S_1 \lor S_2$ would mean ``Either you will not have soup, or you will have salad.''
+Sentence \ref{itm:or4} also requires negation. It can be paraphrased as, ``\emph{It is not the case that} either you get soup or you get salad.'' We need some way of indicating that the negation does not just negate the right or left disjunct, but rather negates the entire disjunction. In order to do this, we put parentheses around the disjunction: ``It is not the case that $(S_1 \lor S_2)$.'' This becomes simply $\lnot (S_1 \lor S_2)$. Notice that the parentheses are doing important work here. The sentence $\lnot S_1 \lor S_2$ would mean ``Either you will not have soup, or you will have salad.''
 
 Something similar happens with negation and conjunction. Consider these sentences
 
 \begin{description}
-\item[\ex{notand1}] You can't have soup and you can't have salad.
-\item[\ex{notand2}] You can't have both soup and salad.
+\item[\label{itm:notand1}] You can't have soup and you can't have salad.
+\item[\label{itm:notand2}] You can't have both soup and salad.
 \end{description}
 
-In sentence \ref{notand1}, the two parts of the sentence are negated individually. We would translate it into SL like this: $\lnot S_1 \land $\lnot$ S_2$. In sentence \ref{notand2}, the negation applies to soup and salad taken together. You are allowed to have soup only, or salad only. You just can't have both together. We would translate sentence \ref{notand2} like this: $\lnot(S_1 \land S_2)$.
+In sentence \ref{itm:notand1}, the two parts of the sentence are negated individually. We would translate it into SL like this: $\lnot S_1 \land \lnot S_2$. In sentence \ref{itm:notand2}, the negation applies to soup and salad taken together. You are allowed to have soup only, or salad only. You just can't have both together. We would translate sentence \ref{itm:notand2} like this: $\lnot(S_1 \land S_2)$.
 
 You can combine disjunction, conjunction, and negation to represent the exclusive or, as in this sentence.
 
 \begin{description}
-\item[\ex{or.xor}] You get either soup or salad, but not both.
+\item[\label{itm:or.xor}] You get either soup or salad, but not both.
 \end{description}
 
-Remember on page \pageref{def:inclusive_or}, we said that the $\lor$ in SL represented an inclusive or. It said ``this or that or both.'' If we want to represent an exclusive or, we need to combine disjunction, conjuction and negation. We can break the sentence into two parts. The first part says that you get one or the other. We translate this as $(S_1 \lor S_2)$. The second part says that you do not get both. We can paraphrase this as ``It is not the case both that you get soup and that you get salad.'' Using both negation and conjunction, we translate this as $\lnot(S_1 \land S_2)$. Now we just need to put the two parts together. As we saw above, ``but'' can usually be translated as a conjunction. Sentence \ref{or.xor} can thus be translated as $(S_1 \lor S_2) \land \lnot(S_1 \land S_2)$.
+Remember on page \pageref{def:inclusive_or}, we said that the $\lor$ in SL represented an inclusive or. It said ``this or that or both.'' If we want to represent an exclusive or, we need to combine disjunction, conjuction and negation. We can break the sentence into two parts. The first part says that you get one or the other. We translate this as $(S_1 \lor S_2)$. The second part says that you do not get both. We can paraphrase this as ``It is not the case both that you get soup and that you get salad.'' Using both negation and conjunction, we translate this as $\lnot(S_1 \land S_2)$. Now we just need to put the two parts together. As we saw above, ``but'' can usually be translated as a conjunction. Sentence \ref{itm:or.xor} can thus be translated as $(S_1 \lor S_2) \land \lnot(S_1 \land S_2)$.
 
 
 
