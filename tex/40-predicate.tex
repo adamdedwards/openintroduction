@@ -1,8 +1,4 @@
-\chapter{Quantified Logic}
-\label{chap:QL}
-\markright{Chap. \ref{chap:QL}: Quantified Logic}
-\setlength{\parindent}{1em}
-
+\chapter{Quantified Logic}\label{ch:QL}
 
 This chapter introduces a logical language called QL. It is a version of \emph{quantified logic}, because it introduces words like \emph{all} and \emph{some}, which tell us about quantities. Quantified logic is also sometimes called \emph{predicate logic}, because the basic units of the language are predicates and terms.
 
@@ -20,25 +16,25 @@ Therefore, if we don't try to believe a contradiction, then no one will be confu
 \end{quote}
 
 In order to symbolize this in SL, we will need a symbolization key. 
-\begin{ekey}
+\begin{description}
 \item[L:] Everyone knows logic.
 \item[N:] No one will be confused.
 \item[E:] Everyone will be confused.
 \item[B:] We try to believe a contradiction.
-\end{ekey}
+\end{description}
 Notice that $N$ and $E$ are both about people being confused, but they are two separate sentence letters. We could not replace $E$ with $\enot N$. Why not? $\enot N$ means ``It is not the case that no one will be confused.'' This would be the case if even one person were confused, so it is a long way from saying that \emph{everyone} will be confused.
 
 Once we have separate sentence letters for $N$ and $E$, however, we erase any connection between the two. They are just two atomic sentences which might be true or false independently. In English, it could never be the case that both no one and everyone was confused. As sentences of SL, however, there is a truth value assignment for which $N$ and $E$ are both true.
 
 Expressions like ``no one'', ``everyone'', and ``anyone'' are called \emph{quantifiers}. By translating $N$ and $E$ as separate atomic sentences, we leave out the \emph{quantifier structure} of the sentences. Fortunately, the quantifier structure is not what makes this argument valid. As such, we can safely ignore it. To see this, we translate the argument to SL:
 
-\begin{earg}
+\begin{kormanize}
 \item[1.]$L \eif (N \eor E)$
 \item[2.]$E \eif B$
 \item[3.]$L$
 \item[] \textcolor{white}{.}\sout{\hspace{.2\linewidth}} \textcolor{white}{.}
 \item[\therefore]$\enot B \eif N$
-\end{earg}
+\end{kormanize}
 
 This is a valid argument in SL. (You can do a truth table to check this.) 
 
@@ -51,19 +47,19 @@ Willard is a logician. All logicians wear funny hats. Therefore, Willard wears a
 \end{quote}
 
 To symbolize it in SL, we define a symbolization key:
-\begin{ekey}
+\begin{description}
 \item[L:] Willard is a logician.
 \item[A:] All logicians wear funny hats.
 \item[F:] Willard wears a funny hat.
-\end{ekey}
+\end{description}
 
 Now we symbolize the argument:
-\begin{earg}
+\begin{kormanize}
 \item[1.]$L$
 \item[2.]$A$
 \item[] \textcolor{white}{.}\sout{\hspace{.05\linewidth}} \textcolor{white}{.}
 \item[\therefore] $F$
-\end{earg}
+\end{kormanize}
 
 This is \emph{invalid} in SL. (Again, you can confirm this with a truth table.) There is something very wrong here, because this is clearly a valid argument in English. The symbolization in SL leaves out all the important structure. Once again, the translation to SL overlooks quantifier structure: The sentence ``All logicians wear funny hats'' is about both logicians and hat-wearing. By not translating this structure, we lose the connection between Willard's being a logician and Willard's wearing a hat.
 
@@ -145,7 +141,7 @@ If we are translating this sentence into QL, should we translate it with a one-,
 In general, we can have predicates with as many places as we need. Predicates with more than one place are called \define{polyadic}. Predicates with $n$ places, for some number $n$, are called \define{n-place} or \define{n-adic}.
 
 In QL, we symbolize predicates with capital letters $A$ through $Z$, with or without subscripts. When we give a symbolization key for predicates, we will not use blanks; instead, we will use variables. By convention, constants are listed at the end of the key. So we might write a key that looks like this:
-\begin{ekey}
+\begin{description}
 \label{DMG_symbolization_key}
 \item[Ax:] $x$ is angry.
 \item[Hx:] $x$ is happy.
@@ -155,17 +151,17 @@ In QL, we symbolize predicates with capital letters $A$ through $Z$, with or wit
 \item[d:] Donald
 \item[g:] Gregor
 \item[m:] Marybeth
-\end{ekey}
+\end{description}
 
 We can symbolize sentences that use any combination of these predicates and terms. For example:
-\begin{earg}
+\begin{kormanize}
 \nix{I am inclined to change these to Cordelia, Hamlet, and Macbeth}
 \item[\ex{terms1}] Donald is angry.
 \item[\ex{terms2}] If Donald is angry, then so are Gregor and Marybeth.
 \item[\ex{terms3}] Marybeth is at least as tall and as tough as Gregor.
 \item[\ex{terms4}] Donald is shorter than Gregor.
 \item[\ex{terms5}] Gregor is between Donald and Marybeth.
-\end{earg}
+\end{kormanize}
 
 Sentence \ref{terms1} is straightforward: $Ad$. The ``$x$'' in the key entry ``$Ax$'' is just a placeholder; we can replace it with other terms when translating.
 
@@ -205,7 +201,7 @@ Sentence \ref{terms5} requires that we pay careful attention to the order of ter
 \problempart
 Given the following translation key, translate the sentences below.
 
-\begin{ekey}
+\begin{description}
 \item [Fxy:] $x$ is a friend of $y$
 \item [Sxy:] x is a sibling of y. 
 \item [Oxy:]x is older than y
@@ -218,7 +214,7 @@ Given the following translation key, translate the sentences below.
 \item [o:] Jane
 \item [m:]	Molly
 \item [r:]	Rob
-\end{ekey}
+\end{description}
 
 
 \begin{enumerate}[label=\arabic*)]
@@ -241,11 +237,11 @@ Given the following translation key, translate the sentences below.
 \setlength{\parindent}{1em}
 
 We are now ready to introduce quantifiers. Consider the symbolization key on page \pageref{DMG_symbolization_key} with Donald, Gregor and Marybeth and the sample sentences that came with it. Let's add these sentences to that list:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{q.a}] Everyone is happy.
 \item[\ex{q.ac}] Everyone is at least as tough as Donald.
 \item[\ex{q.e}] Someone is angry.
-\end{earg}
+\end{kormanize}
 
 It might be tempting to translate sentence \ref{q.a} as $Hd \eand Hg \eand Hm$. Yet this would only say that Donald, Gregor, and Marybeth are happy. We want to say that \emph{everyone} is happy, even if we have not defined a constant to name them. In order to do this, we introduce the $\forall$ symbol. This is called the \define{universal quantifier}.
 
@@ -260,11 +256,11 @@ In these quantified sentences, the variable $x$ is serving as a kind of placehol
 To translate sentence \ref{q.e}, we introduce another new symbol: the \define{existential quantifier}, $\exists$. Like the universal quantifier, the existential quantifier requires a variable. Sentence \ref{q.e} can be translated as $\exists x Ax$. This means that there is some $x$ which is angry. More precisely, it means that there is \emph{at least one} angry person. Once again, the variable is a kind of placeholder; we could just as easily have translated sentence \ref{q.e} as $\exists z Az$.
 
 Consider these further sentences:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{q.ne}] No one is angry.
 \item[\ex{q.en}] There is someone who is not happy.
 \item[\ex{q.na}] Not everyone is happy.
-\end{earg}
+\end{kormanize}
 
 Sentence \ref{q.ne} can be paraphrased as, ``It is not the case that someone is angry.'' This can be translated using negation and an existential quantifier: $\enot \exists x Ax$. Yet sentence \ref{q.ne} could also be paraphrased as, ``Everyone is not angry.'' With this in mind, it can be translated using negation and a universal quantifier: $\forall x \enot Ax$. Both of these are acceptable translations, because they are logically equivalent. The critical thing is whether the negation comes before or after the quantifier.
 
@@ -283,18 +279,18 @@ Although we have two quantifiers in QL, we could have an equivalent formal langu
 Given the symbolization key we have been using, $\forall xHx$ means ``Everyone is happy.'' Who is included in this \emph{everyone}? When we use sentences like this in English, we usually do not mean everyone now alive on the Earth. We certainly do not mean everyone who was ever alive or who will ever live. We mean something more modest: everyone in the building, everyone in the class, or everyone in the room.
 
 In order to eliminate this ambiguity, we will need to specify a \define{universe of discourse}---abbreviated UD. The UD is the set of things that we are talking about. So if we want to talk about people in Chicago, we define the UD to be people in the Chicago. We write this at the beginning of the symbolization key, like this:
-\begin{ekey}
+\begin{description}
 \item[UD:] people in Chicago
-\end{ekey}
+\end{description}
 The quantifiers \emph{range over} the universe of discourse. Given this UD, $\forall x$ means ``Everyone in Chicago'' and $\exists x$ means ``Someone in Chicago.'' Each constant names some member of the UD, so we can only use this UD with the symbolization key above if Donald, Gregor, and Marybeth are all in Chicago. If we want to talk about people in places besides Chicago, then we need to include those people in the UD.
 
 In QL, the UD must be \emph{non-empty}; that is, it must include at least one thing. It is possible to construct formal languages that allow for empty UDs, but this introduces complications.
 
 Even allowing for a UD with just one member can produce some strange results. Suppose we have this as a symbolization key:
-\begin{ekey}
+\begin{description}
 \item[UD:] the Eiffel Tower
 \item[Px:] $x$ is in Paris.
-\end{ekey}
+\end{description}
 The sentence $\forall x Px$ might be paraphrased in English as ``Everything is in Paris.'' Yet that would be misleading. It means that everything \emph{in the UD} is in Paris. This UD contains only the Eiffel Tower, so with this symbolization key $\forall x Px$ just means that the Eiffel Tower is in Paris.
 
 \subsection{Non-referring terms}
@@ -303,16 +299,16 @@ The sentence $\forall x Px$ might be paraphrased in English as ``Everything is i
 In QL, each constant must pick out exactly one member of the UD. A constant cannot refer to more than one thing---it is a \emph{singular} term. Each constant must still pick out \emph{something}. This is connected to a classic philosophical problem: the so-called problem of non-referring terms.
 
 Medieval philosophers typically used sentences about the \emph{chimera} to exemplify this problem. Chimera is a mythological creature; it does not really exist. Consider these two sentences:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{chimera1}] Chimera is angry.
 \item[\ex{chimera2}] Chimera is not angry.
-\end{earg}
+\end{kormanize}
 It is tempting just to define a constant to mean ``chimera.'' The symbolization key would look like this:
-\begin{ekey}
+\begin{description}
 \item[UD:] creatures on Earth
 \item[Ax:] $x$ is angry.
 \item[c:] chimera
-\end{ekey}
+\end{description}
 We could then translate sentence \ref{chimera1} as $Ac$ and sentence \ref{chimera2} as $\enot Ac$.
 
 Problems will arise when we ask whether these sentences are true or false.
@@ -329,20 +325,20 @@ This is the \emph{problem of non-referring terms}, and we will return to it late
 
 \section{Translating to Quantified Logic}
 We now have all of the pieces of QL. Translating more complicated sentences will only be a matter of knowing the right way to combine predicates, constants, quantifiers, and connectives. Consider these sentences:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{quan1}] Every coin in my pocket is a quarter.
 \item[\ex{quan2}] Some coin on the table is a dime.
 \item[\ex{quan3}] Not all the coins on the table are dimes.
 \item[\ex{quan4}] None of the coins in my pocket are dimes.
-\end{earg}
+\end{kormanize}
 In providing a symbolization key, we need to specify a UD. Since we are talking about coins in my pocket and on the table, the UD must at least contain all of those coins. Since we are not talking about anything besides coins, we let the UD be all coins. Since we are not talking about any specific coins, we do not need to define any constants. So we define this key:
-\begin{ekey}
+\begin{description}
 \item[UD:] all coins
 \item[Px:] $x$ is in my pocket.
 \item[Tx:] $x$ is on the table.
 \item[Qx:] $x$ is a quarter.
 \item[Dx:] $x$ is a dime.
-\end{ekey}
+\end{description}
 Sentence \ref{quan1} is most naturally translated with a universal quantifier. The universal quantifier says something about everything in the UD, not just about the coins in my pocket. Sentence \ref{quan1} means that, for any coin, \emph{if} that coin is in my pocket \emph{then} it is a quarter. So we can translate it as $\forall x(Px \eif Qx)$.
 
 Since sentence \ref{quan1} is about coins that are both in my pocket \emph{and} that are quarters, it might be tempting to translate it using a conjunction. However, the sentence $\forall x(Px \eand Qx)$ would mean that everything in the UD is both in my pocket and a quarter: All the coins that exist are quarters in my pocket. This is would be a crazy thing to say, and it means something very different than sentence \ref{quan1}.
@@ -360,21 +356,21 @@ We can now translate the argument from p.~\pageref{willard1}, the one that motiv
 Willard is a logician. All logicians wear funny hats.\\
 \therefore\ Willard wears a funny hat.
 \end{quote}
-\begin{ekey}
+\begin{description}
 \item[UD:] people
 \item[Lx:] $x$ is a logician.
 \item[Fx:] $x$ wears a funny hat.
 \item[w:] Willard
-\end{ekey}
+\end{description}
 
 Translating, we get:
 
-\begin{earg}
+\begin{kormanize}
 \item[1.] $Lw$
 \item[2.] $\forall x(Lx \eif Fx)$
 \item[] \textcolor{white}{.}\sout{\hspace{.2\linewidth}} \textcolor{white}{.} 
 \item[\therefore] $Fw$
-\end{earg}
+\end{kormanize}
 
 This captures the structure that was left out of the SL translation of this argument, and this is a valid argument in QL.
 
@@ -386,16 +382,16 @@ This captures the structure that was left out of the SL translation of this argu
 A predicate need not apply to anything in the UD. A predicate that applies to nothing in the UD is called an \define{empty predicate}.
 
 Suppose we want to symbolize these two sentences:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{monkey1}]Every monkey knows sign language.
 \item[\ex{monkey2}]Some monkey knows sign language.
-\end{earg}
+\end{kormanize}
 It is possible to write the symbolization key for these sentences in this way:
-\begin{ekey}
+\begin{description}
 \item[UD:] animals
 \item[Mx:] $x$ is a monkey.
 \item[Sx:] $x$ knows sign language.
-\end{ekey}
+\end{description}
 
 Sentence \ref{monkey1} can now be translated as $\forall x(Mx \eif Sx)$.
 
@@ -434,9 +430,9 @@ If you were actually translating the sentence ``All refrigerators are monkeys'',
 The appropriate symbolization of an English language sentence in QL will depend on the symbolization key. In some ways, this is obvious: It matters whether $Dx$ means ``$x$ is dainty'' or ``$x$ is dangerous.'' The meaning of sentences in QL also depends on the UD.
 
 Let $Rx$ mean ``$x$ is a rose,'' let $Tx$ mean ``$x$ has a thorn,'' and consider this sentence:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{pickUDrose}] Every rose has a thorn.
-\end{earg}
+\end{kormanize}
 
 It is tempting to say that sentence \ref{pickUDrose} should be translated as $\forall x(Rx \eif Tx)$. If the UD contains all roses, that would be correct. Yet if the UD is merely \emph{things on my kitchen table}, then $\forall x(Rx \eif Tx)$ would only mean that every rose on my kitchen table has a thorn. If there are no roses on my kitchen table, the sentence would be trivially true.
 
@@ -448,13 +444,13 @@ If we wanted the universal quantifier to mean \emph{every} thing, without restri
 
 Suppose that we want to translate sentence \ref{pickUDrose} and, with the same symbolization key, translate these sentences:
 
-\begin{earg}
+\begin{kormanize}
 \item[\ex{pickUDhair}] Esmerelda has a rose in her hair.
 \item[\ex{pickUDcross}] Everyone is cross with Esmerelda.
-\end{earg}
+\end{kormanize}
 
 We need a UD that includes roses (so that we can symbolize sentence \ref{pickUDrose}) and a UD that includes people (so we can translate sentence \ref{pickUDhair}--\ref{pickUDcross}.) Here is a suitable key:
-\begin{ekey}
+\begin{description}
 \item[UD:] people and plants
 \item[Px:] $x$ is a person.
 \item[Rx:] $x$ is a rose.
@@ -462,7 +458,7 @@ We need a UD that includes roses (so that we can symbolize sentence \ref{pickUDr
 \item[Cxy:] $x$ is cross with $y$.
 \item[Hxy:] $x$ has $y$ in their hair.
 \item[e:] Esmerelda
-\end{ekey}
+\end{description}
 
 Since we do not have a predicate that means ``$\ldots$ has a rose in her hair'', translating sentence \ref{pickUDhair} will require paraphrasing. The sentence says that there is a rose in Esmerelda's hair; that is, there is something which is both a rose and is in Esmerelda's hair. So we get: $\exists x(Rx \eand Hex)$.
 
@@ -480,7 +476,7 @@ In general, the universal quantifier can be used to mean ``everyone'' if the UD 
 \problempart
 \label{pr.QLalligators}
 Using the symbolization key given, translate each English-language sentence into QL.
-\begin{ekey}
+\begin{description}
 \item[UD:] all animals
 \item[Ax:] $x$ is an alligator.
 \item[Mx:] $x$ is a monkey.
@@ -490,8 +486,8 @@ Using the symbolization key given, translate each English-language sentence into
 \item[a:] Amos
 \item[b:] Bouncer
 \item[c:] Cleo
-\end{ekey}
-\begin{earg}
+\end{description}
+\begin{kormanize}
 \item Amos, Bouncer, and Cleo all live at the zoo. 
 \item Bouncer is a reptile, but not an alligator. 
 \item If Cleo loves Bouncer, then Bouncer is a monkey. 
@@ -507,7 +503,7 @@ Using the symbolization key given, translate each English-language sentence into
 \item If any animal is an alligator, then it is a reptile.
 \item Every monkey that Cleo loves is also loved by Amos.
 \item There is a monkey that loves Bouncer, but sadly Bouncer does not reciprocate this love.
-\end{earg}
+\end{kormanize}
 
 
 \problempart
@@ -632,11 +628,11 @@ We can now give a formal definition for scope: The \define{scope} of a quantifie
 
 A {sentence} is something that can be either true or false. In SL, every expression that satisfied the recursive syntax was a sentence. You could tell, because we could decide whether expression was true or false. This will not be the case for wffs in QL. Consider the following symbolization key:
 
-\begin{ekey}
+\begin{description}
 \item[UD:] people.
 \item[Lxy:] $x$ loves $y$.
 \item[b:] Boris.
-\end{ekey}
+\end{description}
 
 Consider the expression $Lzz$. It is an atomic formula: a two-place predicate followed by two terms. All atomic formula are wffs, so $Lzz$ is a wff. Does it mean anything? You might think that it means that $z$ loves himself, in the same way that $Lbb$ means that Boris loves himself. Yet $z$ is a variable; it does not name some person the way a constant would. The wff $Lzz$ does not tell us how to interpret $z$. Does it mean everyone? anyone? someone? If we had a z-quantifier, it would tell us how to interpret $z$. For instance, $\exists zLzz$ would mean that someone loves themselves.
 
@@ -671,22 +667,22 @@ On this definition, a substitution instance is formed by replacing just \emph{on
 \problempart
 \label{pr.freeQL}
 Identify which variables are bound and which are free.
-\begin{earg}
+\begin{kormanize}
 \item $\exists x Lxy \eand \forall y Lyx$
 \item $\forall x Ax \eand Bx$
 \item $\forall x (Ax \eand Bx) \eand \forall y(Cx \eand Dy)$
 \item $\forall x\exists y[Rxy \eif (Jz \eand Kx)] \eor Ryx$
 \item $\forall x_1(Mx_2 \eiff Lx_2x_1) \eand \exists x_2 Lx_3x_2$
-\end{earg}
+\end{kormanize}
 
 
 \problempart
 \label{pr.subinstanceQL}
-\begin{earg}
+\begin{kormanize}
 \item Identify which of the following are substitution instances of $\forall x Rcx$: $Rac$, $Rca$, $Raa$, $Rcb$, $Rbc$, $Rcc$, $Rcd$, $Rcx$
 \item Identify which of the following are substitution instances of $\exists x\forall y Lxy$:
 $\forall y Lby$, $\forall x Lbx$, $Lab$, $\exists x Lxa$
-\end{earg}
+\end{kormanize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%SECTION 5.6 Tricky Translations %%%%%%%%%%%%%%%%% 
 \section{Tricky Translations}
@@ -698,9 +694,9 @@ $\forall y Lby$, $\forall x Lbx$, $Lab$, $\exists x Lxa$
 %%%%%%%%%%%%%%%%%%%%%%%%%%SECTION 5.6.1 Ambiguous Predicates %%%%%%%%%%%%%%
 
 Suppose we just want to translate this sentence:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{surgeon1}] Adina is a skilled surgeon.
-\end{earg}
+\end{kormanize}
 Let the UD be people, let $Kx$ mean ``$x$ is a skilled surgeon'', and let $a$ mean Adina. Sentence \ref{surgeon1} is simply $Ka$.
 
 
@@ -709,23 +705,23 @@ Suppose instead that we want to translate this argument:
 The hospital will only hire a skilled surgeon. All surgeons are greedy. Billy is a surgeon, but is not skilled. Therefore, Billy is greedy, but the hospital will not hire him.
 \end{quote}
 We need to distinguish being a \emph{skilled surgeon} from merely being a \emph{surgeon}. So we define this symbolization key:
-\begin{ekey}
+\begin{description}
 \item[UD:] people
 \item[Gx:] $x$ is greedy.
 \item[Hx:] The hospital will hire $x$.
 \item[Rx:] $x$ is a surgeon.
 \item[Kx:] $x$ is skilled.
 \item[b:] Billy
-\end{ekey}
+\end{description}
 
 Now the argument can be translated in this way:
-\begin{earg}
+\begin{kormanize}
 \label{surgeon2}
 \item[] $\forall x\bigl[\enot (Rx \eand Kx) \eif \enot Hx\bigr]$
 \item[] $\forall x(Rx \eif Gx)$
 \item[] $Rb \eand \enot Kb$
 \item[\therefore] $Gb \eand \enot Hb$
-\end{earg}
+\end{kormanize}
 
 Next suppose that we want to translate this argument:
 \begin{quote}
@@ -733,16 +729,16 @@ Next suppose that we want to translate this argument:
 Carol is a skilled surgeon and a tennis player. Therefore, Carol is a surgeon and a skilled tennis player.
 \end{quote}
 If we start with the symbolization key we used for the previous argument, we could add a predicate (let $Tx$ mean ``$x$ is a tennis player'') and a constant (let $c$ mean Carol). Then the argument becomes:
-\begin{earg}
+\begin{kormanize}
 \item[] $(Rc \eand Kc) \eand Tc$
 \item[\therefore] $Tc \eand Kc$
-\end{earg}
+\end{kormanize}
 This translation is a disaster! It takes what in English is a terrible argument and translates it as a valid argument in QL. The problem is that there is a difference between being \emph{skilled as a surgeon} and \emph{skilled as a tennis player}. Translating this argument correctly requires two separate predicates, one for each type of skill. If we let $K_1x$ mean ``$x$ is skilled as a surgeon'' and $K_2x$ mean ``$x$ is skilled as a tennis player,'' then we can symbolized the argument in this way:
-\begin{earg}
+\begin{kormanize}
 \label{surgeon3correct}
 \item[] $(Rc \eand K_1c) \eand Tc$
 \item[\therefore] $Tc \eand K_2c$
-\end{earg}
+\end{kormanize}
 Like the English language argument it translates, this is invalid. %\nix{Notice that there is no logical connection between $K_1c$ and $Rc$. As symbols of QL, they might be any one-place predicates. In English there is a connection between being a \emph{surgeon} and being a \emph{skilled surgeon}: Every skilled surgeon is a surgeon. In order to capture this connection, we symbolize `Carol is a skilled surgeon' as $Rc \eand K_1c$. This means: `Carol is a surgeon and is skilled as a surgeon.'}
 
 The moral of these examples is that you need to be careful of symbolizing predicates in an ambiguous way. Similar problems can arise with predicates like \emph{good}, \emph{bad}, \emph{big}, and \emph{small}. Just as skilled surgeons and skilled tennis players have different skills, big dogs, big mice, and big problems are big in different ways.
@@ -757,22 +753,22 @@ Must we always distinguish between different ways of being skilled, good, bad, o
 
 
 Consider this following symbolization key and the sentences that follow it:
-\begin{ekey}
+\begin{description}
 \item{UD:} People and dogs
 \item{Dx:} $x$ is a dog.
 \item{Fxy:} $x$ is a friend of $y$.
 \item{Oxy:} $x$ owns $y$.
 \item{f:} Fifi
 \item{g:} Gerald
-\end{ekey}
+\end{description}
 
-\begin{earg}
+\begin{kormanize}
 \item[\ex{dog1}] Fifi is a dog.
 \item[\ex{dog2}] Gerald is a dog owner.
 \item[\ex{dog3}] Someone is a dog owner.
 \item[\ex{dog4}] All of Gerald's friends are dog owners.
 \item[\ex{dog5}] Every dog owner is the friend of a dog owner.
-\end{earg}
+\end{kormanize}
 
 Sentence \ref{dog1} is easy: $Df$.
 
@@ -786,16 +782,16 @@ Sentence \ref{dog4} can be paraphrased as, ``Every friend of Gerald is a dog own
 Sentence \ref{dog5} can be paraphrased as ``For any $x$ that is a dog owner, there is a dog owner who is $x$'s friend.'' Partially translated, this becomes $$\forall x\bigl[\mbox{$x$ is a dog owner}\eif\exists y(\mbox{$y$ is a dog owner}\eand Fxy\bigr].$$ Completing the translation, sentence \ref{dog5} becomes $$\forall x\bigl[\exists z(Dz \eand Oxz)\eif\exists y(\exists z(Dz \eand Oyz)\eand Fxy\bigr].$$
 
 Consider this symbolization key and these sentences:
-\begin{ekey}
+\begin{description}
 \item[UD:] people
 \item[Lxy:] $x$ likes $y$.
 \item[i:] Imre.
 \item[k:] Karl.
-\end{ekey}
-\begin{earg}
+\end{description}
+\begin{kormanize}
 \item[\ex{likes1}]Imre likes everyone that Karl likes.
 \item[\ex{likes2}]There is someone who likes everyone who likes everyone that he likes.
-\end{earg}
+\end{kormanize}
 
 Sentence \ref{likes1} can be partially translated as $\forall x(\mbox{Karl likes $x$}\eif\mbox{Imre likes $x$})$. This becomes $\forall x(Lkx\eif Lix)$.
 
@@ -813,19 +809,19 @@ When symbolizing sentences with multiple quantifiers, it is best to proceed by s
 
 Let's look at another situation where it helps to translate in small steps. For the next several examples, we will use this symbolization key:
 
-\begin{ekey}
+\begin{description}
 \item[UD:] people
 \item[Gx:] $x$ can play bass guitar.
 \item[Rx:] $x$ is a rock star.
 \item[l:] Lemmy
-\end{ekey}
+\end{description}
 
 Now consider these sentences:
 
-\begin{earg}
+\begin{kormanize}
 \item[\ex{pronoun1}] If Lemmy can play bass guitar, then he is a rock star.
 \item[\ex{pronoun2}] If a person can play bass guitar, then he is a rock star.
-\end{earg}
+\end{kormanize}
 
 
 Sentence \ref{pronoun1} and sentence \ref{pronoun2} have the same consequent (``$\ldots$ he is a rock star''), but they cannot be translated in the same way. It helps to paraphrase the original sentences, replacing pronouns with explicit references.
@@ -837,10 +833,10 @@ Sentence \ref{pronoun2} must be paraphrased differently: ``If a person can play 
 
 Consider these further sentences:
 
-\begin{earg}
+\begin{kormanize}
 \item[\ex{anyone1}] If anyone can play bass guitar, then Lemmy can.
 \item[\ex{anyone2}] If anyone can play bass guitar, then he or she is a rock star.
-\end{earg}
+\end{kormanize}
 
 These two sentences have the same antecedent (``If anyone can play guitar$\ldots$''), but they have different logical structures.
 
@@ -866,7 +862,7 @@ This oddity does not arise with other connectives or if the variable is in the c
 % These are all taken from the original chapter on QL
 \setlength{\parindent}{0em}
 \problempart Using the symbolization key given, translate each English-language sentence into QL.
-\begin{ekey}
+\begin{description}
 \item[UD:] all animals
 \item[Dx:] $x$ is a dog.
 \item[Sx:] $x$ likes samurai movies.
@@ -874,8 +870,8 @@ This oddity does not arise with other connectives or if the variable is in the c
 \item[b:] Bertie
 \item[e:] Emerson
 \item[f:] Fergis
-\end{ekey}
-\begin{earg}
+\end{description}
+\begin{kormanize}
 \item Bertie is a dog who likes samurai movies.
 \item Bertie, Emerson, and Fergis are all dogs.
 \item Emerson is larger than Bertie, and Fergis is larger than Emerson.
@@ -892,34 +888,34 @@ This oddity does not arise with other connectives or if the variable is in the c
 \item Every dog is larger than some dog.
 \item There is an animal that is smaller than every dog.
 \item If there is an animal that is larger than any dog, then that animal does not like samurai movies.
-\end{earg}
+\end{kormanize}
 
 
 \problempart
 \label{pr.QLarguments}
 For each argument, write a symbolization key and translate the argument into QL.
-\begin{earg}
+\begin{kormanize}
 \item Nothing on my desk escapes my attention. There is a computer on my desk. As such, there is a computer that does not escape my attention.
 \item All my dreams are black and white. Old TV shows are in black and white. Therefore, some of my dreams are old TV shows.
 \item Neither Holmes nor Watson has been to Australia. A person could see a kangaroo only if they had been to Australia or to a zoo. Although Watson has not seen a kangaroo, Holmes has. Therefore, Holmes has been to a zoo.
 \item No one expects the Spanish Inquisition. No one knows the troubles I've seen. Therefore, anyone who expects the Spanish Inquisition knows the troubles I've seen.
 \item An antelope is bigger than a bread box. I am thinking of something that is no bigger than a bread box, and it is either an antelope or a cantaloupe. As such, I am thinking of a cantaloupe.
 \item All babies are illogical. Nobody who is illogical can manage a crocodile. Berthold is a baby. Therefore, Berthold is unable to manage a crocodile.
-\end{earg}
+\end{kormanize}
 
 
 \problempart
 \label{pr.QLcandies}
 Using the symbolization key given, translate each English-language sentence into QL.
-\begin{ekey}
+\begin{description}
 \item[UD:] candies
 \item[Cx:] $x$ has chocolate in it.
 \item[Mx:] $x$ has marzipan in it.
 \item[Sx:] $x$ has sugar in it.
 \item[Tx:] Boris has tried $x$.
 \item[Bxy:] $x$ is better than $y$.
-\end{ekey}
-\begin{earg}
+\end{description}
+\begin{kormanize}
 \item Boris has never tried any candy.
 \item Marzipan is always made with sugar.
 \item Some candy is sugar-free.
@@ -930,13 +926,13 @@ Using the symbolization key given, translate each English-language sentence into
 %\item Boris has tried nothing that is better than sugar-free marzipan.
 \item Any candy with chocolate is better than any candy without it.
 \item Any candy with chocolate and marzipan is better than any candy that lacks both.
-\end{earg}
+\end{kormanize}
 
 
 
 \problempart
 Using the symbolization key given, translate each English-language sentence into QL.
-\begin{ekey}
+\begin{description}
 \item[UD:] people and dishes at a potluck
 \item[Rx:] $x$ has run out.
 \item[Tx:] $x$ is on the table.
@@ -946,8 +942,8 @@ Using the symbolization key given, translate each English-language sentence into
 \item[e:] Eli
 \item[f:] Francesca
 \item[g:] the guacamole
-\end{ekey}
-\begin{earg}
+\end{description}
+\begin{kormanize}
 \item All the food is on the table.
 \item If the guacamole has not run out, then it is on the table.
 \item Everyone likes the guacamole.
@@ -957,14 +953,14 @@ Using the symbolization key given, translate each English-language sentence into
 \item Eli likes anyone who likes the guacamole.
 \item Eli likes anyone who likes the people that he likes.
 \item If there is a person on the table already, then all of the food must have run out.
-\end{earg}
+\end{kormanize}
 
 
 
 \problempart
 \label{pr.QLballet}
 Using the symbolization key given, translate each English-language sentence into QL.
-\begin{ekey}
+\begin{description}
 \item[UD:] people
 \item[Dx:] $x$ dances ballet.
 \item[Fx:] $x$ is female.
@@ -974,8 +970,8 @@ Using the symbolization key given, translate each English-language sentence into
 \item[e:] Elmer
 \item[j:] Jane
 \item[p:] Patrick
-\end{ekey}
-\begin{earg}
+\end{description}
+\begin{kormanize}
 \item All of Patrick's children are ballet dancers.
 \item Jane is Patrick's daughter.
 \item Patrick has a daughter.
@@ -988,7 +984,7 @@ Using the symbolization key given, translate each English-language sentence into
 \item Jane is an aunt.
 \item Everyone who dances ballet has a sister who also dances ballet.
 \item Every man who dances ballet is the child of someone who dances ballet.
-\end{earg}
+\end{kormanize}
 
 \section{Identity}
 %%%%%%%%%%%%%%%%%%%%%%%	5.7	Identity	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -997,9 +993,9 @@ Using the symbolization key given, translate each English-language sentence into
 
 
 Consider this sentence:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{else1}] Pavel owes money to everyone else.
-\end{earg}
+\end{kormanize}
 Let the UD be people; this will allow us to translate ``everyone'' as a universal quantifier. Let $Oxy$ mean ``$x$ owes money to $y$,'' and let $p$ mean Pavel. Now we can symbolize sentence \ref{else1} as $\forall x Opx$. Unfortunately, this translation has some odd consequences. It says that Pavel owes money to every member of the UD, including Pavel; it entails that Pavel owes money to himself. However, sentence \ref{else1} does not say that Pavel owes money to himself; he owes money to everyone \emph{else}. This is a problem, because $\forall x Opx$ is the best translation we can give of this sentence into QL.
 
 The solution is to add another symbol to QL. The symbol $=$ is a two-place predicate. Since it has a special logical meaning, we write it a bit differently: For two terms $t_1$ and $t_2$, $t_1=t_2$ is an atomic formula.
@@ -1009,19 +1005,19 @@ The predicate $x=y$ means ``$x$ is identical to $y$.'' This does not mean merely
 When we write $x \neq y$, we mean that $x$ and $y$ are not identical. There is no reason to introduce this as an additional predicate. Instead, $x \neq y$ is an abbreviation of $\enot(x = y)$.
 
 Now suppose we want to symbolize this sentence:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{else2}] Pavel is Mister Checkov.
-\end{earg}
+\end{kormanize}
 Let the constant $c$ mean Mister Checkov. Sentence \ref{else2} can be symbolized as $p=c$. This means that the constants $p$ and $c$ both refer to the same guy.
 
 This is all well and good, but how does it help with sentence \ref{else1}? That sentence can be paraphrased as, ``Everyone who is not Pavel is owed money by Pavel.'' This is a sentence structure we already know how to symbolize: ``For all $x$, if $x$ is not Pavel, then $x$ is owed money by Pavel.'' In QL with identity, this becomes $\forall x (x\neq p \eif Opx)$.
 
 In addition to sentences that use the word ``else,'' identity will be helpful when symbolizing some sentences that contain the words ``besides'' and ``only.'' Consider these examples:
 
-\begin{earg}
+\begin{kormanize}
 \item[\ex{else3}] No one besides Pavel owes money to Hikaru.
 \item[\ex{else4}] Only Pavel owes Hikaru money.
-\end{earg}
+\end{kormanize}
 
 We add the constant $h$, which means Hikaru.
 
@@ -1034,11 +1030,11 @@ Sentence \ref{else4} can be paraphrased as, ``Pavel owes Hikaru \emph{and} no on
 %%%%%%%%%%%%%%%%%%%%	5.7.1.	Expressions of Quantity	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 We can also use identity to say how many things there are of a particular kind. For example, consider these sentences:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{atleast1}] There is at least one apple on the table.
 \item[\ex{atleast2}] There are at least two apples on the table.
 \item[\ex{atleast3}] There are at least three apples on the table.
-\end{earg}
+\end{kormanize}
 Let the UD be \emph{things on the table}, and let $Ax$ mean ``$x$ is an apple.''
 
 Sentence \ref{atleast1} does not require identity. It can be translated adequately as $\exists x Ax$: There is some apple on the table---perhaps many, but at least one.
@@ -1051,10 +1047,10 @@ Continuing in this way, we could translate ``There are at least $n$ apples on th
 
 
 Now consider these sentences:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{atmost1}] There is at most one apple on the table.
 \item[\ex{atmost2}] There are at most two apples on the table.
-\end{earg}
+\end{kormanize}
 
 Sentence \ref{atmost1} can be paraphrased as, ``It is not the case that there are at least \emph{two} apples on the table.'' This is just the negation of sentence \ref{atleast2}: $$\enot \exists x \exists y(Ax \eand Ay \eand x\neq y)$$
 Sentence \ref{atmost1} can also be approached in another way. It means that any apples that there are on the table must be the selfsame apple, so it can be translated as $\forall x\forall y\bigl[(Ax \eand Ay) \eif x=y\bigr]$. The two translations are logically equivalent, so both are correct.
@@ -1065,19 +1061,19 @@ $$\forall x\forall y\forall z\bigl[(Ax \eand Ay \eand Az) \eif (x=y \eor x=z \eo
 See p.~\pageref{summary.atmost} for the general case.
 
 The examples above are sentences about apples, but the logical structure of the sentences translates mathematical inequalities like $a\geq 3$, $a \leq 2$, and so on. We also want to be able to translate statements of equality which say exactly how many things there are. For example:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{exactly1}] There is exactly one apple on the table.
 \item[\ex{exactly2}] There are exactly two apples on the table.
-\end{earg}
+\end{kormanize}
 
 Sentence \ref{exactly1} can be paraphrased as, ``There is \emph{at least} one apple on the table, and there is \emph{at most} one apple on the table.'' This is just the conjunction of sentence \ref{atleast1} and sentence \ref{atmost1}: $\exists x Ax \eand \forall x\forall y\bigl[(Ax \eand Ay) \eif x=y\bigr]$. This is a somewhat complicated way of going about it. It is perhaps more straightforward to paraphrase sentence \ref{exactly1} as ``There is a thing which is the only apple on the table.'' Thought of in this way, the sentence can be translated $\exists x\bigl[Ax \eand \enot\exists y(Ay \eand x\neq y)\bigr]$.
 
 Similarly, sentence \ref{exactly2} may be paraphrased as, ``There are two different apples on the table, and these are the only apples on the table.'' This can be translated as $\exists x\exists y\bigl[Ax \eand Ay \eand x\neq y \eand \enot\exists z(Az \eand x\neq z \eand y\neq z)\bigr]$.
 
 Finally, consider this sentence:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{atmost2inUD}] There are at most two things on the table.
-\end{earg}
+\end{kormanize}
 It might be tempting to add a predicate so that $Tx$ would mean ``$x$ is a thing on the table.'' However, this is unnecessary. Since the UD is the set of things on the table, all members of the UD are on the table. If we want to talk about a \emph{thing on the table}, we need only use a quantifier. Sentence \ref{atmost2inUD} can be symbolized like sentence \ref{atmost2} (which said that there were at most two apples), but leaving out the predicate entirely. That is, sentence \ref{atmost2inUD} can be translated as $\forall x \forall y \forall z(x=y \eor x=z \eor y=z)$.
 
 Techniques for symbolizing expressions of quantity (``at most'', ``at least'', and ``exactly'') are summarized on p.~\pageref{summary.atleast}.
@@ -1090,9 +1086,9 @@ Techniques for symbolizing expressions of quantity (``at most'', ``at least'', a
 Recall that a constant of QL must refer to some member of the UD. This constraint allows us to avoid the problem of non-referring terms. Given a UD that included only actually existing creatures but a constant $c$ that meant ``chimera'' (a mythical creature), sentences containing $c$ would become impossible to evaluate.
 
 The most widely influential solution to this problem was introduced by Bertrand Russell in 1905. Russell asked how we should understand this sentence:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{defdesc1}] The present king of France is bald.
-\end{earg}
+\end{kormanize}
 The phrase ``the present king of France'' is supposed to pick out an individual by means of a definite description. However, there was no king of France in 1905 and there is none now. Since the description is a non-referring term, we cannot just define a constant to mean ``the present king of France'' and translate the sentence as $Kf$.
 
 Russell's idea was that sentences that contain definite descriptions have a different logical structure than sentences that contain proper names, even though they share the same grammatical form. What do we mean when we use an unproblematic, referring description, like ``the highest peak in Washington state''? We mean that there is such a peak, because we could not talk about it otherwise. We also mean that it is the only such peak. If there was another peak in Washington state of exactly the same height as Mount Rainier, then Mount Rainier would not be \emph{the} highest peak.
@@ -1106,14 +1102,14 @@ Let the UD be \emph{people actually living}, let $Fx$ mean ``$x$ is the present 
 Understood in this way, sentence \ref{defdesc1} is meaningful but false. It says that this guy exists, but he does not.
 
 The problem of non-referring terms is most vexing when we try to translate negations. So consider this sentence:
-\begin{earg}
+\begin{kormanize}
 \item[\ex{defdesc2}] The present king of France is not bald.
-\end{earg}
+\end{kormanize}
 According to Russell, this sentence is ambiguous in English. It could mean either of two things:
-\begin{earg}
+\begin{kormanize}
 \item[\ref{defdesc2}a.] It is not the case that the present king of France is bald.
 \item[\ref{defdesc2}b.] The present king of France is non-bald.
-\end{earg}
+\end{kormanize}
 Both possible meanings negate sentence \ref{defdesc1}, but they put the negation in different places.
 
 Sentence \ref{defdesc2}a is called a \define{wide-scope negation}, because it negates the entire sentence. It can be translated as $\enot\exists x\bigl[Fx \eand \enot\exists y(Fy \eand x\neq y) \eand Bx\bigr]$. This does not say anything about the present king of France, but rather says that some sentence about the present king of France is false. Since sentence \ref{defdesc1} if false, sentence \ref{defdesc2}a is true.
@@ -1135,24 +1131,24 @@ Russell's theory of definite descriptions resolves the problem of non-referring 
 % These are all taken from the original chapter on QL
 
 %\problempart
-%\begin{earg}
+%\begin{kormanize}
 %\item Are there any wffs of QL that contain more than one x-quantifier? If your answer is yes, give an example.
-%\end{earg}
+%\end{kormanize}
 
 % rob: The above is from Magnus. I have no idea what he is on about.
 %\solutions
 %\problempart
 %\label{pr.wiffQL}
 %For each of the following: (a) Is it a wff of QL, allowing for notational conventions? (b) Is it a sentence of QL?
-%\begin{earg}
+%\begin{kormanize}
 %\item $\forall x\forall y[(Rxy \eand Ryx) \eif \exists zRzz]$
-%\end{earg}
+%\end{kormanize}
 
 
 
 \problempart
 Using the symbolization key given, translate each English-language sentence into QL with identity. The last sentence is ambiguous and can be translated two ways; you should provide both translations. (Hint: Identity is only required for the last four sentences.)
-\begin{ekey}
+\begin{description}
 \item[UD:] people
 \item[Kx:] $x$ knows the combination to the safe.
 \item[Sx:] $x$ is a spy.
@@ -1160,8 +1156,8 @@ Using the symbolization key given, translate each English-language sentence into
 \item[Txy:] $x$ trusts $y$.
 \item[h:] Hofthor
 \item[i:] Ingmar
-\end{ekey}
-\begin{earg}
+\end{description}
+\begin{kormanize}
 \item Hofthor is a spy, but no vegetarian is a spy.
 \item No one knows the combination to the safe unless Ingmar does.
 \item No spy knows the combination to the safe.
@@ -1173,7 +1169,7 @@ Using the symbolization key given, translate each English-language sentence into
 \item Ingmar trusts Hofthor, but no one else.
 \item The person who knows the combination to the safe is a vegetarian.
 \item The person who knows the combination to the safe is not a spy.
-\end{earg}
+\end{kormanize}
 
 %Note how this draws on some chapter 2 knowledge, like ``only'' and ``unless'' and ``but.'' Create an exercises that draws on these for 5.4 as a part of generally sequencing the arguments more carefully. 
 
@@ -1181,7 +1177,7 @@ Using the symbolization key given, translate each English-language sentence into
 \problempart
 \label{pr.QLcards}
 Using the symbolization key given, translate each English-language sentence into QL with identity. The last two sentences are ambiguous and can be translated two ways; you should provide both translations for each.
-\begin{ekey}
+\begin{description}
 \item[UD:] cards in a standard deck
 \item[Bx:] $x$ is black.
 \item[Cx:] $x$ is a club.
@@ -1190,8 +1186,8 @@ Using the symbolization key given, translate each English-language sentence into
 \item[Mx:] $x$ is a man with an axe.
 \item[Ox:] $x$ is one-eyed.
 \item[Wx:] $x$ is wild.
-\end{ekey}
-\begin{earg}
+\end{description}
+\begin{kormanize}
 \item All clubs are black cards.
 \item There are no wild cards.
 \item There are at least two clubs.
@@ -1204,18 +1200,18 @@ Using the symbolization key given, translate each English-language sentence into
 \item If the deuce of clubs is wild, then there is exactly one wild card.
 \item The man with the axe is not a jack.
 \item The deuce of clubs is not the man with the axe.
-\end{earg}
+\end{kormanize}
 
 
 \problempart Using the symbolization key given, translate each English-language sentence into QL with identity. The last two sentences are ambiguous and can be translated two ways; you should provide both translations for each.
-\begin{ekey}
+\begin{description}
 \item[UD:] animals in the world
 \item[Bx:] $x$ is in Farmer Brown's field.
 \item[Hx:] $x$ is a horse.
 \item[Px:] $x$ is a Pegasus.
 \item[Wx:] $x$ has wings.
-\end{ekey}
-\begin{earg}
+\end{description}
+\begin{kormanize}
 \item There are at least three horses in the world.
 \item There are at least three animals in the world.
 \item There is more than one horse in Farmer Brown's field.
@@ -1224,7 +1220,7 @@ Using the symbolization key given, translate each English-language sentence into
 \item The Pegasus is a winged horse.
 \item The animal in Farmer Brown's field is not a horse.
 \item The horse in Farmer Brown's field does not have wings.
-\end{earg}
+\end{kormanize}
 
 
 

@@ -1,11 +1,13 @@
+\chapter{Categorical Transformations}\label{ch:cattransformation}
+\markright{Ch. \ref{ch:cattransformation}: Categorical Transformations}
 
 \section{Conversion, Obversion, and Contraposition}\label{sec:conv_obv_cont}
 
-Now that we have shown the wide range of statements that can be represented in our four standard logical forms A, E, I, and O, it is time to begin constructing arguments with them. The arguments we are going to look at are sometimes called ``immediate inferences'' because they only have one premise. We are going to learn to identify some valid forms of these one-premise arguments by looking at ways you can transform so that a true sentence will stay true and a false sentence will stay false. Remember that on page \pageref{def:Truth_value} we said that the \gls{truth value} of a sentence is simply whether the sentence is true or false. So we can say that the transformations we will be looking at here preserve the truth values of the sentences.
+Now that we have shown the wide range of statements that can be represented in our four standard logical forms A, E, I, and O, it is time to begin constructing arguments with them. The arguments we are going to look at are sometimes called ``immediate inferences'' because they only have one premise. We are going to learn to identify some valid forms of these one-premise arguments by looking at ways you can transform so that a true sentence will stay true and a false sentence will stay false. Remember that on page \pageref{def:truth_value} we said that the \gls{truth value} of a sentence is simply whether the sentence is true or false. So we can say that the transformations we will be looking at here preserve the truth values of the sentences.
 
 Consider the statements, ``No dogs are reptiles'' and ``No reptiles are dogs.'' They have the same truth value and basically mean the same thing. On the other hand if you change ``All dogs are mammals'' into ``All mammals are dogs'' you turn a true sentence into a false one. In this section we are going to look at three ways of transforming categorical statements---conversion, obversion, and contraposition---and use Venn diagrams to determine whether these transformations also lead to a change in truth value. From there we can identify valid argument forms.
 
-\subsection{Conversion}
+\section{Conversion}\label{sec:conversion}
 
 The two examples in the last paragraph are examples of conversion. \textsc{\gls{conversion}} \label{def:conversion} is the process of transforming a categorical statement by switching the subject and the predicate. When you convert a statement, it keeps its form---an A statement remains an A statement, an E statement remains an E statement---however it might change its truth value.  The Venn diagrams in Figure \ref{fig:conversion} illustrate this.
 
@@ -56,7 +58,7 @@ Notice that these are argument forms, with variables in the place of the key ter
 
 The truth value of the converses of A and O statements, on the other hand, are undetermined by the truth value of the original statements. This means we cannot construct valid arguments from them. Imagine you have an argument with an A or O statement as its premise and the converse of that statement as the conclusion. Even if the premise is true, we know nothing about the truth of the conclusion. So there are no valid argument forms to be found here.
 
-\subsection{Obversion}
+\section{Obversion}\label{sec:obversion}
 
 
 Obversion is a more complex process. To understand what an obverse is, we first need to define the complement of a class. The \textsc{\gls{complement}} \label{def:complement} of a class is everything that is not in the class. So the complement of the class of dogs is everything that is not a dog, including not just cats, but battleships, pop songs, and black holes. In English we can easily create a name for the complement of any class using the prefix ``non-''. So the complement of the class of dogs is the class of non-dogs. We will use complements in defining both obversion and contraposition.
@@ -134,13 +136,11 @@ How would we take the obverse of this statement? Step 1 is to change the quality
 
 Taking the converse of ``Some $S$ are non-$P$'' also takes a moment of thought. We are supposed to reverse subject and predicate. But does that mean that the ``non-'' moves to the subject position along with the ``$P$''? Or does the ``non-'' now attach to the $S$? We saw that E and I statements kept their truth value after conversion, and we want this to still be true when the statements start out referring to the complement of some class. This means that the ``non-'' has to travel with the predicate, because ``Some $S$ are non-$P$'' will always have the same truth value as ``Some non-$P$ are $S$.'' Another way of thinking about this is that the ``non-'' is part of the name of the class that forms the predicate of ``Some $S$ are non-$P$.'' The statement is making a claim about a class, and that class happens to be defined as the complement of another class. So, the bottom line is when you take the converse of a statement where one of the terms is a complement, move the ``non-'' with that term.
 
-\subsection{Contraposition}
+\section{Contraposition}\label{sec:contraposition}
 
+\textsc{\Gls{contraposition}} is a two-step process, like obversion, but it doesn't always lead to results that are logically equivalent to the original sentence. The contrapositive of a categorical sentence is the sentence that results from reversing subject and predicate and then replacing them with their complements. Thus ``All $S$ are $P$'' becomes ``All non-$P$ are non-$S$.''
 
-
-\textsc{\gls{contraposition}} is a two-step process, like obversion, but it doesn't always lead to results that are logically equivalent to the original sentence. The contrapositive of a categorical sentence is the sentence that results from reversing subject and predicate and then replacing them with their complements. Thus ``All $S$ are $P$'' becomes ``All non-$P$ are non-$S$.''
-
-Figure \ref{fig:contraposition} shows the corresponding Venn diagrams. In this case, the shading around the outside of the two circles in the contraposed form of E is meant to indicate that nothing can lie outside the two circles. Everything must be $S$ or $P$ or both. Like conversion, applying contraposition to two of the forms gives us statements that are logically equivalent to the original. This time, though, it is forms A and O that come through the process without changing their truth value.
+Figure \ref{fig:contraposition} shows the corresponding Venn diagrams. Like conversion, applying contraposition to two of the forms gives us statements that are logically equivalent to the original. This time, though, it is forms A and O that come through the process without changing their truth value.
 
 
 \begin{figure}[!ht]
@@ -150,19 +150,36 @@ Figure \ref{fig:contraposition} shows the corresponding Venn diagrams. In this c
 
 \includegraphics[width=0.4\textwidth]{2venn6}
 \begin{minipage}[c]{0.1\textwidth}\vspace{-2.5cm}\hspace{.4cm}$\to$\end{minipage}
-\includegraphics[width=0.4\textwidth]{2venn7}
+\includegraphics[width=0.4\textwidth]{2venn6}
 \caption{Contrapositions of all quantified categorical sentences.}
 \label{fig:contraposition}
 \end{figure}
 
 
-This then gives us two valid argument forms, shown in Figure \ref{fig:argument_contraposition}. If you have an argument with an A or O statement as its premise and the contraposition of that statement as the conclusion, you know it must be valid. Whenever the premise is true, the conclusion must be true, because the two statements are logically equivalent. On the other hand, if you had an E or an I statement as the premise, the truth of the conclusion is undetermined, so these arguments would not be valid.
+This then gives us two valid argument forms, shown in Figure \ref{fig:contraposition_arguments}. If you have an argument with an A or O statement as its premise and the contraposition of that statement as the conclusion, you know it must be valid. Whenever the premise is true, the conclusion must be true, because the two statements are logically equivalent. On the other hand, if you had an E or an I statement as the premise, the truth of the conclusion is undetermined, so these arguments would not be valid.
 
-\subsection{Evaluating Short Arguments}
-\label{sec:ESA}
+\begin{figure}
+\begin{minipage}[t]{0.4\textwidth}
+\begin{kormanize}
+\premise{All $S$ is $P$.}
+\conclusion{All non-$P$ are non-$S$.}
+\end{kormanize}
+\end{minipage}\hspace{1cm}
+\begin{minipage}[t]{0.4\textwidth}
+\begin{kormanize}
+\premise{Some $S$ is non-$P$.}
+\conclusion{Some non-$P$ is not non-$S$.}
+\end{kormanize}
+\end{minipage}
+\caption{Two valid arguments from contraposition.}
+\label{fig:contraposition_arguments}
+\end{figure}
+
+\section{Evaluating Short Arguments}\label{sec:ESA}
+
 So far we have seen eight valid forms of argument with one premise: two arguments that are valid by conversion, four that are valid by obversion, and two that are valid by contraposition. As we said, short arguments like these are sometimes called ``immediate inferences,'' because your brain just flits automatically from the truth of the premises to the truth of the conclusion. Now that we have identified these valid forms of inference, we can use this knowledge to see whether some of the arguments we encounter in ordinary language are valid. We can now tell in a few cases if our brain is right to flit so seamlessly from the premise to the conclusion.
 
-In the real world, the inferences we make are messy and hard to classify. Much of the complexity of this issue is tackled in the parts of the complete version of this text that cover critical thinking. Part \ref{part:CT_and_informal_logic} of this text, on critical thinking. Right now we are just going to deal with a limited subset of inferences: immediate inferences that might be based on conversion, obversion, or contraposition. Let's start start with the uncontroversial premise ``All dogs are mammals.'' Can we infer from this that all non-mammals are non-dogs? In canonical form, the argument would look like this.
+In the real world, the inferences we make are messy and hard to classify. Much of the complexity of this issue is tackled in the parts of the complete version of this text that cover critical thinking. Part \ref{part:critical_thinking} of this text, on critical thinking. Right now we are just going to deal with a limited subset of inferences: immediate inferences that might be based on conversion, obversion, or contraposition. Let's start start with the uncontroversial premise ``All dogs are mammals.'' Can we infer from this that all non-mammals are non-dogs? In canonical form, the argument would look like this.
 
 \begin{kormanize}
 \premise{ All dogs are mammals.}
@@ -201,4 +218,4 @@ This is an argument by conversion on an mood-A statement, which is invalid. The 
 \conclusion{ All \textit{Canis familiaris} are dogs.}
 \end{kormanize}
 
-The Venn diagrams for the premise and conclusion of this argument will be just like the ones for the previous argument, just with different labels. So even though the argument has a true premise and a true conclusion, it is still invalid, because it is possible for an argument of this form to have a true premise and a false conclusion. This is an unreliable argument form that just happened, in this instance, not to lead to a false conclusion. This again is just a variation on a theme we saw in Chapter \ref{chap:basicevaluation}, in Figure \ref{fig:invalid_paris}, when we saw an invalid argument for the conclusion that Paris was in France.
+The Venn diagrams for the premise and conclusion of this argument will be just like the ones for the previous argument, just with different labels. So even though the argument has a true premise and a true conclusion, it is still invalid, because it is possible for an argument of this form to have a true premise and a false conclusion. This is an unreliable argument form that just happened, in this instance, not to lead to a false conclusion. This again is just a variation on a theme we saw in Chapter \ref{ch:basicevaluation}, in Figure \ref{arg:invalid_paris}, when we saw an invalid argument for the conclusion that Paris was in France.

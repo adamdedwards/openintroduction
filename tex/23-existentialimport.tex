@@ -238,7 +238,7 @@ name=fallacy of exclusive premises,
 description={A fallacy committed in an Aristotelian syllogism where both premises are negative.}
 }
 
-Back in exercise set \ref{no_conclusion_set1} you were asked to determine what conclusion, if any, could be drawn from a given pair of premises. Some of the exercises involved arguments with two negative premises. Problem \ref{itm:no_conclusion_set1_EEE} went like this: ``No $P$ are $M$, and no $M$ are $S$, therefore \underline{\hspace{2cm}}.'' If you haven't done so already, try to find a conclusion about $S$ and $P$ that you can draw from this pair of premises.
+Consider the following argument: ``No $P$ are $M$, and no $M$ are $S$, therefore \underline{\hspace{2cm}}.'' If you haven't done so already, try to find a conclusion about $S$ and $P$ that you can draw from this pair of premises.
 
 Hopefully you have convinced yourself that there is no conclusion to be drawn  from the premises above using standard Aristotelian format. No matter what mood you put the conclusion is, it will not follow from the premises. The same thing would be true of any syllogism with two negative premises. We could show this conclusively by running through the 16 possible combinations of negative premises and figures. A more intuitive proof of this rule goes like this: The conclusion of an Aristotelian syllogism must tell us about the relationship between subject and predicate. But if both premises are negative then the middle term must be disjoint, either entirely or partially, from the subject and predicate terms. An argument that breaks this rule is said to commit the \textsc{\gls{fallacy of exclusive premises}}. \label{def:exclusive_premises}
 
@@ -363,7 +363,7 @@ So suppose we have a syllogism with two particular premises. If we want to avoid
 
 Except for a brief discussion of logically structured English in section \ref{sec:form_mood_figure}, so far, we have only been evaluating arguments that use variables for the subject, middle, and predicate terms. Now, we will be looking in detail at issues that come up when we try to evaluate categorical arguments that come up in ordinary English. In this section we will consider how your knowledge of the real world terms discussed in an argument can distract you from evaluating the form of the argument itself. In this section we will consider difficulties in putting ordinary language arguments into logically structured English, so they can be analyzed using the techniques we have learned.
 
-Let's go back again to the definition of validity on page \pageref{def:valid}. (It is always good for beginning student to reinforce their understanding of validity). We did this in the last chapter in Section \ref{sec:ESA}, and we are doing it again now. \label{valid_definition_reinforcement} Validity is a fundamental concept in logic that can be confusing. A valid argument is not necessarily one with true premises or a true conclusion. An argument is valid if the premises \emph{would} make the conclusion true \emph{if} the premises were true.
+Let's go back again to the definition of validity on page \pageref{def:valid}. We did this in the last chapter in Section \ref{sec:ESA}, and we are doing it again now. \label{valid_definition_reinforcement} Validity is a fundamental concept in logic that can be confusing. A valid argument is not necessarily one with true premises or a true conclusion. An argument is valid if the premises \emph{would} make the conclusion true \emph{if} the premises were true.
 
 This means that, as we have seen before, there can be valid arguments with false conclusions. Consider this argument:
 
@@ -415,8 +415,8 @@ This in an invalid form, and it remains invalid whether the $P$ stands for cats 
 %\end{figure}
 
 
-All these examples bring out an important fact about the kind of logic we are doing in this chapter and the last one: this is \emph{formal} logic. As we discussed on page \pageref{def:Formal_logic} formal logic is a way of making our investigation content neutral. By using variables for terms instead of noun phrases in English we can show that certain ways of arguing are good or bad regardless of the topic being argued about. This method will be extended in Chapters \ref{ch:SL} and \ref{ch:QL}, when we introduce our full formal languages SL and QL.
-This method will be extended in Part \ref{part:sent_logic}, when we introduce the full formal language SL.
+All these examples bring out an important fact about the kind of logic we are doing in this chapter and the last one: this is \emph{formal} logic. As we discussed on page \pageref{def:formal_logic} formal logic is a way of making our investigation content neutral. By using variables for terms instead of noun phrases in English we can show that certain ways of arguing are good or bad regardless of the topic being argued about. This method will be extended in Chapters \ref{ch:SL} and \ref{ch:QL}, when we introduce our full formal languages SL and QL.
+This method will be extended in Part \ref{part:prop_logic}, when we introduce the full formal language SL.
 
 
 The examples above also show us another way of proving that an argument given in English is invalid, called the counterexample method. As we have just seen, if you are given an argument in English with, say, false premises and a false conclusion, you cannot determine immediately whether the argument is valid. However, we can look at arguments that have the same form, and use them to see whether the argument is valid. If we can find an argument that has the exact same form as a given argument but has true premises and a false conclusion, then we know the argument is invalid. We just did that with the AEE-IV argument above. We were given an argument with true premises and a true conclusion involving cats, dogs, and animals. We were able to show this argument invalid by finding an argument with the same form that has true premises and a false conclusion, this time involving chihuahuas, dogs, and animals.
@@ -496,11 +496,12 @@ And again we have it, a counterexample to the given syllogism.
 
 \section{Ordinary Language Arguments}
 
-In the last section we saw that arguments in ordinary language can throw us off because our knowledge of the truth or falsity of the statements in them can cloud our perception of the validity of the argument. Now we are going to look at ways we might need to transform ordinary language arguments in order to put them in standard form (see p. \pageref{standard_form_for_an_Aristotelian_syllogism}) and use our evaluative tools.
+In the last section we saw that arguments in ordinary language can throw us off because our knowledge of the truth or falsity of the statements in them can cloud our perception of the validity of the argument. Now we are going to look at ways we might need to transform ordinary language arguments in order to put them in standard form (see p. \pageref{standard_form}) and use our evaluative tools.
 
 \subsection{Basic Transformations into Logically Structured English}
 
-Arguments are composed of statements, so all of the guidelines we discussed for putting ordinary English statements into logically structured English in Section \ref{sec:transformation} apply here. Also, as you saw in the exercises in Section \ref{sec:form_mood_figure}, we need to be aware that the conclusion of an ordinary language argument can occur anywhere in the passage. Consider this argument
+Arguments are composed of statements, so all of the guidelines we discussed for putting ordinary English statements into logically structured English in Section \ref{sec:transformation} apply here.
+Consider this argument:
 
 \begin{quotation}
 \noindent Every single penguin in the world is a bird. Therefore, at least one bird in the world is not a person, because not one person is a penguin.
@@ -554,7 +555,7 @@ Generally speaking, arguments involving different names for the same person can 
 \noindent Bertrand Russell was a philosopher. We know this because Mr. Russell was a logician, and all logicians are philosophers.
 \end{quotation}
 
-``Bertrand Russell'' and ``Mr. Russell'' are names for the same person, so we can represent them using the same variable. Back on page \pageref{subsec:singular_propositions} we learned that names for individuals need to be transformed into classes using phrases like ``objects identical with \ldots'' or ``people identical with \ldots.''  Thus the argument turns out to be Celarent's best friend, Barbara (AAA-I):
+``Bertrand Russell'' and ``Mr. Russell'' are names for the same person, so we can represent them using the same variable. Names for individuals need to be transformed into classes using phrases like ``objects identical with \ldots'' or ``people identical with \ldots.''  Thus the argument turns out to be Celarent's best friend, Barbara (AAA-I):
 
 \begin{tabu}{{X[1.25,l] X[1,l]}}
 \begin{description}
@@ -578,7 +579,7 @@ Another thing to be aware of when you assign variables to terms is that often yo
 Bertrand Russell did not believe in God. I know this because Mr. Russell was not a Christian, and all Christians believe in God
 \end{quotation}
 
-Here again we need to use one variable for both ``Bertrand Russell'' and ``Mr. Russell.'' But we also have to change the verb phrase ``believes in God'' into a predicate term (see page \pageref{subsec:nonstandard_verbs}). The main trick here is to transform the verb phrase ``believes in God'' and the singular terms referring to Bertrand Russell in a way that will match. The trick is to use the word ``people'' each time. ``Believes in God'' becomes ``people who believe in God,'' and the two names for Bertrand Russell need to become ``people identical with Bertrand Russell.'' By including the word ``people'' in each case, we ensure that the terms will be comparable.
+Here again we need to use one variable for both ``Bertrand Russell'' and ``Mr. Russell.'' But we also have to change the verb phrase ``believes in God'' into a predicate term. The main trick here is to transform the verb phrase ``believes in God'' and the singular terms referring to Bertrand Russell in a way that will match. The trick is to use the word ``people'' each time. ``Believes in God'' becomes ``people who believe in God,'' and the two names for Bertrand Russell need to become ``people identical with Bertrand Russell.'' By including the word ``people'' in each case, we ensure that the terms will be comparable.
 
 \begin{tabu}{{X[2,l]X[1,l]}}
 \begin{description}
@@ -695,7 +696,7 @@ description={An argument where a premise or conclusion has been left unstated.}
 }
 
 
-In the real world, arguments are often presented with pieces missing. The missing piece could be an important premise or sometimes even the conclusion.  Arguments with parts missing are called \textsc{\glspl{enthymeme}}. \label{def:enthymeme} We discuss them extensively in the chapter on incomplete arguments in the full version of this text. Here we will be dealing with them specifically as they are used with Aristotelian syllogisms. Because we are now dealing with more real-world arguments, we will return to our practice of giving the context in italics before passages (see page \pageref{context_marker}). Remember, that this context is not a part of the argument. It is just there to help interpret the passage.
+In the real world, arguments are often presented with pieces missing. The missing piece could be an important premise or sometimes even the conclusion.  Arguments with parts missing are called \textsc{\glspl{enthymeme}}. \label{def:enthymeme} We discuss them extensively in the chapter on incomplete arguments in the full version of this text. Here we will be dealing with them specifically as they are used with Aristotelian syllogisms. Because we are now dealing with more real-world arguments, we will return to our practice of giving the context in italics before passages (see page \pageref{fig:statements_and_context}). Remember, that this context is not a part of the argument. It is just there to help interpret the passage.
 
 The simplest and most common reason one might leave out a part of an Aristotelian syllogism is brevity. Sometimes part of an argument is common knowledge or completely obvious from the context and simply doesn't need to be said. Consider this common inference that might pop into your head one afternoon:
 
@@ -710,7 +711,7 @@ If in order to evaluate the argument, though, we need to make all of the reasoni
 \conclusion{The mail is here.}
 \end{kormanize}
 
-But if we are going to use the tools of Aristotelian logic to show that this is valid, we are going to need to convert these statements into categorical statements. The ``now'' functions here as a singular term, so we needed to use the awkward ``times identical with'' construction (see page \pageref{subsec:singular_propositions}). Also, we needed to find a general category to put things under, in this case ``times,'' to be sure that all the terms matched. (This is similar to the ``persons identical to Bertrand Russell example on page \pageref{finding_general_terms}.)
+But if we are going to use the tools of Aristotelian logic to show that this is valid, we are going to need to convert these statements into categorical statements. The ``now'' functions here as a singular term, so we needed to use the awkward ``times identical with'' construction. Also, we needed to find a general category to put things under, in this case ``times,'' to be sure that all the terms matched. (This is similar to the ``persons identical to Bertrand Russell example on page \pageref{finding_general_terms}.)
 
 \begin{kormanize}
 \premise{All times identical with now are times when the dog is barking.}
@@ -725,7 +726,7 @@ Once we do this, we can see that the conclusion is a statement in mood A. The mi
 \conclusion{All times identical with now are times when the mail arrives.}
 \end{kormanize}
 
-Remember that the asterisks means that an implicit premise has been made explicit. (See Chapter \ref{ch:incomplete_arguments}) Once we have that in place, however, we can see that this argument is just a version of Barbara (AAA-1). The full argument is quite wordy, which shows how much sophisticated reasoning is going on in your brain when you make even the most everyday of inferences.
+Once we have that in place, however, we can see that this argument is just a version of Barbara (AAA-1). The full argument is quite wordy, which shows how much sophisticated reasoning is going on in your brain when you make even the most everyday of inferences.
 
 Enthymemes can also be used to hide premises that are needed for the argument, but that the audience might not accept if their attention were drawn to them. Consider this argument:
 
@@ -748,9 +749,9 @@ Again, we have two mood-A statements. The minor term is ``things identical with 
 
 But wait, is this implicit premise even true? Actually it isn't---the Cayenne itself only gets 20 miles per gallon in the city and 24 on the highway---no wonder the salesperson kept this premise implicit! Compare the Cayenne's mileage to that of a regular gas-powered car like the Honda Fit, which gets 33 city and 41 highway. It is true that hybrids generally get better mileage than similarly sized cars that run on gasoline only, but that isn't the reasoning the salesperson is presenting here. Someone who was really all that concerned about mileage probably should not be in the market for a luxury SUV like the Cayenne.
 
-When filling in missing parts of an enthymeme it is important to remember the principle of charity. The principle of charity says that we should try to interpret other people in a way that makes reasoning coherent and their beliefs reasonable. (See Chapter \ref{ch:incomplete_arguments}.) With the example of the salesperson above, one might argue that we were not being as charitable as we could have been. Perhaps the salesperson didn't expect us to believe that \textit{all} hybrids get good gas mileage. Perhaps they only expected us to believe that \textit{most} hybrids get good gas mileage.
+When filling in missing parts of an enthymeme it is important to remember the principle of charity. The principle of charity says that we should try to interpret other people in a way that makes reasoning coherent and their beliefs reasonable. With the example of the salesperson above, one might argue that we were not being as charitable as we could have been. Perhaps the salesperson didn't expect us to believe that \textit{all} hybrids get good gas mileage. Perhaps they only expected us to believe that \textit{most} hybrids get good gas mileage.
 
-If you interpret the argument this way, you are getting a more believable premise in exchange for a weaker inference. The original argument had the strongest possible inference---it was genuinely valid. If you change the major premise to something involving ``most,'' you will have an argument that is at best strong, not  valid. The premise is now believable, but the inference is fallible.  (This kind of trade-off is discussed more extensively in Chapter \ref{ch:incomplete_arguments}) Also note that if you do decide to use ``most'' when filling in the missing premise, the argument becomes inductive, and thus is something that you would evaluate using the tools from the parts of this textbook on inductive and scientific reasoning, not the tools of Aristotelian logic. In this section we will only be looking at enthymemes where you fill in premises in a way that yields Aristotelian syllogisms.
+If you interpret the argument this way, you are getting a more believable premise in exchange for a weaker inference. The original argument had the strongest possible inference---it was genuinely valid. If you change the major premise to something involving ``most,'' you will have an argument that is at best strong, not  valid. The premise is now believable, but the inference is fallible. Also note that if you do decide to use ``most'' when filling in the missing premise, the argument becomes inductive, and thus is something that you would evaluate using the tools from the parts of this textbook on inductive and scientific reasoning, not the tools of Aristotelian logic. In this section we will only be looking at enthymemes where you fill in premises in a way that yields Aristotelian syllogisms.
 
 Sometimes enthymemes are missing a conclusion, rather than a premise. Consider this example:
 
@@ -845,7 +846,7 @@ name=sorites categorical argument,
 description={A categorical argument with more than two premises.}
 }
 
-Categorical arguments with more than two premises are called \textsc{\glspl{sorites categorical argument}}, \label{def:sorites_categorical_arguments} or just ``Sorites'' (pronounced ``sore-EYE-tease'') for short. The name comes from the Greek word ``\textSigma\textomikron\textrho\textomikron\textvarsigma'' meaning ``heap.'' This kind of sorites should not be confused with the sorites paradoxes, which are arguments that exploit vague premises.
+Categorical arguments with more than two premises are called \textsc{\glspl{sorites categorical argument}}, \label{def:sorites_categorical_arguments} or just ``Sorites''\footnote{Pronounced ``sore-EYE-tease''} for short. The name comes from the Greek word ``\textSigma\textomikron\textrho\textomikron\textvarsigma'' meaning ``heap.'' This kind of sorites should not be confused with the sorites paradoxes, which are arguments that exploit vague premises.
 
 Here is a simple example of a categorical sorites.
 
@@ -1056,7 +1057,7 @@ Actually, once you note that the first two premises violate Rule 3 for Aristotel
 Rather than filling in all the missing intermediate conclusions, we can see directly whether a sorites is valid by applying the rules we went over in Section  \ref{sec:rules_and_fallacies}. To spare you from flipping back and forth too much in the text, let's repeat the five basic rules here, modified so that they work with the longer arguments we are discussing.
 
 \begin{quotation}
-\begin{tabu}{X[1] X[9]}
+\begin{tabu}{X[2] X[8]}
 \textbf{Rule 1}: & Each middle term in a valid categorical sorites argument must be distributed at least once. \\
 \textbf{Rule 2}: & If a term is distributed in the conclusion of a valid categorical sorites argument, then it must also be distributed in one of the premises. \\
 \textbf{Rule 3}: & A valid Aristotelian syllogism cannot have two or more negative premises. \\
@@ -1138,9 +1139,9 @@ You can confirm that this is a valid argument now using the method of filling in
 
 The last method we will consider is the most advanced but also the most fun. Your instructor may decide to skip this section, given that the prior two techniques are sufficient to evaluate sorites arguments. The Venn diagrams we have been making for this section have had three circles to represent three terms. The arguments we are dealing with have four or more terms, so if we want to represent them all at once, we will need a diagram with more shapes. To see how to set this up we need to remember the principles behind the original design of the diagram.
 
-Recall that John Venn's original insight was that we should always begin by arranging the shapes so that every possible combination of the terms was represented (see pages \pageref{fig:two_circle_venn} and \pageref{fig:three_term_venn_areas}). If we have two terms, we can use circles arranged like this,
+Recall that John Venn's original insight was that we should always begin by arranging the shapes so that every possible combination of the terms was represented (see pages \pageref{fig:2vennlabels} and \pageref{fig:3vennlabels}). If we have two terms, we can use circles arranged like this,
 
-\begin{figure}
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.6\textwidth]{2venn0}
 \end{figure}
@@ -1149,14 +1150,17 @@ Recall that John Venn's original insight was that we should always begin by arra
 
 Three terms give us eight possibilities to represent, so we draw the diagram like this:
 
-\begin{figure}
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=0.6\textwidth]{3venn0}
 \end{figure}
 
 A four-term sorites will have 16 possible combinations of terms. To represent all of these, we will need to stretch out our circles into ellipses.
 
-
+\begin{figure}[!ht]
+\centering
+\includegraphics[width=0.6\textwidth]{4venn0}
+\end{figure}
 
 The diagram is complex, and it takes some practice to learn to work with it. However, the basic methods for using it are the same as with the three-term diagram. Consider this argument, taken from Lewis Carroll's logic textbook \cite{Dodgson1896}.
 
@@ -1167,11 +1171,11 @@ The diagram is complex, and it takes some practice to learn to work with it. How
 \conclusion{No babies can manage a crocodile.}
 \end{kormanize}
 
-If we set the major term ``Persons who can manage a crocodile'' as $A$, the minor term ``babies'' as $D$, and the two middle terms as $B$ and $C$, we get this for the Venn diagram.
+%If we set the major term ``Persons who can manage a crocodile'' as $A$, the minor term ``babies'' as $D$, and the two middle terms as $B$ and $C$, we get this for the Venn diagram.
 
-\begin{description}
-\item[$A$:] Persons who can manage a crocodile
-\item[$B$:] Persons who are despised
-\item[$C$:] Illogical persons
-\item[$D$:] Babies
-\end{description}
+%\begin{description}
+%\item[$A$:] Persons who can manage a crocodile
+%\item[$B$:] Persons who are despised
+%\item[$C$:] Illogical persons
+%\item[$D$:] Babies
+%\end{description}

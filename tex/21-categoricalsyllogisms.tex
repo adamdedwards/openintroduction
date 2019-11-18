@@ -61,10 +61,16 @@ name=unconditional validity,
 description={A kind of validity that an Aristotelian syllogism has regardless of whether the objects named by its terms actually exist.}
 }
 
+\newglossaryentry{syllogism mood}
+{
+name=syllogism mood,
+description={The classification of an Aristotelian syllogism based on the moods of statements it contains. The mood is designated simply by listing the three letters for the moods of the statements in the argument, such as AAA, EAE, AII, etc.}
+}
+
 
 \section{Standard Form, Mood, and Figure}\label{sec:form_mood_figure}
 
-So far we have just been looking at very short arguments using categorical statements. The arguments just had one premise and a conclusion that was often logically equivalent to the premise. For most of the history of logic in the West, however, the focus has been on arguments that are a step more complicated called \textsc{\glspl{categorical syllogism}}. A categorical syllogism is a two-premise argument composed of categorical statements. Aristotle began the study of this kind of argument in his book the \textit{Prior Analytics}.\footnote{A digital copy of the \textit{Prior Analytics} is available at \url{http://classics.mit.edu/Aristotle/prior.html}} This work was refined over the centuries by many thinkers in the Pagan, Christian, Jewish, and Islamic traditions until it reached the form it is in today.
+So far we have just been looking at very short arguments using categorical statements. The arguments just had one premise and a conclusion that was often logically equivalent to the premise. For most of the history of logic in the West, however, the focus has been on arguments that are a step more complicated called \textsc{\glspl{categorical syllogism}}. A categorical syllogism is a two-premise argument composed of categorical statements. Aristotle began the study of this kind of argument in his book the \textit{Prior Analytics}.\footnote{A digital copy of the \textit{Prior Analytics} is available at \url{http://classics.mit.edu/Aristotle/prior.html}} This work was refined over the centuries by many thinkers in the Pagan, Christian, Jewish, and Islamic philosophical traditions until it reached the form it is in today.
 
 There are actually many kinds of two-premise arguments using categorical statements, but Aristotle only looked at arguments where each statement is in one of the moods A, E, I, or O. The arguments also had to have exactly three terms, arranged so that any two pairs of statements will share one term. Let's call a categorical syllogism that fits this more narrow description an \textsc{\gls{Aristotelian syllogism}}. Here is a typical Aristotelian syllogism using only mood-A sentences:
 
@@ -79,13 +85,12 @@ Notice how the statements in this argument overlap each other. Each statement sh
 We can also define the \textsc{\gls{major premise}} as the one premise in an Aristotelian syllogism that names the major term, and the \textsc{\gls{minor premise}} as the one premise that names the minor term. So in the argument above, Premise 1 is the major premise and Premise 2 is the minor premise.
 
 
-With these definitions in place, we can now define the \textsc{\gls{standard form}} in logically structured English. Recall that in section~\ref{sec:QQDVD}, we started standardizing our language into something we called ``logically structured English'' in order to remove ambiguity and to make its logical structure clear. The first step was to define the standard form for a categorical statement, which we did on page \pageref{def:standard form}. Now we do the same thing for an Aristotelian syllogism. We say that an Aristotelian syllogism is in standard form for logically structured English if and only if these criteria have been met: (1) all of the individual statements are in standard form, (2) each instance of a term is in the same format and is used in the same sense, (3) the major premise appears first, followed by the minor premise, and then the conclusion.
-
-\newglossaryentry{syllogism mood}
-{
-name=syllogism mood,
-description={The classification of an Aristotelian syllogism based on the moods of statements it contains. The mood is designated simply by listing the three letters for the moods of the statements in the argument, such as AAA, EAE, AII, etc.}
-}
+With these definitions in place, we can now define the \textsc{\gls{standard form}} in logically structured English. Recall that in section~\ref{sec:QQDVD}, we started standardizing our language into something we called ``logically structured English'' in order to remove ambiguity and to make its logical structure clear. The first step was to define the standard form for a categorical statement, which we did on page \pageref{def:standard_form_cat_statement}. Now we do the same thing for an Aristotelian syllogism. We say that an Aristotelian syllogism is in standard form for logically structured English if and only if these criteria have been met: 
+\begin{enumerate*}
+\item all of the individual statements are in standard form, 
+\item each instance of a term is in the same format and is used in the same sense, 
+\item the major premise appears first, followed by the minor premise, and then the conclusion.
+\end{enumerate*}
 
 Once we standardize things this way, we can actually catalog every possible form of an Aristotelian syllogism. To begin with, each of the three statements can take one of four forms: A, E, I, or O. This gives us $4 \times 4 \times 4,$ or 64 possibilities. These 64 possibilities are called the \textsc{\gls{syllogism mood}}, and we designate it just by writing the three letters of the moods of the statements that make it up. So the mood of the argument on page \pageref{AAA_arg} is simply AAA. All 64 moods are listed in table~\ref{tab:sixty_four_moods}, for reference.
 
@@ -132,11 +137,11 @@ In addition to varying the kind of statements we use in an Aristotelian syllogis
 
 \\
 
-\hspace{2em} Figure 1
+\hspace{1.5em} Figure 1
 
 &
 
-\hspace{2em} Figure 2
+\hspace{1.5em} Figure 2
 
 \\
 
@@ -156,11 +161,11 @@ In addition to varying the kind of statements we use in an Aristotelian syllogis
 
 \\
 
-\hspace{2em} Figure 3
+\hspace{1.5em} Figure 3
 
 &
 
-\hspace{2em} Figure 4
+\hspace{1.5em} Figure 4
 
 \end{tabu}
 
@@ -190,7 +195,7 @@ Given an Aristotelian syllogism in ordinary English, we can transform it into st
 \noindent No geckos are cats. I know this because all geckos are lizards, but cats aren't lizards.
 \end{quotation}
 
-The first step is to identify the conclusion, using the basic skills you acquired back in Chapter \ref{ch:what_is_logic}. In this case, you can see that ``because'' is a premise indicator word, so the statement before it, ``No geckos are cats,'' must be the conclusion.
+\noindent The first step is to identify the conclusion, using the basic skills you acquired back in Chapter \ref{ch:what_is_logic}. In this case, you can see that ``because'' is a premise indicator word, so the statement before it, ``No geckos are cats,'' must be the conclusion.
 
 Step two is to identify the major, middle, and minor terms. Remember that the major term is the predicate of the conclusion, and the minor term is the subject. So here the major term is ``cats,'' the minor term is ``geckos.'' The leftover term, ``lizards,'' must then be the middle term.
 
@@ -220,16 +225,16 @@ We have seen that there are 256 possible categorical arguments that fit Aristotl
 
 In the previous chapter, we drew Venn diagrams with two circles for arguments that had had two terms. The circles partially overlapped, giving us four areas, each of which represented a way an individual could relate to the two classes. So area 1 represented things that were $S$ but not $P$, etc.
 
-\begin{figure}
-\centering
+\begin{figure}[!ht]\centering
 \includegraphics[width=0.6\textwidth]{2venn0}
+\label{fig:2vennlabels}
 \end{figure}
 
 Now that we are considering arguments with three terms, we will need to draw three circles, and they need to overlap in a way that will let us represent the eight possible ways an individual can be inside or outside these three classes.
 
-\begin{figure}
-\centering
-    \includegraphics[width=0.6\textwidth]{3venn0}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.6\textwidth]{3venn0}
+\label{fig:3vennlabels}
 \end{figure}
 
 So in this diagram, area 1 represents the things that are $M$ but not $S$ or $P$, area 2 represents the things that are $M$ and $S$ but not $P$, etc. We'll mostly ignore region 8 as things that are neither $S$, nor $M$, nor $P$.
@@ -258,39 +263,37 @@ Similarly, there are four mood-E propositions that can occur in the premises of 
 \end{tabu}
 \end{figure}
 
-Particular propositions are a bit trickier. Consider the statement ``Some $M$ are $P$.'' With a two circle diagram, you would just put an x in the overlap between the $M$ circle and the $P$ circle. But with the three circle diagram, there are now two places we can put it. It can go in either area 3 or area 4, as shown in figure~\ref{fig:vennambig}.
+Particular propositions are a bit trickier. Consider the statement ``Some $M$ are $P$.'' With a two circle diagram, you would just put an X in the overlap between the $M$ circle and the $P$ circle. But with the three circle diagram, there are now two places we can put it. It can go in either area 3 or area 4, as shown in figure~\ref{fig:vennambig}.
 
-\begin{marginfigure}[-7cm]
-\centering
-\includegraphics[width=0.8\textwidth]{3venn7}
-\caption{It is ambiguous where the X should go on this Venn diagram.}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.5\textwidth]{3venn7}
+\caption{It is ambiguous where the X should go on this Venn diagram. Given that all we know is that some M are P, this doesn't tell us whether those things that are both M and P are \emph{also} S or not. Thus, we don't know whether there should be an X in the center (region 3) or in the top right (region 4) or both. }
 \label{fig:vennambig}
-\end{marginfigure}
+\end{figure}
 
-The solution here will be to put the x on the boundary between areas 3 and 4, to represent the fact that it \emph{could} go in either location. An example of this is shown in figure~\ref{fig:vennunambig}.
+The solution here will be to put the X on the boundary between areas 3 and 4, to represent the fact that it \emph{could} go in either location. An example of this is shown in figure~\ref{fig:vennunambig}.
 
-\begin{marginfigure}[-1cm]
-\centering
-\includegraphics[width=0.8\textwidth]{3venn8}
-\caption{We place the X on the border between these regions to indicate that it \emph{could} be in either.}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.5\textwidth]{3venn8}
+\caption{We place the X on the border between these regions to indicate that objects \emph{could} be in either region that shares this border.}
 \label{fig:vennunambig}
-\end{marginfigure}
+\end{figure}
 
 Sometimes, however, you won't have to draw the X on a border between two areas, because you will already know that one of those areas can't be occupied. Suppose, for instance, that you want to diagram ``Some $M$ are $P$,'' but you already know that all $M$ are $S$. You would diagram ``All $M$ are $S$'' as in figure~\ref{fig:vennunivex}
 
-\begin{marginfigure}
-\includegraphics[width=0.8\textwidth]{3venn4}
-\caption{The X is forced into region 3 because we know that nothing can be in region 4.}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.5\textwidth]{3venn4}
+\caption{The X will be forced into region 3 because we know that nothing can be in region 4.}
 \label{fig:vennunivex}
-\end{marginfigure}
+\end{figure}
 
 Then, when it comes time to add the x for ``Some $M$ are $P$,'' you know that it has to go in the exact center of the diagram. This is shown in figure~\ref{fig:vennforcedtocenter}
 
-\begin{marginfigure}
-\includegraphics[width=0.8\textwidth]{3venn9}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.5\textwidth]{3venn9}
 \caption{The X is forced into region 3 because we know that nothing can be in region 4.}
 \label{fig:vennforcedtocenter}
-\end{marginfigure}
+\end{figure}
 
 The Venn diagrams for the particular premises that can appear in Aristotelian syllogisms are given in figure~\ref{fig:part_venns}. The figure assumes that you are just representing the individual premises, and don't know any other premises that would shade some regions out. Again, some of these premises are equivalent by conversion, and thus share a Venn diagram.
 
@@ -311,9 +314,9 @@ The Venn diagrams for the particular premises that can appear in Aristotelian sy
 \label{fig:part_venns}
 \end{figure}
 
-\subsection{Venn Diagrams for Full Syllogisms}
+\section{Venn Diagrams for Full Syllogisms}
 
-In the last chapter, we used Venn diagrams to evaluate arguments with single premises. It turned out that when those arguments were valid, the conclusion was logically equivalent to the premise, so they had the exact same Venn diagram. This time we have two premises to diagram, and the conclusion won't be logically equivalent to either of them. Nevertheless we will find that for valid arguments, once we have diagrammed the two premises, we will also have diagrammed the conclusion.
+%In the last chapter, we used Venn diagrams to evaluate arguments with single premises. It turned out that when those arguments were valid, the conclusion was logically equivalent to the premise, so they had the exact same Venn diagram. This time we have two premises to diagram, and the conclusion won't be logically equivalent to either of them. Nevertheless we will find that for valid arguments, once we have diagrammed the two premises, we will also have diagrammed the conclusion.
 
 First we need to specify a rule about the order to diagram the premises in: if one of the premises is universal and the other is particular, diagram the universal one first. This will allow us to narrow down the area where we need to put the x from the particular premise, as in the example above where we diagrammed ``Some $M$ are $P$'' assuming that we already knew that all $M$ are $S$.
 
@@ -327,20 +330,20 @@ Let's start with a simple example, an argument with the form AAA-1.
 
 Since both premises are universal, it doesn't matter what order we do them in. Let's do the major premise first. The major premise has us shade out the parts of the $M$ circle that don't overlap the $P$ circle, as shown in figure~\ref{fig:allmarep}
 
-\begin{marginfigure}[-6cm]
-\includegraphics[width=0.8\textwidth]{3venn2}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.5\textwidth]{3venn2}
 \caption{``All $M$ are $P$.''}
 \label{fig:allmarep}
-\end{marginfigure}
+\end{figure}
 
 The second premise, on the other hand, tells us that there is nothing in the $S$ circle that isn't also in the $M$ circle. We put that together with the first diagram, and we get the Venn diagram in figure~\ref{fig:vennvalidexample}:
 
 
-\begin{marginfigure}[2cm]
-\includegraphics[width=0.8\textwidth]{3venn15}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.5\textwidth]{3venn15}
 \caption{``All $M$ are $P$.'' and ``All $S$ are $M$.''}
 \label{fig:vennvalidexample}
-\end{marginfigure}
+\end{figure}
 
 
 From this we can see that the conclusion must be true. All $S$ are $P$, because the only space left in $S$ is the area in the exact center, area 7.
@@ -355,19 +358,19 @@ Now let's look at an argument that is invalid. One of the interesting things abo
 
 Again, both premises are universal, so we can do them in any order, so we will do the major premise first. This time, the major premise tells us to shade out the part of $P$ that does not overlap $M$ as shown in figure~\ref{fig:allparem}
 
-\begin{marginfigure}
-\includegraphics[width=0.8\textwidth]{3venn1}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.5\textwidth]{3venn1}
 \caption{``All $P$ are $M$.''}
 \label{fig:allparem}
-\end{marginfigure}
+\end{figure}
 
 The second premise adds the idea that all $S$ are $M$, which we diagram as shown in figure~\ref{fig:venninvalidexample}.
 
-\begin{marginfigure}
-\includegraphics[width=0.8\textwidth]{3venn16}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.5\textwidth]{3venn16}
 \caption{``All $P$ are $M$.'' and ``All $S$ are $M$.''}
 \label{fig:venninvalidexample}
-\end{marginfigure}
+\end{figure}
 
 Now we ask if the diagram of the two premises also shows that the conclusion is true. Here the conclusion is that all $S$ are $P$. If this diagram had made this true, we would have shaded out all the parts of $S$ that do not overlap $P$. But we haven't done that. It is still possible for something to be in area 2. Therefore, this argument is invalid.
 
@@ -383,20 +386,20 @@ Now let's try an argument with a particular statement in the premises. Consider 
 
 Here, the second premise is universal, while the first is particular, so we begin by diagramming the universal premise as shown in figure~\ref{fig:vennallsarem}
 
-\begin{marginfigure}
-\includegraphics[width=0.8\textwidth]{3venn3}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.5\textwidth]{3venn3}
 \caption{``All $S$ are $M$.''}
 \label{fig:vennallsarem}
-\end{marginfigure}
+\end{figure}
 
 Then we diagram the particular premise ``Some $M$ are $P$.'' This tells us that something is in the overlap between $M$ and $P$, but it doesn't tell us whether that thing is in the exact center of the diagram or in the area for things that are $M$ and $P$ but not $S$. Therefore, we place the X on the border between these two areas as shown in figure~\ref{fig:venninvalidpart}
 
-\begin{marginfigure}
+\begin{figure}[!ht]\centering
 %\begin{syllogism}\IMP\ASM\end{syllogism}
-\includegraphics[width=0.8\textwidth]{3venn17}
+\includegraphics[width=0.5\textwidth]{3venn17}
 \caption{``Some $M$ are $P$.'' and ``All $S$ are $M$.''}
 \label{fig:venninvalidpart}
-\end{marginfigure}
+\end{figure}
 
 Now we can see that the argument is not valid. The conclusion asserts that something is in the overlap between $S$ and $P$. But the X we drew does not necessarily represent an object that exists in that overlap. There is something out there that could be in area 3, but it could just as easily be in area 4. The second premise doesn't help us, because it just rules out the existence of objects in areas 5 and 6.
 
@@ -410,19 +413,19 @@ For a final example, let's look at a case of a valid argument with a particular 
 
 Again, we begin with the universal premise. This time it tells us to shade out part of the $M$ circle as shown in figure~\ref{fig:vennallmares}
 
-\begin{marginfigure}
-\includegraphics[width=0.8\textwidth]{3venn4}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.5\textwidth]{3venn4}
 \caption{``All $M$ are $S$.''}
 \label{fig:vennallmares}
-\end{marginfigure}
+\end{figure}
 
 But now we fill in the parts of $M$ that don't overlap with $S$, we have to put the X in the exact center of the diagram.
 
-\begin{marginfigure}
-\includegraphics[width=0.8\textwidth]{3venn9}
-\caption{``Some $M$ are $P$.'' and ``All $M$ are $S$.''}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.5\textwidth]{3venn9}
+\caption{``All $M$ are $S$.'' and ``Some $M$ are $P$.''}
 \label{fig:vennvalidpart}
-\end{marginfigure}
+\end{figure}
 
 And now this time we see that ``Some $S$ are $P$'' has to be true based on the premises, because the X has to be in area 3. So this argument is valid.
 
@@ -474,10 +477,10 @@ The columns in Table \ref{tab:unconditionally_valid} represent the four figures.
 \sortitem {Translation key}{}
 \sortitem {Unconditional validity}{}
 \sortitem {Critical term}{}
-\sortitem {Fallacy of exclusive premises}{}
-\sortitem {Fallacy of illicit process}{}
-\sortitem {Fallacy of particular premises}{}
-\sortitem {Fallacy of the undistributed middle}{}
-\sortitem {Negative-affirmative fallacy}{}
+%\sortitem {Fallacy of exclusive premises}{}
+%\sortitem {Fallacy of illicit process}{}
+%\sortitem {Fallacy of particular premises}{}
+%\sortitem {Fallacy of the undistributed middle}{}
+%\sortitem {Negative-affirmative fallacy}{}
 
 \end{sortedlist}

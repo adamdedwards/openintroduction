@@ -80,9 +80,13 @@
 
 \usetikzlibrary{shapes,backgrounds,matrix,arrows,decorations,positioning,calc,automata,positioning,graphs}
 
-\setcounter{secnumdepth}{0}
-%\titleformat{\chapter}[display]
-%  {\itshape\Huge}{Chapter \thechapter:~}{}{}
+\setcounter{secnumdepth}{1}
+\titleformat{\chapter}%
+  {\huge\slshape}% format applied to label+text
+  {{\upshape\thechapter}}% label
+  {1em}% horizontal separation between label and title body
+  {}% before the title body
+  []% after the title body
 
 \RequirePackage{answers,textcomp,float,anyfontsize}
 \RequirePackage{url,syntonly,turnstile}

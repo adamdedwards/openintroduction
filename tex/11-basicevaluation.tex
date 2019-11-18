@@ -52,7 +52,7 @@ description={An argument is valid just in case its premises entail its conclusio
 
 In logic, we are mostly concerned with evaluating the quality of inferences, not the truth of the premises. The truth of various premises will be a matter of whatever specific topic we are arguing about and since logic is content neutral we will also remain neutral.
 
-The strongest possible evidential support would be for the premises to somehow force the conclusion to be true. This kind of inference is called \textsc{\gls{valid}}. Lets make this notion a bit more precise:
+The strongest possible evidential support would be for the premises to somehow force the conclusion to be true. This kind of inference is called \textsc{\gls{valid}} \label{def:valid}. Lets make this notion a bit more precise:
 
 \begin{definition}[Valid]\label{def:valid_impossible}
   An argument is valid if and only if it is logically impossible for the premises to be true and the conclusion false.
@@ -77,7 +77,7 @@ The important thing to see is that the definition is about what \textit{would} h
 
 The American pop star Lady Gaga is not from Mars. (She's from New York City.) Nevertheless, if you grant that she is from Mars, you \emph{also} have to grant that she is from the fourth planet from our sun, because Mars simply is the fourth planet form our sun. Therefore this argument is valid.
 
-This way of understanding validity is based on what you can imagine, but not everyone is convinced that the imagination is a reliable tool in logic. That is why definitions like \ref{def:valid} talk about what is necessary or impossible. If the premises are true, the conclusion necessarily must be true. Alternately, it is impossible for the premises to be true and the conclusion false. The idea here is that instead of talking about the imagination, we will just talk about what can or cannot happen at the same time. The fundamental notion of validity remains the same, however: the truth of the premises would simply guarantee the truth of conclusion.
+This way of understanding validity is based on what you can imagine, but not everyone is convinced that the imagination is a reliable tool in logic. That is why definitions like \ref{def:valid_impossible} and \ref{def:valid_necessary} talk about what is impossible or what is necessary. If the premises are true, the conclusion necessarily must be true. Alternately, it is impossible for the premises to be true and the conclusion false. The idea here is that instead of talking about the imagination, we will just talk about what can or cannot happen at the same time. The fundamental notion of validity remains the same, however: the truth of the premises would simply guarantee the truth of conclusion.
 
 So, assessing validity means wondering about whether the conclusion would be true \textit{if} the premises were true. This means that valid arguments can have false conclusions. This is important to keep in mind because people naturally tend to think that any argument must be good if they agree with the conclusion. And the more passionately people believe in the conclusion, the more likely we are to think that any argument for it must be brilliant. Conversely, if the conclusion is something we don't believe in, we naturally tend to think the argument is poor. And the more we don't like the conclusion, the less likely we are to like the argument.
 
@@ -134,12 +134,11 @@ name=invalid,
 description={A property of arguments that holds when the premises do not force the truth of the conclusion. The opposite of valid.}
 }
 
-\begin{definition}[Valid]
-  An argument is valid if and only if it is impossible for the premises to be true and the conclusion false.
+\begin{definition}[Invalid]
+  An argument is invalid if and only if it is not valid.
 \end{definition}
 
-
-The premises and conclusion of this argument are, as a matter of fact, all true. This is a terrible argument, however, because the premises have nothing to do with the conclusion. Imagine what would happen if Paris declared independence from the rest of France. Then the conclusion would be false, even though the premises would both still be true. Thus, it is \emph{logically possible} for the premises of this argument to be true and the conclusion false. The argument is not valid.  If an argument is not valid, it is called \textsc{\gls{invalid}}. \label{def:invalid} As we shall see, this term is a little misleading, because less than perfect arguments can be very useful. But before we do that, we need to look more at the concept of validity.
+The premises and conclusion of this argument are, as a matter of fact, all true. This is a terrible argument, however, because the premises have nothing to do with the conclusion. Imagine what would happen if Paris declared independence from the rest of France. Then the conclusion would be false, even though the premises would both still be true. Thus, it is \emph{logically possible} for the premises of this argument to be true and the conclusion false. The argument is not valid. If an argument is not valid, it is called \textsc{\gls{invalid}}. \label{def:invalid} As we shall see, this term is a little misleading, because less than perfect arguments can be very useful. But before we do that, we need to look more at the concept of validity.
 
 In general, then, the \textit{actual} truth or falsity of the premises, if known, do not tell you whether or not an inference is valid. There is one exception: when the premises are true and the conclusion is false, the inference cannot be valid, because valid reasoning can only yield a true conclusion when beginning from true premises.
 
@@ -162,12 +161,12 @@ Some invalid arguments are hard to detect because they resemble valid arguments.
 \begin{kormanize}
 \premise{ An economic stimulus package will allow the U.S. to avoid a depression.}
 \premise{ There is no economic stimulus package}
-\conclusion{[.3] The U.S. will go into a depression.}
+\conclusion{The U.S. will go into a depression.}
 \end{kormanize}
 \caption{An \textbf{invalid} argument} \label{fig:invalid_stimulus}
 \end{figure}
 
-This reasoning is not valid since the premises do not \textit{definitively} support the conclusion. To see this, assume that the premises are true and then ask, ``Is it possible that the conclusion could be false in such a situation?". There is no inconsistency in taking the premises to be true without taking the conclusion to be true. The first premise says that the stimulus package will allow the U.S. to avoid a depression, but it does not say that a stimulus package is the \textit{only }way to avoid a depression. Thus, the mere fact that there is no stimulus package does not necessarily mean that a depression will occur.
+This reasoning is not valid since the premises do not \textit{definitively} support the conclusion. To see this, assume that the premises are true and then ask, ``Is it possible that the conclusion could be false in such a situation?". There is no inconsistency in taking the premises to be true without taking the conclusion to be true. The first premise says that the stimulus package will allow the U.S. to avoid a depression, but it does not say that a stimulus package is the \emph{only} way to avoid a depression. Thus, the mere fact that there is no stimulus package does not necessarily mean that a depression will occur.
 
 \newglossaryentry{fallacy}
 {
@@ -178,27 +177,39 @@ description={A common mistake in reasoning. Fallacies are generally conceived of
 
 When an argument resembles a good argument but is actually a bad one, we say it is a .\textsc{\gls{fallacy}}\label{def:fallacy}. Fallacies are similar to cognitive biases, in that they are ways our reasoning can go wrong.  Fallacies, however, are always mistakes you can explicitly lay out as arguments in canonical form, as above.
 
-Here is another, trickier, example. I will give it first in ordinary language.
+Here is another, trickier, example. Let's first consider it in ordinary language.
 
-\begin{quote} \noindent\textit{A pundit is speaking on a cable news show} If the U.S. economy were in recession and inflation were running at more than 4\%, then the value of the U.S. dollar would be falling against other major currencies. But this is not happening --- the dollar continues to be strong. So, the U.S. is not in recession. \end{quote}
+\begin{quote}
+\noindent\textit{A pundit is speaking on a cable news show} If the U.S. economy were in recession and inflation were running at more than 4\%, then the value of the U.S. dollar would be falling against other major currencies. But this is not happening --- the dollar continues to be strong. So, the U.S. is not in recession.
+\end{quote}
 
 The conclusion is ``The U.S. economy is not in recession.'' If we put the argument in canonical form, it looks like figure \ref{fig:invalid_recession}
 
+\begin{figure}[!ht]
 \begin{kormanize}
 \premise{ If the U.S. were in a recession with more than 4\% inflation, then the dollar would be falling.}
 \premise{ The dollar is not falling.}
 \conclusion{The U.S. is not in a recession.}
 \end{kormanize}
+\caption{An \textbf{invalid} argument} \label{fig:invalid_recession}
+\end{figure}
 
-The conclusion does not follow necessarily from the premises. It does follow necessarily from the premises that (i) the U.S. economy is not in recession or (ii) inflation is running at more than 4\%, but they do not guarantee (i) in particular, which is the conclusion. For all the premises say, it is possible that the U.S. economy is in recession but inflation is less than 4\%. So, the inference does not \textit{necessarily} establish that the U.S. is not in recession. A parallel inference would be ``Jack needs eggs and milk to make an omelet. He can't make an omelet. So, he doesn't have eggs.".
+The conclusion does not follow necessarily from the premises. It does follow necessarily from the premises that (i) the U.S. economy is not in recession or (ii) inflation is running at more than 4\%, but they do not guarantee (i) in particular, which is the conclusion. For all the premises say, it is possible that the U.S. economy is in recession but inflation is less than 4\%. So, the inference does not \textit{necessarily} establish that the U.S. is not in recession. An inference with the same form would be ``Jack needs eggs and milk to make an omelet. He can't make an omelet. So, he doesn't have eggs.".
 
 \newglossaryentry{sound}
 {
 name=sound,
-description={A property of arguments that holds if the argument is valid and has all true premises.}
+description={An argument is sound if and only if the argument is valid and has all true premises.}
 }
 
-If an argument is not only valid, but also has true premises, we call it \textsc{\gls{sound}}. \label{def:sound} ``Sound'' is the highest compliment you can pay an argument. If logic is the study of virtue in argument, sound arguments are the most virtuous. We said in Section \ref{sec:two_ways} that there were two ways an argument could go wrong, either by having false premises or weak inferences. Sound arguments have true premises and undeniable inferences. If someone gives a sound argument in a conversation, you have to believe the conclusion, or else you are irrational.
+If an argument is not only valid, but also has true premises, we call it \textsc{\gls{sound}}.
+
+
+\begin{definition}[Sound]\label{def:sound}
+  An argument is sound if and only if the argument is valid \emph{and} has all true premises.
+\end{definition}
+
+``Sound'' is the highest compliment you can pay an argument. If logic is the study of virtue in argument, sound arguments are the most virtuous. We said in section \ref{sec:two_ways} that there were two ways an argument could go wrong, either by having false premises or weak evidential support. Sound arguments have true premises and maximum evidential support. If someone gives a sound argument in a conversation you have to believe the conclusion or else you are behaving irrationally.
 
 \begin{table}[!ht]
 \begin{longtabu}{X[1,c] X[1,c]}
@@ -223,21 +234,23 @@ The argument on the left in Figure \ref{fig:valid_sound} is valid, but not sound
 
 Both arguments have the exact same form. They say that a thing belongs to a general category and everything in that category has a certain property, so the thing has that property. Because the form is the same, it is the same valid inference each time. The difference in the arguments is not the validity of the inference, but the truth of the second premise. People are not carrots, therefore the argument on the left is not sound. People are mortal, so the argument on the right is sound.
 
-Often it is easy to tell the difference between validity and soundness if you are using completely silly examples. Things become more complicated with false premises that you might be tempted to believe, as in the argument in Figure \ref{fig:valid_unsound}.
+Often it is easy to tell the difference between validity and soundness if you are using completely silly examples. Things become more complicated with false premises that you might be tempted to believe, as in the argument in figure \ref{fig:valid_unsound}.
 
+\begin{figure}[!ht]
 \begin{kormanize}
 \premise{ Every Irishman drinks Guinness.}
 \premise{ Smith is an Irishman.}
 \conclusion{ Smith drinks Guinness.}
-\label{fig:valid_unsound}
 \end{kormanize}
+\caption{A valid, but unsound, argument.}
+\label{fig:valid_unsound}
+\end{figure}
 
-
-You might have a general sense that the argument in Figure \ref{fig:valid_unsound} is bad---you shouldn't assume that someone drinks Guinness just because they are Irish. But the argument is completely valid (at least when it is expressed this way.) The inference here is the same as it was in the previous two arguments. The problem is the first premise. Not all Irishmen drink Guinness, but if they did, and Smith was an Irishman, he would drink Guinness.
+You might have a general sense that the argument in figure \ref{fig:valid_unsound} is bad---you shouldn't assume that someone drinks Guinness just because they are Irish. But the argument is completely valid. The inference here is the same as it was in the previous two arguments. The problem is the first premise. Not all Irishmen drink Guinness, but if they did, and Smith was an Irishman, he would drink Guinness.
 
 The important thing to remember is that validity is not about the actual truth or falsity of the statements in the argument. Instead, it is about the way the premises and conclusion are put together. It is really about the \emph{form} of the argument. A valid argument has perfect logical form. The premises and conclusion have been put together so that the truth of the premises is incompatible with the falsity of the conclusion.
 
-A general trick for determining whether an argument is valid is to try to come up with just one way in which the premises could be true but the conclusion false. If you can think of one (just one! anything at all! but no violating the laws of physics!), the reasoning is \textit{invalid.}
+A general trick for determining whether an argument is valid is to try to come up with just one way in which the premises could be true but the conclusion false. If you can think of one, the reasoning is \textit{invalid.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Strong, Cogent, Deductive, Inductive}\label{sec:strongcogent}
@@ -306,11 +319,14 @@ Here is an example in which the context is an artificial code --- the tax code:
 
 This rule describes the conditions under which a person can or cannot take a certain tax credit. Such a rule can be used to reach a valid conclusion that the tax credit can or cannot be taken.
 
-As another example of an inference in an artificial situation with limited and clearly defined options, consider a Sudoku puzzle. The rules of Sudoku are that each cell contains a single number from 1 to 9, and each row, each column and each 9-cell square contain one occurrence of each number from 1 to 9. Consider the following partially completed board:
+As another example of an inference in an artificial situation with limited and clearly defined options, consider a Sudoku puzzle. The rules of Sudoku are that each cell contains a single number from 1 to 9, and each row, each column and each 9-cell square contain one occurrence of each number from 1 to 9. Consider the partially completed board in figure~\ref{fig:sudoku}.
 
-\begin{center}
+\begin{figure}[!ht]
+\centering
 \noindent \includegraphics*[width=2.45in, height=2.45in, keepaspectratio=false]{img/sudoku}
-\end{center}
+\caption{A sudoku board.}
+\label{fig:sudoku}
+\end{figure}
 
 The following inference shows that, in the first column, a 9 must be entered below the 7:
 
@@ -327,37 +343,38 @@ One can also create a context where deduction is possible by imagining a rule th
 \textbf{Smith:} & I'm going to Adriatico's. They always make a great pizza. \\
 \end{longtabu}
 
-Here, Smith justifies his belief that the pizza will be excellent --- it comes from Adriatico's, where the pizza, he claims, is \textit{always }great: in the past, present and future.
+Here, Smith justifies his belief that the pizza will be excellent --- it comes from Adriatico's, where the pizza, he claims, is \textit{always} great: in the past, present and future.
 
 As stated by Smith, the inference that the pizza will be great this evening is valid. However, making the inference valid in this way often means making the general premise false: it's not likely that the pizza is great \textit{every single} time; Smith is overstating the case for emphasis. Note that Smith does not need to use a universal proposition in order to convince Jones that the pizza will \textit{very likely} be good. The inference to the conclusion would be strong (though not valid) if he had said that the pizza is ``almost always'' great, or that the pizza has been great on all of the many occasions he has been at that restaurant in the past. The strength of the inference would fall to some extent---it would not be guaranteed to be great this evening---but a slightly weaker inference seems appropriate, given that sometimes things go contrary to expectation.
 
 Sometimes the laws of nature make constructing contexts for valid arguments more reasonable. Now consider the following passage, which involves a scientific law:
 
-\begin{quotation}Jack is about to let go of Jim's leash. The operation of gravity makes all unsupported objects near the Earth's surface fall toward the center of the Earth. Nothing stands in the way. Therefore, Jim's leash will fall. \end{quotation}
+\begin{quote}
+\noindent Jack is about to let go of Rose's leash. The operation of gravity makes all unsupported objects near the Earth's surface fall toward the center of the Earth. Nothing stands in the way. Therefore, Rose's leash will fall. \end{quote}
 
-(Or, as Spock said in a Star Trek episode, ``If I let go of a hammer on a planet that has a positive gravity, I need not see it fall to know that it has in fact fallen.") The inference above is represented in canonical form as follows:
+(Or, as Spock said in a Star Trek episode, ``If I let go of a hammer on a planet that has a positive gravity, I need not see it fall to know that it has in fact fallen.'') The inference above is represented in canonical form as follows:
 
-\begin{kormanize}
-    \premise{Jack is about to let go of Jim's leash.}
-    \premise{The operation of gravity makes all unsupported objects near the Earth's surface fall toward the center of the Earth.}
-    \premise{Nothing stands in the way of the leash falling.}
-    \conclusion{Jim's leash will fall toward the center of the Earth.}
+\begin{kormanize}[P]
+    \premise{In the near future, Jack lets go of Rose's leash.}
+    \premise{All objects let go near the Earth's surface will fall toward the center of the Earth unless something stands in the way.}
+    \premise{Nothing stands in the way of Rose's leash falling.}
+    \conclusion{In the near future, Rose's leash will fall toward the center of the Earth.}
 \end{kormanize}
 
-As stated, this argument is valid. That is, if you pretend that they are true or accept them ``for the sake of argument", you would \textit{necessarily} also accept the conclusion. Or, to put it another way, there is no way in which you could hold the premises to be true and the conclusion false.
+As stated, this argument is valid. That is, if you pretend that the premises are true or accept them ``for the sake of argument'', you should also accept the conclusion. Or, to put it another way, there is no way in which you could hold the premises to be true and the conclusion false.
 
-Although this argument is valid, it involves idealizing assumptions similar to the ones we saw in the pizza example. P$_2$ states a physical law which is about as well confirmed as any statement about the world around us you care to name. However, physical laws make assumptions about the situations they apply to---they typically neglect things like wind resistance. In this case, the idealizing assumption is just that nothing stands in the way of the leash falling. This can be checked just by looking, but this check can go wrong. Perhaps there is an invisible pillar underneath Jack's hand? Perhaps a huge gust of wind will come? These events are much less likely than Adriatico's making a lousy pizza, but they are still possible.
+Although this argument is valid, it involves idealizing assumptions similar to the ones we saw in the pizza example. P2 states a physical law which is about as well confirmed as any statement about the world around us you care to name. However, physical laws make assumptions about the situations they apply to---they typically neglect things like wind resistance. In this case, the idealizing assumption is just that nothing stands in the way of the leash falling. This can be checked just by looking, but this check can go wrong. Perhaps there is an invisible pillar underneath Jack's hand? Perhaps a huge gust of wind will come? These events are much less likely than Adriatico's making a lousy pizza, but they are still possible.
 
 Thus we see that using scientific laws to create a context where deductive validity is possible is a much safer bet than simply asserting whatever exceptionless rule pops into your head. However, it still involves improving the quality of the inference by introducing premises that are less likely to be true.
 
-So deduction is possible in artificial contexts like logical puzzles and legal codes. It is also possible in cases where we make idealizing assumptions or imagine exceptionless rules. The rest of the time we are dealing with induction. When we do induction, we try for strong inferences, where the premises, assuming they are true, would make the truth of the conclusion very likely, though not necessary. Consider the two arguments in Figure \ref{fig:strong_weak}
+So deduction is possible in artificial contexts like logical puzzles and legal codes. It is also possible in cases where we make idealizing assumptions or imagine exceptionless rules. The rest of the time we are dealing with induction. When we do induction, we try for strong inferences, where the premises, assuming they are true, would make the truth of the conclusion very likely, though less than logically necessary. Consider the two arguments in Figure \ref{fig:strong_weak}
 
-\begin{figure}
+\begin{figure*}
 \begin{longtabu} to \textwidth {X[1,l] X[1,l]}
 \begin{kormanize}
 \premise{92\% of Republicans from Texas voted for Bush in 2000.}
 \premise{Jack is a Republican from Texas.}
-\conclusion{Jack voted for Bush.}
+\conclusion{Jack voted for Bush in 2000.}
 \end{kormanize}
 &
 \begin{kormanize}
@@ -370,17 +387,17 @@ A \textbf{strong} argument & A \textbf{weak} argument \\
 \end{longtabu}
 \caption{Neither argument is valid, but one is strong and one is weak}
 \label{fig:strong_weak}
-\end{figure}
+\end{figure*}
 
-Note that the premises in neither inference \textit{guarantee} the truth of the conclusion. For all the premises in the first one say, Jack could be one of the 8\% of Republicans from Texas who did not vote for Bush; perhaps, for example, Jack soured on Bush, but not on Republicans in general, when Bush served as governor. Likewise for the second; the driver could be one of the 49\%.
+Note that the premises in neither inference \emph{guarantee} the truth of the conclusion. For all the premises in the first one say, Jack could be one of the 8\% of Republicans from Texas who did not vote for Bush; perhaps, for example, Jack soured on Bush, but not on Republicans in general, when Bush served as governor. Likewise for the second; the driver could be one of the 49\%.
 
 So, neither inference is valid. But there is a big difference between how much support the premises, if true, would give to the conclusion in the first and how much they would in the second. The premises in the first, assuming they are true, would provide very strong reasons to accept the conclusion. This, however, is not the case with the second: if the premises in it were true then they would give only weak reasons for believing the conclusion. thus, the first is strong while the second is weak.
 
-As we said earlier, there there are only two options with respect to validity---valid or not valid. On the other hand, strength comes in degrees, and sometimes arguments will have percentages that will enable you to exactly quantify their strength, as in the two examples in Figure \ref{fig:strong_weak}.
+As we said earlier, there there are only two options with respect to validity---valid or not valid. On the other hand, strength comes in degrees, and sometimes arguments will have probabilities or percentages that will enable you to assign specific quantities their strength, as in the two examples in Figure \ref{fig:strong_weak}. Other times degree of strength will be more vague.
 
 However, even where the degree of support is made explicit by a percentage there is no firm way to say at what degree of support an inference can be classified as strong and below which it is weak. In other words, it is difficult to say whether or not a conclusion is \emph{very likely} to be true. For example, In the inference about whether Jack, a Texas Republican, voted for Bush. If 92\% of Texas Republicans voted for Bush, the conclusion, if the premises are granted, would very probably be true. But what if the number were 85\%? Or 75\%? Or 65\%? Would the conclusion very likely be true? Similarly, the second inference involves a percentage greater than 50\%, but this does not seem sufficient. At what point, however, would it be sufficient?
 
-In order to answer this question, go back to basics and ask yourself: ``If I accept the truth of the premises, would I then have sufficient reason to believe the conclusion?". If you would not feel safe in adopting the conclusion as a belief as a result of the inference, then you think it is weak, that is, you do not think the premises give sufficient support to the conclusion.
+In order to answer this question, go back to basics and ask yourself: ``If I accept the truth of the premises, would I then have sufficient reason to believe the conclusion?'' If you would not feel safe in adopting the conclusion as a belief as a result of the inference, then you think it is weak, that is, you do not think the premises give sufficient support to the conclusion.
 
 Note that the same inference might be weak in one context but strong in another, because the degree of support needed changes. For example, if you merely have a deposit to make, you might accept that the bank is open on Saturday based on your memory of having gone to the bank on Saturday at some time in the past. If, on the other hand, you have a vital mortgage payment to make, you might not consider your memory sufficient justification. Instead, you will want to call up the bank and increase your level of confidence in the belief that it will be open on Saturday.\footnote{This kind of context-sensitivity is called \emph{contextualism} in epistemology. For more information, see e.g. Jason Stanley's book \textit{Knowledge and Practical Interests}.}
 

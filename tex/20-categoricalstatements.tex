@@ -1,162 +1,6 @@
 \chapter{Categorical Statements}
 \label{ch:catstatements}
-\markright{Chap. \ref{ch:catstatements}: Categorical Statements}
-
-\newglossaryentry{quantified categorical statement}
-{
-  name=quantified categorical statement,
-  description={A statement that makes a claim about a certain quantity of the members of a class or group.}
-}
-
-\newglossaryentry{quantifier}
-{
-  name=quantifier,
-  description={The part of a categorical sentence that specifies a portion of a class.}
-}
-
-\newglossaryentry{subject class}
-{
-  name=subject class,
-  description={The first class named in a quantified categorical statement.}
-}
-
-\newglossaryentry{predicate class}
-{
-  name=predicate class,
-  description={The second class named in a quantified categorical statement.}
-  }
-
-\newglossaryentry{copula}
-{
-  name=copula,
-  description={The form of the verb ``to be'' that links subject and predicate.}
-}
-
-\newglossaryentry{quantity}
-{
-name=quantity,
-description={The portion of the subject class described by a categorical statement. Generally ``some'' or ``none.''}
-}
-
-\newglossaryentry{universal}
-{
-name=universal,
-description={The quantity of a statement that uses the quantifier ``all.''}
-}
-
-\newglossaryentry{particular}
-{
-name=particular,
-description={The quantity of a statement that uses the quantifier ``some.''}
-}
-
-\newglossaryentry{quality}
-{
-name=quality,
-description={The status of a categorical statement as affirmative or negative.}
-}
-
-\newglossaryentry{negative}
-{
-name=negative,
-description={The quality of a statement containing a ``not'' or ``no.''}
-}
-
-\newglossaryentry{affirmative}
-{
-name=affirmative,
-description={The quality of a statement without a ``not'' or a ``no.''}
-}
-
-\newglossaryentry{statement mood}
-{
-name=statement mood,
-description={The classification of a categorical statement based on its quantity and quality.}
-}
-
-\newglossaryentry{mood-A statement}
-{
-name=mood-A statement,
-description={A quantified categorical statement of the form ``All $S$ are $P$.''}
-}
-
-\newglossaryentry{mood-E statement}
-{
-name=mood-E statement,
-description={A quantified categorical statement of the form ``No $S$ are $P$.''}
-}
-
-\newglossaryentry{mood-I statement}
-{
-name=mood-I statement,
-description={A quantified categorical statement of the form ``Some $S$ are $P$.''}
-}
-
-\newglossaryentry{mood-O statement}
-{
-name=mood-O statement,
-description={A quantified categorical statement of the form ``Some $S$ are not $P$.''}
-}
-
-\newglossaryentry{distribution}
-{
-name=distribution,
-description={A property of the terms of a categorical statement that is present when the statement makes a claim about the whole term.}
-}
-
-\newglossaryentry{Venn diagram}
-{
-name=Venn diagram,
-description={A diagram that represents categorical statements using circles that stand for classes.}
-}
-
-\newglossaryentry{translation key}
-{
-name=translation key,
-description={A list that assigns English phrases or sentences to variable names. Also called a ``symbolization key''  or simply a ``dictionary.''}
-}
-
-\newglossaryentry{logically structured English}
-{
-name=logically structured English,
-description={English that has been regimented into a standard form to make its logical structure clear and to remove ambiguity. A stepping stone to full-fledged formal languages.}
-}
-
-\newglossaryentry{standard form for a categorical statement}
-{
-name=standard form for a categorical statement,
-description={A categorical statement that has been put into logically structured English, with the following elements in the following order: (1) The quantifiers ``all,'' ``some,'' or ``no''; (2) the subject term; (3) the copula ``are'' or ``are not''; and (4) the predicate term.}
-}
-
-\newglossaryentry{truth value}
-{
-  name=truth value,
-  description={The status of a statement with relationship to truth. For  this textbook, this means the status of a statement as true or false}
-}
-
-\newglossaryentry{conversion}
-{
-name=conversion,
-description={The process of changing a sentence by reversing the subject and predicate.}
-}
-
-\newglossaryentry{complement}
-{
-name=complement,
-description={The class of everything that is not in a given class.}
-}
-
-\newglossaryentry{obversion}
-{
-name=obversion,
-description={The process of transforming a categorical statement by changing its quality and replacing the predicate with its complement.}
-}
-
-\newglossaryentry{contraposition}
-{
-name=contraposition,
-description={The process of transforming a categorical statement by reversing subject and predicate and replacing them with their complements.}
-}
+\input{tex/glossaries/20-categoricalstatements-gloss.tex}
 
 \section{Quantified Categorical Statements}
 \label{sec:qcatstatements}
@@ -283,32 +127,32 @@ Venn pointed out that the circles in the top left of figure \ref{fig:euler_circl
 
 Venn suggested that to represent just the content of a single proposition, we should always begin by drawing partially overlapping circles. This means that we always have spaces available to represent the four possible ways the terms can combine. Thus, for a single sentence we should always draw the diagram as in figure~\ref{fig:basicvenn}.
 
-\begin{marginfigure}
-\includegraphics{2venn1}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.5\textwidth]{2venn1}
 \caption{A basic Venn diagram.}
 \label{fig:basicvenn}
-\end{marginfigure}
+\end{figure}
 
 To return to our initial question, suppose we want to represent the sentence ``All $S$ is $P$.'' using Venn diagrams. To do so we will shade the region of $S$ that does not overlap with $P$. This tells us that the left-hand side of S is empty and so everything that has property $S$ must also have property $P$. (See figure~\ref{fig:mooda}.)
 
-\begin{marginfigure}
-\includegraphics{2venn2}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.5\textwidth]{2venn2}
 \caption{A Venn diagram for a mood-A sentence.}
 \label{fig:mooda}
-\end{marginfigure}
+\end{figure}
 
 If we want to say that something does exist in a region, we put an ``x'' in it. The diagram for ``Some $S$ are $P$'' is in figure~\ref{fig:moodi}.
 
-\begin{marginfigure}
-\includegraphics{2venn5}
+\begin{figure}[!ht]\centering
+\includegraphics[width=0.5\textwidth]{2venn5}
 \caption{A Venn diagram for a mood-I sentence.}
 \label{fig:moodi}
-\end{marginfigure}
+\end{figure}
 
 
 If a region of a Venn diagram is blank, if it is neither shaded nor has an x in it, it could go either way. Maybe such things exist, maybe they do not.
 
-The Venn diagrams for all four basic forms of categorical statements are in figure \ref{fourvenns}. Notice that when we draw diagrams for the two universal forms, A and E, we do not draw any x's. For these forms we are only ruling out possibilities, not asserting that things actually exist. This is part of what Venn learned from Boole, and we will see its importance in chapter \ref{ch:existentialimport}.
+The Venn diagrams for all four basic forms of categorical statements are in figure \ref{fig:fourvenns}. Notice that when we draw diagrams for the two universal forms, A and E, we do not draw any Xs. For these forms we are only ruling out possibilities, not asserting that things actually exist. This is part of what Venn learned from Boole, and we will see its importance in chapter \ref{ch:existentialimport}.
 
 \begin{figure}[!ht]
 \begin{minipage}[t]{0.4\textwidth}\centering
@@ -338,14 +182,28 @@ The Venn diagrams for all four basic forms of categorical statements are in figu
 \end{figure}
 
 
-Finally, notice that so far, we have only been talking about categorical statements involving the variables $S$ and $P$. Sometimes, though, we will want to represent statements in regular English. To do this, we will include a key saying what the variables $S$ and $P$ represent in this case. We will call a list that assigns English phrases or sentences to variable names a \textsc{\gls{translation key}}.\label{def:translation_key} These are sometimes also called ``symbolization keys'' or simply just ``dictionaries.'' As our logical systems get more complicated, the symbolization keys will get more complicated. For now, though, they just consist of a note saying what the $S$ and $P$ stand for. For instance, this is the diagram for ``No dogs are reptiles.''
+Finally, notice that so far, we have only been talking about categorical statements involving the variables $S$ and $P$. Sometimes, though, we will want to represent statements in regular English. To do this, we will include a key saying what the variables $S$ and $P$ represent in this case. We will call a list that assigns English phrases or sentences to variable names a \textsc{\gls{translation key}}.\label{def:translation_key} These are sometimes also called ``symbolization keys'' or simply just ``dictionaries.'' As our logical systems get more complicated, the symbolization keys will get more complicated. For now, though, they just consist of a note saying what the $S$ and $P$ stand for. For instance, figure \ref{fig:moode} is the diagram for ``No dogs are reptiles.''
 
+\begin{figure}[!ht]
+\begin{multicols}{2}\centering
+    \begin{longtabu}{X[1,r] X[2,l]}\Large
+    & \\
+    & \\
+    \multicolumn{2}{c}{\bf Translation Key} \\ \midrule
+    S: & Dogs \\
+    P: & Reptiles \\ \bottomrule
+    \end{longtabu}
+\includegraphics{2venn4}
+\end{multicols}
+\caption{``No dogs are reptiles.''}
+\label{fig:moode}
+\end{figure}
 
 \section{Transforming English into Logically Structured English} \label{sec:transformation}
 
 Because the four basic forms are stated using variables, they have a great deal of generality. We can expand on that generality by showing how many different kinds of English sentences can be represented as sentences in our four basic forms. We already touched on this a little in section \ref{sec:qcatstatements}, when we look at sentences like ``Thirty percent of Canadians speak French.'' There we saw that the predicate was not explicitly a class. We needed to change ``speak French'' to ``people who speak French.'' In this section, we are going to expand on that to show how ordinary English sentences can be transformed into something we will call ``logically structured English.'' \textsc{\gls{logically structured English}} \label{def:LSE} is English that has been put into a standardized form that allows us to see its logical structure more clearly and removes ambiguity.  Doing this is a step towards the creation of formal languages, which we will start doing in Chapter \ref{ch:SL}.
 
-Transforming English sentences into logically structured English is fundamentally a matter of understanding the meaning of the English sentence and then finding the logically structured English statements with the same or similar meaning. Sometimes this will require judgment calls. English, like any natural  language, is fraught with ambiguity. One of our goals with logically structured English is to reduce the amount of ambiguity. Clarifying ambiguous sentences will always require making judgments that can be questioned. Things will only get harder when we start using full blown formal languages in Chapter \ref{chap:SL}, which are supposed to be completely free of ambiguity.
+Transforming English sentences into logically structured English is fundamentally a matter of understanding the meaning of the English sentence and then finding the logically structured English statements with the same or similar meaning. Sometimes this will require judgment calls. English, like any natural  language, is fraught with ambiguity. One of our goals with logically structured English is to reduce the amount of ambiguity. Clarifying ambiguous sentences will always require making judgments that can be questioned. Things will only get harder when we start using full blown formal languages in Chapter \ref{ch:SL}, which are supposed to be completely free of ambiguity.
 
 To transform a quantified categorical statement into logically structured English, we have to put all of its elements in a fixed order and be sure they are all of the right type. All statements must begin with the quantifies ``All'' or ``Some'' or the negated quantifier ``No.'' Next comes the subject term, which must be a plural noun, a noun phrase, or a variable that stands for any plural noun or noun phrase. Then comes the copula ``are'' or the negated copula ``are not.'' Last is the predicate term, which must also be a plural noun or noun phrase. We also specify that you can only say ``are not'' with the quantifier ``some,'' that way the universal negative statement is always phrased ``No $S$ are $P$,'' not ``All S are not $P$.'' Taken together, these criteria define the \textsc{\gls{standard form for a categorical statement}} in logically structured English. \label{def:standard_form_cat_statement}
 
@@ -396,7 +254,7 @@ Some words are hurtful things.
 
 English has a wide variety of ways to express quantity. We need to reduce all of these to either ``all'' or ``some,'' plus negations.  Here are some examples:
 
-\begin{fullwidth}
+\begin{table*}[!ht]
 \begin{longtabu}{p{.5\linewidth}p{.5\linewidth}}
 \underline{English} &
 \underline{Logically Structured English} \\
@@ -417,7 +275,6 @@ Some Americans are doctors. \\
 A man is walking down the street. &
 Some men are things that are walking down the street.\\
 
-
 Every day is a blessing. &
 All days are blessings. \\
 
@@ -436,15 +293,12 @@ Some things are things that are rotten in Denmark\\
 Everything is coming up roses &
 All things are things that are coming up roses\\
 
-
 ``What does not destroy me, makes me stronger.'' --Friedrich Nietzsche &
 All things that do not destroy me are things that make me stronger. \\
-
-
 \end{longtabu}
-\end{fullwidth}
+\end{table*}
 
-Notice in the last case we are losing quite a bit of information when we transform the sentence into logically structured English. ``Most'' means more that fifty percent, while ``some'' could be any percentage less than a hundred. This is simply a price we have to pay in creating a standard logical form. As we will see when we move to constructing artificial languages in Chapter \ref{chap:SL}, no logical language has the expressive richness of a natural language.
+Notice in the last case we are losing quite a bit of information when we transform the sentence into logically structured English. ``Most'' means more that fifty percent, while ``some'' could be any percentage less than a hundred. This is simply a price we have to pay in creating a standard logical form. As we will see when we move to constructing artificial languages in Chapter \ref{ch:SL}, no logical language has the expressive richness of a natural language.
 
 Sometimes universal statements in English don't have an explicit quantifier. Instead they use a plural noun or indefinite article to express generality.
 
@@ -453,9 +307,14 @@ Sometimes universal statements in English don't have an explicit quantifier. Ins
 \underline{English} &
 \underline{Logically Structured English} \\
 \endhead
-Boots are footwear. & All boots are footwear.\\
-Giraffes are tall. & All giraffes are tall things.\\
-A dog is not a cat. & No dogs are cats.\\
+Boots are footwear. & 
+All boots are footwear.\\
+
+Giraffes are tall. & 
+All giraffes are tall things.\\
+
+A dog is not a cat. & 
+No dogs are cats.\\
 
 A lion is a fierce creature. &
 All lions are fierce creatures.\\
@@ -471,7 +330,7 @@ You may be someone who interprets these indefinite sentences slightly differentl
 
 English also uses specialized adverbial phrases as quantifiers for people, places and times. If we want to talk about all people, we use a specialized quantifier like ``everyone,'' ``someone'' or ``no one.'' We use ``everywhere,'' ``somewhere,'' and ``nowhere'' for places, and ``always,'' ``sometimes,'' and ``never'' for times.  All of these need to be transformed into using the simple quantifiers ``all'' or ``some,'' plus negations.
 
-\begin{fullwidth}
+\begin{table*}
 \tabulinesep=1.25ex
 \begin{longtabu}{p{.5\linewidth}p{.5\linewidth}}
 \underline{English} &
@@ -493,7 +352,7 @@ No times are times when we will get back together.\\
 All persons who fight with monsters are persons who should be careful lest they become a monster.\\
 
 \end{longtabu}
-\end{fullwidth}
+\end{table*}
 
 \subsection{Standardize Alternative Universal Forms}
 \label{subsec:alternative_universals}
@@ -502,7 +361,7 @@ Many constructions in English can be represented as universal statements in Logi
 
 For instance, it turns out that statements about individual people or specific objects can be represented by A or E statements. This is not something Aristotle originally noticed. For him a statement like ``Socrates is mortal,'' for Aristotle, were neither universal nor particular. They were a third class he called ``singular.'' The power of categorical logic was expanded considerably when it was realized singular statements can converted into universal statements. The trick is to add a phrase like ``All things identical to\ldots'' to our singular sentence. Essentially we are adding a universal quantifier that only picks out one specific object.
 
-\begin{table*}[!ht]
+\begin{table}[!ht]
 \begin{longtabu}{p{.5\linewidth}p{.5\linewidth}}
 \underline{English} & \underline{Logically Structured English} \\
 \endhead
@@ -511,7 +370,7 @@ The Empire State Building is tall. & All things identical to The Empire State Bu
 Ludwig was not happy. & No people identical with Ludwig are happy people. \\
 
 \end{longtabu}
-\end{table*}
+\end{table}
 
 
 %
@@ -536,20 +395,20 @@ Ludwig was not happy. & No people identical with Ludwig are happy people. \\
 %\textbf{A}: All dogs are mammals.
 %\end{tabu}
 
-Another kind of statement that can be transformed into a universal statement is a conditional. A conditional is a statement of the form ``If \ldots then \ldots.'' They will become a big focus of our attention starting in Chapter \ref{chap:SL} when we begin introducing modern formal languages. They are not given special treatment in the Aristotelian tradition, however. Instead, where we can, we just treat them as categorical generalizations:
+Another kind of statement that can be transformed into a universal statement is a conditional. A conditional is a statement of the form ``If \ldots then \ldots.'' They will become a big focus of our attention starting in Chapter \ref{ch:SL} when we begin introducing modern formal languages. They are not given special treatment in the Aristotelian tradition, however. Instead, where we can, we just treat them as categorical generalizations:
 
-\begin{table*}
+\begin{table}
 \begin{longtabu}{p{.5\linewidth}p{.5\linewidth}}
 \underline{English} & \underline{Logically Structured English} \\
 \endhead
 If something is a cat, then it is a felines. & All cats are feline.\\
 If something is a dog, then it's not a cat. & No dogs are cats. \\
 \end{longtabu}
-\end{table*}
+\end{table}
 
 The word ``only'' is used in a couple of different constructions in English that can be represented as universal statements. The first kind are called ``exclusive propositions.'' These are statements that say the subject excludes everything except what is in the predicate. For instance the sentence ``Only people over 21 may drink'' says that the class of people who may drink excludes everyone except those who are over 21. In English exclusive propositions are created using the words ``only,'' ``none but,'' or ``none except.'' These statements become A statements when translated into logically structured English. So ``Only people over 21 may drink'' becomes ``If you may drink, you  are over 21.'' It is important to see that in each case these words are used to introduce the predicate, not the subject. In the sentence ``Only people over 21 may drink,'' the term ``people over 21'' is actually the  predicate, and ``people who may drink'' is the subject.
 
-\begin{table*}
+\begin{table}
 \begin{longtabu}{p{.5\linewidth}p{.5\linewidth}}
 \underline{English} & \underline{Logically Structured English} \\
 \endhead
@@ -557,7 +416,7 @@ Only people over 21 may drink. & All people who drink are over 21.\\
 No one, except those with a ticket, may enter the theater. & All people who enter the theater have a ticket. \\
 None but the strong survive. & All people who survive are strong people. \\
 \end{longtabu}
-\end{table*}
+\end{table}
 
 Sentences with ``The only'' are a little different than sentences regular exclusive propositions, which just have ``only'' in them. The sentence ``Humans are the only animals that talk on cell phones'' should be translated as ``All animals who talk on cell phones are humans.'' In this sentence, ``the only'' introduces the subject, rather than the predicate. The statement still asserts that the subject excludes everything except what is in the predicate, and we still represent them using mood A statements.
 
@@ -570,7 +429,7 @@ Shrews are the only venomous mammal in North America. & All venomous mammals in 
 \end{longtabu}
 \end{table*}
 
-Transforming sentences into \gls{logically structured English} requires judgment and attention to the nuances of meaning in English. You must be able to recognize which of the transformations describe above needs to be applied and apply it correctly. One frequent mistake by people starting out is to overgeneralize. We saw at the start of the subsection on alternative universal forms that singular propositions can be turned into universal propositions by adding the phrase ``Things identical to \ldots'' Once you get in the habit of doing this, it becomes tempting to add the phrase ``things identical to \ldots'' to everything, even when it isn't necessary or doesn't make sense. The sentence ``Fido is a dog'' should become ``all things identical to Fido are dogs'' in logically structured English, because ``Fido'' is a singular term referring to an individual dog. But with the sentence ``dogs are mammals,'' you do not need to add the phrase ``All things identical to\ldots'', because ``dogs'' is already a collective noun, not an individual.
+Transforming sentences into \textsc{\gls{logically structured English}} requires judgment and attention to the nuances of meaning in English. You must be able to recognize which of the transformations describe above needs to be applied and apply it correctly. One frequent mistake by people starting out is to overgeneralize. We saw at the start of the subsection on alternative universal forms that singular propositions can be turned into universal propositions by adding the phrase ``Things identical to \ldots'' Once you get in the habit of doing this, it becomes tempting to add the phrase ``things identical to \ldots'' to everything, even when it isn't necessary or doesn't make sense. The sentence ``Fido is a dog'' should become ``all things identical to Fido are dogs'' in logically structured English, because ``Fido'' is a singular term referring to an individual dog. But with the sentence ``dogs are mammals,'' you do not need to add the phrase ``All things identical to\ldots'', because ``dogs'' is already a collective noun, not an individual.
 
 The same is true for the phrases we use to transform adjective and verb phrases into noun phrases. The sentence ``No cats bark'' has to be changed, because ``bark'' is a verb, so it becomes ``No cats are animals that bark'' in Logically Structured English. But the sentence ``No cats are reptiles'' already has a noun, ``reptiles,'' for a predicate, so you do not need to transform it into ``No cats are animals that are reptiles.'' The key is not only knowing when to use the transformations we describe, but knowing when not to use them.
 
@@ -592,18 +451,18 @@ The same is true for the phrases we use to transform adjective and verb phrases 
 \sortitem{Quantity}{}
 \sortitem{Quality}{}
 \sortitem{Logically structured English}{}
-\sortitem{Distribution}{}
-\sortitem{Complement}{}
-\sortitem{Converse}{}
-\sortitem{Obverse}{}
-\sortitem{Contraposition}{}
-\sortitem{Contradictories}{}
-\sortitem{Contraries}{}
-\sortitem{Square of opposition}{}
-\sortitem{Subcontraries}{}
-\sortitem{Subalternation}{}
-\sortitem{Existential import}{}
-\sortitem{Vacuous truth}{}
+%\sortitem{Distribution}{}
+%\sortitem{Complement}{}
+%\sortitem{Converse}{}
+%\sortitem{Obverse}{}
+%\sortitem{Contraposition}{}
+%\sortitem{Contradictories}{}
+%\sortitem{Contraries}{}
+%\sortitem{Square of opposition}{}
+%\sortitem{Subcontraries}{}
+%\sortitem{Subalternation}{}
+%\sortitem{Existential import}{}
+%\sortitem{Vacuous truth}{}
 \sortitem{Venn diagram}{}
 \sortitem{Standard form categorical statement}{}
 \sortitem{Universal}{}
